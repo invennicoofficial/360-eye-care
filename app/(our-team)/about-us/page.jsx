@@ -1,0 +1,84 @@
+import SubHeader from "../../../components/SubHeader";
+import AboutUsSection from "../../../components/AboutUsSection";
+import Associate from "../../../components/Associate";
+import { FaCaretRight } from "react-icons/fa";
+import Image from "next/image";
+import { MeetOptometryImage } from "../../../constants/Images";
+const AboutUs = () => {
+  return (
+    <main className="pt-[110px]">
+      <SubHeader text="About Us" />
+      <AboutUsSection />
+      <div className="w-full bg-[#F6F7F5] py-16">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row  bg-white shadow-md">
+          <div className=" ml-10 mb-20 lg:w-1/2">
+            <div className="relative h-full">
+              <Image
+                src={MeetOptometryImage}
+                alt="Eye care professionals with patients"
+                className="object-cover"
+                width={578}
+                height={668}
+                style={{ height: "100%", width: "100%" }}
+              />
+            </div>
+          </div>
+
+          <div className="lg:w-[40%] ml-10 p-8  lg:p-0  flex flex-col gap-6">
+            <div className="flex flex-col ">
+              <h2 className="text-3xl lg:text-4xl font-bold text-combination-200 mb-6">
+                Why Choose Us for Your Optometric Needs?
+              </h2>
+              <div className="w-24 h-1 bg-combination-100 mb-6"></div>
+              <p className="text-neutral-500 mb-4">
+                360 Eyecare's vision is based on providing our patients and
+                customers with the full circle of eye care. Whether you need a
+                routine comprehensive eye exam, advanced diagnostics, emergency
+                eye consult, and treatment, or you're looking for a great
+                eyewear product such as prescription glasses, sunglasses, or
+                contact lenses, we are here to help.
+              </p>
+              <p className="text-neutral-500">
+                We are committed to providing the Toronto community with the
+                ultimate eyecare experience and eyewear products.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4 mt-2">
+              <div>
+                <div className="flex flex-row gap-2 items-center mb-2">
+                  <FaCaretRight size={20} className="text-teal-400" />
+                  <p className="text-blue-900 font-semibold text-lg">
+                    Payment Options
+                  </p>
+                </div>
+                <p className="text-neutral-500 pl-7">
+                  We also offer direct billing to your insurance providers (as
+                  your plan allows).
+                </p>
+              </div>
+
+              <div>
+                <div className="flex flex-row gap-2 items-center mb-2">
+                  <FaCaretRight size={20} className="text-teal-400" />
+                  <p className="text-blue-900 font-semibold text-lg">
+                    Financing Available
+                  </p>
+                </div>
+                <p className="text-neutral-500 pl-7">
+                  We have payment plans available through Affirm. Please call
+                  our office if you have any questions about those payment
+                  options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Associate />
+    </main>
+  );
+};
+
+export default AboutUs;
