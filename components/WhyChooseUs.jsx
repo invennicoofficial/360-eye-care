@@ -14,27 +14,27 @@ const WhyChooseUs = () => {
   const cardData = [
     {
       id: "01",
-      icon: "/icons/Optometry-Icon1.webp",
+      icon: "/Icons/Optometry-Icon1.webp",
       title: "Expertise",
       description:
         "Experienced optometrists committed to delivering quality eye care.",
     },
     {
       id: "02",
-      icon: "/icons/Optometry-Icon2.webp",
+      icon: "/Icons/Optometry-Icon2.webp",
       title: "Eye Care For All Ages",
       description: "We offer essential eye care services for every age group.",
     },
     {
       id: "03",
-      icon: "/icons/Optometry-Icon1.webp",
+      icon: "/Icons/Optometry-Icon1.webp",
       title: "Personalized Treatment",
       description:
         "Get personalized eye care from the best optometrists in Toronto.",
     },
     {
       id: "04",
-      icon: "/icons/Optometry-Icon2.webp",
+      icon: "/Icons/Optometry-Icon2.webp",
       title: "Modern Optical Centre",
       description:
         "Full scope and family friendly optical store for your eyewear needs.",
