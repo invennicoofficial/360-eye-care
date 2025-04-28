@@ -11,8 +11,25 @@ import {
   FaEnvelope,
   FaChevronUp,
 } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  // Show scroll button only when scrolled down
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollButton(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer
       className="text-[#ffffff99] w-full relative pt-12 px-4 md:px-0"
@@ -23,7 +40,11 @@ const Footer = () => {
       }}
     >
       {/* Overlay */}
-      <div class="absolute inset-0 bg-[#334F72] opacity-90 z-10"></div>
+      <div
+        className="absolute inset-0 bg-[#334F72] opacity-90 z-10 transition-opacity duration-300 pointer-events-none"
+        id="pageOverlay"
+        aria-hidden="true"
+      ></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-8 mt-8 mb-8">
@@ -35,6 +56,8 @@ const Footer = () => {
                 alt="360 EyeCare Logo"
                 width={120}
                 height={60}
+                fetchPriority="high"
+                loading="eager"
               />
             </div>
             <p className="mb-6 text-base">
@@ -51,47 +74,85 @@ const Footer = () => {
             <div className="h-1 w-16 bg-teal-400 mb-4"></div>
 
             <div className="mb-4 flex items-start">
-              <FaMapMarkerAlt className="text-teal-400 mr-3 mt-1" size={18} />
-              <p className="text-base">
+              <FaMapMarkerAlt
+                className="text-combination-100 mr-3 mt-1"
+                size={18}
+                aria-hidden="true"
+              />
+              <address className="text-base not-italic">
                 2199 Queen Street East,
                 <br />
                 Toronto, ON M4E 1E5
+              </address>
+            </div>
+
+            <div className="mb-4 flex items-center">
+              <FaPhone
+                className="text-combination-100 mr-3"
+                size={18}
+                aria-hidden="true"
+              />
+              <p className="text-base">
+                <span className="sr-only">Phone:</span>
+                <a href="tel:4166983937" className="hover:text-combination-100">
+                  416-698-3937
+                </a>
               </p>
             </div>
 
             <div className="mb-4 flex items-center">
-              <FaPhone className="text-teal-400 mr-3" size={18} />
-              <p className="text-base">Phone: 416-698-3937</p>
-            </div>
-
-            <div className="mb-4 flex items-center">
-              <FaFax className="text-teal-400 mr-3" size={18} />
-              <p className="text-base">Fax: 416-698-1161</p>
+              <FaFax
+                className="text-combination-100 mr-3"
+                size={18}
+                aria-hidden="true"
+              />
+              <p className="text-base">
+                <span className="sr-only">Fax:</span>
+                416-698-1161
+              </p>
             </div>
 
             <div className="mb-6 flex items-center">
-              <FaEnvelope className="text-teal-400 mr-3" size={18} />
-              <p className="text-base">beaches@360eyecare.ca</p>
+              <FaEnvelope
+                className="text-combination-100 mr-3"
+                size={18}
+                aria-hidden="true"
+              />
+              <p className="text-base">
+                <span className="sr-only">Email:</span>
+                <a
+                  href="mailto:beaches@360eyecare.ca"
+                  className="hover:text-combination-100"
+                >
+                  beaches@360eyecare.ca
+                </a>
+              </p>
             </div>
 
             <div className="flex space-x-4">
               <Link
                 href="https://www.facebook.com/360eyecare.Beaches/"
-                className="text-white hover:text-teal-400"
+                className="text-white hover:text-combination-100"
+                aria-label="Facebook"
+                rel="noopener noreferrer"
               >
-                <FaFacebookF size={24} />
+                <FaFacebookF size={24} aria-hidden="true" />
               </Link>
               <Link
                 href="https://www.instagram.com/360eyecare/"
-                className="text-white hover:text-teal-400"
+                className="text-white hover:text-combination-100"
+                aria-label="Instagram"
+                rel="noopener noreferrer"
               >
-                <FaInstagram size={24} />
+                <FaInstagram size={24} aria-hidden="true" />
               </Link>
               <Link
                 href="https://x.com/360eyecare"
-                className="text-white hover:text-teal-400"
+                className="text-white hover:text-combination-100"
+                aria-label="X (formerly Twitter)"
+                rel="noopener noreferrer"
               >
-                <FaTwitter size={24} />
+                <FaTwitter size={24} aria-hidden="true" />
               </Link>
             </div>
           </div>
@@ -104,49 +165,87 @@ const Footer = () => {
             <div className="h-1 w-16 bg-teal-400 mb-4"></div>
 
             <div className="mb-4 flex items-start">
-              <FaMapMarkerAlt className="text-teal-400 mr-3 mt-1" size={18} />
-              <p className="text-base">
+              <FaMapMarkerAlt
+                className="text-combination-100 mr-3 mt-1"
+                size={18}
+                aria-hidden="true"
+              />
+              <address className="text-base not-italic">
                 Concourse level
                 <br />
                 55 Bloor St W Suite 03,
                 <br />
                 Toronto, ON M4W 1A5, Canada
+              </address>
+            </div>
+
+            <div className="mb-4 flex items-center">
+              <FaPhone
+                className="text-combination-100 mr-3"
+                size={18}
+                aria-hidden="true"
+              />
+              <p className="text-base">
+                <span className="sr-only">Phone:</span>
+                <a href="tel:4169012725" className="hover:text-combination-100">
+                  416-901-2725
+                </a>
               </p>
             </div>
 
             <div className="mb-4 flex items-center">
-              <FaPhone className="text-teal-400 mr-3" size={18} />
-              <p className="text-base">Phone: 416-901-2725</p>
-            </div>
-
-            <div className="mb-4 flex items-center">
-              <FaFax className="text-teal-400 mr-3" size={18} />
-              <p className="text-base">Fax: 416-901-2727</p>
+              <FaFax
+                className="text-combination-100 mr-3"
+                size={18}
+                aria-hidden="true"
+              />
+              <p className="text-base">
+                <span className="sr-only">Fax:</span>
+                416-901-2727
+              </p>
             </div>
 
             <div className="mb-6 flex items-center">
-              <FaEnvelope className="text-teal-400 mr-3" size={18} />
-              <p className="text-base">yorkville@360eyecare.ca</p>
+              <FaEnvelope
+                className="text-combination-100 mr-3"
+                size={18}
+                aria-hidden="true"
+              />
+              <p className="text-base">
+                <span className="sr-only">Email:</span>
+                <a
+                  href="mailto:yorkville@360eyecare.ca"
+                  className="hover:text-combination-100"
+                >
+                  yorkville@360eyecare.ca
+                </a>
+              </p>
             </div>
 
             <div className="flex space-x-4">
               <Link
                 href="https://www.facebook.com/360eyecare.yorkville/"
-                className="text-white hover:text-teal-400"
+                className="text-white hover:text-combination-100"
+                aria-label="Facebook"
+                rel="noopener noreferrer"
               >
-                <FaFacebookF size={24} />
+                <FaFacebookF size={24} aria-hidden="true" />
               </Link>
               <Link
                 href="https://www.instagram.com/360eyecare_yorkville/"
-                className="text-white hover:text-teal-400"
+                className="text-white hover:text-combination-100"
+                aria-label="Instagram"
+                rel="noopener noreferrer"
               >
-                <FaInstagram size={24} />
+                <FaInstagram size={24} aria-hidden="true" />
               </Link>
               <Link
                 href="https://x.com/360eyecare"
-                className="text-white hover:text-teal-400"
+                className="text-white hover:text-combination-100"
+                aria-label="X (formerly Twitter)"
+                rel="noopener noreferrer"
               >
-                <FaTwitter size={24} />
+                <FaTwitter size={24} aria-hidden="true" />
               </Link>
             </div>
           </div>
@@ -158,26 +257,49 @@ const Footer = () => {
             </h3>
             <div className="h-1 w-16 bg-teal-400 mb-4"></div>
 
-            <div className="flex flex-col space-y-3 text-base">
-              <Link href="/terms" className="hover:text-teal-400">
-                Terms of Service & Conditions
-              </Link>
-              <Link href="/privacy" className="hover:text-teal-400">
-                Privacy Policy
-              </Link>
-              <Link href="/shipping" className="hover:text-teal-400">
-                Shipping & Return Policy
-              </Link>
-              <Link href="/dry-eye-shop" className="hover:text-teal-400">
-                Dry Eye Product Shop
-              </Link>
-              <Link href="/contact-lens-shop" className="hover:text-teal-400">
-                Contact Lens Shop
-              </Link>
-              <Link href="/integrum-eyewear" className="hover:text-teal-400">
-                Integrum Eyewear
-              </Link>
-            </div>
+            <nav aria-label="Footer Navigation">
+              <ul className="flex flex-col space-y-3 text-base list-none p-0">
+                <li>
+                  <Link href="/terms" className="hover:text-combination-100">
+                    Terms of Service & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-combination-100">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/shipping" className="hover:text-combination-100">
+                    Shipping & Return Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/dry-eye-shop"
+                    className="hover:text-combination-100"
+                  >
+                    Dry Eye Product Shop
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact-lens-shop"
+                    className="hover:text-combination-100"
+                  >
+                    Contact Lens Shop
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/integrum-eyewear"
+                    className="hover:text-combination-100"
+                  >
+                    Integrum Eyewear
+                  </Link>
+                </li>
+              </ul>
+            </nav>
 
             <div className="mt-10">
               <h3 className="text-lg font-semibold mb-4 text-white">
@@ -188,10 +310,11 @@ const Footer = () => {
               <div className="flex flex-wrap gap-4">
                 <Image
                   src="/payments.webp"
-                  alt="Payment Methods"
+                  alt="Payment methods including credit cards and digital payment options"
                   width={280}
                   height={40}
                   className="bg-transparent"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -209,16 +332,18 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll to top button */}
-      <div className="fixed bottom-8 right-8 z-50">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-combination-100 text-white p-3 rounded-full hover:bg-combination-200 focus:outline-none"
-          aria-label="Scroll to top"
-        >
-          <FaChevronUp size={18} />
-        </button>
-      </div>
+      {/* Scroll to top button - conditionally rendered */}
+      {showScrollButton && (
+        <div className="fixed bottom-8 right-8 z-50">
+          <button
+            onClick={scrollToTop}
+            className="bg-combination-100 text-white p-3 rounded-full hover:bg-combination-200 focus:outline-none focus:ring-2 focus:ring-teal-300"
+            aria-label="Scroll to top"
+          >
+            <FaChevronUp size={18} aria-hidden="true" />
+          </button>
+        </div>
+      )}
     </footer>
   );
 };

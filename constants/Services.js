@@ -9,7 +9,7 @@ import {
 
 export const OptometryServices = [
   {
-    imageLink: "/icons/Optometry-Icon1.webp",
+    imageLink: "/Icons/Optometry-Icon1.webp",
     title: "Comprehensive Eye Exams",
     description:
       "Our eye exams help detect issues early and ensure your vision is at its best.",
@@ -17,7 +17,7 @@ export const OptometryServices = [
     buttonLink: "/book-exam",
   },
   {
-    imageLink: "/icons/Optometry-Icon2.webp",
+    imageLink: "/Icons/Optometry-Icon2.webp",
     title: "Eyewear Collection",
     description:
       "Choose from our handcrafted and designer frames to suit your style and vision needs",
@@ -32,14 +32,14 @@ export const cardData = [
     title: "Expertise",
     description:
       "Experienced optometrists committed to delivering quality eye care.",
-    iconPath: "/icons/Optometry-Icon1.webp",
+    iconPath: "/Icons/Optometry-Icon1.webp",
   },
   {
     id: 2,
     number: "02",
     title: "Eye Care For All Ages",
     description: "We offer essential eye care services for every age group.",
-    iconPath: "/icons/Optometry-Icon2.webp",
+    iconPath: "/Icons/Optometry-Icon2.webp",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const cardData = [
     title: "Personalized Treatment",
     description:
       "Get personalized eye care from the best optometrists in Toronto.",
-    iconPath: "/icons/Optometry-Icon1.webp",
+    iconPath: "/Icons/Optometry-Icon1.webp",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ export const cardData = [
     title: "Modern Optical Centre",
     description:
       "Full scope and family friendly optical store for your eyewear needs.",
-    iconPath: "/icons/Optometry-Icon2.webp",
+    iconPath: "/Icons/Optometry-Icon2.webp",
   },
 ];
 
