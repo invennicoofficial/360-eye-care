@@ -23,7 +23,7 @@ const Footer = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute top-0 inset-0 bg-[#334F72] opacity-[90%]"></div>
+      <div class="absolute inset-0 bg-[#334F72] opacity-90 z-10"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-8 mt-8 mb-8">
@@ -35,7 +35,6 @@ const Footer = () => {
                 alt="360 EyeCare Logo"
                 width={120}
                 height={60}
-                className="w-auto h-auto"
               />
             </div>
             <p className="mb-6 text-base">

@@ -72,7 +72,7 @@ const HeroCarousel = () => {
                           className="w-14 h-14 text-primary-600 flex items-center justify-center"
                         >
                           <Image
-                            src="/icons/HeroIcon1.webp"
+                            src="/Icons/HeroIcon1.webp"
                             alt="Eye chart icon"
                             width={38}
                             height={53}
@@ -87,7 +87,7 @@ const HeroCarousel = () => {
                           className="w-14 h-14 text-primary-600 flex items-center justify-center"
                         >
                           <Image
-                            src="/icons/HeroIcon2.webp"
+                            src="/Icons/HeroIcon2.webp"
                             alt="Eye examination icon"
                             width={48}
                             height={48}
@@ -102,7 +102,7 @@ const HeroCarousel = () => {
                           className="w-14 h-14 text-primary-600 flex items-center justify-center"
                         >
                           <Image
-                            src="/icons/HeroIcon3.webp"
+                            src="/Icons/HeroIcon3.webp"
                             alt="Eye test equipment icon"
                             width={68}
                             height={48}
