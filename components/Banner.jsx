@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 
 const Banner = ({
   title = "Schedule Your Eye Exam Today",

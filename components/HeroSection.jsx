@@ -3,26 +3,10 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { slides } from "../constants/Services";
 const HeroCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const MotionLink = motion(Link);
-
-  const slides = [
-    {
-      title: "360 Eyecare",
-      subtitle: "Your Neighbourhood Optometry Clinic",
-      buttonText: "Book an Eye Exam",
-      buttonLink: "book-exam",
-      image: "/Slider1.webp",
-    },
-    {
-      title: "Toronto Optometrists",
-      subtitle: "Providing You with Expert Eye Care",
-      buttonText: "About Us",
-      buttonLink: "about-us",
-      image: "/Slider2.webp",
-    },
-  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -47,9 +31,12 @@ const HeroCarousel = () => {
         >
           {/* Background image */}
           <div className="absolute inset-0">
-            <div
-              className="w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
+            <img
+              src={slide.image}
+              alt="Background image"
+              className="w-full h-full object-cover"
+              loading="eager"
+              fetchpriority="high"
             />
           </div>
 

@@ -43,7 +43,7 @@ const NavBar = () => {
         },
         {
           name: "360 Eyecare - Yorkville Rosedale",
-          link: "/toronto-beaches-optometrist",
+          link: "/toronto-rosedale-optometrist",
         },
       ],
     },
@@ -139,7 +139,7 @@ const NavBar = () => {
         <div className="hidden md:flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <div className="w-36">
                 <Image
                   src={EyeCareLogo}
@@ -148,7 +148,7 @@ const NavBar = () => {
                   height={70}
                 />
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Navigation Links */}
@@ -161,16 +161,28 @@ const NavBar = () => {
                   onMouseEnter={() => item.dropdown && toggleDropdown(index)}
                   onMouseLeave={closeDropdown}
                 >
-                  <a
-                    href={item.link}
-                    className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200 hover:text-combination-100 hover:bg-gray-50 ${
-                      activeDropdown === index
-                        ? "hover:text-combination-100 hover:bg-gray-50"
-                        : "text-combination-200"
-                    }`}
-                  >
-                    {item.name}
-                  </a>
+                  {item.link ? (
+                    <Link
+                      href={item.link}
+                      className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200 hover:text-combination-100 hover:bg-gray-50 ${
+                        activeDropdown === index
+                          ? "hover:text-combination-100 hover:bg-gray-50"
+                          : "text-combination-200"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <span
+                      className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200 hover:text-combination-100 hover:bg-gray-50 cursor-pointer ${
+                        activeDropdown === index
+                          ? "hover:text-combination-100 hover:bg-gray-50"
+                          : "text-combination-200"
+                      }`}
+                    >
+                      {item.name}
+                    </span>
+                  )}
 
                   {/* Dropdown Menu */}
                   {item.dropdown && activeDropdown === index && (
@@ -178,13 +190,13 @@ const NavBar = () => {
                       <ul className="py-2 px-4 ">
                         {item.dropdown.map((subItem, subIndex) => (
                           <li key={subIndex}>
-                            <a
+                            <Link
                               href={subItem.link}
                               className="relative  block px-4 py-3 text-sm text-neutral-700 transition-colors duration-150 hover:text-combination-100 group"
                             >
                               {subItem.name}
                               <span className="absolute left-4 bottom-2 h-[2px] w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"></span>
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>

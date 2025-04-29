@@ -1,4 +1,3 @@
-import React from "react";
 import { FaArrowsToEye, FaUserDoctor } from "react-icons/fa6";
 import { InfoCard } from "../components/InfoCard";
 import { LuMonitorDot } from "react-icons/lu";

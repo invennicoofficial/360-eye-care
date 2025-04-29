@@ -60,6 +60,22 @@ export const cardData = [
   },
 ];
 
+export const slides = [
+  {
+    title: "360 Eyecare",
+    subtitle: "Your Neighbourhood Optometry Clinic",
+    buttonText: "Book an Eye Exam",
+    buttonLink: "book-exam",
+    image: "/Slider1.webp",
+  },
+  {
+    title: "Toronto Optometrists",
+    subtitle: "Providing You with Expert Eye Care",
+    buttonText: "About Us",
+    buttonLink: "about-us",
+    image: "/Slider2.webp",
+  },
+];
 export const optometrists = [
   {
     id: 1,

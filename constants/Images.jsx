@@ -30,6 +30,8 @@ import MeetOptometryImage from "../public/Meetoptometrist.webp";
 import EyeChairImage from "../public/EyeChair.webp";
 import SamBarramImage2 from "../public/doctors/sambarram2.webp";
 import EyeCareSetup from "../public/eyecaresetup.webp";
+import StoreFrontImage from "../public/storefront.jpg";
+import eyeCare360Image from "../public/360eyeCare.webp";
 export {
   EyeCareLogo,
   OptometryImage,
@@ -63,4 +65,6 @@ export {
   EyeChairImage,
   SamBarramImage2,
   EyeCareSetup,
+  StoreFrontImage,
+  eyeCare360Image,
 };

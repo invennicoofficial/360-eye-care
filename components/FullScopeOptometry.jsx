@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+
 import { OptometryImage } from "../constants/Images";
 import { OptometryServices } from "../constants/Services";
 import Link from "next/link";

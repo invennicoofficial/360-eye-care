@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { BeachImage, YorkVilleRosedale } from "../constants/Images";
 import HappyClientBeaches from "./HappyClientBeaches";
@@ -18,7 +17,7 @@ const NearYou = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-12 px-4">
         {/* Beaches Location */}
         <div className="flex flex-col items-center w-full max-w-md lg:max-w-none mb-8 lg:mb-0">
-          <div className="relative w-full h-[250px] md:h-[350px] lg:w-[600px] lg:h-[400px]">
+          <div className="relative w-full h-[250px] md:h-[350px] lg:w-[600px] lg:h-[397px]">
             <Image
               src={BeachImage}
               alt="2199 Queen Street East, Toronto"
@@ -28,7 +27,7 @@ const NearYou = () => {
               loading="eager"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg=="
-              className="rounded shadow"
+              className="rounded shadow object-cover"
             />
             <div className="absolute bottom-[-15px] md:bottom-[-20px] right-0 md:right-[-10px] bg-brand-btn text-white w-full max-w-[250px] md:w-[280px] h-[70px] md:h-[82px] font-medium text-xs md:text-base flex justify-center text-center items-center px-4 md:px-6 rounded-md shadow">
               2199 Queen Street East, Toronto
@@ -43,7 +42,7 @@ const NearYou = () => {
 
         {/* Yorkville Rosedale Location */}
         <div className="flex flex-col items-center w-full max-w-md lg:max-w-none">
-          <div className="relative w-full h-[250px] md:h-[350px] lg:w-[600px] lg:h-[400px]">
+          <div className="relative w-full h-[250px] md:h-[350px] lg:w-[600px] lg:h-[397px]">
             <Image
               src={YorkVilleRosedale}
               alt="55 Bloor St W Suite 03, Toronto"
@@ -53,7 +52,7 @@ const NearYou = () => {
               loading="eager"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg=="
-              className="rounded shadow"
+              className="rounded shadow object-cover"
             />
             <div className="absolute bottom-[-15px] md:bottom-[-20px] right-0 md:right-[-10px] bg-brand-btn text-white w-full max-w-[250px] md:w-[280px] h-[70px] md:h-[82px] font-medium text-xs md:text-base flex justify-center text-center items-center px-4 md:px-6 rounded-md shadow">
               55 Bloor St W Suite 03, Toronto

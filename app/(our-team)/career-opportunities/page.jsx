@@ -1,4 +1,3 @@
-import React from "react";
 import SubHeader from "../../../components/SubHeader";
 import Image from "next/image";
 import { MedicalTeamImage } from "../../../constants/Images";

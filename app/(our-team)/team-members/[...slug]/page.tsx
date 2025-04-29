@@ -1,6 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
-import React from "react";
+
 import { optometrists } from "../../../../constants/Services";
 import SubHeader from "../../../../components/SubHeader";
 import Image from "next/image";
