@@ -31,22 +31,25 @@ const Footer = () => {
   };
 
   return (
-    <footer
-      className="text-[#ffffff99] w-full relative pt-12 px-4 md:px-0"
-      style={{
-        backgroundImage: 'url("/footer-bg.jpg")',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <footer className="text-[#ffffff99] w-full relative pt-12 px-4 md:px-0 min-h-[300px]">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <Image
+          src="/footer-bg.jpg"
+          alt="Footer background"
+          fill
+          quality={60}
+          priority={false}
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
       {/* Overlay */}
       <div
-        className="absolute inset-0 bg-[#334F72] opacity-90 z-10 transition-opacity duration-300 pointer-events-none"
-        id="pageOverlay"
+        className="absolute inset-0 bg-[#334F72] opacity-80 visibility-hidden z-10 pointer-events-none transition-opacity duration-300"
         aria-hidden="true"
       ></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-8 mt-8 mb-8">
           {/* Logo and Tagline */}
           <div className="flex flex-col items-start">
@@ -56,8 +59,8 @@ const Footer = () => {
                 alt="360 EyeCare Logo"
                 width={120}
                 height={60}
-                fetchPriority="high"
-                loading="eager"
+                quality={90}
+                priority
               />
             </div>
             <p className="mb-6 text-base">
@@ -313,8 +316,9 @@ const Footer = () => {
                   alt="Payment methods including credit cards and digital payment options"
                   width={280}
                   height={40}
-                  className="bg-transparent"
+                  quality={75}
                   loading="lazy"
+                  className="bg-transparent"
                 />
               </div>
             </div>

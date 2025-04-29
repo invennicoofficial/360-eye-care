@@ -1,54 +1,38 @@
-import dynamic from "next/dynamic";
-import React, { Suspense } from "react";
+import FullScopeOptometry from "../components/FullScopeOptometry";
+import WhyChooseUs from "../components/WhyChooseUs";
+import PediatricOptometric from "../components/PediatricOptometric";
+import OptometryServices from "../components/Optometry";
+import NearYou from "../components/NearYou";
+import Associate from "../components/Associate";
+import LatestEyeCareInsight from "../components/LatestEyeCareInsight";
+import Banner from "../components/Banner";
+import HeroSection from "../components/HeroSection";
 
-// Dynamically import all client components
-const HeroCarousel = dynamic(() => import("../components/HeroSection"), {
-  ssr: false,
-});
-const FullScopeOptometry = dynamic(
-  () => import("../components/FullScopeOptometry"),
-  { ssr: false }
-);
-const WhyChooseUs = dynamic(() => import("../components/WhyChooseUs"), {
-  ssr: false,
-});
-const PediatricOptometric = dynamic(
-  () => import("../components/PediatricOptometric"),
-  { ssr: false }
-);
-const OptometryServices = dynamic(() => import("../components/Optometry"), {
-  ssr: false,
-});
-const NearYou = dynamic(() => import("../components/NearYou"), { ssr: false });
-const Associate = dynamic(() => import("../components/Associate"), {
-  ssr: false,
-});
-const LatestEyeCareInsight = dynamic(
-  () => import("../components/LatestEyeCareInsight"),
-  { ssr: false }
-);
-const Banner = dynamic(() => import("../components/Banner"), { ssr: false });
-
-const LoadingFallback = () => (
-  <div className="flex justify-center items-center p-4">
-    <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
-  </div>
-);
-
+export const metadata = {
+  title: "360 Eye Care - Expert Optometry Services in Toronto",
+  description:
+    "Toronto's leading eye care clinic offering comprehensive eye exams, dry eye treatment, myopia control, and advanced diagnostics. Our expert optometrists provide personalized care for your entire family. Schedule your visit today!",
+  alternates: {
+    canonical: "https://360eyecare.ca",
+  },
+  openGraph: {
+    title: "360 Eye Care - Expert Optometry Services in Toronto",
+    description:
+      "Toronto's leading eye care clinic offering comprehensive eye exams, dry eye treatment, myopia control, and advanced diagnostics. Our expert optometrists provide personalized care for your entire family. Schedule your visit today!",
+  },
+};
 const Home = () => {
   return (
     <main className="pt-[80px]">
-      <Suspense fallback={<LoadingFallback />}>
-        <HeroCarousel />
-        <FullScopeOptometry />
-        <WhyChooseUs />
-        <PediatricOptometric />
-        <OptometryServices />
-        <NearYou />
-        <Associate rows={2} />
-        <LatestEyeCareInsight />
-        <Banner />
-      </Suspense>
+      <HeroSection />
+      <FullScopeOptometry />
+      <WhyChooseUs />
+      <PediatricOptometric />
+      <OptometryServices />
+      <NearYou />
+      <Associate rows={2} />
+      <LatestEyeCareInsight />
+      <Banner />
     </main>
   );
 };

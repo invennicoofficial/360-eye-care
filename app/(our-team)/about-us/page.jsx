@@ -4,6 +4,8 @@ import Associate from "../../../components/Associate";
 import { FaCaretRight } from "react-icons/fa";
 import Image from "next/image";
 import { MeetOptometryImage } from "../../../constants/Images";
+import Link from "next/link";
+import { BeforeAfterSlider } from "../../../components/BeforeSlider";
 const AboutUs = () => {
   return (
     <main className="pt-[110px]">
@@ -73,6 +75,38 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-[#F6F7F5] w-full ">
+        <div className="max-w-7xl mx-auto py-16 flex justify-between">
+          <div className="flex flex-col gap-2 w-[55%]">
+            <h3 className="text-combination-200 text-[37px] font-bold mt-2">
+              Our Vision
+            </h3>
+            <hr className="w-24 h-1 bg-combination-100 mb-3" />
+            <p className="text-neutral-500  tracking-wider text-lg leading-relaxed">
+              360 Eyecare’s vision is to consistently provide our patients and
+              customers with a full scope, customer service oriented eye care
+              experience utilizing the most cutting edge technology. We strive
+              to provide the best in class care through our comprehensive eye
+              exams, our optical store, and our specialty{" "}
+              <Link
+                href="/dry-eye"
+                className="/dry-eye text-combination-200 hover:text-combination-100"
+              >
+                dry eye
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/myopia-control"
+                className="text-combination-200 hover:text-combination-100"
+              >
+                myopia control clinics.
+              </Link>{" "}
+            </p>
+          </div>
+          <BeforeAfterSlider />
         </div>
       </div>
 

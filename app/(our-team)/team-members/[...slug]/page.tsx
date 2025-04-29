@@ -8,47 +8,51 @@ import Link from "next/link";
 
 const TeamMember = () => {
   const { slug } = useParams();
+  const doctor = optometrists.find((doctor) => doctor.slug == slug);
 
-  const doctor = optometrists.filter((doctor) => doctor.slug === slug);
+  if (!doctor) {
+    return (
+      <main className="pt-[110px] px-4">
+        <SubHeader text="Team Member Not Found" />
+        <p className="text-neutral-500 text-lg mt-4">
+          Sorry, we couldn't find the team member you're looking for.
+        </p>
+      </main>
+    );
+  }
 
   return (
     <main className="pt-[110px]">
-      <SubHeader text={doctor[0]?.name} />
+      <SubHeader text={doctor.name} />
 
-      <div className=" px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex flex-row gap-4 items-start md:py-20">
           <Image
-            src={doctor[0]?.image}
-            alt={doctor[0]?.name}
+            src={doctor.image}
+            alt={doctor.name}
             width={450}
             height={500}
           />
 
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <p className="text-combination-200 text-2xl font-bold mb-4">
-              {doctor[0]?.name}
+              {doctor.name}
             </p>
-            {doctor[0]?.longDescription && (
-              <>
-                {doctor[0].longDescription
-                  .split(". ") // Split by sentence
-                  .reduce((acc, sentence, index) => {
-                    const paragraphSize = 3; // how many sentences per paragraph (adjust if needed)
-                    const paraIndex = Math.floor(index / paragraphSize);
-
-                    if (!acc[paraIndex]) {
-                      acc[paraIndex] = [];
-                    }
-                    acc[paraIndex].push(sentence);
-                    return acc;
-                  }, [])
-                  .map((sentences, idx) => (
-                    <p key={idx} className="text-neutral-500 text-lg mb-4">
-                      {sentences.join(". ") + "."}
-                    </p>
-                  ))}
-              </>
-            )}
+            {doctor.longDescription &&
+              doctor.longDescription
+                .split(". ")
+                .reduce((acc, sentence, index) => {
+                  const paragraphSize = 3;
+                  const paraIndex = Math.floor(index / paragraphSize);
+                  if (!acc[paraIndex]) acc[paraIndex] = [];
+                  acc[paraIndex].push(sentence);
+                  return acc;
+                }, [])
+                .map((sentences, idx) => (
+                  <p key={idx} className="text-neutral-500 text-lg mb-4">
+                    {sentences.join(". ") + "."}
+                  </p>
+                ))}
 
             <Link
               href="/book-eye-exam"

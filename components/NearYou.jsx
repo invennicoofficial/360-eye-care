@@ -22,8 +22,12 @@ const NearYou = () => {
             <Image
               src={BeachImage}
               alt="2199 Queen Street East, Toronto"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 600px"
+              quality={75}
+              loading="eager"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg=="
               className="rounded shadow"
             />
             <div className="absolute bottom-[-15px] md:bottom-[-20px] right-0 md:right-[-10px] bg-brand-btn text-white w-full max-w-[250px] md:w-[280px] h-[70px] md:h-[82px] font-medium text-xs md:text-base flex justify-center text-center items-center px-4 md:px-6 rounded-md shadow">
@@ -43,8 +47,12 @@ const NearYou = () => {
             <Image
               src={YorkVilleRosedale}
               alt="55 Bloor St W Suite 03, Toronto"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 600px"
+              quality={75}
+              loading="eager"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg=="
               className="rounded shadow"
             />
             <div className="absolute bottom-[-15px] md:bottom-[-20px] right-0 md:right-[-10px] bg-brand-btn text-white w-full max-w-[250px] md:w-[280px] h-[70px] md:h-[82px] font-medium text-xs md:text-base flex justify-center text-center items-center px-4 md:px-6 rounded-md shadow">

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Check, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function ReviewCarousel() {
   const [reviews, setReviews] = useState([]);
@@ -224,10 +225,13 @@ export default function ReviewCarousel() {
             <div className="flex flex-col items-center">
               {review.avatar ? (
                 <div className="w-12 h-12 rounded-full overflow-hidden mb-2">
-                  <img
+                  <Image
                     src={review.avatar}
-                    alt={review.author}
+                    alt={`Profile picture of ${review.author}`}
+                    width={48}
+                    height={48}
                     className="w-full h-full object-cover"
+                    priority
                   />
                 </div>
               ) : (

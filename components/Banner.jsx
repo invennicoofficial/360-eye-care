@@ -26,7 +26,7 @@ const Banner = ({
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl px-4">
-        <h1 className="text-5xl font-bold mb-4">{title}</h1>
+        <h1 className="text-5xl font-bold mb-4 text-white">{title}</h1>
         <p className="text-base mb-8 tracking-wide">{description}</p>
         <Link
           href={buttonUrl}

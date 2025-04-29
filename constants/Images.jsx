@@ -27,6 +27,9 @@ import GillImage from "../public/doctors/Gill.webp";
 import GinaChenImage from "../public/doctors/GinaChen.webp";
 import swatchImage from "../public/doctors/swatch.webp";
 import MeetOptometryImage from "../public/Meetoptometrist.webp";
+import EyeChairImage from "../public/EyeChair.webp";
+import SamBarramImage2 from "../public/doctors/sambarram2.webp";
+import EyeCareSetup from "../public/eyecaresetup.webp";
 export {
   EyeCareLogo,
   OptometryImage,
@@ -57,4 +60,7 @@ export {
   GinaChenImage,
   swatchImage,
   MeetOptometryImage,
+  EyeChairImage,
+  SamBarramImage2,
+  EyeCareSetup,
 };

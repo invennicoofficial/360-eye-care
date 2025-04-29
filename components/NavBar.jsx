@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { EyeCareLogo } from "../constants/Images";
+
 const NavBar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,10 +37,13 @@ const NavBar = () => {
       name: "Locations",
       link: null,
       dropdown: [
-        { name: "360 Eyecare - The Beaches", link: "/locations/beaches" },
+        {
+          name: "360 Eyecare - The Beaches",
+          link: "/toronto-beaches-optometrist",
+        },
         {
           name: "360 Eyecare - Yorkville Rosedale",
-          link: "/locations/yorkville-rosedale",
+          link: "/toronto-beaches-optometrist",
         },
       ],
     },
@@ -195,22 +200,24 @@ const NavBar = () => {
         <div className="md:hidden flex items-center justify-between h-16">
           {/* Mobile Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <div className="w-24">
                 <Image
                   src={EyeCareLogo}
-                  alt="Logo"
+                  alt="360 EyeCare Logo"
                   width={141.89}
                   height={70}
+                  priority
                 />
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => toggleDropdown("mobile")}
             className="inline-flex items-center justify-center p-2 rounded-md text-neutral-700 hover:text-brand-blue hover:bg-neutral-100 focus:outline-none transition-colors duration-200"
+            aria-label="Toggle mobile menu"
           >
             {activeDropdown === "mobile" ? (
               <svg
@@ -218,6 +225,7 @@ const NavBar = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -232,6 +240,7 @@ const NavBar = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -246,25 +255,36 @@ const NavBar = () => {
 
         {/* Mobile Menu Dropdown */}
         {activeDropdown === "mobile" && (
-          <div className="md:hidden animate-slide-up">
+          <nav
+            className="md:hidden animate-slide-up"
+            aria-label="Mobile navigation"
+          >
             <div className="pt-2 pb-4 border-t border-[2px] border-combination-100">
               {navItems.map((item, index) => (
                 <div key={index} className="border-b border-neutral-100">
                   <div className="flex items-center justify-between px-4 py-3">
-                    <a
-                      href={item.link}
-                      className={`text-base font-medium ${
-                        activeDropdown === `mobile-${index}`
-                          ? "text-brand-blue"
-                          : "text-neutral-700"
-                      }`}
-                    >
-                      {item.name}
-                    </a>
+                    {item.link ? (
+                      <Link
+                        href={item.link}
+                        className={`text-base font-medium ${
+                          activeDropdown === `mobile-${index}`
+                            ? "text-brand-blue"
+                            : "text-neutral-700"
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                    ) : (
+                      <span className="text-base font-medium text-neutral-700">
+                        {item.name}
+                      </span>
+                    )}
                     {item.dropdown && (
                       <button
                         onClick={() => toggleDropdown(`mobile-${index}`)}
                         className="p-1 rounded-full hover:bg-neutral-100"
+                        aria-expanded={activeDropdown === `mobile-${index}`}
+                        aria-label={`Toggle ${item.name} submenu`}
                       >
                         <ChevronDown
                           size={20}
@@ -273,6 +293,7 @@ const NavBar = () => {
                               ? "rotate-180 text-brand-blue"
                               : "text-neutral-500"
                           }`}
+                          aria-hidden="true"
                         />
                       </button>
                     )}
@@ -282,20 +303,20 @@ const NavBar = () => {
                   {item.dropdown && activeDropdown === `mobile-${index}` && (
                     <div className="bg-neutral-50 px-4 py-2 animate-fade-in">
                       {item.dropdown.map((subItem, subIndex) => (
-                        <a
+                        <Link
                           key={subIndex}
                           href={subItem.link}
                           className="block py-3 pl-4 border-l-2 border-neutral-200 text-sm text-neutral-600 hover:text-brand-blue hover:border-brand-blue transition-colors duration-150"
                         >
                           {subItem.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   )}
                 </div>
               ))}
             </div>
-          </div>
+          </nav>
         )}
       </div>
     </div>

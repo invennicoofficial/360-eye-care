@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   AlinaShahidImage,
   AnitaSritharanImage,
@@ -149,5 +150,123 @@ She gained a plethora of practical experience during her rotations at the Detroi
 Dr. Swatch enjoys learning and staying abreast of the latest developments in eye care in order to best serve her patients’ needs. In her spare time, she loves to bake and is an avid fashion and interior design lover.
 
 She currently works at the Yorkville Rosedale location and looks forward to serving the community.`,
+  },
+];
+
+export const whyChoose360 = [
+  {
+    head: "Led by the Best Optometrist in The Beaches, Toronto",
+    para: "Our founder, Dr. Sam Baraam, is a highly respected optometrist known for expertise, compassionate care, and dedication to patient well-being.",
+  },
+  {
+    head: "State-of-the-Art Technology & Personalized Eye Care",
+    para: "We use cutting-edge diagnostic tools to provide accurate assessments and customized treatment plans for optimal vision health.",
+  },
+  {
+    head: "Comprehensive Eye Care for All Ages",
+    para: "We offer eyecare services for every stage of life from pediatric eye exams to senior vision care.",
+  },
+  {
+    head: "Convenient Booking Options",
+    para: "While we welcome walk-ins when possible, we offer online and phone bookings to provide efficient service with minimal wait times.",
+  },
+];
+
+export const eyeCareServices = [
+  {
+    head: "Comprehensive Eye Exams",
+    para: (
+      <>
+        Regular{" "}
+        <Link
+          href="/eye-exams"
+          className="text-combination-200 hover:text-combination-100"
+        >
+          eye exams in Toronto
+        </Link>{" "}
+        are essential for maintaining good vision and early detection of eye
+        diseases. Our thorough eye exams for children, adults, and seniors
+        ensure you enjoy clear vision and long-term eye health.
+      </>
+    ),
+  },
+  {
+    head: "Advanced Dry Eye Treatment – IPL & RF Therapy",
+    para: (
+      <>
+        If you suffer from dry, irritated, or fatigued eyes, our{" "}
+        <Link
+          href="/dry-eye-treatment"
+          className="text-combination-200 hover:text-combination-100"
+        >
+          Intense Pulsed Light (IPL)
+        </Link>{" "}
+        and Radiofrequency (RF) treatments offer lasting relief by addressing
+        the root cause of dry eye disease. Our{" "}
+        <Link
+          href="/our-doctors"
+          className="text-combination-200 hover:text-combination-100"
+        >
+          eye doctors
+        </Link>{" "}
+        provide customized treatment plans to help restore your eye comfort.
+      </>
+    ),
+  },
+  {
+    head: "Pediatric Eye Care",
+    para: "Children’s vision plays a crucial role in their learning and development. Our pediatric eye exams in The Beaches detect early vision issues such as nearsightedness, lazy eye (amblyopia), and eye coordination problems, ensuring your child sees the world clearly.",
+  },
+  {
+    head: "Emergency Eye Care – Immediate Attention When You Need It Most",
+    para: "Eye emergencies require urgent medical attention. If you experience sudden vision loss, severe eye pain, flashes of light, eye infections, or injuries, contact us immediately for emergency care.",
+  },
+  {
+    head: "Eyewear & Contact Lens Fittings",
+    para: "If you are looking for stylish and functional eyewear, we carry a wide range of designer frames, prescription glasses, and specialty contact lenses. Our opticians will ensure you have the perfect fit for your lifestyle and vision needs.",
+  },
+];
+
+export const beachesFaqs = [
+  {
+    head: "Can I visit your clinic for urgent eye care needs?",
+    para: "Yes, 360 Eyecare provides emergency services at our Eye Clinic in The Beaches, handling eye injuries, infections, and sudden vision problems.",
+  },
+  {
+    head: "Do you offer contact lens fittings and consultations?",
+    para: "Yes, our Optometry provides comprehensive contact lens fittings, including options for Ortho-K lenses for myopia control.",
+  },
+  {
+    head: "Do you provide laser vision correction consultations in The Beaches?",
+    para: "Yes, our Optometrist in The Beaches team offers laser vision correction consultations to guide you through pre- and post-operative care.",
+  },
+  {
+    head: "Can I visit your clinic for urgent eye care needs?",
+    para: "Yes, 360 Eyecare provides emergency services at our Eye Clinic in The Beaches, handling eye injuries, infections, and sudden vision problems.",
+  },
+  {
+    head: "How often should I have an eye exam?",
+    para: (
+      <>
+        {"=>"} Adults (19–64): Every 1–2 years <br />
+        {"=>"} Children (0–18) & Seniors (65+): Annually or as recommended by
+        your optometrist
+      </>
+    ),
+  },
+  {
+    head: "Do you accept vision insurance?",
+    para: (
+      <>
+        Yes! We accept most vision insurance plans.{" "}
+        <Link
+          href={""}
+          className="text-combination-200 hover:text-combination-100"
+        >
+          Learn more
+        </Link>{" "}
+        about coverage.
+      </>
+    ),
   },
 ];
