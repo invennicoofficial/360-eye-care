@@ -3,6 +3,7 @@ import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import React, { useState } from "react";
 import { PatientScaledImage } from "../constants/Images";
+import { cardData } from "../constants/Services";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -10,37 +11,6 @@ const playfair = Playfair_Display({
 });
 
 const WhyChooseUs = () => {
-  // Array of card data for easier maintenance and mapping
-  const cardData = [
-    {
-      id: "01",
-      icon: "/Icons/Optometry-Icon1.webp",
-      title: "Expertise",
-      description:
-        "Experienced optometrists committed to delivering quality eye care.",
-    },
-    {
-      id: "02",
-      icon: "/Icons/Optometry-Icon2.webp",
-      title: "Eye Care For All Ages",
-      description: "We offer essential eye care services for every age group.",
-    },
-    {
-      id: "03",
-      icon: "/Icons/Optometry-Icon1.webp",
-      title: "Personalized Treatment",
-      description:
-        "Get personalized eye care from the best optometrists in Toronto.",
-    },
-    {
-      id: "04",
-      icon: "/Icons/Optometry-Icon2.webp",
-      title: "Modern Optical Centre",
-      description:
-        "Full scope and family friendly optical store for your eyewear needs.",
-    },
-  ];
-
   return (
     <div className="w-full bg-brand-blue px-4 py-16 md:py-20">
       <div className="flex flex-col gap-4 items-center justify-center">

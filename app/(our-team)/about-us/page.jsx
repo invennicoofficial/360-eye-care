@@ -6,11 +6,38 @@ import Image from "next/image";
 import { MeetOptometryImage } from "../../../constants/Images";
 import Link from "next/link";
 import { BeforeAfterSlider } from "../../../components/BeforeSlider";
+import { FaArrowsToEye, FaUserDoctor } from "react-icons/fa6";
+import { LuMonitorDot } from "react-icons/lu";
+
+import { LuScanEye } from "react-icons/lu";
+const cardData = [
+  {
+    icon: FaUserDoctor,
+    title: "Our Story",
+    description:
+      "Delivering Toronto's ultimate eye care and eyewear experience with dedication.",
+    bgColor: "bg-combination-100",
+  },
+  {
+    icon: LuScanEye,
+    title: "Our Mission",
+    description:
+      "Dedicated to providing exceptional eye care and improving vision health.",
+    bgColor: "bg-combination-200",
+  },
+  {
+    icon: LuMonitorDot,
+    title: "Our Values",
+    description:
+      "Compassionate care, advanced technology, and patient-centered approach define us.",
+    bgColor: "bg-combination-100",
+  },
+];
 const AboutUs = () => {
   return (
     <main className="pt-[110px]">
       <SubHeader text="About Us" />
-      <AboutUsSection />
+      <AboutUsSection cardData={cardData} />
       <div className="w-full bg-[#F6F7F5] py-16">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row  bg-white shadow-md">
           <div className=" ml-10 mb-20 lg:w-1/2">

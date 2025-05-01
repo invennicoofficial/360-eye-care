@@ -2,100 +2,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import {
-  ContactLensIcon,
-  ContactLensImage,
-  DryEyeIcon,
-  DryEyeImage,
-  EyeExamIcon,
-  EyeExamImage,
-  MyopiaIcon,
-  MyopiaImage,
-  PediatricEyeCareImage,
-  PediatricIcon,
-} from "../constants/Images";
+import { services } from "../constants/Services";
 
 const Optometry = () => {
   const [selected, setSelected] = useState(0);
-
-  const services = [
-    {
-      label: "Eye Exams",
-      icon: EyeExamIcon,
-      image: EyeExamImage,
-      title: "Comprehensive Eye Exams by Top Toronto Optometrists",
-      description:
-        "Comprehensive Eye Exams by Top Toronto Optometrists. Our team of experienced optometrists provides thorough eye exams using advanced technology to assess your vision and eye health. We tailor our exams to your needs, whether you're seeking a routine check-up, have specific concerns, or need a new prescription. By choosing our optometrists near you, you're selecting the best optometrists in Toronto committed to your eye care.",
-      services: [
-        "Comprehensive Eye Health Assessment",
-        "OCT scan and Retinal imaging",
-        "Refraction Assessment for Glasses and Contact Lenses",
-        "Eye Pressure Measurement (Tonometry)",
-        "Visual Fields and other ocular tests",
-      ],
-    },
-    {
-      label: "Contact Lens Fitting",
-      icon: ContactLensIcon,
-      image: ContactLensImage,
-      title: "Professional Contact Lens Fittings for You",
-      description:
-        "Our clinic offers expert contact lens fittings to ensure optimal comfort, vision, and eye health. Our experienced optometrists assess your eyes to recommend the most suitable contact lenses for your lifestyle and needs.",
-      services: [
-        "Customized Fittings for Comfort",
-        "Thorough Eye Health Evaluation",
-        "Trial Lenses for Evaluation",
-        "Education on Proper Lens Care",
-        "Follow-Up Care for Continued Comfort",
-      ],
-    },
-    {
-      label: "Myopia Control",
-      icon: MyopiaIcon,
-      image: MyopiaImage,
-      title: "Effective Myopia Control Solutions for Children",
-      description:
-        "Our clinic offers specialized myopia control treatments for children to slow the progression of nearsightedness. Our personalized approach includes Spectacle therapy, multifocal contact lenses, atropine eye drops, and orthokeratology (Ortho-K) to manage myopia effectively.",
-      services: [
-        "Spectacle Therapy",
-        "Customized Treatment Plans",
-        "Multifocal Contact Lenses",
-        "Orthokeratology (Ortho-K)",
-        "Regular Monitoring and Adjustments",
-        "Axial Length measurements",
-      ],
-    },
-    {
-      label: "Dry Eye Treatment",
-      icon: DryEyeIcon,
-      image: DryEyeImage,
-      title: "Effective Dry Eye Treatment Solutions",
-      description:
-        "We offer advanced dry eye treatments to relieve discomfort and improve eye health. We identify the underlying causes and recommend treatments to restore moisture and comfort to your eyes.",
-      services: [
-        "Comprehensive Dry Eye Evaluation",
-        "Lifestyle and Environmental Recommendations",
-        "Prescription Eye Drops and Medications",
-        "Tear Duct Plugs (Punctal Plugs)",
-        "IPL and RF therapy procedures",
-      ],
-    },
-    {
-      label: "Pediatric Eye Care",
-      icon: PediatricIcon,
-      image: PediatricEyeCareImage,
-      title: "Comprehensive Pediatric Optometric Services in Toronto",
-      description:
-        "Our Toronto optometrists specialize in pediatric eye care, providing comprehensive exams, vision therapy, and myopia control solutions. We are dedicated to ensuring your child's vision and eye health are our top priority.",
-      services: [
-        "Pediatric Eye Exams Tailored for Children",
-        "Vision Therapy Services for Visual Development",
-        "Myopia Control Solutions to Manage Nearsightedness",
-        "Expertise in Treating Children's Eye Conditions",
-        "Compassionate and Child-Friendly Care",
-      ],
-    },
-  ];
 
   // Function to render the content for a service
   const renderServiceContent = (service) => {
@@ -171,7 +81,7 @@ const Optometry = () => {
                   onClick={() => setSelected(isActive ? -1 : index)}
                   className={`w-full p-4 rounded-lg text-center cursor-pointer transition-all duration-200 flex items-center justify-center mb-1 ${
                     isActive
-                      ? "bg-teal-500 text-white shadow-md"
+                      ? "bg-combination-100 text-white shadow-md"
                       : "bg-gray-50 text-slate-800 hover:bg-gray-100"
                   }`}
                 >
@@ -226,9 +136,9 @@ const Optometry = () => {
                 <button
                   key={service.label}
                   onClick={() => setSelected(index)}
-                  className={`relative flex flex-col items-center justify-center w-40 lg:w-48 p-4 rounded-lg text-center cursor-pointer transition-all duration-200 ${
+                  className={`relative flex flex-col items-center justify-center w-40 lg:w-48 p-4  text-center cursor-pointer transition-all duration-200 ${
                     isActive
-                      ? "bg-teal-500 text-white shadow-md"
+                      ? "bg-combination-100 text-white shadow-md"
                       : "bg-gray-50 text-slate-800 hover:bg-gray-100"
                   }`}
                 >

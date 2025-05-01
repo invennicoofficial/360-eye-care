@@ -3,6 +3,9 @@ import {
   eyeCare360Image,
   EyeCareSetup,
   EyeChairImage,
+  eyechairrosedale,
+  opticalShopImage,
+  rosevaleChairImage,
   SamBarramImage2,
   StoreFrontImage,
   YorkVilleRosedale,
@@ -19,8 +22,10 @@ import GoogleMapEmbed from "../../../components/GoogleMapEmbed";
 
 import {
   beachesFaqs,
+  eyeCareRosedale,
   eyeCareServices,
   whyChoose360,
+  whyChoose360Rosedale,
 } from "../../../constants/Services";
 
 const TorontoRosedaleOptometrist = () => {
@@ -116,13 +121,13 @@ const TorontoRosedaleOptometrist = () => {
 
           {/* Third Section */}
           <div className="mx-4 md:mx-12 bg-white md:px-20 py-8 flex flex-col md:flex-row md:justify-between gap-8">
-            <div className="w-full md:w-[50%] flex justify-center">
+            <div className="w-full md:w-[50%] flex items-start">
               <Image
-                src={EyeChairImage}
-                alt="Eye Chair Image"
-                width={400}
-                height={400}
-                className="w-full max-w-[400px] h-auto object-contain"
+                src={eyechairrosedale}
+                alt="Eye Chair Rosedale"
+                width={600}
+                height={600}
+                className="w-[577px] h-[375px]  object-contain"
               />
             </div>
 
@@ -133,7 +138,7 @@ const TorontoRosedaleOptometrist = () => {
               <hr className="w-24 h-1 bg-combination-100 mb-6" />
 
               <div className="flex flex-col gap-4">
-                {whyChoose360.map((item, index) => (
+                {whyChoose360Rosedale.map((item, index) => (
                   <div key={index} className="flex flex-col gap-2">
                     <div className="flex flex-row gap-4 items-center">
                       <FaPlay
@@ -157,14 +162,14 @@ const TorontoRosedaleOptometrist = () => {
           <div className="mx-4 md:mx-12 bg-white md:px-20 py-8 flex flex-col md:flex-row-reverse md:justify-between gap-8">
             <div className="w-full md:w-[50%] flex flex-col gap-6 md:gap-10 items-center">
               <Image
-                src={EyeCareSetup}
+                src={opticalShopImage}
                 alt="eye care setup"
                 width={548}
                 height={368}
                 className="w-full max-w-[548px] h-auto object-contain"
               />
               <Image
-                src={YorkVilleRosedale}
+                src={rosevaleChairImage}
                 alt="York villa place"
                 width={548}
                 height={368}
@@ -179,7 +184,7 @@ const TorontoRosedaleOptometrist = () => {
               <hr className="w-24 h-1 bg-combination-100 mb-6" />
 
               <div className="flex flex-col gap-4">
-                {eyeCareServices.map((item, index) => (
+                {eyeCareRosedale.map((item, index) => (
                   <div key={index} className="flex flex-col gap-2">
                     <div className="flex flex-row gap-4 items-center">
                       <FaPlay

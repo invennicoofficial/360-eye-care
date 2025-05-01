@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BeachImage, YorkVilleRosedale } from "../constants/Images";
 import HappyClientBeaches from "./HappyClientBeaches";
 import HappyClientYorkVilla from "./HappyClientYorkVilla";
+import Link from "next/link";
 const NearYou = () => {
   return (
     <div className="bg-white w-full py-8 md:py-16">
@@ -33,11 +34,14 @@ const NearYou = () => {
               2199 Queen Street East, Toronto
             </div>
           </div>
-          <div className="flex justify-end w-full mt-8 md:mr-20 md-0">
-            <button className="bg-combination-100 text-white px-4 md:px-6 py-2 md:py-3 rounded font-semibold w-[140px] md:w-[162px] h-[45px] md:h-[52px] text-sm md:text-base">
+          <Link
+            href="/toronto-beaches-optometrist"
+            className="flex justify-end w-full mt-8 md:mr-20 md-0"
+          >
+            <button className="bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white px-4 md:px-6 py-2 md:py-3 rounded font-semibold w-[140px] md:w-[162px] h-[45px] md:h-[52px] text-sm md:text-base">
               Beaches →
             </button>
-          </div>
+          </Link>
         </div>
 
         {/* Yorkville Rosedale Location */}
@@ -58,11 +62,14 @@ const NearYou = () => {
               55 Bloor St W Suite 03, Toronto
             </div>
           </div>
-          <div className="flex justify-end w-full mt-8 md:mr-20 md-0">
-            <button className="bg-combination-100 text-white px-4 md:px-6 py-2 md:py-3 rounded font-semibold w-[200px] md:w-[240px] h-[45px] md:h-[54px] text-sm md:text-base">
+          <Link
+            href={"/toronto-rosedale-optometrist"}
+            className="flex justify-end w-full mt-8 md:mr-20 md-0"
+          >
+            <button className="bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white px-4 md:px-6 py-2 md:py-3 rounded font-semibold w-[200px] md:w-[240px] h-[45px] md:h-[54px] text-sm md:text-base">
               Yorkville Rosedale →
             </button>
-          </div>
+          </Link>
         </div>
       </div>
 

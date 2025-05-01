@@ -6,11 +6,11 @@ const Banner = ({
   buttonText = "Book Now",
   buttonUrl = "/book-eye-exam",
   backgroundImage = "/newsletter-bg.webp",
-  overlayColor = "rgba(30, 40, 95, 0.7)",
+  overlayColor = "rgba(30, 40, 95, 0.1)",
 }) => {
   return (
     <div
-      className="relative w-full py-16 flex items-center justify-center text-center text-white"
+      className="relative w-full py-16 h-[360px] flex items-center justify-center text-center text-white"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -25,11 +25,11 @@ const Banner = ({
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl px-4">
-        <h1 className="text-5xl font-bold mb-4 text-white">{title}</h1>
-        <p className="text-base mb-8 tracking-wide">{description}</p>
+        <h1 className="text-[40px] font-bold mb-3 text-white">{title}</h1>
+        <p className="text-base mb-4 tracking-wide">{description}</p>
         <Link
           href={buttonUrl}
-          className="inline-block px-[30px] py-[15px] bg-combination-100 text-white font-semiboold rounded hover:bg-combination-200 transition-colors"
+          className="inline-block px-[25px] py-[10px] bg-combination-100 text-white font-medium rounded hover:bg-combination-200 transition-colors"
         >
           {buttonText}
         </Link>

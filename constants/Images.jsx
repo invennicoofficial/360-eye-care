@@ -32,8 +32,14 @@ import SamBarramImage2 from "../public/doctors/sambarram2.webp";
 import EyeCareSetup from "../public/eyecaresetup.webp";
 import StoreFrontImage from "../public/storefront.jpg";
 import eyeCare360Image from "../public/360eyeCare.webp";
+import eyechairrosedale from "../public/eyechairrosedale.webp";
+import opticalShopImage from "../public/opticalShop.webp";
+import rosevaleChairImage from "../public/YorkvillaChair.webp";
+import SpectacleImage from "../public/spectacle.webp";
 export {
   EyeCareLogo,
+  opticalShopImage,
+  rosevaleChairImage,
   OptometryImage,
   PatientScaledImage,
   PediatricEyeCareImage,
@@ -67,4 +73,6 @@ export {
   EyeCareSetup,
   StoreFrontImage,
   eyeCare360Image,
+  eyechairrosedale,
+  SpectacleImage,
 };

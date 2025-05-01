@@ -1,54 +1,7 @@
 import Image from "next/image";
+import { firstRow, orgImages } from "../constants/Services";
 
 const Associate = ({ rows }) => {
-  const firstRow = [
-    {
-      src: "/associate/associate1.webp",
-      alt: "Canadian Association of Optometrists",
-      width: 275,
-      height: 32,
-    },
-    {
-      src: "/associate/associate2.webp",
-      alt: "Ontario Association of Optometrists",
-      width: 250,
-      height: 91,
-    },
-    {
-      src: "/associate/associate3.webp",
-      alt: "College of Optometrists of Ontario",
-      width: 200,
-      height: 80,
-    },
-    {
-      src: "/associate/associate4.webp",
-      alt: "National Board of Examiners in Optometry",
-      width: 305,
-      height: 126,
-    },
-  ];
-
-  const orgImages = [
-    {
-      src: "/associate/associate5.webp",
-      alt: "World Sight Day Challenge",
-      width: 174,
-      height: 50,
-    },
-    {
-      src: "/associate/associate6.webp",
-      alt: "Optometry Giving Sight",
-      width: 174,
-      height: 103,
-    },
-    {
-      src: "/associate/associate7.webp",
-      alt: "Optometry Giving Sight",
-      width: 784,
-      height: 165,
-    },
-  ];
-
   return (
     <div className="py-16 bg-white">
       <div className="container mx-auto">
