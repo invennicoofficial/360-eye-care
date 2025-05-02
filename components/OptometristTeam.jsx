@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { optometrists } from "../constants/Services";
+import { optometrists } from "../constants/Constants";
 import Image from "next/image";
 
 export default function OptometristTeam() {

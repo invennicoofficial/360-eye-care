@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Plus, Minus, ArrowUp } from "lucide-react";
-// FAQ Data
+
+// Updated FAQ Data based on screenshot
 const faqData = [
   {
     id: 1,
@@ -14,50 +15,50 @@ const faqData = [
     id: 2,
     question: "How often should I get my eyes examined?",
     answer:
-      "Adults should have their eyes examined every 1-2 years, depending on age, risk factors, and whether they wear corrective lenses. Children should have their first comprehensive eye exam at 6 months, again at age 3, and annually throughout school years.",
+      "This depends on your age and previously diagnosed conditions, but a good rule of thumb is to have your eyes regularly checked every 1 to 2 years. The sooner we can spot potential vision issues developing, the easier it is to correct. Knowing when to visit an eye doctor to get your eyes checked is important. Not only is this information advisable, but it could also save you from potentially developing advanced eye conditions that might not have symptoms at early stages. Only your optometrist can determine how frequently you should be seen for an examination. However, the Canadian Association of Optometrists recommends the following as the minimum frequency for routine eye examinations: Infants and toddlers should undergo their first eye examination between the ages of 6 and 9 months. Preschool Children 2 to 5 years of age should undergo at least one eye examination in this period. Schoolchildren aged 6 to 19 years should undergo an eye examination annually. Adults aged 20 to 39 years should undergo an eye examination every 2 to 3 years. Adults aged 40 to 64 years should undergo an eye examination every 2 years. Adults aged 65 years or older should undergo an eye examination annually. The risk of developing ocular disease is higher at 65 years of age and older. Our doctors at 360 Eyecare in Toronto strongly advocate following the recommended frequency of visits to your optometrist. These exams will detect early signs of many age-related eye diseases such as glaucoma, cataracts, and macular degeneration.",
   },
   {
     id: 3,
     question: "How flexible are the appointment times?",
     answer:
-      "We offer flexible appointment times including evenings and weekends to accommodate your busy schedule. Please contact our office to find a time that works best for you.",
+      "We try to cater to our patient's needs, thus, we will try to accommodate you as soon as possible. We also have appointments outside of working hours and on Saturdays, so you can have lots of possibilities for scheduling your eye exam in the The Beaches and Yorkville, Toronto.",
   },
   {
     id: 4,
     question: "How do I have to prepare for my eye exam?",
     answer:
-      "Bring your current glasses or contact lenses, a list of current medications, and your insurance information. If you wear contact lenses, wear them to your appointment so the doctor can evaluate the fit. Consider writing down any vision issues you've been experiencing.",
+      "Although not a lot of preparation is required, please be ready to answer questions about what prescription drugs you use and relevant family history. Also, if you currently wear glasses or contact lenses, please bring them with you. Lastly, if your exam requires your pupils to be dilated, we advise having someone else drive you.",
   },
   {
     id: 5,
     question: "What should I expect during an eye exam?",
     answer:
-      "During your comprehensive eye exam, we'll assess your visual acuity, check for refractive errors, evaluate your eye health, test for common eye diseases, and determine if you need corrective lenses. The entire process is comfortable and non-invasive.",
+      "During a comprehensive eye exam at our clinics, our optometrists will perform various tests to assess your vision and eye health. These may include visual acuity tests, refraction assessments, eye pressure measurements, and retinal examinations.",
   },
   {
     id: 6,
     question: "How long does an eye exam take?",
     answer:
-      "A comprehensive eye exam typically takes 30-60 minutes, depending on the tests required and complexity of your eye health needs.",
+      "Eye exams can take up to 40 to 60 minutes depending on the tests needed to be done. Most exams are completed in 30 to 40 minutes. Please allow extra time if you are a new patient and required to fill out paperwork before your examination.",
   },
   {
     id: 7,
     question: "Does my insurance cover eye exams?",
     answer:
-      "Most private insurance plans cover routine eye exams. We accept most major insurance providers. Please bring your insurance information to your appointment, and our staff will help determine your coverage.",
+      "Although we do accept most types of vision and health insurance plans, it's best to ask a few days in advance or when booking your appointment so we can check for you ahead of time.",
   },
   {
     id: 8,
     question:
       "Do you offer pediatric eye exams in Yorkville and The Beaches, Toronto?",
     answer:
-      "Yes, we offer pediatric eye exams at our locations in Yorkville and The Beaches. Our optometrists are experienced in making children feel comfortable during their eye exams.",
+      "Yes, we specialize in providing gentle and thorough pediatric eye exams to ensure your child's vision health. Our optometrists are experienced in examining children of all ages and strive to make the experience comfortable and enjoyable for young patients. You can book an eye exam with eye doctor near you at The Beaches or Yorkville Rosedale.",
   },
   {
     id: 9,
     question: "Can I schedule an eye exam online?",
     answer:
-      "Yes, you can schedule an appointment through our website's online booking system. Alternatively, you can call our office directly to speak with our staff.",
+      "Yes, you can easily schedule your eye exam online through our website. Simply select your preferred location (Beaches, Toronto, or Rosedale, Toronto), choose a convenient date and time, and our team will confirm your appointment.",
   },
 ];
 
@@ -74,7 +75,7 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
         onClick={() => toggleFAQ(faq.id)}
       >
         <h3
-          className={`font-medium   cursor-pointer ${
+          className={`font-medium cursor-pointer ${
             isOpen
               ? "text-white font-semibold "
               : "text-combination-200 hover:text-combination-100"
@@ -103,10 +104,18 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
 
 // Main FAQ Component
 const FaqPlusMinus = () => {
-  const [openFAQ, setOpenFAQ] = useState(null);
+  // Changed from single state to an array of open FAQ IDs
+  const [openFAQs, setOpenFAQs] = useState([]);
 
   const toggleFAQ = (id) => {
-    setOpenFAQ(openFAQ === id ? null : id);
+    setOpenFAQs((prevOpenFAQs) => {
+      // If already open, remove it from the array (close it)
+      if (prevOpenFAQs.includes(id)) {
+        return prevOpenFAQs.filter((faqId) => faqId !== id);
+      }
+      // Otherwise, add it to the array (open it)
+      return [...prevOpenFAQs, id];
+    });
   };
 
   return (
@@ -134,7 +143,7 @@ const FaqPlusMinus = () => {
           <FAQItem
             key={faq.id}
             faq={faq}
-            isOpen={openFAQ === faq.id}
+            isOpen={openFAQs.includes(faq.id)}
             toggleFAQ={toggleFAQ}
           />
         ))}

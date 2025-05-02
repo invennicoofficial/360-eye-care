@@ -2,10 +2,31 @@ import Link from "next/link";
 import {
   AlinaShahidImage,
   AnitaSritharanImage,
+  CataractImage,
+  ContactLenspediaImage,
+  cornealImage,
+  DiabeticImage,
+  DryEyeSyndromeImage,
   GillImage,
   GinaChenImage,
+  GlaucomaImage,
+  IPLTherapyImage,
+  lasikImage,
+  MacularImage,
+  MeibographyImage,
+  MyopiaPediaImage,
+  octImage,
+  PediatricEyeImage,
+  PerimetryImage,
+  prkImage,
+  RetinalImage,
+  RFTherapyImage,
   SamBarramImage,
+  smileImage,
+  SportsVisionImage,
   swatchImage,
+  TearOsmolarityImage,
+  VisionThreapImage,
 } from "./Images";
 import {
   ContactLensIcon,
@@ -18,7 +39,7 @@ import {
   MyopiaImage,
   PediatricEyeCareImage,
   PediatricIcon,
-} from "../constants/Images";
+} from "./Images";
 
 import {
   FaEye,
@@ -31,7 +52,7 @@ import {
 } from "react-icons/fa";
 export const OptometryServices = [
   {
-    imageLink: "/Icons/Optometry-Icon1.webp",
+    imageLink: "/homeIcons/Comprehensive Eye Exams.png",
     title: "Comprehensive Eye Exams",
     description:
       "Our eye exams help detect issues early and ensure your vision is at its best.",
@@ -39,7 +60,7 @@ export const OptometryServices = [
     buttonLink: "/book-exam",
   },
   {
-    imageLink: "/Icons/Optometry-Icon2.webp",
+    imageLink: "/homeIcons/Eyewear Collection.png",
     title: "Eyewear Collection",
     description:
       "Choose from our handcrafted and designer frames to suit your style and vision needs",
@@ -236,7 +257,7 @@ export const eyeCareServices = [
         Regular{" "}
         <Link
           href="/eye-exams"
-          className="text-combination-200 hover:text-combination-100"
+          className="text-combination-100 hover:text-combination-100"
         >
           eye exams in Toronto
         </Link>{" "}
@@ -253,7 +274,7 @@ export const eyeCareServices = [
         If you suffer from dry, irritated, or fatigued eyes, our{" "}
         <Link
           href="/dry-eye-treatment"
-          className="text-combination-200 hover:text-combination-100"
+          className="text-combination-100 hover:text-combination-100"
         >
           Intense Pulsed Light (IPL)
         </Link>{" "}
@@ -261,7 +282,7 @@ export const eyeCareServices = [
         the root cause of dry eye disease. Our{" "}
         <Link
           href="/our-doctors"
-          className="text-combination-200 hover:text-combination-100"
+          className="text-combination-100 hover:text-combination-100"
         >
           eye doctors
         </Link>{" "}
@@ -340,7 +361,7 @@ export const beachesFaqs = [
         Yes! We accept most vision insurance plans.{" "}
         <Link
           href={""}
-          className="text-combination-200 hover:text-combination-100"
+          className="text-combination-100 hover:text-combination-100"
         >
           Learn more
         </Link>{" "}
@@ -397,6 +418,8 @@ export const orgImages = [
     height: 165,
   },
 ];
+
+
 
 // Array of card data for easier maintenance and mapping
 export const cardData = [
@@ -620,5 +643,1069 @@ export const eyeExamTools = [
       "The ways the visual fields test is administered can vary depending on whether the optometrist or ophthalmologist wants to run a basic check or a more in-depth examination. The detailed visual field test involves the patient looking into a machine called a perimeter and staring at a predetermined fixed point on the screen inside. The patient is then instructed to press a button every time they see a blinking light or moving line appear somewhere else on the screen without looking away from the center. The test is done per eye, with the untested eye covered for the duration, and can take anywhere from three to ten minutes to complete depending on the testing type.",
     paragraph2:
       "In some cases, a patient may only need to have visual field screening once. Other patients may need regular screening on a yearly or bi-annual basis. Certain jobs and careers require a visual field test as a part of their application process, and at least a basic visual field screening is required for new drivers getting their license in Ontario. Should you find yourself requiring a visual field test for any reason, a quick call to your regular optometrist to see if they provide that testing is recommended.",
+  },
+];
+
+export const commonEyeServices = [
+  {
+    label: "Cataracts",
+    icon: EyeExamIcon,
+    image: CataractImage,
+    title: "Understanding Cataracts and Treatment Options",
+    description:
+      "Cataracts are a common age-related eye condition that causes cloudy vision. Our clinic offers advanced surgical and non-surgical treatments to restore clear vision and improve quality of life. Our team of experts will guide you through the diagnosis, treatment, and recovery process, ensuring personalized care every step of the way.",
+  },
+  {
+    label: "Glaucoma",
+    icon: ContactLensIcon,
+    image: GlaucomaImage,
+    title: "Managing Glaucoma: Diagnosis to Treatment",
+    description:
+      "Glaucoma is a group of eye diseases that can lead to vision loss if left untreated. Our clinic specializes in early detection and personalized treatment plans to manage glaucoma effectively. From medication to surgical options, we offer comprehensive care to preserve your vision and enhance your quality of life.",
+  },
+  {
+    label: "Dry Eye",
+    icon: MyopiaIcon,
+    image: DryEyeSyndromeImage,
+    title: "Relief from Dry Eye: Causes and Treatments",
+    description:
+      "Dry eye syndrome is a common condition that occurs when the eyes do not produce enough or poor-quality tears. Our clinic provides advanced diagnostic testing to determine the underlying cause of dry eye and offers personalized treatment plans to alleviate symptoms and improve eye comfort. From prescription eye drops to lifestyle changes, we tailor our approach to meet your unique needs and improve your overall eye health.",
+  },
+  {
+    label: "Diabetic Retinopathy",
+    icon: DryEyeIcon,
+    image: DiabeticImage,
+    title: "Diabetic Retinopathy: Prevention and Treatment",
+    description:
+      "Diabetic retinopathy is a serious eye condition that affects people with diabetes. If not properly managed, it can lead to vision loss. Our clinic specializes in the early detection and treatment of diabetic retinopathy, offering comprehensive eye exams and advanced treatments to preserve vision and prevent complications. With a focus on patient education and proactive care, we help our patients maintain healthy vision and overall well-being.",
+  },
+  {
+    label: "Macular Degeneration",
+    icon: PediatricIcon,
+    image: MacularImage,
+    title: "Macular Degeneration: Symptoms and Treatments",
+    description:
+      "Macular degeneration is a leading cause of vision loss in older adults. Our clinic offers state-of-the-art diagnostic testing and personalized treatment plans to manage macular degeneration effectively. From lifestyle modifications to advanced therapies, we provide comprehensive care to slow the progression of the disease and preserve your vision. Our team of experts is committed to helping you maintain healthy vision and quality of life.",
+  },
+];
+
+export const eyeemergencyData = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Corneal Abrasions",
+    description:
+      "If you think you have a foreign object in your eye or a corneal abrasion, get medical help immediately.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Chemical Burns",
+    description:
+      "In case of a chemical burn, wash your eyes with clear water and seek immediate medical attention.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Penetrating Foreign Objects",
+    description: "If something gets in your eye, call us immediately.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Sudden Inflammation and Eye Bleeding",
+    description:
+      "Signs of serious underlying issues requiring urgent attention..",
+  },
+];
+
+export const benefitsData = [
+  {
+    title: "Clear Vision",
+    description: "Achieve sharp, clear vision without the need for glasses.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Quick Recovery",
+    description:
+      "Experience fast recovery and return to your daily activities.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="2"
+          y="2"
+          width="20"
+          height="20"
+          rx="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M7 13l3 3 7-7"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Long-Term Results",
+    description:
+      "Enjoy lasting vision improvement with laser vision correction.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Proven Safety",
+    description: "Laser vision correction is a safe and established procedure.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="3"
+          y="3"
+          width="16"
+          height="20"
+          rx="1"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <line
+          x1="7"
+          y1="9"
+          x2="15"
+          y2="9"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="13"
+          x2="15"
+          y2="13"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="17"
+          x2="11"
+          y2="17"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
+      </svg>
+    ),
+  },
+  {
+    title: "Enhanced Quality of Life",
+    description: "Improved vision can lead to a better quality of life.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="6"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C16 8 16 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C8 8 8 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="9"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+        <circle
+          cx="12"
+          cy="15"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Personalized Treatment",
+    description: "Each procedure is tailored to meet your vision needs.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="8"
+          r="4"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+];
+
+export const laservisiondata = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "LASIK Eye Surgery",
+    description:
+      "Refractive surgery to correct vision problems like nearsightedness and astigmatism.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "PRK Vision Correction",
+    description:
+      "Similar to LASIK but does not involve creating a corneal flap.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Bladeless Laser Surgery",
+    description:
+      "Advanced technology for precise and blade-free laser vision correction.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Custom Wavefront LASIK",
+    description:
+      "Personalized treatment that maps the unique characteristics of your eyes.",
+  },
+];
+export const pediatricEyeData = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Vision Care",
+    description: "Comprehensive eye care services for children of all ages.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Myopia Control",
+    description:
+      "Specialized treatments to slow down the progression of nearsightedness.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Eye Exams",
+    description:
+      "Regular eye exams to monitor and maintain your child’s vision health.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Eyeglasses & Contacts",
+    description: "Stylish eyeglasses and comfy contact lenses for kids.",
+  },
+];
+
+export const laservisionService = [
+  {
+    label: "PRK",
+    icon: EyeExamIcon,
+    image: prkImage,
+    title: "PRK Laser Vision Correction Treatment",
+    description:
+      "PRK (Photorefractive Keratectomy) is a type of laser eye surgery used to correct nearsightedness, farsightedness, and astigmatism. It involves removing the cornea’s outer layer before reshaping it with an excimer laser. PRK is often recommended for patients with thin corneas or other corneal irregularities. The procedure typically takes less than 15 minutes per eye, and most patients experience improved vision within a few days to a week. PRK is a safe and effective option for vision correction, offering long-lasting results and minimal risk of complications. If you’re considering PRK, our experienced team can help determine if you’re a candidate and guide you through the process.",
+  },
+  {
+    label: "LASIK",
+    icon: ContactLensIcon,
+    image: lasikImage,
+    title: "LASIK Laser Vision Correction Treatment",
+    description:
+      "LASIK (Laser-Assisted In Situ Keratomileusis) is a popular laser eye surgery that reshapes the cornea to correct refractive errors such as nearsightedness, farsightedness, and astigmatism. It involves creating a thin flap in the cornea using a femtosecond laser and an excimer laser to reshape the underlying corneal tissue. LASIK is known for its quick recovery time and high success rate, with many patients achieving 20/25 vision or better after the procedure. LASIK offers a permanent solution for vision correction, reducing or eliminating the need for glasses or contact lenses. If you’re interested in LASIK, our skilled LASIK surgeons can determine if you’re a suitable candidate and provide personalized care throughout your journey to clearer vision.",
+  },
+  {
+    label: "SMILE",
+    icon: MyopiaIcon,
+    image: smileImage,
+    title: "SMILE Laser Vision Correction Treatment",
+    description:
+      "SMILE(Small Incision Lenticule Extraction) is an innovative laser vision correction procedure that corrects myopia (nearsightedness) and astigmatism. Unlike LASIK, which creates a corneal flap, SMILE uses a femtosecond laser to create a small, lens-shaped piece of tissue within the cornea, which is then removed through a small incision. This gentle, minimally invasive procedure preserves more of the cornea’s structural integrity compared to LASIK, making it a suitable option for patients with thin corneas or those at higher risk of dry eye syndrome. SMILE offers rapid visual recovery, with many patients achieving clear vision within a few days. If you’re considering SMILE, our experienced ophthalmologists can assess your candidacy and provide personalized guidance to help you achieve your vision correction goals.",
+  },
+];
+
+export const advanceddiagnosticsbenefitsData = [
+  {
+    title: "Digital Retinal Imaging",
+    description:
+      "High-resolution images of the retina for early disease detection.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Optical Coherence Tomography (OCT)",
+    description:
+      "Detailed cross-sectional images of the eye for precise diagnosis.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="2"
+          y="2"
+          width="20"
+          height="20"
+          rx="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M7 13l3 3 7-7"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Visual Field Testing",
+    description:
+      "Assessment of your peripheral vision for early detection of diseases.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Corneal Topography",
+    description:
+      "Mapping the cornea’s surface to detect irregularities and conditions.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="3"
+          y="3"
+          width="16"
+          height="20"
+          rx="1"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <line
+          x1="7"
+          y1="9"
+          x2="15"
+          y2="9"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="13"
+          x2="15"
+          y2="13"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="17"
+          x2="11"
+          y2="17"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
+      </svg>
+    ),
+  },
+  {
+    title: "Pachymetry",
+    description:
+      "Measurement of corneal thickness is important for glaucoma detection.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="6"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C16 8 16 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C8 8 8 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="9"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+        <circle
+          cx="12"
+          cy="15"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Auto Refraction",
+    description:
+      "Automated measurement of refractive errors for accurate prescriptions..",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="8"
+          r="4"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+];
+
+export const advanceddiagnosticsService = [
+  {
+    label: "OCT Scans",
+    icon: EyeExamIcon,
+    image: octImage,
+    title: "OCT Scans for Detailed Eye Analysis",
+    description:
+      "OCT (Optical Coherence Tomography) provides high-resolution, cross-sectional retina and optic nerve images. It helps in the early detection and management of eye diseases such as glaucoma, macular degeneration, and diabetic retinopathy. OCT’s noninvasive nature makes it a valuable tool for monitoring and managing various eye conditions.",
+  },
+
+  {
+    label: "Corneal Topography",
+    icon: MyopiaIcon,
+    image: cornealImage,
+    title: "Corneal Topography for Corneal Health Assessment",
+    description:
+      "Corneal topography maps the curvature and shape of the cornea, aiding in diagnosing conditions such as astigmatism, keratoconus, and corneal dystrophies. It is also used in preoperative evaluations for procedures like LASIK and contact lens fittings. This technology provides detailed information about the cornea, helping eye care professionals to customize treatment plans for each patient.",
+  },
+  {
+    label: "Meibography",
+    icon: MyopiaIcon,
+    image: MeibographyImage,
+    title: "Meibography for Meibomian Gland Assessment",
+    description:
+      "Meibography is used to assess the meibomian glands responsible for producing the oily layer of the tear film. This test helps diagnose and manage meibomian gland dysfunction (MGD), a common cause of dry eye syndrome. By evaluating the structure and function of the meibomian glands, meibography helps eye care professionals determine the most appropriate treatment for MGD.  Such treatments include warm compress therapy, lid hygiene,  meibomian gland expression, Omega 3 fatty acids, or procedures such as Intense pulse light (IPL) or Radiofrequency (RF).",
+  },
+  {
+    label: "Tear Osmolarity Testing",
+    icon: MyopiaIcon,
+    image: TearOsmolarityImage,
+    title: "Tear Osmolarity Testing for Dry Eye Diagnosis",
+    description:
+      "Tear osmolarity testing measures the salt content in tears, an indicator of tear film stability. This test is useful in the diagnosis and management of dry eye disease. The iPen device collects a tear sample, which is then analyzed to determine tear osmolarity levels. By assessing tear osmolarity, eye care professionals can better understand the underlying causes of dry eye and develop personalized treatment plans to improve tear film stability and relieve dry eye symptoms.",
+  },
+  {
+    label: "Perimetry & the Zeiss Humphrey",
+    icon: MyopiaIcon,
+    image: PerimetryImage,
+    title: "Perimetry for Visual Field Assessment",
+    description:
+      "Perimetry is a test that measures the entire area of peripheral vision that can be seen while the eye is focused on a central point. The Zeiss Humphrey visual field analyzer is a tool used for this test. Perimetry is important for detecting and monitoring conditions that cause visual field loss, such as glaucoma, optic nerve damage, and neurological disorders. By regularly performing perimetry, eye care professionals can assess the progression of these conditions and adjust treatment plans accordingly.",
+  },
+  {
+    label: "Retinal Imaging",
+    icon: MyopiaIcon,
+    image: RetinalImage,
+    title: "Retinal Imaging for Comprehensive Retina Evaluation",
+    description:
+      "Retinal imaging uses specialized cameras to capture detailed images of the retina, blood vessels, and optic nerve head. These images help in the early detection and management of various eye diseases, including diabetic retinopathy, age-related macular degeneration, and retinal detachments. Retinal imaging is a non-invasive procedure that provides valuable information about the retina’s health, allowing eye care professionals to detect and monitor eye conditions more effectively.",
+  },
+  {
+    label: "IPL Therapy",
+    icon: MyopiaIcon,
+    image: IPLTherapyImage,
+    title: "Advanced IPL Therapy for Dry Eye",
+    description:
+      "Intense Pulsed Light (IPL) therapy effectively treats dry eye by targeting inflammation and improving tear film stability. It uses controlled light pulses to reduce blockages in the meibomian glands, providing lasting relief and significantly improving overall eye health and comfort for patients suffering from chronic dry eye.",
+  },
+  {
+    label: "RF Therapy",
+    icon: MyopiaIcon,
+    image: RFTherapyImage,
+    title: "Innovative RF Therapy for Dry Eye",
+    description:
+      "Radiofrequency (RF) therapy enhances dry eye treatment by stimulating collagen production and improving meibomian gland function. This non-invasive technique helps restore natural tear production, alleviating discomfort and irritation. Offering a comfortable and effective solution, RF therapy provides significant relief for chronic dry eye sufferers, improving their overall eye health.",
+  },
+];
+
+export const pediatricEyeBenefitsData = [
+  {
+    title: "Myopia Control",
+    description:
+      "Effective treatments to slow down myopia progression in children.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Vision Therapy",
+    description:
+      "Customized programs to enhance children’s visual skills and abilities.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="2"
+          y="2"
+          width="20"
+          height="20"
+          rx="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M7 13l3 3 7-7"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Pediatric Eye Exams",
+    description:
+      "Comprehensive exams to monitor and maintain your child’s vision health.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Eyeglasses for Kids",
+    description:
+      "Stylish and durable eyeglasses designed for children’s active lifestyles.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="3"
+          y="3"
+          width="16"
+          height="20"
+          rx="1"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <line
+          x1="7"
+          y1="9"
+          x2="15"
+          y2="9"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="13"
+          x2="15"
+          y2="13"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="17"
+          x2="11"
+          y2="17"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
+      </svg>
+    ),
+  },
+  {
+    title: "Contact Lenses for Children",
+    description:
+      "Safe and comfortable contact lens options for kids’ vision correction.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="6"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C16 8 16 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C8 8 8 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="9"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+        <circle
+          cx="12"
+          cy="15"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Eye Care Tips for Parents",
+    description:
+      "Valuable advice on how to protect and maintain your child’s vision.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="8"
+          r="4"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+];
+
+export const pediatricEyeService = [
+  {
+    label: "Vision Therapy",
+    icon: EyeExamIcon,
+    image: VisionThreapImage,
+    title: "OCT Scans for Detailed Eye Analysis",
+    description:
+      "Our pediatric optometrists in Toronto provide personalized vision therapy programs to address visual problems that cannot be treated with eyeglasses or contact lenses. Vision therapy is a highly effective non-surgical treatment for lazy eye (amblyopia), eye turns (strabismus), and certain visual processing disorders. Vision therapy helps improve children’s visual skills and abilities through customized exercises and activities, leading to better academic performance and overall quality of life.",
+  },
+
+  {
+    label: "Myopia Control",
+    icon: MyopiaIcon,
+    image: MyopiaPediaImage,
+    title: "Effective Myopia Control Treatments for Kids",
+    description:
+      "Myopia, or nearsightedness, is a common vision problem that often develops during childhood and can worsen over time. Our pediatric optometrists offer specialized myopia control treatments in Toronto to slow myopia progression in children. These treatments, such as orthokeratology (Ortho-K) and multifocal contact lenses, are safe and effective and can help reduce the risk of future eye health issues associated with high myopia.",
+  },
+  {
+    label: "Pediatric Eye Exams",
+    icon: MyopiaIcon,
+    image: PediatricEyeImage,
+    title: "Comprehensive Pediatric Eye Exams in Toronto",
+    description:
+      "Regular eye exams are essential for monitoring your child’s eye health and vision development. Our pediatric optometrists in Toronto conduct comprehensive eye exams specifically designed for children to detect and treat vision problems early. These exams include visual acuity testing, binocular vision assessment, eye health evaluation, and more.We create a comfortable and child-friendly environment to ensure a positive experience for your child during the exam.",
+  },
+  {
+    label: "Contact Lens Fitting",
+    icon: MyopiaIcon,
+    image: ContactLenspediaImage,
+    title: "Expert Contact Lens Fitting for Children",
+    description:
+      "Contact lenses can be a safe and effective vision correction option for children. Our pediatric optometrists in Toronto specialize in fitting contact lenses for kids, ensuring proper fit, comfort, and vision quality. Whether your child needs contact lenses for sports, activities, or daily wear, we provide personalized fitting services to meet their visual needs and lifestyle.",
+  },
+  {
+    label: "Sports Vision",
+    icon: MyopiaIcon,
+    image: SportsVisionImage,
+    title: "Enhancing Sports Performance Through Vision Training",
+    description:
+      "Sports vision training focuses on improving visual skills essential for optimal sports performance. Our pediatric optometrists in Toronto offer specialized sports vision training programs to help young athletes enhance their hand-eye coordination, depth perception, visual reaction time, and tracking abilities. By improving these visual skills, young athletes can improve their performance, reduce the risk of sports-related injuries, and gain a competitive edge on the field or court.",
+  },
+];
+
+export const faqDatapediatric = [
+  {
+    id: 1,
+    question: "Q. At what age should my child have their first eye exam?",
+    answer:
+      "Children should have their first eye exam at around six months of age, followed by another exam at three years old, and then before starting school. After that, yearly exams are recommended.",
+  },
+  {
+    id: 2,
+    question:
+      "Q. What are common signs that my child may have a vision problem?",
+    answer:
+      "Common signs of vision problems in children include frequent eye rubbing, squinting, tilting the head to see better, holding reading materials close to the face, and complaining of headaches or eye strain.",
+  },
+  {
+    id: 3,
+    question: "Q. Can my child wear contact lenses?",
+    answer:
+      "Yes, contact lenses can be a safe and effective option for children, but it depends on their age, maturity level, and ability to handle and care for the lenses. Our optometrists can help determine if contact lenses are suitable for your child.",
+  },
+  {
+    id: 4,
+    question: "Q. How can I protect my child's eyes during sports?",
+    answer:
+      "To protect your child’s eyes during sports, make sure they wear protective eyewear designed for the sport they’re playing. Regular eyeglasses or sunglasses are not sufficient for protecting the eyes during sports",
+  },
+  {
+    id: 5,
+    question: "Q. What is vision therapy, and how can it help my child?",
+    answer:
+      "Vision therapy is a customized program of eye exercises and activities designed to improve visual skills and abilities. It can help children with various vision problems, such as lazy eye (amblyopia), eye alignment issues (strabismus), and focusing problems.",
+  },
+];
+
+export const Orthokeratology = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Non-Surgical and Reversible",
+    description:
+      "Unlike LASIK or other refractive surgeries, Ortho-K is non-invasive and completely reversible. If the patient discontinues wearing the lenses, the cornea gradually returns to its original shape.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Freedom from Daytime Eyewear",
+    description:
+      "Ortho-K allows patients to experience clear vision without glasses or contact lenses during the day, which can be especially beneficial for athletes, swimmers, and individuals in dusty or dry environments.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Slows Myopia Progression in Children",
+    description:
+      "Research has shown that Ortho-K can help slow the progression of myopia in children, reducing the risk of developing high myopia and associated complications later in life.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Comfort and Convenience",
+    description:
+      "For those who find daytime contact lenses uncomfortable or inconvenient, Ortho-K provides a comfortable alternative that fits seamlessly into their nighttime routine.",
   },
 ];

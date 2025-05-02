@@ -76,7 +76,7 @@ const AboutUs = () => {
             <div className="flex flex-col gap-4 mt-2">
               <div>
                 <div className="flex flex-row gap-2 items-center mb-2">
-                  <FaCaretRight size={20} className="text-teal-400" />
+                  <FaCaretRight size={20} className="text-combination-200" />
                   <p className="text-blue-900 font-semibold text-lg">
                     Payment Options
                   </p>
@@ -89,7 +89,7 @@ const AboutUs = () => {
 
               <div>
                 <div className="flex flex-row gap-2 items-center mb-2">
-                  <FaCaretRight size={20} className="text-teal-400" />
+                  <FaCaretRight size={20} className="text-combination-200" />
                   <p className="text-blue-900 font-semibold text-lg">
                     Financing Available
                   </p>

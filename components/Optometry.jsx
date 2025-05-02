@@ -2,7 +2,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { services } from "../constants/Services";
+import { services } from "../constants/Constants";
 
 const Optometry = () => {
   const [selected, setSelected] = useState(0);
@@ -35,7 +35,7 @@ const Optometry = () => {
               {service.services.map((item, i) => (
                 <li key={i} className="flex items-start">
                   <svg
-                    className="w-4 h-4 text-teal-500 mr-2 mt-1 flex-shrink-0"
+                    className="w-4 h-4 text-combination-200 mr-2 mt-1 flex-shrink-0"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +195,7 @@ const Optometry = () => {
                       {services[selected]?.services.map((item, i) => (
                         <li key={i} className="flex items-start">
                           <svg
-                            className="w-5 h-5 text-teal-500 mr-2 mt-1 flex-shrink-0"
+                            className="w-5 h-5 text-combination-200 mr-2 mt-1 flex-shrink-0"
                             viewBox="0 0 24 24"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ import {
   beachesFaqs,
   eyeCareServices,
   whyChoose360,
-} from "../../../constants/Services";
+} from "../../../constants/Constants";
 import Head from "next/head";
 
 const TorontoBeachesOptometrist = () => {

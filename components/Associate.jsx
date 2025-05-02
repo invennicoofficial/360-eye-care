@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { firstRow, orgImages } from "../constants/Services";
+import { firstRow, orgImages } from "../constants/Constants";
 
 const Associate = ({ rows }) => {
   return (
