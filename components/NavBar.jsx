@@ -4,10 +4,13 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { EyeCareLogo } from "../constants/Images";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20); // adjust threshold if needed
@@ -73,24 +76,32 @@ const NavBar = () => {
       name: "Eye Wear",
       link: null,
       dropdown: [
-        { name: "Eyeglasses", link: "/eye-wear/glasses" },
-        { name: "Prescription Lenses", link: "/eye-wear/prescription-lenses" },
-        { name: "Custom Contact Lenses", link: "/eye-wear/contact-lenses" },
-        { name: "Integrum Eyewear", link: "/eye-wear/integrum" },
+        { name: "Eyeglasses", link: "/eyeglasses" },
+        { name: "Prescription Lenses", link: "/prescription-lenses" },
+        { name: "Custom Contact Lenses", link: "/custom-lenses-toronto" },
+        {
+          name: "Integrum Eyewear",
+          link: "https://integrumeyewear.com/",
+          external: true,
+        },
         { name: "MiyoSmart Lenses", link: "/eye-wear/miyosmart" },
         { name: "Virtual Shopping", link: "/eye-wear/virtual-shopping" },
         {
           name: "Eyeglasses Selection Guide",
-          link: "/eye-wear/selection-guide",
+          link: "/selection-guide",
         },
         {
           name: "Contact Lenses Toronto",
           link: "/eye-wear/contact-lenses-toronto",
         },
-        { name: "Contact Lens Shop", link: "/eye-wear/contact-shop" },
-        { name: "Sunglasses", link: "/eye-wear/sunglasses" },
-        { name: "Maui Jim Lens", link: "/eye-wear/maui-jim" },
-        { name: "Custom Lenses", link: "/eye-wear/custom-lenses" },
+        {
+          name: "Contact Lens Shop",
+          link: "https://360eyecare.ottooptics.io/reorder/product/?cat=1",
+          external: true,
+        },
+        { name: "Sunglasses", link: "/sunglasses" },
+        { name: "Maui Jim Lens", link: "/maui-jim-lens-technology" },
+        { name: "Custom Lenses", link: "/custom-lenses" },
       ],
     },
     {
@@ -119,6 +130,12 @@ const NavBar = () => {
       ],
     },
   ];
+
+  // Check if current pathname matches any dropdown item's link
+  const isActiveParent = (item) => {
+    if (!item.dropdown) return false;
+    return item.dropdown.some((subItem) => pathname === subItem.link);
+  };
 
   // Logic to toggle dropdown visibility
   const toggleDropdown = (index) => {
@@ -158,58 +175,104 @@ const NavBar = () => {
           </div>
 
           {/* Navigation Links */}
-          <nav className=" flex-1 flex justify-end">
-            <ul className="  flex space-x-6">
-              {navItems.map((item, index) => (
-                <li
-                  key={index}
-                  className="relative font-sans "
-                  onMouseEnter={() => item.dropdown && toggleDropdown(index)}
-                  onMouseLeave={closeDropdown}
-                >
-                  {item.link ? (
-                    <Link
-                      href={item.link}
-                      className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200 hover:text-combination-100 hover:bg-gray-50 ${
-                        activeDropdown === index
-                          ? "hover:text-combination-100 hover:bg-gray-50"
-                          : "text-combination-200"
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
-                  ) : (
-                    <span
-                      className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200 hover:text-combination-100 hover:bg-gray-50 cursor-pointer ${
-                        activeDropdown === index
-                          ? "hover:text-combination-100 hover:bg-gray-50"
-                          : "text-combination-200"
-                      }`}
-                    >
-                      {item.name}
-                    </span>
-                  )}
+          <nav className="flex-1 flex justify-end">
+            <ul className="flex space-x-6">
+              {navItems.map((item, index) => {
+                const isActive =
+                  (item.link && pathname === item.link) || isActiveParent(item);
 
-                  {/* Dropdown Menu */}
-                  {item.dropdown && activeDropdown === index && (
-                    <div className="absolute  left-0 mt-0 w-60 bg-white shadow-card rounded-b-md z-10 animate-fade-in">
-                      <ul className="py-2 px-4 ">
-                        {item.dropdown.map((subItem, subIndex) => (
-                          <li key={subIndex}>
-                            <Link
-                              href={subItem.link}
-                              className="relative  block px-4 py-3 text-sm text-neutral-700 transition-colors duration-150 hover:text-combination-100 group"
-                            >
-                              {subItem.name}
-                              <span className="absolute left-4 bottom-2 h-[2px] w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"></span>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </li>
-              ))}
+                return (
+                  <li
+                    key={index}
+                    className="relative font-sans"
+                    onMouseEnter={() => item.dropdown && toggleDropdown(index)}
+                    onMouseLeave={closeDropdown}
+                  >
+                    {item.link ? (
+                      <Link
+                        href={item.link}
+                        className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 ${
+                          isActive
+                            ? "text-brand-blue border-b-2 border-brand-blue" // Added border bottom for active item
+                            : "text-combination-200"
+                        } hover:text-combination-100 hover:bg-gray-50 ${
+                          activeDropdown === index
+                            ? "hover:text-combination-100 hover:bg-gray-50"
+                            : "text-combination-200"
+                        }`}
+                        aria-current={isActive ? "page" : undefined}
+                      >
+                        {item.name}
+                      </Link>
+                    ) : (
+                      <span
+                        className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 `}
+                        aria-current={isActive ? "page" : undefined}
+                      >
+                        {item.name}
+                      </span>
+                    )}
+
+                    {/* Dropdown Menu */}
+                    {item.dropdown && activeDropdown === index && (
+                      <div className="absolute left-0 mt-0 w-60 bg-white shadow-card rounded-b-md z-10 animate-fade-in">
+                        <ul className="py-2 px-4">
+                          {item.dropdown.map((subItem, subIndex) => {
+                            const isSubItemActive = pathname === subItem.link;
+
+                            return (
+                              <li key={subIndex}>
+                                {subItem.external ? (
+                                  <a
+                                    href={subItem.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group ${
+                                      isSubItemActive
+                                        ? "text-brand-blue font-medium bg-gray-50"
+                                        : "text-neutral-700"
+                                    }`}
+                                  >
+                                    {subItem.name}
+                                    <span
+                                      className={`absolute left-4 bottom-2 h-[2px] ${
+                                        isSubItemActive
+                                          ? "w-[calc(100%-2rem)] bg-combination-100"
+                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                      }`}
+                                    ></span>
+                                  </a>
+                                ) : (
+                                  <Link
+                                    href={subItem.link}
+                                    className={`relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group ${
+                                      isSubItemActive
+                                        ? "text-brand-blue font-medium bg-gray-50"
+                                        : "text-neutral-700"
+                                    }`}
+                                    aria-current={
+                                      isSubItemActive ? "page" : undefined
+                                    }
+                                  >
+                                    {subItem.name}
+                                    <span
+                                      className={`absolute left-4 bottom-2 h-[2px] ${
+                                        isSubItemActive
+                                          ? "w-[calc(100%-2rem)] bg-combination-100"
+                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                      }`}
+                                    ></span>
+                                  </Link>
+                                )}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>
@@ -278,61 +341,127 @@ const NavBar = () => {
             aria-label="Mobile navigation"
           >
             <div className="pt-2 pb-4 border-t border-[2px] border-combination-100">
-              {navItems.map((item, index) => (
-                <div key={index} className="border-b border-neutral-100">
-                  <div className="flex items-center justify-between px-4 py-3">
-                    {item.link ? (
-                      <Link
-                        href={item.link}
-                        className={`text-base font-medium ${
-                          activeDropdown === `mobile-${index}`
-                            ? "text-brand-blue"
-                            : "text-neutral-700"
-                        }`}
-                      >
-                        {item.name}
-                      </Link>
-                    ) : (
-                      <span className="text-base font-medium text-neutral-700">
-                        {item.name}
-                      </span>
-                    )}
-                    {item.dropdown && (
-                      <button
-                        onClick={() => toggleDropdown(`mobile-${index}`)}
-                        className="p-1 rounded-full hover:bg-neutral-100"
-                        aria-expanded={activeDropdown === `mobile-${index}`}
-                        aria-label={`Toggle ${item.name} submenu`}
-                      >
-                        <ChevronDown
-                          size={20}
-                          className={`transform transition-transform duration-200 ${
-                            activeDropdown === `mobile-${index}`
-                              ? "rotate-180 text-brand-blue"
-                              : "text-neutral-500"
+              {navItems.map((item, index) => {
+                // Determine if this nav item is active (either direct match or parent of active dropdown)
+                const isActive =
+                  (item.link && pathname === item.link) || isActiveParent(item);
+
+                return (
+                  <div
+                    key={index}
+                    className={`border-b border-neutral-100 ${
+                      isActive ? "bg-gray-50" : ""
+                    }`}
+                  >
+                    <div className="flex items-center justify-between px-4 py-3">
+                      {item.link ? (
+                        <Link
+                          href={item.link}
+                          className={`text-base font-medium ${
+                            isActive ? "text-brand-blue" : "text-neutral-700"
                           }`}
-                          aria-hidden="true"
-                        />
-                      </button>
+                          aria-current={isActive ? "page" : undefined}
+                        >
+                          {item.name}
+                          {isActive && (
+                            <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                          )}
+                        </Link>
+                      ) : (
+                        <span
+                          className={`text-base font-medium ${
+                            isActive ? "text-brand-blue" : "text-neutral-700"
+                          }`}
+                        >
+                          {item.name}
+                          {isActive && (
+                            <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                          )}
+                        </span>
+                      )}
+                      {item.dropdown && (
+                        <button
+                          onClick={() => toggleDropdown(`mobile-${index}`)}
+                          className="p-1 rounded-full hover:bg-neutral-100"
+                          aria-expanded={activeDropdown === `mobile-${index}`}
+                          aria-label={`Toggle ${item.name} submenu`}
+                        >
+                          <ChevronDown
+                            size={20}
+                            className={`transform transition-transform duration-200 ${
+                              activeDropdown === `mobile-${index}`
+                                ? "rotate-180 text-brand-blue"
+                                : "text-neutral-500"
+                            }`}
+                            aria-hidden="true"
+                          />
+                        </button>
+                      )}
+                    </div>
+
+                    {/* Mobile Submenu */}
+                    {item.dropdown && activeDropdown === `mobile-${index}` && (
+                      <div className="bg-neutral-50 px-4 py-2 animate-fade-in">
+                        {item.dropdown.map((subItem, subIndex) => {
+                          // Check if this dropdown item is active
+                          const isSubItemActive = pathname === subItem.link;
+
+                          return subItem.external ? (
+                            <a
+                              key={subIndex}
+                              href={subItem.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group ${
+                                isSubItemActive
+                                  ? "text-brand-blue font-medium bg-gray-100"
+                                  : "text-neutral-700"
+                              }`}
+                            >
+                              {subItem.name}
+                              {isSubItemActive && (
+                                <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                              )}
+                              <span
+                                className={`absolute left-4 bottom-2 h-[2px] ${
+                                  isSubItemActive
+                                    ? "w-[calc(100%-2rem)] bg-combination-100"
+                                    : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                }`}
+                              ></span>
+                            </a>
+                          ) : (
+                            <Link
+                              key={subIndex}
+                              href={subItem.link}
+                              className={`relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group ${
+                                isSubItemActive
+                                  ? "text-brand-blue font-medium bg-gray-100"
+                                  : "text-neutral-700"
+                              }`}
+                              aria-current={
+                                isSubItemActive ? "page" : undefined
+                              }
+                            >
+                              {subItem.name}
+                              {isSubItemActive && (
+                                <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                              )}
+                              <span
+                                className={`absolute left-4 bottom-2 h-[2px] ${
+                                  isSubItemActive
+                                    ? "w-[calc(100%-2rem)] bg-combination-100"
+                                    : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                }`}
+                              ></span>
+                            </Link>
+                          );
+                        })}
+                      </div>
                     )}
                   </div>
-
-                  {/* Mobile Submenu */}
-                  {item.dropdown && activeDropdown === `mobile-${index}` && (
-                    <div className="bg-neutral-50 px-4 py-2 animate-fade-in">
-                      {item.dropdown.map((subItem, subIndex) => (
-                        <Link
-                          key={subIndex}
-                          href={subItem.link}
-                          className="block py-3 pl-4 border-l-2 border-neutral-200 text-sm text-neutral-600 hover:text-brand-blue hover:border-brand-blue transition-colors duration-150"
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
+                );
+              })}
             </div>
           </nav>
         )}

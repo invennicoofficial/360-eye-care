@@ -36,6 +36,8 @@ import eyechairrosedale from "../public/eyechairrosedale.webp";
 import opticalShopImage from "../public/opticalShop.webp";
 import rosevaleChairImage from "../public/YorkvillaChair.webp";
 import SpectacleImage from "../public/spectacle.webp";
+import eyeglasses from "../public/eyeglasses.webp";
+
 export {
   EyeCareLogo,
   opticalShopImage,
@@ -75,4 +77,5 @@ export {
   eyeCare360Image,
   eyechairrosedale,
   SpectacleImage,
+  eyeglasses,
 };
