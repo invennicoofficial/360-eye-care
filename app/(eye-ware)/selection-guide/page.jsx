@@ -5,6 +5,8 @@ import { LuScanEye } from "react-icons/lu";
 import { TbBrandVisualStudio } from "react-icons/tb";
 import DetailsDescripton from "../../../components/common/DetailsDescripton";
 import { eyeglassesFrame } from "../../../constants/prescriptionLenses";
+import BookExamCommon from "../../../components/common/BookExampCommon";
+import { FaUserMd } from "react-icons/fa";
 
 const page = () => {
   const whyChooseData = [
@@ -63,6 +65,17 @@ const page = () => {
           reverse
         />
       </div>
+      <BookExamCommon
+        icon={<FaUserMd />}
+        title="Discover The Perfect Frames!"
+        phones={[
+          { label: "Beaches", number: "416-698-3937" },
+          { label: "Rosedale", number: "416-901-2725" },
+        ]}
+        description="Book an appointment with our Opticians for personalized eyewear recommendations."
+        buttonText="Book An Appointment"
+        buttonLink="/book-appointment"
+      />
     </main>
   );
 };
