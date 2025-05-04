@@ -172,4 +172,5 @@ export {
   eyeCare360Image,
   eyechairrosedale,
   SpectacleImage,
+  eyeglasses,
 };

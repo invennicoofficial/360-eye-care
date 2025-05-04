@@ -8,7 +8,7 @@ const BrandCard = ({ brand }) => {
 
   return (
     <div
-      className={`p-6 bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg ${
+      className={`p-6 bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-lg  ${
         isHovered ? "border-4 border-blue-900" : "border-4 border-gray-200"
       } rounded-lg shadow flex flex-col h-full`}
       onMouseEnter={() => setIsHovered(true)}

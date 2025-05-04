@@ -13,7 +13,7 @@ const DetailsDescripton = ({
 }) => {
   return (
     <div
-      className={`max-w-7xl mx-auto py-16 flex justify-between ${
+      className={`max-w-7xl mx-auto py-16 flex gap-10 justify-between ${
         reverse ? "flex-row-reverse" : ""
       }`}
     >

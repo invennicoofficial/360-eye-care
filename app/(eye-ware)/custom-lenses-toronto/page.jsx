@@ -2,6 +2,15 @@ import SubHeader from "../../../components/SubHeader";
 import DetailsDescripton from "../../../components/common/DetailsDescripton";
 import { CustomLensesImage } from "../../../constants/prescriptionLenses";
 
+  /**
+   * A Next.js page component that renders a page for custom contact lenses.
+   * The page displays a hero section with a title and a description of the
+   * benefits of custom contact lenses. It also includes a section with
+   * information about standard contact lenses and how they compare to custom
+   * lenses.
+   *
+   * @returns {JSX.Element} The JSX element for the page.
+   */
 const page = () => {
   const DataDescription = [
     "Custom contact lenses are specially made to fit the unique characteristics of an individual’s eyes. Unlike standard contact lenses, which come in pre-set sizes and parameters, custom lenses are crafted based on detailed measurements of the eye’s shape, size, and curvature. This customization ensures a better fit, improved comfort, and optimal vision correction for the wearer.",

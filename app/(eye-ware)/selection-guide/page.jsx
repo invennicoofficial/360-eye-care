@@ -3,8 +3,21 @@ import SubHeader from "../../../components/SubHeader";
 import { FaUserDoctor } from "react-icons/fa6";
 import { LuScanEye } from "react-icons/lu";
 import { TbBrandVisualStudio } from "react-icons/tb";
+import DetailsDescripton from "../../../components/common/DetailsDescripton";
+import { eyeglassesFrame } from "../../../constants/prescriptionLenses";
 
 const page = () => {
+  const whyChooseData = [
+    "One of the most important aspects of eyeglasses is the frame. Choosing the right frame can greatly enhance your comfort and appearance. Therefore, it is important to consider a few factors when deciding on a frame for your glasses.",
+    ,
+    "Here are a few things to keep in mind:",
+  ];
+  const whyChooseDataBullets = [
+    "The shape of your face is crucial in determining the design of the frame to choose.",
+    "Frame designs vary based on preference. Some present a professional image while others are more casual.",
+    "Frames come in different sizes based on the eye size, which is the horizontal width of the lens.",
+  ];
+
   const cardData = [
     {
       icon: FaUserDoctor,
@@ -42,6 +55,13 @@ const page = () => {
             />
           ))}
         </div>
+        <DetailsDescripton
+          title="How To Pick The Best Frame"
+          description={whyChooseData}
+          image={eyeglassesFrame}
+          bullets={whyChooseDataBullets}
+          reverse
+        />
       </div>
     </main>
   );

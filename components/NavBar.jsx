@@ -92,7 +92,7 @@ const NavBar = () => {
         },
         {
           name: "Contact Lenses Toronto",
-          link: "/eye-wear/contact-lenses-toronto",
+          link: "/contact-lenses-toronto",
         },
         {
           name: "Contact Lens Shop",

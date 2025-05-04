@@ -7,6 +7,10 @@ import Miyosmartlenses from "../public/prescriptionLenses/Miyosmart-lenses.webp"
 import EyewearCollection from "../public/prescriptionLenses/Eyewear-Collection-jpg.webp";
 import MjGlassesBeachReflection from "../public/prescriptionLenses/mj-glasses-beach-reflection.png.webp";
 import MauiJimGolf from "../public/prescriptionLenses/MauiJim-Golf.jpg.webp";
+import ContactLensImage from "../public/prescriptionLenses/Contact-lenses-girl.webp";
+import DailyDisposableLenses from "../public/prescriptionLenses/Daily-disposable-lenses.webp";
+import wearContactLenses from "../public/prescriptionLenses/wear-contact-lenses.webp";
+import eyeglassesFrame from "../public/prescriptionLenses/eyeglasses-frame.webp";
 
 export {
   glassCleanerImage,
@@ -18,4 +22,8 @@ export {
   EyewearCollection,
   MjGlassesBeachReflection,
   MauiJimGolf,
+  ContactLensImage,
+  DailyDisposableLenses,
+  wearContactLenses,
+  eyeglassesFrame,
 };

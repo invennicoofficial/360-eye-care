@@ -98,11 +98,11 @@ const pages = () => {
             </p>
           </div>
           <div className="flex flex-wrap justify-between items-start">
-            {brands.map((brand) => (
+            {/* {brands.map((brand) => (
               <div className="w-[32%] py-2">
                 <BrandCard key={brand.id} brand={brand} />
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
