@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { slides } from "../constants/Services";
+import { slides } from "../constants/Constants";
 const HeroCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const MotionLink = motion(Link);

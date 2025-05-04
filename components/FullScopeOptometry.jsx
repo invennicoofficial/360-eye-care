@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { OptometryImage } from "../constants/Images";
-import { OptometryServices } from "../constants/Services";
+import { OptometryServices } from "../constants/Constants";
 import Link from "next/link";
 
 // ServiceItem component for individual service display

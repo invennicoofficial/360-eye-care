@@ -26,7 +26,7 @@ import {
   eyeCareServices,
   whyChoose360,
   whyChoose360Rosedale,
-} from "../../../constants/Services";
+} from "../../../constants/Constants";
 
 const TorontoRosedaleOptometrist = () => {
   return (

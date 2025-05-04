@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
-import { eyeExamTools } from "../constants/Services";
+import { eyeExamTools } from "../constants/Constants";
 
 const EyeExamTools = () => {
   const [selected, setSelected] = useState(6); // Start with Visual Fields Test selected

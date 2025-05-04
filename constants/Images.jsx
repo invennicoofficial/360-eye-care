@@ -36,16 +36,111 @@ import eyechairrosedale from "../public/eyechairrosedale.webp";
 import opticalShopImage from "../public/opticalShop.webp";
 import rosevaleChairImage from "../public/YorkvillaChair.webp";
 import SpectacleImage from "../public/spectacle.webp";
+import YTThumbnail1 from "../public/youtubethumbnail1.jpg";
+import dryEyeImage from "../public/dryeyeclinic.webp";
+import understandDryEyeImage from "../public/understanddryeye.webp";
+import whatifidonothing from "../public/whatifdonothing.webp";
+import symptomsDryImage from "../public/dry-eye.webp";
+import eyeconditionImage from "../public/eye-condition.jpg";
+import CataractImage from "../public/Cataracts.webp";
+import GlaucomaImage from "../public/Glaucoma-jpg.webp";
+import DryEyeSyndromeImage from "../public/Dry-Eye-Syndrome-jpg.webp";
+import DiabeticImage from "../public/Diabetic-Retinopathy.webp";
+import MacularImage from "../public/Macular-Degeneration-scaled.webp";
+import eyeCareServiceImage from "../public/eye-care-service.webp";
+import UnderstandImage1 from "../public/understand1.webp";
+import UnderstandImage2 from "../public/understand2.webp";
+import UnderstandImage3 from "../public/understand3.webp";
+import UnderstandImage4 from "../public/understand4.webp";
+import EyeEmergencyImage from "../public/Emergency-Eye-Clinic-scaled.webp";
+import eyeemergenciesImage from "../public/eye-emergencies.webp";
+import LaserCorrectionImage from "../public/lasercorrection.jpg";
+import advancedDiagnosticsImage from "../public/advancedDiagnostics.webp";
+import LaserVisionServiceImage from "../public/laservisioncorrection.webp";
+import prkImage from "../public/PRK-Laser-Vision-Correction-jpg.webp";
+import lasikImage from "../public/LASIK.webp";
+import smileImage from "../public/SMILE-Laser-Eye-Surgery-jpg.webp";
+import octImage from "../public/OCT-Machine-jpg.webp";
+import cornealImage from "../public/Corneal-Topography-jpg.webp";
+import MeibographyImage from "../public/Antares.webp";
+import TearOsmolarityImage from "../public/Tear-Osmolarity-Testing-jpeg.webp";
+import PerimetryImage from "../public/Perimetry-600x600.webp";
+import RetinalImage from "../public/Retinal-Imaging-jpg.webp";
+import IPLTherapyImage from "../public/lumecca-machine-jpg.webp";
+import RFTherapyImage from "../public/Forma-RF-eye-treatment.webp";
+import pediatricEyeImage from "../public/Pediatric-Eye-Exams-in-Toronto-2.webp";
+import pediatricGirlImage from "../public/Pediatric-Eye-Care-min.jpg";
+import VisionThreapImage from "../public/Vision-Therapy.webp";
+import MyopiaPediaImage from "../public/Myopia-Control-jpg.webp";
+import PediatricEyeImage from "../public/Pediatric-Eye-Exams.webp";
+import ContactLenspediaImage from "../public/Contact-Lens-Fitting-scaled.webp";
+import SportsVisionImage from "../public/Sports-Vision-scaled.webp";
+import ExpertisePediatricImage from "../public/expert-pediatric.webp";
+import childVisionImage from "../public/childs-vision-health.jpg";
+import OrthoImage from "../public/Orthokeratology-Treatment.webp";
+import OrthoImage2 from "../public/ortho2.webp";
+import OrthoImage3 from "../public/ortho3.webp";
+import myopiaImage from "../public/myopia-1.webp";
+import childeyeexam from "../public/child-eye-exam.webp";
+import pediatriceyeexam from "../public/pediatric-eye-care2.webp";
+import visioneyeexam from "../public/Vision-Health-jpg.webp";
+
 import eyeglasses from "../public/eyeglasses.webp";
 
 export {
   EyeCareLogo,
+  childeyeexam,
+  pediatriceyeexam,
+  visioneyeexam,
+  OrthoImage3,
+  VisionThreapImage,
+  OrthoImage2,
+  myopiaImage,
+  ContactLenspediaImage,
+  OrthoImage,
+  childVisionImage,
+  ExpertisePediatricImage,
+  PediatricEyeImage,
+  SportsVisionImage,
+  MyopiaPediaImage,
+  octImage,
+  cornealImage,
+  pediatricGirlImage,
+  pediatricEyeImage,
+  MeibographyImage,
+  TearOsmolarityImage,
+  PerimetryImage,
+  RetinalImage,
+  IPLTherapyImage,
+  RFTherapyImage,
+  UnderstandImage1,
+  eyeemergenciesImage,
+  prkImage,
+  lasikImage,
+  smileImage,
+  advancedDiagnosticsImage,
+  LaserVisionServiceImage,
+  LaserCorrectionImage,
+  EyeEmergencyImage,
+  UnderstandImage2,
+  UnderstandImage3,
+  UnderstandImage4,
+  eyeCareServiceImage,
+  understandDryEyeImage,
+  CataractImage,
+  GlaucomaImage,
+  DryEyeSyndromeImage,
+  DiabeticImage,
+  MacularImage,
+  eyeconditionImage,
+  symptomsDryImage,
   opticalShopImage,
   rosevaleChairImage,
   OptometryImage,
   PatientScaledImage,
   PediatricEyeCareImage,
   EyeExamIcon,
+  whatifidonothing,
   EyeExamImage,
   ContactLensIcon,
   ContactLensImage,
@@ -77,5 +172,4 @@ export {
   eyeCare360Image,
   eyechairrosedale,
   SpectacleImage,
-  eyeglasses,
 };

@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 
-import { optometrists } from "../../../../constants/Services";
+import { optometrists } from "../../../../constants/Constants";
 import SubHeader from "../../../../components/SubHeader";
 import Image from "next/image";
 import Link from "next/link";

@@ -29,7 +29,7 @@ const Banner = ({
         <p className="text-base mb-4 tracking-wide">{description}</p>
         <Link
           href={buttonUrl}
-          className="inline-block px-[25px] py-[10px] bg-combination-100 text-white font-medium rounded hover:bg-combination-200 transition-colors"
+          className="inline-block px-[25px] py-[10px] bg-combination-100 text-white hover:text-combination-100 font-medium rounded hover:bg-combination-200 transition-colors"
         >
           {buttonText}
         </Link>
