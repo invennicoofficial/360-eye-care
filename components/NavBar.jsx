@@ -84,8 +84,8 @@ const NavBar = () => {
           link: "https://integrumeyewear.com/",
           external: true,
         },
-        { name: "MiyoSmart Lenses", link: "/eye-wear/miyosmart" },
-        { name: "Virtual Shopping", link: "/eye-wear/virtual-shopping" },
+        { name: "MiyoSmart Lenses", link: "/miyosmart" },
+        { name: "Virtual Shopping", link: "/virtual-shopping" },
         {
           name: "Eyeglasses Selection Guide",
           link: "/selection-guide",
@@ -106,7 +106,7 @@ const NavBar = () => {
     },
     {
       name: "Blog",
-      link: "/blog",
+      link: "https://www.360eyecare.ca/blog/",
       dropdown: null,
     },
     {
