@@ -386,6 +386,7 @@ const pages = () => {
         <TitleCommon title="Explore Our Eyeglasses Blogs" position="center" />
         <p>Stay informed about the latest trends and innovations in eyewear.</p>
       </div>
+      {/* todo: card need to add  */}
     </main>
   );
 };
