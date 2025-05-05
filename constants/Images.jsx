@@ -86,13 +86,25 @@ import pediatriceyeexam from "../public/pediatric-eye-care2.webp";
 import visioneyeexam from "../public/Vision-Health-jpg.webp";
 
 import eyeglasses from "../public/eyeglasses.webp";
+import InModeIPLDryImage from "../public/inmodeIpl.webp";
 
+import ThumbnailDryEyeImage1 from "../public/dryeyeclinicytthumbnail1.jpg";
+import ThumbnailDryEyeImage2 from "../public/dryeyeclinicytthumbnail2.jpg";
+import LummericaImage from "../public/TechnologyLogo_Lumecca_Teal-600x191.webp";
+import LumeccaBeforeAfterImage from "../public/Lumecca-Before-After-2.webp";
 export {
   EyeCareLogo,
   childeyeexam,
   pediatriceyeexam,
+  InModeIPLDryImage,
+  LummericaImage,
+  ThumbnailDryEyeImage1,
+  ThumbnailDryEyeImage2,
+  LumeccaBeforeAfterImage,
   visioneyeexam,
   OrthoImage3,
+  YTThumbnail1,
+  dryEyeImage,
   VisionThreapImage,
   OrthoImage2,
   myopiaImage,

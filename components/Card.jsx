@@ -1,0 +1,53 @@
+"use client";
+import { useState } from "react";
+
+// Card Component
+const Card = ({
+  title,
+  subtitle,
+  description,
+  logo,
+  catalogLink,
+  isHighlighted = false,
+}) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className={`
+        relative bg-white shadow-sm p-5 transition-all duration-500 ease-out h-auto flex flex-col
+        origin-center transform scale-100 border-4 ${
+          isHovered
+            ? "scale-105 shadow-lg border-combination-200 z-10 bg-combination-200"
+            : "border-gray-100"
+        }
+            `}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {logo && (
+        <div className="flex justify-center mb-4">
+          <div className="h-12 flex items-center">{logo}</div>
+        </div>
+      )}
+
+      <h3 className="text-xl font-bold text-combination-200 mb-2">{title}</h3>
+
+      {subtitle && (
+        <h4 className="text-md font-medium text-gray-700 mb-3">{subtitle}</h4>
+      )}
+
+      <p className="text-gray-600 mb-5 flex-grow">{description}</p>
+
+      {catalogLink && (
+        <div className="mt-auto">
+          <button className="inline-block bg-blue-900 text-white py-2 px-4 rounded text-sm font-medium hover:bg-blue-800 transition-colors duration-200">
+            {`${title} Catalog`}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Card;
