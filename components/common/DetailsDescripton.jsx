@@ -9,6 +9,7 @@ const DetailsDescripton = ({
   image,
   bullets,
   url,
+  noCatalog,
   reverse = false,
 }) => {
   return (
@@ -49,7 +50,7 @@ const DetailsDescripton = ({
             href={item?.href}
             className="inline-block px-6 mt-3 sm:px-8 py-2 bg-combination-100 text-white font-bold rounded-full hover:bg-combination-200 transition-colors w-full sm:w-auto text-center"
           >
-            {item?.title} Catalog
+            {item?.title} {noCatalog ? "" : "Catalog"}
           </Link>
         ))}
       </div>

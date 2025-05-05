@@ -32,6 +32,9 @@ import {
 } from "../../../constants/brand";
 import Card from "../../../components/Card";
 import BookExamCommon from "../../../components/common/BookExampCommon";
+import DetailsDescripton from "../../../components/common/DetailsDescripton";
+import { glassCleanerImage } from "../../../constants/prescriptionLenses";
+import TitleCommon from "../../../components/common/TitleCommon";
 // todo : need to change the redirection link
 
 const pages = () => {
@@ -268,6 +271,21 @@ const pages = () => {
       logoImg: Brand24,
     },
   ];
+  const whyChooseData = [
+    "At 360 Eyecare, we are dedicated to preserving and enhancing your vision. Our experienced team offers comprehensive eye care services tailored to your needs.",
+  ];
+  const whyChooseDataBullets = [
+    "Advanced diagnostic technology for accurate assessments.",
+    "Personalized treatment plans for optimal eye health.",
+    "Educational resources to empower you about your eye care.",
+  ];
+
+  const whyChooseLink = [
+    {
+      title: "Learn More",
+      href: "/",
+    },
+  ];
 
   return (
     <main className="pt-[110px] bg-[#F6F7F5]">
@@ -355,6 +373,19 @@ const pages = () => {
         buttonText="Book Appointment"
         buttonLink="/book-appointment"
       />
+      <DetailsDescripton
+        title="Committed to Your Eye Health"
+        description={whyChooseData}
+        image={glassCleanerImage}
+        bullets={whyChooseDataBullets}
+        url={whyChooseLink}
+        noCatalog
+        reverse
+      />
+      <div className="max-w-7xl mx-auto py-16 flex  items-center justify-center flex-col">
+        <TitleCommon title="Explore Our Eyeglasses Blogs" position="center" />
+        <p>Stay informed about the latest trends and innovations in eyewear.</p>
+      </div>
     </main>
   );
 };
