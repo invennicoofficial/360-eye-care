@@ -4,19 +4,46 @@ import Image from "next/image";
 import { eyeglasses } from "../../../constants/Images";
 import BrandCard from "../../../components/common/cardComponent";
 import { FaUserMd } from "react-icons/fa";
-import { LindbergImage } from "../../../constants/brand";
+import {
+  Brand1,
+  Brand2,
+  Brand3,
+  Brand4,
+  Brand5,
+  Brand6,
+  Brand7,
+  Brand8,
+  Brand9,
+  Brand10,
+  Brand11,
+  Brand12,
+  Brand13,
+  Brand14,
+  Brand15,
+  Brand16,
+  Brand17,
+  Brand18,
+  Brand19,
+  Brand20,
+  Brand21,
+  Brand22,
+  Brand23,
+  Brand24,
+} from "../../../constants/brand";
+import Card from "../../../components/Card";
 // todo : need to change the redirection link
 
 const pages = () => {
   const brands = [
+    // Image 1 - Top Row
     {
       id: "lindberg",
       name: "Lindberg",
       tagline: "Lindberg Eyeglasses: Sleek Scandinavian Design",
       description:
         "Lindberg eyeglasses are known for their minimalist design and lightweight comfort. Crafted in Denmark, these frames offer a perfect blend of style and functionality. With a focus on innovation and quality, Lindberg frames are ideal for those seeking a sophisticated and timeless look.",
-      logoSrc: LindbergImage,
-      catalogLink: "/brands/lindberg",
+      catalogLink: "Lindberg Catalog",
+      logoImg: Brand1,
     },
     {
       id: "la-eyeworks",
@@ -24,8 +51,8 @@ const pages = () => {
       tagline: "l.a.Eyeworks Eyeglasses: Bold and Unique Styles",
       description:
         "l.a.Eyeworks offers a range of bold and unique eyeglasses that make a statement. With unconventional shapes and vibrant colors, l.a.Eyeworks frames are perfect for those who want to express their individuality. Each pair is handcrafted with attention to detail, ensuring a perfect fit and distinctive look.",
-      logoSrc: "/images/la-eyeworks-logo.png",
-      catalogLink: "/brands/la-eyeworks",
+      catalogLink: "l.a.Eyeworks Catalog",
+      logoImg: Brand2,
     },
     {
       id: "lafont",
@@ -33,10 +60,214 @@ const pages = () => {
       tagline: "LaFont Eyeglasses: Parisian Elegance and Style",
       description:
         "LaFont eyeglasses are synonymous with Parisian elegance and style. Known for their bold colors and unique patterns, LaFont frames are designed to make a statement. With a focus on quality craftsmanship and attention to detail, LaFont eyeglasses are the perfect choice for those who want to stand out.",
-      logoSrc: "/images/lafont-logo.png",
-      catalogLink: "/brands/lafont",
+      catalogLink: "LaFont Catalog",
+      logoImg: Brand3,
+    },
+
+    // Image 1 - Middle Row
+    {
+      id: "tom-ford",
+      name: "Tom Ford",
+      tagline: "Tom Ford Eyeglasses: Luxury and Sophistication",
+      description:
+        "Tom Ford eyeglasses embody luxury and sophistication. With sleek designs and high-quality materials, Tom Ford frames symbolize refined taste. Whether you're looking for classic styles or contemporary trends, Tom Ford Integrum has a frame to suit your style.",
+      catalogLink: "Tom Ford Catalog",
+      logoImg: Brand4,
+    },
+    {
+      id: "integrum",
+      name: "Integrum",
+      tagline: "Integrum Eyeglasses: Fusion of Style and Comfort",
+      description:
+        "Integrum eyeglasses offer a fusion of style and comfort, providing eyewear that enhances your vision and complements your fashion sense. With a focus on quality materials and innovative design, Integrum frames are ideal for those seeking functionality and style.",
+      catalogLink: "Integrum Catalog",
+      logoImg: Brand5,
+    },
+    {
+      id: "maui-jim",
+      name: "Maui Jim",
+      tagline: "Maui Jim Eyeglasses: Island-Inspired Style and Clarity",
+      description:
+        "Maui Jim eyeglasses combine island-inspired style with exceptional clarity. Designed to enhance your view while protecting your eyes, Maui Jim frames are perfect for outdoor enthusiasts. With polarized lenses and durable frames, Maui Jim eyeglasses are ideal for those who value fashion and function.",
+      catalogLink: "Maui Jim Catalog",
+      logoImg: Brand6,
+    },
+
+    // Image 1 - Bottom Row
+    {
+      id: "munic",
+      name: "Munic",
+      tagline: "Munic Eyeglasses: Modern and Innovative Designs",
+      description:
+        "Munic eyeglasses feature modern and innovative designs that blend fashion and technology. With lightweight materials and stylish frames, Munic offers comfortable and trendy eyewear. Whether you're looking for classic styles or bold statements, Munic has a frame to suit your style.",
+      catalogLink: "Munic Catalog",
+      logoImg: Brand7,
+    },
+    {
+      id: "o-and-x-new-york",
+      name: "O&X New York",
+      tagline: "O&X New York Eyeglasses: Urban Sophistication",
+      description:
+        "O&X New York eyeglasses exude urban sophistication and style. With sleek designs and high-quality materials, O&X frames are perfect for those who want to make a statement. Whether in the city or the suburbs, O&X New York eyeglasses are the perfect accessory for any outfit.",
+      catalogLink: "O&X New York",
+      logoImg: Brand8,
+    },
+    {
+      id: "oakley",
+      name: "Oakley",
+      tagline: "Oakley Eyeglasses: Performance and Style",
+      description:
+        "Oakley eyeglasses are known for their performance and style. With a focus on innovation and technology, Oakley frames are designed to enhance your vision and protect your eyes. Whether you're hitting the slopes or the streets, Oakley eyeglasses are the perfect blend of fashion and function.",
+      catalogLink: "Oakley Catalog",
+      logoImg: Brand9,
+    },
+
+    // Image 2 - Top Row
+    {
+      id: "ogi-eyewear",
+      name: "OGI Eyewear",
+      tagline: "OGI Eyewear: Contemporary Designs with Timeless Appeal",
+      description:
+        "OGI Eyewear offers contemporary designs with timeless appeal. With a focus on quality craftsmanship and attention to detail, OGI frames are perfect for those who appreciate classic styles with a modern twist. Whether you're looking for everyday frames or statement pieces, OGI Eyewear has something for everyone.",
+      catalogLink: "OGI Catalog",
+      logoImg: Brand10,
+    },
+    {
+      id: "persol",
+      name: "Persol",
+      tagline: "Persol Eyeglasses: Italian Craftsmanship and Style",
+      description:
+        "Persol eyeglasses are synonymous with Italian craftsmanship and style. With iconic designs and high-quality materials, Persol frames symbolize elegance and sophistication. Whether you're looking for classic styles or contemporary trends, Persol Eyewear has a frame to suit your style.",
+      catalogLink: "Persol Catalog",
+      logoImg: Brand11,
+    },
+    {
+      id: "ray-ban",
+      name: "Ray-Ban",
+      tagline: "Ray-Ban Eyeglasses: Timeless Style and Iconic Design",
+      description:
+        "Ray-Ban eyeglasses are known for their timeless style and iconic design. With a rich heritage of quality craftsmanship and innovative design, Ray-Ban frames symbolize effortless cool. Whether you're looking for classic aviators or retro-inspired frames, Ray-Ban has a frame to suit your style.",
+      catalogLink: "Ray-Ban Catalog",
+      logoImg: Brand12,
+    },
+
+    // Image 2 - Middle Row
+    {
+      id: "seraphin",
+      name: "Seraphin",
+      tagline: "Seraphin Eyeglasses: Vintage-Inspired Styles with Modern Flair",
+      description:
+        "Seraphin eyeglasses offer vintage-inspired styles with a modern flair. Crafted with attention to detail and quality materials, Seraphin frames are perfect for those who appreciate classic aesthetics. Whether you're looking for bold shapes or subtle sophistication, Seraphin has a frame to match your unique style.",
+      catalogLink: "Seraphin Catalog",
+      logoImg: Brand13,
+    },
+    {
+      id: "silhouette",
+      name: "Silhouette",
+      tagline: "Silhouette Eyeglasses: Lightweight and Minimalist",
+      description:
+        "Silhouette eyeglasses are renowned for their lightweight and minimalist designs. Focusing on comfort and style, Silhouette frames offer a perfect blend of form and function. Whether you prefer rimless or semi-rimless styles, Silhouette has a frame to suit your needs.",
+      catalogLink: "Silhouette Catalog",
+      logoImg: Brand14,
+    },
+    {
+      id: "all-poets",
+      name: "All Poets",
+      tagline: "All Poets Eyeglasses: Artistic and Expressive",
+      description:
+        "All Poets eyeglasses are artistic and expressive, perfect for those who want to make a statement. All Poets frames reflect your personality and style with unique designs and vibrant colors. Each pair is crafted with care, ensuring you stand out.",
+      catalogLink: "All Poets Catalog",
+      logoImg: Brand15,
+    },
+
+    // Image 2 - Bottom Row
+    {
+      id: "burberry",
+      name: "Burberry",
+      tagline: "Burberry Eyeglasses: British Heritage and Style",
+      description:
+        "Burberry eyeglasses embody British heritage and style. With iconic designs and luxurious materials, Burberry frames symbolize elegance and sophistication. Whether you're looking for classic tortoiseshell frames or modern metal styles, Burberry has a frame to suit your taste.",
+      catalogLink: "Burberry Catalog",
+      logoImg: Brand16,
+    },
+    {
+      id: "kate-spade",
+      name: "Kate Spade",
+      tagline: "Kate Spade Eyeglasses: Playful and Chic",
+      description:
+        "Kate Spade eyeglasses are playful and chic, perfect for the modern woman. With bold patterns and feminine details, Kate Spade frames add a touch of whimsy to any outfit. Whether you're looking for oversized frames or cat-eye styles, Kate Spade has a frame to match your personality.",
+      catalogLink: "Kate Spade Catalog",
+      logoImg: Brand17,
+    },
+    {
+      id: "life-italia-kids",
+      name: "Life Italia Kids",
+      tagline: "Life Italia Kids Eyeglasses: Stylish and Durable",
+      description:
+        "Life Italia Kids eyeglasses are designed to be stylish and durable, perfect for active kids. With a focus on quality materials and comfortable designs, Life Italia Kids frames are functional and fashionable. Whether your child needs glasses for everyday wear or sports activities, Life Italia Kids has a frame to suit their needs.",
+      catalogLink: "Life Italia Kids Catalog",
+      logoImg: Brand18,
+    },
+
+    // Image 3 - Top Row
+    {
+      id: "michael-kors",
+      name: "Michael Kors",
+      tagline: "Michael Kors Eyeglasses: Timeless Elegance",
+      description:
+        "Michael Kors eyeglasses exude timeless elegance and sophistication. With classic designs and high-quality materials, Michael Kors frames are perfect for those who appreciate understated luxury. Whether you're looking for sleek metal frames or bold acetate styles, Michael Kors has a frame to suit your style.",
+      catalogLink: "Michael Kors Catalog",
+      logoImg: Brand19,
+    },
+    {
+      id: "superflex-kids",
+      name: "Superflex Kids",
+      tagline: "Superflex Kids Eyeglasses: Flexible and Fun",
+      description:
+        "Superflex Kids eyeglasses are flexible and fun, perfect for active kids. With durable materials and vibrant colors, Superflex Kids frames are designed to withstand the demands of everyday wear. Whether your child needs glasses for school or play, Superflex Kids has a frame to match their style and personality.",
+      catalogLink: "Superflex Kids Catalog",
+      logoImg: Brand20,
+    },
+    {
+      id: "vision-avenue",
+      name: "Vision Avenue",
+      tagline: "Vision Avenue Eyeglasses: Clarity and Comfort",
+      description:
+        "Vision Avenue eyeglasses offer clarity and comfort for everyday wear. With lightweight materials and ergonomic designs, Vision Avenue frames provide a comfortable fit and clear vision. Vision Avenue has a frame to suit your needs, whether you're looking for reading glasses or prescription eyewear.",
+      catalogLink: "Vision Avenue",
+      logoImg: Brand21,
+    },
+
+    // Image 3 - Bottom Row
+    {
+      id: "emporio-armani",
+      name: "Emporio Armani",
+      tagline: "Emporio Armani Eyeglasses: Italian Style and Sophistication",
+      description:
+        "Emporio Armani eyeglasses embody Italian style and sophistication. With sleek designs and high-quality materials, Emporio Armani frames symbolize modern elegance. Whether you're looking for classic rectangular frames or trendy round styles, Emporio Armani has a frame to match your style.",
+      catalogLink: "Emporio Armani",
+      logoImg: Brand22,
+    },
+    {
+      id: "ogi-kids",
+      name: "OGI Kids",
+      tagline: "OGI Kids Eyeglasses: Fun and Functional",
+      description:
+        "OGI Kids eyeglasses are fun and functional, perfect for active kids. With durable materials and playful designs, OGI Kids frames are designed to withstand the rigors of childhood. Whether your child needs glasses for school or sports, OGI Kids has a frame to suit their needs.",
+      catalogLink: "OGI Kids Catalog",
+      logoImg: Brand23,
+    },
+    {
+      id: "ray-ban-kids",
+      name: "Ray-Ban Kids",
+      tagline: "Ray-Ban Kids Eyeglasses: Cool and Comfortable",
+      description:
+        "Ray-Ban Kids eyeglasses are cool and comfortable, perfect for stylish kids. With iconic designs and high-quality materials, Ray-Ban Kids frames offer fashion and function. Whether your child needs glasses for reading or everyday wear, Ray-Ban Kids has a frame to suit their style.",
+      catalogLink: "Ray-Ban Kids Catalog",
+      logoImg: Brand24,
     },
   ];
+
   return (
     <main className="pt-[110px] bg-[#F6F7F5]">
       <SubHeader text="Eyeglasses" />
@@ -97,12 +328,17 @@ const pages = () => {
               Rosedale from top brands.
             </p>
           </div>
-          <div className="flex flex-wrap justify-between items-start">
-            {/* {brands.map((brand) => (
-              <div className="w-[32%] py-2">
-                <BrandCard key={brand.id} brand={brand} />
-              </div>
-            ))} */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            {brands.map((brand, index) => (
+              <Card
+                key={index}
+                title={brand.name}
+                subtitle={brand.tagline}
+                description={brand.description}
+                catalogLink={brand.catalogLink}
+                logoImg={brand.logoImg}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { myopiaImage } from "../../../constants/Images";
 import Image from "next/image";
 import MyopiaControl from "../../../components/MyopiaControl";
+import MyopiaControlPage from "../../../components/MyopiaControlPage";
 
 const page = () => {
   return (
@@ -180,6 +181,7 @@ const page = () => {
       </div>
 
       <MyopiaControl />
+      <MyopiaControlPage />
 
       <Banner />
     </main>

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 // Card Component
@@ -6,6 +7,7 @@ const Card = ({
   title,
   subtitle,
   description,
+  logoImg,
   logo,
   catalogLink,
   isHighlighted = false,
@@ -25,6 +27,17 @@ const Card = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      {logoImg && (
+        <div className="flex justify-center mb-4">
+          <Image
+            src={logoImg}
+            alt={title}
+            width={200}
+            height={60}
+            className="object-contain"
+          />
+        </div>
+      )}
       {logo && (
         <div className="flex justify-center mb-4">
           <div className="h-12 flex items-center">{logo}</div>
@@ -41,7 +54,7 @@ const Card = ({
 
       {catalogLink && (
         <div className="mt-auto">
-          <button className="inline-block bg-blue-900 text-white py-2 px-4 rounded text-sm font-medium hover:bg-blue-800 transition-colors duration-200">
+          <button className="inline-block bg-combination-200 text-white py-2 px-4 rounded text-sm font-medium hover:bg-combination-100 transition-colors duration-200">
             {`${title} Catalog`}
           </button>
         </div>

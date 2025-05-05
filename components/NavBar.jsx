@@ -118,15 +118,15 @@ const NavBar = () => {
       name: "Contact",
       link: null,
       dropdown: [
-        { name: "Book An Eye Exam", link: "/contact/book-exam" },
-        { name: "Eye Doctor Near Me", link: "/contact/find-doctor" },
+        { name: "Book An Eye Exam", link: "/book-eye-exam" },
+        { name: "Eye Doctor Near Me", link: "/find-eye-doctor-near-me" },
         {
           name: "Request a Virtual Consultation",
-          link: "/contact/virtual-consultation",
+          link: "/virtual-consult",
         },
-        { name: "Address and Directions", link: "/contact/directions" },
-        { name: "Direct Billing", link: "/contact/billing" },
-        { name: "Payment Plans", link: "/contact/payment-plans" },
+        { name: "Address and Directions", link: "/contact-address-directions" },
+        { name: "Direct Billing", link: "/direct-billing" },
+        { name: "Payment Plans", link: "/payment-plans" },
       ],
     },
   ];

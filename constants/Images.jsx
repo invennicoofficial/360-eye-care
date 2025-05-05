@@ -92,11 +92,19 @@ import ThumbnailDryEyeImage1 from "../public/dryeyeclinicytthumbnail1.jpg";
 import ThumbnailDryEyeImage2 from "../public/dryeyeclinicytthumbnail2.jpg";
 import LummericaImage from "../public/TechnologyLogo_Lumecca_Teal-600x191.webp";
 import LumeccaBeforeAfterImage from "../public/Lumecca-Before-After-2.webp";
+import FormaBeforeAfterImage from "../public/BD_-Forma-I-Before-After-1.webp";
+import HoyaImage from "../public/MiyoSmart-Lenses-Hoya.webp";
+import ZeissImage from "../public/MyoCare-Lenses-Zeiss-1.webp";
+import FormaImage from "../public/forma.webp";
 export {
   EyeCareLogo,
+  HoyaImage,
+  ZeissImage,
+  FormaBeforeAfterImage,
   childeyeexam,
   pediatriceyeexam,
   InModeIPLDryImage,
+  FormaImage,
   LummericaImage,
   ThumbnailDryEyeImage1,
   ThumbnailDryEyeImage2,
