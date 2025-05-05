@@ -76,6 +76,13 @@ const page = () => {
         buttonText="Book An Appointment"
         buttonLink="/book-appointment"
       />
+      <div className="max-w-6xl mx-auto">
+        <p>
+          After you’ve selected your frame it’s important to get complete
+          fitting measurements of the frame on your face to ensure acurate and
+          optimized vision through your new lenses
+        </p>
+      </div>
     </main>
   );
 };

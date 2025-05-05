@@ -15,7 +15,7 @@ const BookExamCommon = ({
         <div className="flex flex-col md:flex-row items-center md:items-start gap-4 text-white text-center md:text-left">
           <div className="text-5xl md:text-6xl mb-2 md:mb-0">{icon}</div>
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold leading-tight text-white">
+            <h2 className="text-xl md:text-1xl font-light leading-tight text-white">
               {title}
             </h2>
             {phones?.map((phone, index) => (
@@ -33,13 +33,13 @@ const BookExamCommon = ({
         </div>
 
         {/* Right: CTA Button */}
-        <div className="w-full md:w-auto text-center shrink-0">
+        {/* <div className="w-full md:w-auto text-center shrink-0">
           <Link href={buttonLink}>
             <button className="bg-combination-200 hover:text-combination-100 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md">
               {buttonText}
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
