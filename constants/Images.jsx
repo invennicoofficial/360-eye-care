@@ -85,7 +85,7 @@ import childeyeexam from "../public/child-eye-exam.webp";
 import pediatriceyeexam from "../public/pediatric-eye-care2.webp";
 import visioneyeexam from "../public/Vision-Health-jpg.webp";
 
-import eyeglasses from "../public/eyeglasses.webp";
+import eyeglasses from "../public/Eyeglasses.webp";
 import InModeIPLDryImage from "../public/inmodeIpl.webp";
 
 import ThumbnailDryEyeImage1 from "../public/dryeyeclinicytthumbnail1.jpg";
@@ -111,6 +111,7 @@ export {
   glassesImage,
   VirtualConsultImage,
   virtualfaqimg,
+  eyeglasses,
   HoyaImage,
   beaches360Image,
   findeyedoctorImage,
