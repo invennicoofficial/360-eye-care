@@ -111,7 +111,6 @@ export {
   glassesImage,
   VirtualConsultImage,
   virtualfaqimg,
-  eyeglasses,
   HoyaImage,
   beaches360Image,
   findeyedoctorImage,

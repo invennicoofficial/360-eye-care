@@ -31,7 +31,7 @@
     "**/*.tsx",
     "components/NearYou.jsx",
     "app/(our-team)/about-us/page.jsx"
-  ],
+, "app/(our-team)/team-members/[...slug]/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
