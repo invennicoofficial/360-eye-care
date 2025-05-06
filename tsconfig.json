@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -30,9 +30,8 @@
     "**/*.ts",
     "**/*.tsx",
     "components/NearYou.jsx",
-    "app/(our-team)/about-us/page.jsx"
-, "app/(our-team)/team-members/[...slug]/page.jsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "app/(our-team)/about-us/page.jsx",
+    "app/(our-team)/team-members/[...slug]/page.jsx"
+  ],
+  "exclude": ["node_modules"]
 }

@@ -1,19 +1,30 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { EyeCareLogo } from "../constants/Images";
 import { usePathname } from "next/navigation";
+import { EyeCareLogo } from "../constants/Images";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "../components/components/ui/sheet";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "../components/components/ui/collapsible";
+import { cn } from "../components/lib/utils";
 
 const NavBar = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [openCollapsible, setOpenCollapsible] = useState(null);
   const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20); // adjust threshold if needed
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,7 +39,7 @@ const NavBar = () => {
     },
     {
       name: "Our Team",
-      link: null,
+      link: "/about-us",
       dropdown: [
         { name: "About 360 Eyecare", link: "/about-us" },
         { name: "Our Optometrists", link: "/optometrists" },
@@ -38,7 +49,7 @@ const NavBar = () => {
     },
     {
       name: "Locations",
-      link: null,
+      link: "/toronto-beaches-optometrist",
       dropdown: [
         {
           name: "360 Eyecare - The Beaches",
@@ -52,7 +63,7 @@ const NavBar = () => {
     },
     {
       name: "Eye Care",
-      link: null,
+      link: "/eye-exams",
       dropdown: [
         { name: "Eye Exams", link: "/eye-exams" },
         { name: "Dry Eye Clinic", link: "/dry-eye-syndrome-keratograph-i-pen" },
@@ -74,7 +85,7 @@ const NavBar = () => {
     },
     {
       name: "Eye Wear",
-      link: null,
+      link: "/eyeglasses",
       dropdown: [
         { name: "Eyeglasses", link: "/eyeglasses" },
         { name: "Prescription Lenses", link: "/prescription-lenses" },
@@ -116,7 +127,7 @@ const NavBar = () => {
     },
     {
       name: "Contact",
-      link: null,
+      link: "/book-eye-exam",
       dropdown: [
         { name: "Book An Eye Exam", link: "/book-eye-exam" },
         { name: "Eye Doctor Near Me", link: "/find-eye-doctor-near-me" },
@@ -131,24 +142,13 @@ const NavBar = () => {
     },
   ];
 
-  // Check if current pathname matches any dropdown item's link
   const isActiveParent = (item) => {
     if (!item.dropdown) return false;
     return item.dropdown.some((subItem) => pathname === subItem.link);
   };
 
-  // Logic to toggle dropdown visibility
-  const toggleDropdown = (index) => {
-    if (activeDropdown === index) {
-      setActiveDropdown(null);
-    } else {
-      setActiveDropdown(index);
-    }
-  };
-
-  // Close dropdown when clicking outside
-  const closeDropdown = () => {
-    setActiveDropdown(null);
+  const toggleCollapsible = (index) => {
+    setOpenCollapsible(openCollapsible === index ? null : index);
   };
 
   return (
@@ -160,7 +160,6 @@ const NavBar = () => {
       >
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <div className="w-36">
@@ -174,7 +173,6 @@ const NavBar = () => {
             </Link>
           </div>
 
-          {/* Navigation Links */}
           <nav className="flex-1 flex justify-end">
             <ul className="flex space-x-6">
               {navItems.map((item, index) => {
@@ -185,36 +183,33 @@ const NavBar = () => {
                   <li
                     key={index}
                     className="relative font-sans"
-                    onMouseEnter={() => item.dropdown && toggleDropdown(index)}
-                    onMouseLeave={closeDropdown}
+                    onMouseEnter={() =>
+                      item.dropdown && toggleCollapsible(index)
+                    }
+                    onMouseLeave={() => setOpenCollapsible(null)}
                   >
                     {item.link ? (
                       <Link
                         href={item.link}
                         className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 ${
                           isActive
-                            ? "text-brand-blue border-b-2 border-brand-blue" // Added border bottom for active item
+                            ? "text-brand-blue border-b-2 border-brand-blue"
                             : "text-combination-200"
-                        } hover:text-combination-100 hover:bg-gray-50 ${
-                          activeDropdown === index
-                            ? "hover:text-combination-100 hover:bg-gray-50"
-                            : "text-combination-200"
-                        }`}
+                        } hover:text-combination-100 hover:bg-gray-50`}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {item.name}
                       </Link>
                     ) : (
                       <span
-                        className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 `}
+                        className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200`}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {item.name}
                       </span>
                     )}
 
-                    {/* Dropdown Menu */}
-                    {item.dropdown && activeDropdown === index && (
+                    {item.dropdown && openCollapsible === index && (
                       <div className="absolute left-0 mt-0 w-60 bg-white shadow-card rounded-b-md z-10 animate-fade-in">
                         <ul className="py-2 px-4">
                           {item.dropdown.map((subItem, subIndex) => {
@@ -279,7 +274,6 @@ const NavBar = () => {
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex items-center justify-between h-16">
-          {/* Mobile Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <div className="w-24">
@@ -294,72 +288,146 @@ const NavBar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => toggleDropdown("mobile")}
-            className="inline-flex items-center justify-center p-2 rounded-md text-neutral-700 hover:text-brand-blue hover:bg-neutral-100 focus:outline-none transition-colors duration-200"
-            aria-label="Toggle mobile menu"
-          >
-            {activeDropdown === "mobile" ? (
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
+          <Sheet>
+            <SheetTrigger asChild>
+              <button
+                className="inline-flex items-center justify-center p-2 rounded-md text-neutral-700 hover:text-brand-blue hover:bg-neutral-100 focus:outline-none transition-colors duration-200"
+                aria-label="Toggle mobile menu"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </button>
-        </div>
-
-        {/* Mobile Menu Dropdown */}
-        {activeDropdown === "mobile" && (
-          <nav
-            className="md:hidden animate-slide-up"
-            aria-label="Mobile navigation"
-          >
-            <div className="pt-2 pb-4 border-t border-[2px] border-combination-100">
-              {navItems.map((item, index) => {
-                // Determine if this nav item is active (either direct match or parent of active dropdown)
-                const isActive =
-                  (item.link && pathname === item.link) || isActiveParent(item);
-
-                return (
-                  <div
-                    key={index}
-                    className={`border-b border-neutral-100 ${
-                      isActive ? "bg-gray-50" : ""
-                    }`}
+                <Menu className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <div className="flex justify-between items-center mb-4">
+                <Link href="/" className="flex items-center">
+                  <div className="w-24">
+                    <Image
+                      src={EyeCareLogo}
+                      alt="360 EyeCare Logo"
+                      width={141.89}
+                      height={70}
+                      priority
+                    />
+                  </div>
+                </Link>
+                <SheetTrigger asChild>
+                  <button
+                    className="p-2 rounded-md text-neutral-700 hover:text-brand-blue hover:bg-neutral-100"
+                    aria-label="Close mobile menu"
                   >
-                    <div className="flex items-center justify-between px-4 py-3">
-                      {item.link ? (
+                    <X className="h-6 w-6" aria-hidden="true" />
+                  </button>
+                </SheetTrigger>
+              </div>
+              <nav className="flex flex-col space-y-2">
+                {navItems.map((item, index) => {
+                  const isActive =
+                    (item.link && pathname === item.link) ||
+                    isActiveParent(item);
+
+                  return (
+                    <div key={index}>
+                      {item.dropdown ? (
+                        <Collapsible
+                          open={openCollapsible === index}
+                          onOpenChange={() => toggleCollapsible(index)}
+                        >
+                          <CollapsibleTrigger asChild>
+                            <button
+                              className={cn(
+                                "flex w-full items-center justify-between px-4 py-3 text-base font-medium text-left",
+                                isActive
+                                  ? "text-brand-blue"
+                                  : "text-neutral-700"
+                              )}
+                              aria-expanded={openCollapsible === index}
+                            >
+                              <span>
+                                {item.name}
+                                {isActive && (
+                                  <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                                )}
+                              </span>
+                              <ChevronDown
+                                size={20}
+                                className={cn(
+                                  "transform transition-transform duration-200",
+                                  openCollapsible === index
+                                    ? "rotate-180 text-brand-blue"
+                                    : "text-neutral-500"
+                                )}
+                                aria-hidden="true"
+                              />
+                            </button>
+                          </CollapsibleTrigger>
+                          <CollapsibleContent className="bg-neutral-50 px-4 py-2">
+                            {item.dropdown.map((subItem, subIndex) => {
+                              const isSubItemActive = pathname === subItem.link;
+
+                              return subItem.external ? (
+                                <a
+                                  key={subIndex}
+                                  href={subItem.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className={cn(
+                                    "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
+                                    isSubItemActive
+                                      ? "text-brand-blue font-medium bg-gray-100"
+                                      : "text-neutral-700"
+                                  )}
+                                >
+                                  {subItem.name}
+                                  {isSubItemActive && (
+                                    <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                                  )}
+                                  <span
+                                    className={cn(
+                                      "absolute left-4 bottom-2 h-[2px]",
+                                      isSubItemActive
+                                        ? "w-[calc(100%-2rem)] bg-combination-100"
+                                        : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                    )}
+                                  ></span>
+                                </a>
+                              ) : (
+                                <Link
+                                  key={subIndex}
+                                  href={subItem.link}
+                                  className={cn(
+                                    "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
+                                    isSubItemActive
+                                      ? "text-brand-blue font-medium bg-gray-100"
+                                      : "text-neutral-700"
+                                  )}
+                                  aria-current={
+                                    isSubItemActive ? "page" : undefined
+                                  }
+                                >
+                                  {subItem.name}
+                                  {isSubItemActive && (
+                                    <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                                  )}
+                                  <span
+                                    className={cn(
+                                      "absolute left-4 bottom-2 h-[2px]",
+                                      isSubItemActive
+                                        ? "w-[calc(100%-2rem)] bg-combination-100"
+                                        : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                    )}
+                                  ></span>
+                                </Link>
+                              );
+                            })}
+                          </CollapsibleContent>
+                        </Collapsible>
+                      ) : (
                         <Link
                           href={item.link}
-                          className={`text-base font-medium ${
+                          className={cn(
+                            "px-4 py-3 text-base font-medium block",
                             isActive ? "text-brand-blue" : "text-neutral-700"
-                          }`}
+                          )}
                           aria-current={isActive ? "page" : undefined}
                         >
                           {item.name}
@@ -367,104 +435,14 @@ const NavBar = () => {
                             <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
                           )}
                         </Link>
-                      ) : (
-                        <span
-                          className={`text-base font-medium ${
-                            isActive ? "text-brand-blue" : "text-neutral-700"
-                          }`}
-                        >
-                          {item.name}
-                          {isActive && (
-                            <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                          )}
-                        </span>
-                      )}
-                      {item.dropdown && (
-                        <button
-                          onClick={() => toggleDropdown(`mobile-${index}`)}
-                          className="p-1 rounded-full hover:bg-neutral-100"
-                          aria-expanded={activeDropdown === `mobile-${index}`}
-                          aria-label={`Toggle ${item.name} submenu`}
-                        >
-                          <ChevronDown
-                            size={20}
-                            className={`transform transition-transform duration-200 ${
-                              activeDropdown === `mobile-${index}`
-                                ? "rotate-180 text-brand-blue"
-                                : "text-neutral-500"
-                            }`}
-                            aria-hidden="true"
-                          />
-                        </button>
                       )}
                     </div>
-
-                    {/* Mobile Submenu */}
-                    {item.dropdown && activeDropdown === `mobile-${index}` && (
-                      <div className="bg-neutral-50 px-4 py-2 animate-fade-in">
-                        {item.dropdown.map((subItem, subIndex) => {
-                          // Check if this dropdown item is active
-                          const isSubItemActive = pathname === subItem.link;
-
-                          return subItem.external ? (
-                            <a
-                              key={subIndex}
-                              href={subItem.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={`relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group ${
-                                isSubItemActive
-                                  ? "text-brand-blue font-medium bg-gray-100"
-                                  : "text-neutral-700"
-                              }`}
-                            >
-                              {subItem.name}
-                              {isSubItemActive && (
-                                <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                              )}
-                              <span
-                                className={`absolute left-4 bottom-2 h-[2px] ${
-                                  isSubItemActive
-                                    ? "w-[calc(100%-2rem)] bg-combination-100"
-                                    : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
-                                }`}
-                              ></span>
-                            </a>
-                          ) : (
-                            <Link
-                              key={subIndex}
-                              href={subItem.link}
-                              className={`relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group ${
-                                isSubItemActive
-                                  ? "text-brand-blue font-medium bg-gray-100"
-                                  : "text-neutral-700"
-                              }`}
-                              aria-current={
-                                isSubItemActive ? "page" : undefined
-                              }
-                            >
-                              {subItem.name}
-                              {isSubItemActive && (
-                                <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                              )}
-                              <span
-                                className={`absolute left-4 bottom-2 h-[2px] ${
-                                  isSubItemActive
-                                    ? "w-[calc(100%-2rem)] bg-combination-100"
-                                    : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
-                                }`}
-                              ></span>
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </nav>
-        )}
+                  );
+                })}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </div>
   );
