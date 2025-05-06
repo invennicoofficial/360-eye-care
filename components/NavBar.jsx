@@ -297,7 +297,10 @@ const NavBar = () => {
                 <Menu className="h-6 w-6" aria-hidden="true" />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <SheetContent
+              side="right"
+              className="w-[490px] h-[616px] min-h-screen   border-t-4 border-combination-100 max-w-none p-6"
+            >
               <div className="flex justify-between items-center mb-4">
                 <Link href="/" className="flex items-center">
                   <div className="w-24">
