@@ -46,6 +46,7 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
 const Faqs = ({ faqData }) => {
   // Changed from single state to an array of open FAQ IDs
   const [openFAQs, setOpenFAQs] = useState([]);
+ 
 
   const toggleFAQ = (id) => {
     setOpenFAQs((prevOpenFAQs) => {
@@ -61,7 +62,7 @@ const Faqs = ({ faqData }) => {
   return (
     <div className="w-full bg-white mx-auto  font-sans">
       <div className="space-y-2">
-        {faqData.map((faq) => (
+        {faqData?.map((faq) => (
           <FAQItem
             key={faq.id}
             faq={faq}

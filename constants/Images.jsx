@@ -103,10 +103,14 @@ import rosedale360Image from "../public/payment/360-Eyecare-Rosedale-1-600x443.w
 import affirmImage from "../public/payment/affirmlogo.webp";
 import choose360image from "../public/360-Eyecare—Beacheschoose.webp";
 import glassesImage from "../public/eyeglasses-yorkville-Toronto.webp";
+import VirtualConsultImage from "../public/virtualconsultimage.webp";
+import virtualfaqimg from "../public/virtualfaqimage.jpg";
 
 export {
   EyeCareLogo,
   glassesImage,
+  VirtualConsultImage,
+  virtualfaqimg,
   HoyaImage,
   beaches360Image,
   findeyedoctorImage,

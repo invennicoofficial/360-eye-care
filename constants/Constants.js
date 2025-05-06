@@ -419,8 +419,6 @@ export const orgImages = [
   },
 ];
 
-
-
 // Array of card data for easier maintenance and mapping
 export const cardData = [
   {
@@ -1707,5 +1705,46 @@ export const Orthokeratology = [
     title: "Comfort and Convenience",
     description:
       "For those who find daytime contact lenses uncomfortable or inconvenient, Ortho-K provides a comfortable alternative that fits seamlessly into their nighttime routine.",
+  },
+];
+
+export const faqVirtualConsult = [
+  {
+    id: 1,
+    question: "What is Tele-optometry?",
+    answer:
+      "Tele-optometry is the provision of vision and eye health services that are delivered within the scope of practice of optometry using electronic health information, medical and communication technologies, and where the provider and patient are separated by remote distance.",
+  },
+  {
+    id: 2,
+    question:
+      "What is the difference between Telemedicine, Telehealth and Tele-optometry?",
+    answer:
+      "Telehealth and Telemedicine are often used interchangeably but are distinguished in terms of their scope. Telemedicine describes the remote delivery of clinical medical services, such as diagnosis and disease management, but Telehealth includes the delivery of health promotion and disease prevention information and therapeutic care. As such, Telemedicine is a part of Telehealth, and Tele-optometry is a part of Telehealth.",
+  },
+  {
+    id: 3,
+    question: "Is Tele-optometry safe and what does it involve?",
+    answer:
+      "Your online consultation may involve video chat, direct messaging, or photo uploads. Your online consultation protects your privacy using encryption technology for any personal information or images that may be shared between you and the doctor on the platform.",
+  },
+  {
+    id: 4,
+    question: "What will I need to prepare for before my virtual consultation?",
+    answer:
+      "You will be asked questions about the nature of your symptoms as well as your health history if relevant, including any medications you are taking.",
+  },
+  {
+    id: 5,
+    question: "Is Tele-optometry covered by OHIP or private insurance?",
+    answer:
+      "As of now (April, 2021) There is no OHIP coverage for telemedical optometry services. Every private insurance will vary in coverage depending on the insurance provider and the specific plan offered. Our office will email you an invoice at the end of your virtual consultation that you can use to submit to your insurance if applicable.",
+  },
+  {
+    id: 6,
+    question:
+      "How much will the consultation cost and how do I make a payment?",
+    answer:
+      "The fee to access this service is $75 per consultation. At the end of the consultation the system will prompt you to make an online payment with a valid credit card. Be sure to have your credit card ready before the beginning of your consultation to avoid delays.",
   },
 ];

@@ -263,23 +263,32 @@ const Footer = () => {
             <nav aria-label="Footer Navigation">
               <ul className="flex flex-col space-y-3 text-base list-none p-0">
                 <li>
-                  <Link href="/terms" className="hover:text-combination-100">
+                  <Link
+                    href="/terms-conditions"
+                    className="hover:text-combination-100"
+                  >
                     Terms of Service & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy" className="hover:text-combination-100">
+                  <Link
+                    href="/privacy-policy"
+                    className="hover:text-combination-100"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/shipping" className="hover:text-combination-100">
+                  <Link
+                    href="/shipping-return-policy"
+                    className="hover:text-combination-100"
+                  >
                     Shipping & Return Policy
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/dry-eye-shop"
+                    href="https://360eyecare.ottooptics.io/reorder/product/?cat=6"
                     className="hover:text-combination-100"
                   >
                     Dry Eye Product Shop
@@ -287,7 +296,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/contact-lens-shop"
+                    href="https://360eyecare.ottooptics.io/reorder/product/?cat=1"
                     className="hover:text-combination-100"
                   >
                     Contact Lens Shop
@@ -295,7 +304,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/integrum-eyewear"
+                    href="https://integrumeyewear.com/"
                     className="hover:text-combination-100"
                   >
                     Integrum Eyewear
