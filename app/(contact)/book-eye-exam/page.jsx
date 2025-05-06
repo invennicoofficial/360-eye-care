@@ -1,10 +1,79 @@
 import React from "react";
 import SubHeader from "../../../components/SubHeader";
+import Link from "next/link";
+import FormSection from "../../../components/FormSection";
+import Image from "next/image";
+import { bookEyeExamImage, OptometryImage } from "../../../constants/Images";
 
 const page = () => {
   return (
     <main className="pt-[110px]">
       <SubHeader text="BOOK AN EYE EXAM" />
+      <div className="max-w-6xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col md:flex-row justify-between">
+        <div className="flex flex-col w-[45%]">
+          <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
+            BOOK AN EYE EXAM
+          </h2>
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
+
+          <p className="text-neutral-500 text-base md:text-lg mb-4">
+            You can now use our online booking tools to select your own
+            appointment date and time. Click a location to book your appointment
+            in real-time. Otherwise, please feel free to use the form below to
+            get in touch with our team.
+          </p>
+          <div className="flex justify-between gap-4 mt-5 mb-8">
+            <Link
+              href="/book-appointment"
+              className="bg-combination-200 hover:text-combination-100 hover:bg-combination-200 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md"
+            >
+              Book At the Beaches
+            </Link>
+            <Link
+              href="https://360rosedale.mypatientportal.xyz/dashboard"
+              className="bg-combination-200 hover:bg-combination-100 hover:text-combination-200 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md"
+            >
+              Book At Yorkville Rosedale{" "}
+            </Link>
+          </div>
+          <FormSection />
+        </div>
+
+        <div className="flex flex-col w-[45%]">
+          <Image
+            src={bookEyeExamImage}
+            alt="Book Eye Exam"
+            width={585}
+            height={919}
+            className="w-[585px] h-[919px] object-contain"
+          />
+        </div>
+      </div>
+      <div className="max-w-5xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col md:flex-row-reverse items-start justify-between">
+        <div className="flex flex-col w-[45%]">
+          <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
+            Book an Eye Exam in the Beaches Toronto
+          </h2>
+
+          <p className="text-neutral-500 text-base md:text-lg mb-4">
+            Choose which of our Optometrists you would like to schedule your
+            appointment with, or simply choose ‘Next Appointment’ for the
+            soonest available openings. Select your preferred date and time from
+            the available slots and click ‘Request’ to submit your appointment
+            request
+          </p>
+        </div>
+
+        <div className="flex flex-col w-[45%]">
+          <Image
+            src={OptometryImage}
+            alt="optometry image"
+            width={466}
+            height={600}
+            className="w-[466px] h-[600px] object-contain"
+          />
+        </div>
+      </div>
     </main>
   );
 };
