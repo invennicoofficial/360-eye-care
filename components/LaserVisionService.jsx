@@ -25,7 +25,7 @@ const LaserVisionService = ({ data, image, imageTitle, imageDesc }) => {
         </div>
 
         <div className="w-full lg:w-80 flex justify-center">
-          <div className="relative w-[380px] h-auto md:h-full max-h-[340px]">
+          <div className="flex flex-col">
             <Image
               src={image}
               alt="patient-scaled-image"

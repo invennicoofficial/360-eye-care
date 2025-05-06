@@ -717,6 +717,310 @@ export const eyeemergencyData = [
   },
 ];
 
+export const laservisiondata = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "LASIK Eye Surgery",
+    description:
+      "Refractive surgery to correct vision problems like nearsightedness and astigmatism.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "PRK Vision Correction",
+    description:
+      "Similar to LASIK but does not involve creating a corneal flap.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Bladeless Laser Surgery",
+    description:
+      "Advanced technology for precise and blade-free laser vision correction.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Custom Wavefront LASIK",
+    description:
+      "Personalized treatment that maps the unique characteristics of your eyes.",
+  },
+];
+export const pediatricEyeData = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Vision Care",
+    description: "Comprehensive eye care services for children of all ages.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Myopia Control",
+    description:
+      "Specialized treatments to slow down the progression of nearsightedness.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Eye Exams",
+    description:
+      "Regular eye exams to monitor and maintain your child’s vision health.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Eyeglasses & Contacts",
+    description: "Stylish eyeglasses and comfy contact lenses for kids.",
+  },
+];
+
+export const laservisionService = [
+  {
+    label: "PRK",
+    icon: EyeExamIcon,
+    image: prkImage,
+    title: "PRK Laser Vision Correction Treatment",
+    description:
+      "PRK (Photorefractive Keratectomy) is a type of laser eye surgery used to correct nearsightedness, farsightedness, and astigmatism. It involves removing the cornea’s outer layer before reshaping it with an excimer laser. PRK is often recommended for patients with thin corneas or other corneal irregularities. The procedure typically takes less than 15 minutes per eye, and most patients experience improved vision within a few days to a week. PRK is a safe and effective option for vision correction, offering long-lasting results and minimal risk of complications. If you’re considering PRK, our experienced team can help determine if you’re a candidate and guide you through the process.",
+  },
+  {
+    label: "LASIK",
+    icon: ContactLensIcon,
+    image: lasikImage,
+    title: "LASIK Laser Vision Correction Treatment",
+    description:
+      "LASIK (Laser-Assisted In Situ Keratomileusis) is a popular laser eye surgery that reshapes the cornea to correct refractive errors such as nearsightedness, farsightedness, and astigmatism. It involves creating a thin flap in the cornea using a femtosecond laser and an excimer laser to reshape the underlying corneal tissue. LASIK is known for its quick recovery time and high success rate, with many patients achieving 20/25 vision or better after the procedure. LASIK offers a permanent solution for vision correction, reducing or eliminating the need for glasses or contact lenses. If you’re interested in LASIK, our skilled LASIK surgeons can determine if you’re a suitable candidate and provide personalized care throughout your journey to clearer vision.",
+  },
+  {
+    label: "SMILE",
+    icon: MyopiaIcon,
+    image: smileImage,
+    title: "SMILE Laser Vision Correction Treatment",
+    description:
+      "SMILE(Small Incision Lenticule Extraction) is an innovative laser vision correction procedure that corrects myopia (nearsightedness) and astigmatism. Unlike LASIK, which creates a corneal flap, SMILE uses a femtosecond laser to create a small, lens-shaped piece of tissue within the cornea, which is then removed through a small incision. This gentle, minimally invasive procedure preserves more of the cornea’s structural integrity compared to LASIK, making it a suitable option for patients with thin corneas or those at higher risk of dry eye syndrome. SMILE offers rapid visual recovery, with many patients achieving clear vision within a few days. If you’re considering SMILE, our experienced ophthalmologists can assess your candidacy and provide personalized guidance to help you achieve your vision correction goals.",
+  },
+];
+
+export const advanceddiagnosticsService = [
+  {
+    label: "OCT Scans",
+    icon: EyeExamIcon,
+    image: octImage,
+    title: "OCT Scans for Detailed Eye Analysis",
+    description:
+      "OCT (Optical Coherence Tomography) provides high-resolution, cross-sectional retina and optic nerve images. It helps in the early detection and management of eye diseases such as glaucoma, macular degeneration, and diabetic retinopathy. OCT’s noninvasive nature makes it a valuable tool for monitoring and managing various eye conditions.",
+  },
+
+  {
+    label: "Corneal Topography",
+    icon: MyopiaIcon,
+    image: cornealImage,
+    title: "Corneal Topography for Corneal Health Assessment",
+    description:
+      "Corneal topography maps the curvature and shape of the cornea, aiding in diagnosing conditions such as astigmatism, keratoconus, and corneal dystrophies. It is also used in preoperative evaluations for procedures like LASIK and contact lens fittings. This technology provides detailed information about the cornea, helping eye care professionals to customize treatment plans for each patient.",
+  },
+  {
+    label: "Meibography",
+    icon: MyopiaIcon,
+    image: MeibographyImage,
+    title: "Meibography for Meibomian Gland Assessment",
+    description:
+      "Meibography is used to assess the meibomian glands responsible for producing the oily layer of the tear film. This test helps diagnose and manage meibomian gland dysfunction (MGD), a common cause of dry eye syndrome. By evaluating the structure and function of the meibomian glands, meibography helps eye care professionals determine the most appropriate treatment for MGD.  Such treatments include warm compress therapy, lid hygiene,  meibomian gland expression, Omega 3 fatty acids, or procedures such as Intense pulse light (IPL) or Radiofrequency (RF).",
+  },
+  {
+    label: "Tear Osmolarity Testing",
+    icon: MyopiaIcon,
+    image: TearOsmolarityImage,
+    title: "Tear Osmolarity Testing for Dry Eye Diagnosis",
+    description:
+      "Tear osmolarity testing measures the salt content in tears, an indicator of tear film stability. This test is useful in the diagnosis and management of dry eye disease. The iPen device collects a tear sample, which is then analyzed to determine tear osmolarity levels. By assessing tear osmolarity, eye care professionals can better understand the underlying causes of dry eye and develop personalized treatment plans to improve tear film stability and relieve dry eye symptoms.",
+  },
+  {
+    label: "Perimetry & the Zeiss Humphrey",
+    icon: MyopiaIcon,
+    image: PerimetryImage,
+    title: "Perimetry for Visual Field Assessment",
+    description:
+      "Perimetry is a test that measures the entire area of peripheral vision that can be seen while the eye is focused on a central point. The Zeiss Humphrey visual field analyzer is a tool used for this test. Perimetry is important for detecting and monitoring conditions that cause visual field loss, such as glaucoma, optic nerve damage, and neurological disorders. By regularly performing perimetry, eye care professionals can assess the progression of these conditions and adjust treatment plans accordingly.",
+  },
+  {
+    label: "Retinal Imaging",
+    icon: MyopiaIcon,
+    image: RetinalImage,
+    title: "Retinal Imaging for Comprehensive Retina Evaluation",
+    description:
+      "Retinal imaging uses specialized cameras to capture detailed images of the retina, blood vessels, and optic nerve head. These images help in the early detection and management of various eye diseases, including diabetic retinopathy, age-related macular degeneration, and retinal detachments. Retinal imaging is a non-invasive procedure that provides valuable information about the retina’s health, allowing eye care professionals to detect and monitor eye conditions more effectively.",
+  },
+  {
+    label: "IPL Therapy",
+    icon: MyopiaIcon,
+    image: IPLTherapyImage,
+    title: "Advanced IPL Therapy for Dry Eye",
+    description:
+      "Intense Pulsed Light (IPL) therapy effectively treats dry eye by targeting inflammation and improving tear film stability. It uses controlled light pulses to reduce blockages in the meibomian glands, providing lasting relief and significantly improving overall eye health and comfort for patients suffering from chronic dry eye.",
+  },
+  {
+    label: "RF Therapy",
+    icon: MyopiaIcon,
+    image: RFTherapyImage,
+    title: "Innovative RF Therapy for Dry Eye",
+    description:
+      "Radiofrequency (RF) therapy enhances dry eye treatment by stimulating collagen production and improving meibomian gland function. This non-invasive technique helps restore natural tear production, alleviating discomfort and irritation. Offering a comfortable and effective solution, RF therapy provides significant relief for chronic dry eye sufferers, improving their overall eye health.",
+  },
+];
+
+export const pediatricEyeService = [
+  {
+    label: "Vision Therapy",
+    icon: EyeExamIcon,
+    image: VisionThreapImage,
+    title: "OCT Scans for Detailed Eye Analysis",
+    description:
+      "Our pediatric optometrists in Toronto provide personalized vision therapy programs to address visual problems that cannot be treated with eyeglasses or contact lenses. Vision therapy is a highly effective non-surgical treatment for lazy eye (amblyopia), eye turns (strabismus), and certain visual processing disorders. Vision therapy helps improve children’s visual skills and abilities through customized exercises and activities, leading to better academic performance and overall quality of life.",
+  },
+
+  {
+    label: "Myopia Control",
+    icon: MyopiaIcon,
+    image: MyopiaPediaImage,
+    title: "Effective Myopia Control Treatments for Kids",
+    description:
+      "Myopia, or nearsightedness, is a common vision problem that often develops during childhood and can worsen over time. Our pediatric optometrists offer specialized myopia control treatments in Toronto to slow myopia progression in children. These treatments, such as orthokeratology (Ortho-K) and multifocal contact lenses, are safe and effective and can help reduce the risk of future eye health issues associated with high myopia.",
+  },
+  {
+    label: "Pediatric Eye Exams",
+    icon: MyopiaIcon,
+    image: PediatricEyeImage,
+    title: "Comprehensive Pediatric Eye Exams in Toronto",
+    description:
+      "Regular eye exams are essential for monitoring your child’s eye health and vision development. Our pediatric optometrists in Toronto conduct comprehensive eye exams specifically designed for children to detect and treat vision problems early. These exams include visual acuity testing, binocular vision assessment, eye health evaluation, and more.We create a comfortable and child-friendly environment to ensure a positive experience for your child during the exam.",
+  },
+  {
+    label: "Contact Lens Fitting",
+    icon: MyopiaIcon,
+    image: ContactLenspediaImage,
+    title: "Expert Contact Lens Fitting for Children",
+    description:
+      "Contact lenses can be a safe and effective vision correction option for children. Our pediatric optometrists in Toronto specialize in fitting contact lenses for kids, ensuring proper fit, comfort, and vision quality. Whether your child needs contact lenses for sports, activities, or daily wear, we provide personalized fitting services to meet their visual needs and lifestyle.",
+  },
+  {
+    label: "Sports Vision",
+    icon: MyopiaIcon,
+    image: SportsVisionImage,
+    title: "Enhancing Sports Performance Through Vision Training",
+    description:
+      "Sports vision training focuses on improving visual skills essential for optimal sports performance. Our pediatric optometrists in Toronto offer specialized sports vision training programs to help young athletes enhance their hand-eye coordination, depth perception, visual reaction time, and tracking abilities. By improving these visual skills, young athletes can improve their performance, reduce the risk of sports-related injuries, and gain a competitive edge on the field or court.",
+  },
+];
+
+export const faqDatapediatric = [
+  {
+    id: 1,
+    question: "Q. At what age should my child have their first eye exam?",
+    answer:
+      "Children should have their first eye exam at around six months of age, followed by another exam at three years old, and then before starting school. After that, yearly exams are recommended.",
+  },
+  {
+    id: 2,
+    question:
+      "Q. What are common signs that my child may have a vision problem?",
+    answer:
+      "Common signs of vision problems in children include frequent eye rubbing, squinting, tilting the head to see better, holding reading materials close to the face, and complaining of headaches or eye strain.",
+  },
+  {
+    id: 3,
+    question: "Q. Can my child wear contact lenses?",
+    answer:
+      "Yes, contact lenses can be a safe and effective option for children, but it depends on their age, maturity level, and ability to handle and care for the lenses. Our optometrists can help determine if contact lenses are suitable for your child.",
+  },
+  {
+    id: 4,
+    question: "Q. How can I protect my child's eyes during sports?",
+    answer:
+      "To protect your child’s eyes during sports, make sure they wear protective eyewear designed for the sport they’re playing. Regular eyeglasses or sunglasses are not sufficient for protecting the eyes during sports",
+  },
+  {
+    id: 5,
+    question: "Q. What is vision therapy, and how can it help my child?",
+    answer:
+      "Vision therapy is a customized program of eye exercises and activities designed to improve visual skills and abilities. It can help children with various vision problems, such as lazy eye (amblyopia), eye alignment issues (strabismus), and focusing problems.",
+  },
+];
+
+export const Orthokeratology = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Non-Surgical and Reversible",
+    description:
+      "Unlike LASIK or other refractive surgeries, Ortho-K is non-invasive and completely reversible. If the patient discontinues wearing the lenses, the cornea gradually returns to its original shape.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Freedom from Daytime Eyewear",
+    description:
+      "Ortho-K allows patients to experience clear vision without glasses or contact lenses during the day, which can be especially beneficial for athletes, swimmers, and individuals in dusty or dry environments.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Slows Myopia Progression in Children",
+    description:
+      "Research has shown that Ortho-K can help slow the progression of myopia in children, reducing the risk of developing high myopia and associated complications later in life.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Comfort and Convenience",
+    description:
+      "For those who find daytime contact lenses uncomfortable or inconvenient, Ortho-K provides a comfortable alternative that fits seamlessly into their nighttime routine.",
+  },
+];
+
+export const faqVirtualConsult = [
+  {
+    id: 1,
+    question: "What is Tele-optometry?",
+    answer:
+      "Tele-optometry is the provision of vision and eye health services that are delivered within the scope of practice of optometry using electronic health information, medical and communication technologies, and where the provider and patient are separated by remote distance.",
+  },
+  {
+    id: 2,
+    question:
+      "What is the difference between Telemedicine, Telehealth and Tele-optometry?",
+    answer:
+      "Telehealth and Telemedicine are often used interchangeably but are distinguished in terms of their scope. Telemedicine describes the remote delivery of clinical medical services, such as diagnosis and disease management, but Telehealth includes the delivery of health promotion and disease prevention information and therapeutic care. As such, Telemedicine is a part of Telehealth, and Tele-optometry is a part of Telehealth.",
+  },
+  {
+    id: 3,
+    question: "Is Tele-optometry safe and what does it involve?",
+    answer:
+      "Your online consultation may involve video chat, direct messaging, or photo uploads. Your online consultation protects your privacy using encryption technology for any personal information or images that may be shared between you and the doctor on the platform.",
+  },
+  {
+    id: 4,
+    question: "What will I need to prepare for before my virtual consultation?",
+    answer:
+      "You will be asked questions about the nature of your symptoms as well as your health history if relevant, including any medications you are taking.",
+  },
+  {
+    id: 5,
+    question: "Is Tele-optometry covered by OHIP or private insurance?",
+    answer:
+      "As of now (April, 2021) There is no OHIP coverage for telemedical optometry services. Every private insurance will vary in coverage depending on the insurance provider and the specific plan offered. Our office will email you an invoice at the end of your virtual consultation that you can use to submit to your insurance if applicable.",
+  },
+  {
+    id: 6,
+    question:
+      "How much will the consultation cost and how do I make a payment?",
+    answer:
+      "The fee to access this service is $75 per consultation. At the end of the consultation the system will prompt you to make an online payment with a valid credit card. Be sure to have your credit card ready before the beginning of your consultation to avoid delays.",
+  },
+];
+
 export const benefitsData = [
   {
     title: "Clear Vision",
@@ -956,90 +1260,249 @@ export const benefitsData = [
     ),
   },
 ];
-
-export const laservisiondata = [
+export const pediatricEyeBenefitsData = [
   {
-    id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
-    title: "LASIK Eye Surgery",
-    description:
-      "Refractive surgery to correct vision problems like nearsightedness and astigmatism.",
-  },
-  {
-    id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
-    title: "PRK Vision Correction",
-    description:
-      "Similar to LASIK but does not involve creating a corneal flap.",
-  },
-  {
-    id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
-    title: "Bladeless Laser Surgery",
-    description:
-      "Advanced technology for precise and blade-free laser vision correction.",
-  },
-  {
-    id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
-    title: "Custom Wavefront LASIK",
-    description:
-      "Personalized treatment that maps the unique characteristics of your eyes.",
-  },
-];
-export const pediatricEyeData = [
-  {
-    id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
-    title: "Vision Care",
-    description: "Comprehensive eye care services for children of all ages.",
-  },
-  {
-    id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
     title: "Myopia Control",
     description:
-      "Specialized treatments to slow down the progression of nearsightedness.",
+      "Effective treatments to slow down myopia progression in children.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="36"
+        height="36"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
   },
   {
-    id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
-    title: "Eye Exams",
+    title: "Vision Therapy",
     description:
-      "Regular eye exams to monitor and maintain your child’s vision health.",
+      "Customized programs to enhance children’s visual skills and abilities.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="2"
+          y="2"
+          width="20"
+          height="20"
+          rx="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M7 13l3 3 7-7"
+        />
+      </svg>
+    ),
   },
   {
-    id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
-    title: "Eyeglasses & Contacts",
-    description: "Stylish eyeglasses and comfy contact lenses for kids.",
-  },
-];
-
-export const laservisionService = [
-  {
-    label: "PRK",
-    icon: EyeExamIcon,
-    image: prkImage,
-    title: "PRK Laser Vision Correction Treatment",
+    title: "Pediatric Eye Exams",
     description:
-      "PRK (Photorefractive Keratectomy) is a type of laser eye surgery used to correct nearsightedness, farsightedness, and astigmatism. It involves removing the cornea’s outer layer before reshaping it with an excimer laser. PRK is often recommended for patients with thin corneas or other corneal irregularities. The procedure typically takes less than 15 minutes per eye, and most patients experience improved vision within a few days to a week. PRK is a safe and effective option for vision correction, offering long-lasting results and minimal risk of complications. If you’re considering PRK, our experienced team can help determine if you’re a candidate and guide you through the process.",
+      "Comprehensive exams to monitor and maintain your child’s vision health.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="6"
+          ry="4"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="2"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
   },
   {
-    label: "LASIK",
-    icon: ContactLensIcon,
-    image: lasikImage,
-    title: "LASIK Laser Vision Correction Treatment",
+    title: "Eyeglasses for Kids",
     description:
-      "LASIK (Laser-Assisted In Situ Keratomileusis) is a popular laser eye surgery that reshapes the cornea to correct refractive errors such as nearsightedness, farsightedness, and astigmatism. It involves creating a thin flap in the cornea using a femtosecond laser and an excimer laser to reshape the underlying corneal tissue. LASIK is known for its quick recovery time and high success rate, with many patients achieving 20/25 vision or better after the procedure. LASIK offers a permanent solution for vision correction, reducing or eliminating the need for glasses or contact lenses. If you’re interested in LASIK, our skilled LASIK surgeons can determine if you’re a suitable candidate and provide personalized care throughout your journey to clearer vision.",
+      "Stylish and durable eyeglasses designed for children’s active lifestyles.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="3"
+          y="3"
+          width="16"
+          height="20"
+          rx="1"
+          strokeWidth="2"
+          stroke="currentColor"
+          fill="none"
+        />
+        <line
+          x1="7"
+          y1="9"
+          x2="15"
+          y2="9"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="13"
+          x2="15"
+          y2="13"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <line
+          x1="7"
+          y1="17"
+          x2="11"
+          y2="17"
+          strokeWidth="2"
+          stroke="currentColor"
+        />
+        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
+      </svg>
+    ),
   },
   {
-    label: "SMILE",
-    icon: MyopiaIcon,
-    image: smileImage,
-    title: "SMILE Laser Vision Correction Treatment",
+    title: "Contact Lenses for Children",
     description:
-      "SMILE(Small Incision Lenticule Extraction) is an innovative laser vision correction procedure that corrects myopia (nearsightedness) and astigmatism. Unlike LASIK, which creates a corneal flap, SMILE uses a femtosecond laser to create a small, lens-shaped piece of tissue within the cornea, which is then removed through a small incision. This gentle, minimally invasive procedure preserves more of the cornea’s structural integrity compared to LASIK, making it a suitable option for patients with thin corneas or those at higher risk of dry eye syndrome. SMILE offers rapid visual recovery, with many patients achieving clear vision within a few days. If you’re considering SMILE, our experienced ophthalmologists can assess your candidacy and provide personalized guidance to help you achieve your vision correction goals.",
+      "Safe and comfortable contact lens options for kids’ vision correction.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="6"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C16 8 16 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M12 6C8 8 8 16 12 18"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <circle
+          cx="12"
+          cy="9"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+        <circle
+          cx="12"
+          cy="15"
+          r="1"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Eye Care Tips for Parents",
+    description:
+      "Valuable advice on how to protect and maintain your child’s vision.",
+    icon: (
+      <svg
+        className="w-9 h-9 text-combination-100"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="8"
+          r="4"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+        <path
+          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+        />
+      </svg>
+    ),
   },
 ];
 
@@ -1284,467 +1747,5 @@ export const advanceddiagnosticsbenefitsData = [
         />
       </svg>
     ),
-  },
-];
-
-export const advanceddiagnosticsService = [
-  {
-    label: "OCT Scans",
-    icon: EyeExamIcon,
-    image: octImage,
-    title: "OCT Scans for Detailed Eye Analysis",
-    description:
-      "OCT (Optical Coherence Tomography) provides high-resolution, cross-sectional retina and optic nerve images. It helps in the early detection and management of eye diseases such as glaucoma, macular degeneration, and diabetic retinopathy. OCT’s noninvasive nature makes it a valuable tool for monitoring and managing various eye conditions.",
-  },
-
-  {
-    label: "Corneal Topography",
-    icon: MyopiaIcon,
-    image: cornealImage,
-    title: "Corneal Topography for Corneal Health Assessment",
-    description:
-      "Corneal topography maps the curvature and shape of the cornea, aiding in diagnosing conditions such as astigmatism, keratoconus, and corneal dystrophies. It is also used in preoperative evaluations for procedures like LASIK and contact lens fittings. This technology provides detailed information about the cornea, helping eye care professionals to customize treatment plans for each patient.",
-  },
-  {
-    label: "Meibography",
-    icon: MyopiaIcon,
-    image: MeibographyImage,
-    title: "Meibography for Meibomian Gland Assessment",
-    description:
-      "Meibography is used to assess the meibomian glands responsible for producing the oily layer of the tear film. This test helps diagnose and manage meibomian gland dysfunction (MGD), a common cause of dry eye syndrome. By evaluating the structure and function of the meibomian glands, meibography helps eye care professionals determine the most appropriate treatment for MGD.  Such treatments include warm compress therapy, lid hygiene,  meibomian gland expression, Omega 3 fatty acids, or procedures such as Intense pulse light (IPL) or Radiofrequency (RF).",
-  },
-  {
-    label: "Tear Osmolarity Testing",
-    icon: MyopiaIcon,
-    image: TearOsmolarityImage,
-    title: "Tear Osmolarity Testing for Dry Eye Diagnosis",
-    description:
-      "Tear osmolarity testing measures the salt content in tears, an indicator of tear film stability. This test is useful in the diagnosis and management of dry eye disease. The iPen device collects a tear sample, which is then analyzed to determine tear osmolarity levels. By assessing tear osmolarity, eye care professionals can better understand the underlying causes of dry eye and develop personalized treatment plans to improve tear film stability and relieve dry eye symptoms.",
-  },
-  {
-    label: "Perimetry & the Zeiss Humphrey",
-    icon: MyopiaIcon,
-    image: PerimetryImage,
-    title: "Perimetry for Visual Field Assessment",
-    description:
-      "Perimetry is a test that measures the entire area of peripheral vision that can be seen while the eye is focused on a central point. The Zeiss Humphrey visual field analyzer is a tool used for this test. Perimetry is important for detecting and monitoring conditions that cause visual field loss, such as glaucoma, optic nerve damage, and neurological disorders. By regularly performing perimetry, eye care professionals can assess the progression of these conditions and adjust treatment plans accordingly.",
-  },
-  {
-    label: "Retinal Imaging",
-    icon: MyopiaIcon,
-    image: RetinalImage,
-    title: "Retinal Imaging for Comprehensive Retina Evaluation",
-    description:
-      "Retinal imaging uses specialized cameras to capture detailed images of the retina, blood vessels, and optic nerve head. These images help in the early detection and management of various eye diseases, including diabetic retinopathy, age-related macular degeneration, and retinal detachments. Retinal imaging is a non-invasive procedure that provides valuable information about the retina’s health, allowing eye care professionals to detect and monitor eye conditions more effectively.",
-  },
-  {
-    label: "IPL Therapy",
-    icon: MyopiaIcon,
-    image: IPLTherapyImage,
-    title: "Advanced IPL Therapy for Dry Eye",
-    description:
-      "Intense Pulsed Light (IPL) therapy effectively treats dry eye by targeting inflammation and improving tear film stability. It uses controlled light pulses to reduce blockages in the meibomian glands, providing lasting relief and significantly improving overall eye health and comfort for patients suffering from chronic dry eye.",
-  },
-  {
-    label: "RF Therapy",
-    icon: MyopiaIcon,
-    image: RFTherapyImage,
-    title: "Innovative RF Therapy for Dry Eye",
-    description:
-      "Radiofrequency (RF) therapy enhances dry eye treatment by stimulating collagen production and improving meibomian gland function. This non-invasive technique helps restore natural tear production, alleviating discomfort and irritation. Offering a comfortable and effective solution, RF therapy provides significant relief for chronic dry eye sufferers, improving their overall eye health.",
-  },
-];
-
-export const pediatricEyeBenefitsData = [
-  {
-    title: "Myopia Control",
-    description:
-      "Effective treatments to slow down myopia progression in children.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Vision Therapy",
-    description:
-      "Customized programs to enhance children’s visual skills and abilities.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="2"
-          y="2"
-          width="20"
-          height="20"
-          rx="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M7 13l3 3 7-7"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Pediatric Eye Exams",
-    description:
-      "Comprehensive exams to monitor and maintain your child’s vision health.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Eyeglasses for Kids",
-    description:
-      "Stylish and durable eyeglasses designed for children’s active lifestyles.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="3"
-          y="3"
-          width="16"
-          height="20"
-          rx="1"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <line
-          x1="7"
-          y1="9"
-          x2="15"
-          y2="9"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="13"
-          x2="15"
-          y2="13"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="17"
-          x2="11"
-          y2="17"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
-      </svg>
-    ),
-  },
-  {
-    title: "Contact Lenses for Children",
-    description:
-      "Safe and comfortable contact lens options for kids’ vision correction.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="6"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C16 8 16 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C8 8 8 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="9"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-        <circle
-          cx="12"
-          cy="15"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Eye Care Tips for Parents",
-    description:
-      "Valuable advice on how to protect and maintain your child’s vision.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="8"
-          r="4"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
-  },
-];
-
-export const pediatricEyeService = [
-  {
-    label: "Vision Therapy",
-    icon: EyeExamIcon,
-    image: VisionThreapImage,
-    title: "OCT Scans for Detailed Eye Analysis",
-    description:
-      "Our pediatric optometrists in Toronto provide personalized vision therapy programs to address visual problems that cannot be treated with eyeglasses or contact lenses. Vision therapy is a highly effective non-surgical treatment for lazy eye (amblyopia), eye turns (strabismus), and certain visual processing disorders. Vision therapy helps improve children’s visual skills and abilities through customized exercises and activities, leading to better academic performance and overall quality of life.",
-  },
-
-  {
-    label: "Myopia Control",
-    icon: MyopiaIcon,
-    image: MyopiaPediaImage,
-    title: "Effective Myopia Control Treatments for Kids",
-    description:
-      "Myopia, or nearsightedness, is a common vision problem that often develops during childhood and can worsen over time. Our pediatric optometrists offer specialized myopia control treatments in Toronto to slow myopia progression in children. These treatments, such as orthokeratology (Ortho-K) and multifocal contact lenses, are safe and effective and can help reduce the risk of future eye health issues associated with high myopia.",
-  },
-  {
-    label: "Pediatric Eye Exams",
-    icon: MyopiaIcon,
-    image: PediatricEyeImage,
-    title: "Comprehensive Pediatric Eye Exams in Toronto",
-    description:
-      "Regular eye exams are essential for monitoring your child’s eye health and vision development. Our pediatric optometrists in Toronto conduct comprehensive eye exams specifically designed for children to detect and treat vision problems early. These exams include visual acuity testing, binocular vision assessment, eye health evaluation, and more.We create a comfortable and child-friendly environment to ensure a positive experience for your child during the exam.",
-  },
-  {
-    label: "Contact Lens Fitting",
-    icon: MyopiaIcon,
-    image: ContactLenspediaImage,
-    title: "Expert Contact Lens Fitting for Children",
-    description:
-      "Contact lenses can be a safe and effective vision correction option for children. Our pediatric optometrists in Toronto specialize in fitting contact lenses for kids, ensuring proper fit, comfort, and vision quality. Whether your child needs contact lenses for sports, activities, or daily wear, we provide personalized fitting services to meet their visual needs and lifestyle.",
-  },
-  {
-    label: "Sports Vision",
-    icon: MyopiaIcon,
-    image: SportsVisionImage,
-    title: "Enhancing Sports Performance Through Vision Training",
-    description:
-      "Sports vision training focuses on improving visual skills essential for optimal sports performance. Our pediatric optometrists in Toronto offer specialized sports vision training programs to help young athletes enhance their hand-eye coordination, depth perception, visual reaction time, and tracking abilities. By improving these visual skills, young athletes can improve their performance, reduce the risk of sports-related injuries, and gain a competitive edge on the field or court.",
-  },
-];
-
-export const faqDatapediatric = [
-  {
-    id: 1,
-    question: "Q. At what age should my child have their first eye exam?",
-    answer:
-      "Children should have their first eye exam at around six months of age, followed by another exam at three years old, and then before starting school. After that, yearly exams are recommended.",
-  },
-  {
-    id: 2,
-    question:
-      "Q. What are common signs that my child may have a vision problem?",
-    answer:
-      "Common signs of vision problems in children include frequent eye rubbing, squinting, tilting the head to see better, holding reading materials close to the face, and complaining of headaches or eye strain.",
-  },
-  {
-    id: 3,
-    question: "Q. Can my child wear contact lenses?",
-    answer:
-      "Yes, contact lenses can be a safe and effective option for children, but it depends on their age, maturity level, and ability to handle and care for the lenses. Our optometrists can help determine if contact lenses are suitable for your child.",
-  },
-  {
-    id: 4,
-    question: "Q. How can I protect my child's eyes during sports?",
-    answer:
-      "To protect your child’s eyes during sports, make sure they wear protective eyewear designed for the sport they’re playing. Regular eyeglasses or sunglasses are not sufficient for protecting the eyes during sports",
-  },
-  {
-    id: 5,
-    question: "Q. What is vision therapy, and how can it help my child?",
-    answer:
-      "Vision therapy is a customized program of eye exercises and activities designed to improve visual skills and abilities. It can help children with various vision problems, such as lazy eye (amblyopia), eye alignment issues (strabismus), and focusing problems.",
-  },
-];
-
-export const Orthokeratology = [
-  {
-    id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
-    title: "Non-Surgical and Reversible",
-    description:
-      "Unlike LASIK or other refractive surgeries, Ortho-K is non-invasive and completely reversible. If the patient discontinues wearing the lenses, the cornea gradually returns to its original shape.",
-  },
-  {
-    id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
-    title: "Freedom from Daytime Eyewear",
-    description:
-      "Ortho-K allows patients to experience clear vision without glasses or contact lenses during the day, which can be especially beneficial for athletes, swimmers, and individuals in dusty or dry environments.",
-  },
-  {
-    id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
-    title: "Slows Myopia Progression in Children",
-    description:
-      "Research has shown that Ortho-K can help slow the progression of myopia in children, reducing the risk of developing high myopia and associated complications later in life.",
-  },
-  {
-    id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
-    title: "Comfort and Convenience",
-    description:
-      "For those who find daytime contact lenses uncomfortable or inconvenient, Ortho-K provides a comfortable alternative that fits seamlessly into their nighttime routine.",
-  },
-];
-
-export const faqVirtualConsult = [
-  {
-    id: 1,
-    question: "What is Tele-optometry?",
-    answer:
-      "Tele-optometry is the provision of vision and eye health services that are delivered within the scope of practice of optometry using electronic health information, medical and communication technologies, and where the provider and patient are separated by remote distance.",
-  },
-  {
-    id: 2,
-    question:
-      "What is the difference between Telemedicine, Telehealth and Tele-optometry?",
-    answer:
-      "Telehealth and Telemedicine are often used interchangeably but are distinguished in terms of their scope. Telemedicine describes the remote delivery of clinical medical services, such as diagnosis and disease management, but Telehealth includes the delivery of health promotion and disease prevention information and therapeutic care. As such, Telemedicine is a part of Telehealth, and Tele-optometry is a part of Telehealth.",
-  },
-  {
-    id: 3,
-    question: "Is Tele-optometry safe and what does it involve?",
-    answer:
-      "Your online consultation may involve video chat, direct messaging, or photo uploads. Your online consultation protects your privacy using encryption technology for any personal information or images that may be shared between you and the doctor on the platform.",
-  },
-  {
-    id: 4,
-    question: "What will I need to prepare for before my virtual consultation?",
-    answer:
-      "You will be asked questions about the nature of your symptoms as well as your health history if relevant, including any medications you are taking.",
-  },
-  {
-    id: 5,
-    question: "Is Tele-optometry covered by OHIP or private insurance?",
-    answer:
-      "As of now (April, 2021) There is no OHIP coverage for telemedical optometry services. Every private insurance will vary in coverage depending on the insurance provider and the specific plan offered. Our office will email you an invoice at the end of your virtual consultation that you can use to submit to your insurance if applicable.",
-  },
-  {
-    id: 6,
-    question:
-      "How much will the consultation cost and how do I make a payment?",
-    answer:
-      "The fee to access this service is $75 per consultation. At the end of the consultation the system will prompt you to make an online payment with a valid credit card. Be sure to have your credit card ready before the beginning of your consultation to avoid delays.",
   },
 ];
