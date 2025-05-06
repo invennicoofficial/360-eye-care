@@ -49,7 +49,7 @@ const Footer = () => {
         aria-hidden="true"
       ></div>
 
-      <div className="max-w-7xl mx-auto relative z-20">
+      <div className="max-w-7xl mx-auto relative z-20 text-white font-medium">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-8 mt-8 mb-8">
           {/* Logo and Tagline */}
           <div className="flex flex-col items-start">

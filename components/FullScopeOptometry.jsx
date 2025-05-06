@@ -55,7 +55,7 @@ const ServiceItem = ({
 const FullScopeOptometry = () => {
   return (
     <div className="mt-16">
-      <div className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-start gap-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-start gap-8 mb-12">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
           <div className="flex flex-col gap-6 mb-10">
             <h2 className="text-brand-blue text-3xl md:text-4xl font-semibold leading-tight">
