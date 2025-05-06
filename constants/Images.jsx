@@ -98,13 +98,16 @@ import ZeissImage from "../public/MyoCare-Lenses-Zeiss-1.webp";
 import FormaImage from "../public/forma.webp";
 import bookEyeExamImage from "../public/bookaneyexam.webp";
 // import findeyedoctorImage from "../public/Routine-Eye-Check-Ups.webp";
-// import beaches360Image from "../public/payment/360-Eyecare-Beaches-1.webp";
-// import rosedale360Image from "../public/payment/360-Eyecare-Rosedale-1-600x443.webp";
-// import affirmImage from "../public/payment/affirmlogo.webp";
+import beaches360Image from "../public/payment/360-Eyecare-Beaches-1.webp";
+import rosedale360Image from "../public/payment/360-Eyecare-Rosedale-1-600x443.webp";
+import affirmImage from "../public/payment/affirmlogo.webp";
 
 export {
   EyeCareLogo,
   HoyaImage,
+  beaches360Image,
+  rosedale360Image,
+  affirmImage,
   ZeissImage,
   bookEyeExamImage,
   FormaBeforeAfterImage,
