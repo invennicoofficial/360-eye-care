@@ -195,6 +195,133 @@ const Page = () => {
           browse our online contact lens shop!
         </p>
       </div>
+      <div className="bg-[#29305f] !text-white py-4">
+        <TitleCommon
+          css="text-white"
+          title="Types of Contact Lenses"
+          position="center"
+        />
+
+        <div className="max-w-[1172px] mx-auto flex">
+          <div className="w-[50%]">
+            <TitleCommon
+              css="text-white !text-[30px]"
+              title="Daily Soft Contact Lenses"
+              position="start"
+            />
+            <p className="text-white my-4">
+              Daily soft contact lenses are the most popular choice for almost
+              everyone as they are comfortable and have a very low adaptation
+              period. These contact lenses allow oxygen to pass through and are
+              less likely to have protein built on them over time as they are
+              replaced on a daily basis. Soft contact lenses are made of soft
+              plastic lenses or silicone hydrogel.
+            </p>
+            <TitleCommon
+              css="text-white !text-[30px]"
+              title="Hard Contact Lenses or RGP Lenses"
+              position="start"
+            />
+            <p className="text-white my-4">
+              Hard Contact Lenses are designed in a way that allows oxygen to
+              reach the ocular surface. These lenses are hard and smaller than
+              soft contact lenses. They provide better visual outcome than soft
+              lenses for patients with irregular corneal surface such as
+              keratoconus patients. They generally can be worn for longer
+              periods of time but need to be cleaned regularly.
+            </p>
+            <TitleCommon
+              css="text-white !text-[30px]"
+              title="Hybrid Lenses"
+              position="start"
+            />
+            <p className="text-white my-4">
+              Hybrid lenses have a central optic zone which is made of Gas
+              Permeable materials and the rest is made of soft material. They
+              typically provide better eye care comfort than hard lenses due to
+              the integration of the soft lens component.
+            </p>
+            <TitleCommon
+              css="text-white !text-[30px]"
+              title="Bifocal Lenses"
+              position="start"
+            />
+            <p className="text-white my-4">
+              Bifocal contact lenses work just like bifocal glasses offering
+              clear vision at different distances. Bifocal or multifocal lenses
+              are used to correct astigmatism as well.
+            </p>
+            <TitleCommon
+              css="text-white !text-[30px]"
+              title="Multifocal lenses"
+              position="start"
+            />
+            <p className="text-white my-4">
+              Multifocal lenses are similar to progressive lenses in glasses.
+              They have more than one power to correct vision at different
+              distances to provide clear vision at all times.
+            </p>
+            <p className="text-white my-4">
+              Learn more about Multifocal Contact Lenses
+            </p>
+          </div>
+
+          <div className="w-[50%]">
+            <TitleCommon
+              css="text-white !text-[30px]"
+              title="Keratoconus Lenses"
+              position="start"
+            />
+            <p className="text-white my-4">
+              Keratoconus is a condition in which the cornea loses its natural
+              round shape and starts bulging, and thinning and is associated
+              with reduced vision. It results in irregular astigmatism. At 360
+              Eyecare, our optometrists utilize labs that specialize in RGP
+              keratoconus lenses for optimum results.
+            </p>
+            <TitleCommon
+              css="text-white !text-[30px]"
+              title="Orthokeratology Lenses"
+              position="start"
+            />
+            <p className="text-white my-4">
+              We also offer Orthokeratology (ortho-k) lens treatment: it is an
+              overnight vision correction, which can help reshape your cornea to
+              reduce refractive errors, temporarily. It involves the fitting of
+              specially designed gas-permeable contact lenses, which you can
+              wear overnight. While you are asleep, the lenses gently reshape
+              the front surface of your eye (cornea) so that you can see clearly
+              the following day after you remove the lenses. For best results,
+              it is suggested that you wear the lenses every night.
+            </p>
+            <p className="text-white mt-2">
+              For the right candidate, Orthokeratology lenses can be prescribed
+              to:
+            </p>
+            <ul className="list-disc pl-5 text-white my-2">
+              <li>
+                Correct refractive errors, primarily mild to moderate levels of
+                Myopia
+              </li>
+              <li>Slow the progression of childhood myopia.</li>
+              <li>
+                However, some mild astigmatism, hyperopia, and in some cases,
+                presbyopia can also be corrected.
+              </li>
+            </ul>
+
+            <p className="text-white my-4">
+              The type and amount of refractive error that can be effectively
+              managed with orthokeratology differ for each case. A comprehensive
+              eye exam should help determine a specific plan to manage vision
+              correction in each case. At 360 Eyecare our optometrists will
+              discuss available lens options for your specific needs and
+              prognosis for each at the time of your consult.
+            </p>
+            <p className="text-white">Learn more about Orthokeratology</p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
