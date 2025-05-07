@@ -12,6 +12,11 @@ import DailyDisposableLenses from "../public/prescriptionLenses/Daily-disposable
 import wearContactLenses from "../public/prescriptionLenses/wear-contact-lenses.webp";
 import eyeglassesFrame from "../public/prescriptionLenses/eyeglasses-frame.webp";
 import ourCustomLensesImage from "../public/prescriptionLenses/Custom-Lenses.webp";
+import MiyoSmartglasses from "../public/prescriptionLenses/MiyoSmart-glasses.webp";
+import MiyosmartglassePng1 from "../public/prescriptionLenses/Miyosmart-glasse.webp";
+import progressionofmyopia from "../public/prescriptionLenses/progression-of-myopia-jpg.webp";
+import perceptioneyecare from "../public/prescriptionLenses/perceptioneyecare.webp";
+import myopiaInChildren from "../public/prescriptionLenses/myopia-in-children.webp";
 
 export {
   glassCleanerImage,
@@ -28,4 +33,9 @@ export {
   wearContactLenses,
   eyeglassesFrame,
   ourCustomLensesImage,
+  MiyoSmartglasses,
+  MiyosmartglassePng1,
+  progressionofmyopia,
+  perceptioneyecare,
+  myopiaInChildren,
 };
