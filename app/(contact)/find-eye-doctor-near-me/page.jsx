@@ -24,7 +24,7 @@ const page = () => {
             in real-time. Otherwise, please feel free to use the form below to
             get in touch with our team.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-3 sm:mt-5 mb-6 md:mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-3 sm:mt-5 mb-6 md:mb-8 md:w-auto w-[240px]">
             <Link
               href="tel:4166983937"
               className="bg-combination-100 hover:text-combination-100 hover:bg-combination-200 text-white font-bold py-2 sm:py-3 px-4 sm:px-8 rounded-md transition-colors duration-200 shadow-md text-center text-sm sm:text-base"
@@ -99,7 +99,7 @@ const page = () => {
                 Beaches:{" "}
                 <Link
                   href="tel:4166983937"
-                  className="text-combination-200 hover:text-combination-100"
+                  className="text-combination-200 hover:text-combination-100 "
                 >
                   416-698-3937
                 </Link>

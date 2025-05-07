@@ -27,7 +27,7 @@ const page = () => {
           </p>
 
           {/* Buttons - stacked on mobile, side by side on desktop */}
-          <div className="flex flex-col sm:flex-row sm:justify-between gap-4 mt-5 mb-8">
+          <div className="flex flex-col sm:flex-row sm:justify-between gap-4 mt-5 mb-8 w-[280px] md:w-auto">
             <Link
               href="/book-appointment"
               className="bg-combination-200  hover:bg-combination-100 hover:text-combination-200 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md text-center"

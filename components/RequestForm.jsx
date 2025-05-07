@@ -92,7 +92,7 @@ const RequestForm = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row max-w-7xl my-10 gap-6 mx-auto p-4 ">
+    <div className="flex flex-col md:flex-row items-center md:justify-start max-w-7xl my-10 gap-6 mx-auto p-4 ">
       <div className="md:w-2/3 pr-4">
         <div className="mb-6 text-gray-600">
           <p className="text-neutral-500 text-base font-medium">

@@ -16,10 +16,10 @@ export default function OptometristTeam() {
     <div className="w-full bg-[#F6F7F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 items-center py-12">
-          <h3 className="text-center font-bold text-[#2D3B55] text-4xl">
+          <h3 className="text-center  font-bold text-[#2D3B55] text-4xl">
             Our Optometrists
           </h3>
-          <hr className="w-20 h-1 bg-blue-500" />
+          <hr className="w-20 h-1 bg-combination-100" />
           <p className="text-neutral-500 font-bold text-base mb-8 text-center">
             Meet Toronto's 360 eyecare team of experienced and dedicated eye
             care professionals.

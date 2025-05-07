@@ -89,7 +89,7 @@ const page = () => {
     <main className="pt-[110px]">
       <div className="bg-[#F6F7F5]">
         <SubHeader text="Comprehensive Eye Exams in Toronto" />
-        <div className="bg-white px-4 sm:px-10">
+        <div className="bg-white px-4 sm:px-10 md:pb-12 pb-8">
           <AboutUsSection cardData={cardData} />
         </div>
 

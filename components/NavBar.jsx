@@ -236,13 +236,6 @@ const NavBar = () => {
                                     }`}
                                   >
                                     {subItem.name}
-                                    <span
-                                      className={`absolute left-4 bottom-2 h-[2px] ${
-                                        isSubItemActive
-                                          ? "w-[calc(100%-2rem)] bg-combination-100"
-                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
-                                      }`}
-                                    ></span>
                                   </a>
                                 ) : (
                                   <Link
@@ -257,13 +250,6 @@ const NavBar = () => {
                                     }
                                   >
                                     {subItem.name}
-                                    <span
-                                      className={`absolute left-4 bottom-2 h-[2px] ${
-                                        isSubItemActive
-                                          ? "w-[calc(100%-2rem)] bg-combination-100"
-                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
-                                      }`}
-                                    ></span>
                                   </Link>
                                 )}
                               </li>
@@ -356,11 +342,13 @@ const NavBar = () => {
                               )}
                               aria-expanded={openCollapsible === index}
                             >
-                              <span>
-                                {item.name}
-                                {isActive && (
-                                  <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                              <span
+                                className={cn(
+                                  "",
+                                  isActive && "text-combination-200"
                                 )}
+                              >
+                                {item.name}
                               </span>
                               <ChevronDown
                                 size={20}
@@ -393,9 +381,7 @@ const NavBar = () => {
                                   )}
                                 >
                                   {subItem.name}
-                                  {isSubItemActive && (
-                                    <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                                  )}
+
                                   <span
                                     className={cn(
                                       "absolute left-4 bottom-2 h-[2px]",
@@ -421,9 +407,7 @@ const NavBar = () => {
                                     }
                                   >
                                     {subItem.name}
-                                    {isSubItemActive && (
-                                      <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                                    )}
+
                                     <span
                                       className={cn(
                                         "absolute left-4 bottom-2 h-[2px]",
@@ -449,9 +433,6 @@ const NavBar = () => {
                             aria-current={isActive ? "page" : undefined}
                           >
                             {item.name}
-                            {isActive && (
-                              <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                            )}
                           </Link>
                         </SheetClose>
                       )}
