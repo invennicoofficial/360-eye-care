@@ -32,7 +32,7 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
         </div>
       </div>
       <div
-        className={`bg-white px-4 overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`bg-[#F9F9F9] px-4 overflow-scroll transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 py-4" : "max-h-0"
         }`}
       >
@@ -46,7 +46,6 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
 const Faqs = ({ faqData }) => {
   // Changed from single state to an array of open FAQ IDs
   const [openFAQs, setOpenFAQs] = useState([]);
- 
 
   const toggleFAQ = (id) => {
     setOpenFAQs((prevOpenFAQs) => {
@@ -60,8 +59,8 @@ const Faqs = ({ faqData }) => {
   };
 
   return (
-    <div className="w-full bg-white mx-auto  font-sans">
-      <div className="space-y-2">
+    <div className="w-full bg-[#F9F9F9] mx-auto  font-sans">
+      <div className="space-y-4  ">
         {faqData?.map((faq) => (
           <FAQItem
             key={faq.id}

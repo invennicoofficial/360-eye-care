@@ -105,10 +105,12 @@ import choose360image from "../public/360-Eyecare—Beacheschoose.webp";
 import glassesImage from "../public/eyeglasses-yorkville-Toronto.webp";
 import VirtualConsultImage from "../public/virtualconsultimage.webp";
 import virtualfaqimg from "../public/virtualfaqimage.jpg";
+import virtualshoppingfagimg from "../public/virtual-shopping.jpg";
 
 import ColorfulGlassesImage from "../public/colourfulglesses.webp";
 export {
   EyeCareLogo,
+  virtualshoppingfagimg,
   glassesImage,
   VirtualConsultImage,
   virtualfaqimg,

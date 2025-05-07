@@ -1050,6 +1050,46 @@ export const faqVirtualConsult = [
       "The fee to access this service is $75 per consultation. At the end of the consultation the system will prompt you to make an online payment with a valid credit card. Be sure to have your credit card ready before the beginning of your consultation to avoid delays.",
   },
 ];
+export const fagshoppingfaq = [
+  {
+    id: 1,
+    question: "What is Tele-optometry?",
+    answer:
+      "Tele-optometry is the provision of vision and eye health services that are delivered within the scope of practice of optometry using electronic health information, medical and communication technologies, and where the provider and patient are separated by remote distance.",
+  },
+  {
+    id: 2,
+    question:
+      "What is the difference between Telemedicine, Telehealth and Tele-optometry?",
+    answer:
+      "Telehealth and Telemedicine are often used interchangeably but are distinguished in terms of their scope. Telemedicine describes the remote delivery of clinical medical services, such as diagnosis and disease management, but Telehealth includes the delivery of health promotion and disease prevention information and therapeutic care. As such, Telemedicine is a part of Telehealth, and Tele-optometry is a part of Telehealth.",
+  },
+  {
+    id: 3,
+    question: "Is Tele-optometry safe and what does it involve?",
+    answer:
+      "Your online consultation may involve video chat, direct messaging, or photo uploads. Your online consultation protects your privacy using encryption technology for any personal information or images that may be shared between you and the doctor on the platform.",
+  },
+  {
+    id: 4,
+    question: "What will I need to prepare for before my virtual consultation?",
+    answer:
+      "You will be asked questions about the nature of your symptoms as well as your health history if relevant, including any medications you are taking.",
+  },
+  {
+    id: 5,
+    question: "Is Tele-optometry covered by OHIP or private insurance?",
+    answer:
+      "As of now (April, 2021) There is no OHIP coverage for telemedical optometry services. Every private insurance will vary in coverage depending on the insurance provider and the specific plan offered. Our office will email you an invoice at the end of your virtual consultation that you can use to submit to your insurance if applicable.",
+  },
+  {
+    id: 6,
+    question:
+      "How much will the consultation cost and how do I make a payment?",
+    answer:
+      "The fee to access this service is $75 per consultation. At the end of the consultation the system will prompt you to make an online payment with a valid credit card. Be sure to have your credit card ready before the beginning of your consultation to avoid delays.",
+  },
+];
 
 export const benefitsData = [
   {
@@ -1778,4 +1818,88 @@ export const advanceddiagnosticsbenefitsData = [
       </svg>
     ),
   },
+];
+
+export const customlensfaqs = [
+  {
+    id: 1,
+    question: "Can I wear contact lenses?",
+    answer:
+      "The answer depends on each patient. However, with today's technology and the advancements that have been made in this field, we can find solutions for many patients. Whether you have been diagnosed with astigmatism or presbyopia, you can correct the condition with both soft lenses or scleral contact lenses respectively. In other words, you may be a better candidate for contacts than you assume.",
+  },
+  {
+    id: 2,
+    question: "Are contacts uncomfortable?",
+    answer:
+      "This depends on your age and previously diagnosed conditions, but a good rule of thumb is to have your eyes regularly checked every 1 to 2 years. The doctor can inform you which conditions that require attention, or register if it is normal. Knowing when to visit an eye doctor to get your eyes checked is important. Not only is this information valuable, but it could also save you from potentially developing advanced eye conditions that might not have symptoms at early stages. Only your optometrist can determine how frequently you should be seen for eye examinations. Assume you were deemed a candidate and had a proper fit with no complications it typically only takes a brief period for you to adapt to the contacts and you won't notice any difference. The risk of developing ocular disease is higher at 65 years of age and older. Our doctors at 360 Eyecare in Toronto strongly advocate following the recommended frequency of visits by your optometrist. These exams will detect early signs of many eye diseases such as glaucoma, cataracts, and macular degeneration.",
+  },
+  {
+    id: 3,
+    question: "Can they get lost behind my eyeball?",
+    answer:
+      "The conjunctiva (which is a thin membrane) covers the white of your eye and connects to your eyelid making it practically impossible for the contact lens to get lost behind the eyeball.",
+  },
+  {
+    id: 4,
+    question: "Can a contact lens be permanently stuck to my eye?",
+    answer:
+      "While it is true that the soft contact lens may stick to the surface of the eye when it (the lens) is dried out, re-moisturizing it should make it easy for you to remove it. A sterile saline solution or multi-purpose lens solution should be used to moisturize the lens.",
+  },
+  {
+    id: 5,
+    question: "Can contact lenses cause eye problems?",
+    answer:
+      "Yes, they can cause eye problems. Certain eye complications may arise due to the use of contacts. However, if you follow your optometrist's instructions regarding how to wear them, how to take care of them, how frequently they should be replaced, and how long to wear them then your risk of complications is reduced.",
+  },
+  {
+    id: 6,
+    question: "Can contacts pop out of my eyes?",
+    answer:
+      "Some years ago, the old-fashioned contacts would pop out of the eye during sports or any other rigorous activity. However, while it is still possible, recent advancements in both soft and rigid gas-permeable lenses have allowed for more customizable fits making it more difficult to dislodge.",
+  },
+  {
+    id: 7,
+    question: "Are contacts too expensive?",
+    answer:
+      "That depends on the brand and quality of lenses, but for the most part, contact lens prices have come a long way and most are quite affordable now. You can get disposable daily contacts (once considered a luxury) for less than the cost of a daily cup of coffee.",
+  },
+  {
+    id: 8,
+    question: "Am I too old to wear contacts?",
+    answer:
+      "Thanks to the bifocal contact lens, age is no longer a barrier. Our optometrists and opticians at 360 Eyecare are licensed and experienced in all modalities of contacts including multi-focal and mono-vision systems.",
+  },
+  {
+    id: 9,
+    question: "Do contacts require a lot of care?",
+    answer:
+      "Not really. A multipurpose solution or hydrogen peroxide can be used to clean and disinfect most lenses daily. Better yet, you can opt for daily disposable contacts, which save you a lot of headaches, as they do not require any solution. These lenses are disposed of daily and new ones are worn every day.",
+  },
+];
+
+export const virtualShoppingFaqs = [
+  {
+    id: 1,
+    question: "Is there a cost for booking a virtual shopping appointment?",
+    answer: 
+      "Nope! There are absolutely no costs or fees to book a virtual shopping appointment. If you enjoy the virtual experience of shopping with us, you're welcome to book more than once."
+  },
+  {
+    id: 2,
+    question: "What happens if I can't make it or need to cancel?",
+    answer: 
+      "If you can't make it to your shopping timeslot, please kindly email virtual@360eyecare.ca and let us know your name and timeslot. We understand things come up and there are no penalties for canceling a timeslot."
+  },
+  {
+    id: 3,
+    question: "How do I make an appointment to shop virtually?",
+    answer: 
+      "We provide all of our virtual shopping appointments via Zoom. Once you have received confirmation of your timeslot, our staff will provide you with a meeting link when appropriate. To ensure a smooth experience and to make the most of your time, please have Zoom installed/set up prior to your timeslot. Our staff can provide basic setup assistance for your timeslot upon request."
+  },
+  {
+    id: 4,
+    question: "What happens during a virtual shopping experience?",
+    answer: 
+      "Our virtual experiences provide one-on-one appointments with our opticians in half-hour timeslots. During this time you get a personalized walk-through of our wide selection of frames. Whether you want to pick out frames from the comfort of your home or get selections and suggestions tailored to you by our experienced opticians, our shopping experience gives you a completely private, personalized, and exclusive frame selection experience."
+  }
 ];

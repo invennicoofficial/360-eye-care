@@ -6,6 +6,8 @@ import {
   ourCustomLensesImage,
 } from "../../../constants/prescriptionLenses";
 import BookExamCommon from "components/common/BookExampCommon";
+import Faqs from "components/Faqs";
+import { customlensfaqs } from "constants/Constants";
 
 const page = () => {
   const DataDescription = [
@@ -234,6 +236,32 @@ const page = () => {
         noCatalog
         reverse
       />
+
+      <div className="max-w-6xl mx-auto h-auto mb-14">
+        {/* Background "FAQ" text */}
+        <h1 className="relative text-[120px] font-extrabold text-gray-200 top-10 left-4 z-0 select-none">
+          FAQ
+        </h1>
+
+        {/* Foreground text */}
+        <h2 className=" ml-4 text-3xl md:text-4xl font-extrabold text-combination-200 z-10 ">
+          Frequently Asked Questions
+        </h2>
+
+        <p className="text-neutral-500 ml-4 mb-4 mt-2">
+          While some people enjoy making a fashion statement with a pair of chic
+          eyeglasses, others prefer doing without them. Contact lenses are great
+          for this. They also provide a full field of unobstructed view, which
+          is great for sports. A lot of facts and myths have been spread about
+          contacts; let’s look at some of them and whether they are true or not:
+        </p>
+
+        {/* Underline */}
+        <div className="ml-4 w-32 h-1 bg-combination-100 mt-3"></div>
+        <div className="ml-4 mt-6 mb-10">
+          <Faqs faqData={customlensfaqs} />
+        </div>
+      </div>
     </main>
   );
 };

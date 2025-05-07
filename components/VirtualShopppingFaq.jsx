@@ -2,27 +2,30 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
-import { faqVirtualConsult } from "../constants/Constants";
-import { virtualfagimg, virtualfaqimg } from "../constants/Images";
+import {
+  fagshoppingfaq,
+  faqVirtualConsult,
+  virtualShoppingFaqs,
+} from "../constants/Constants";
+import {
+  virtualfagimg,
+  virtualfaqimg,
+  virtualshoppingfagimg,
+} from "../constants/Images";
+
 // FAQ Item Component
 const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
   return (
     <div className="mb-4">
       <div
-        className={`flex justify-between items-center p-4 cursor-pointer rounded transition-colors duration-300 ease-in-out ${
+        className={`flex justify-between items-center p-4 cursor-pointer rounded ${
           isOpen
             ? "bg-combination-100 text-white"
             : "bg-gray-100 text-combination-200"
         }`}
         onClick={() => toggleFAQ(faq.id)}
       >
-        <h3
-          className={`text-base font-bold cursor-pointer ${
-            isOpen
-              ? "text-white font-semibold"
-              : "text-combination-200 hover:text-combination-100"
-          }`}
-        >
+        <h3 className="text-base font-medium cursor-pointer text-combination-200">
           {faq.question}
         </h3>
         <div>
@@ -35,7 +38,7 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
       </div>
 
       <div
-        className={`bg-[#E7F4F2] overflow-hidden  transition-all duration-300 ease-linear ${
+        className={`bg-white overflow-hidden transition-all duration-300 ease-linear ${
           isOpen
             ? "max-h-96 p-6 mt-1 opacity-100"
             : "max-h-0 p-0 mt-0 opacity-0"
@@ -77,37 +80,58 @@ const Faqs = ({ faqData }) => {
 };
 
 // Virtual FAQ Component
-const VirtualFaq = () => {
-  // Sample FAQ data with complete answers based on images
-
+const VirtualShopppingFaq = () => {
   return (
-    <div className="w-full bg-[#E7F4F2]">
+    <div className="w-full bg-white">
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col items-center mb-10">
           <h2 className="text-4xl font-bold text-combination-200 mb-2">
-            Virtual Consult FAQ
+            Virtual Shopping FAQ
           </h2>
           <hr className="w-20 h-1 bg-combination-100" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-start">
-          {/* Left side with image and blue bar */}
-          <div className="lg:w-[60%] ">
-            <div className="flex flex-row items-end">
+          {/* Left side with image and contact info */}
+          <div className="lg:w-2/5">
+            <div className="flex flex-row items-start">
               <div className="w-12 h-36 bg-combination-100" />
-              <Image
-                src={virtualfagimg}
-                alt="Virtual Consult FAQ"
-                width={555}
-                height={390}
-                className="w-[555px] h-[390px]"
-              />
+              <div className="flex-1">
+                <Image
+                  src={virtualshoppingfagimg}
+                  alt="Virtual Shopping FAQ"
+                  width={555}
+                  height={390}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <p className="text-neutral-500 text-base mb-2">
+                Hours: Monday to Friday from 10:00 am – 5:00 pm
+              </p>
+              <p className="text-neutral-500 text-base mb-2">
+                Email:{" "}
+                <a
+                  href="mailto:virtual@360eyecare.ca"
+                  className="text-combination-200"
+                >
+                  virtual@360eyecare.ca
+                </a>
+              </p>
+              <p className="text-neutral-500 text-base mb-2">
+                Phone:{" "}
+                <a href="tel:4169012725" className="text-combination-200">
+                  416-901-2725
+                </a>
+              </p>
             </div>
           </div>
 
           {/* Right side with FAQs */}
           <div className="lg:w-3/5">
-            <Faqs faqData={faqVirtualConsult} />
+            <Faqs faqData={virtualShoppingFaqs} />
           </div>
         </div>
       </div>
@@ -115,4 +139,4 @@ const VirtualFaq = () => {
   );
 };
 
-export default VirtualFaq;
+export default VirtualShopppingFaq;

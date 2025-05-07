@@ -2,6 +2,7 @@ import SubHeader from "../../../components/SubHeader";
 import DetailsDescripton from "../../../components/common/DetailsDescripton";
 import { EyewearCollection } from "../../../constants/prescriptionLenses";
 import TitleCommon from "../../../components/common/TitleCommon";
+import VirtualShopppingFaq from "../../../components/VirtualShopppingFaq";
 
 const Page = () => {
   const dataDescription = [
@@ -27,6 +28,7 @@ const Page = () => {
           position="center"
         />
       </section>
+      <VirtualShopppingFaq />
     </main>
   );
 };

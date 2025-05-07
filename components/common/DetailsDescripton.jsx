@@ -45,7 +45,7 @@ const DetailsDescription = ({
           <Link
             key={index}
             href={item?.href}
-            className="inline-block px-6 mt-3 sm:px-8 py-2 bg-combination-100 text-white font-bold rounded-full hover:bg-combination-200 transition-colors w-full sm:w-auto text-center"
+            className=" px-6 mt-3 sm:px-8 py-2 w-[180px] bg-combination-100 text-white font-bold rounded-full hover:bg-combination-200 transition-colors   text-center"
           >
             {item?.title} {noCatalog ? "" : "Catalog"}
           </Link>
