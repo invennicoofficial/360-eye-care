@@ -306,7 +306,7 @@ const NavBar = () => {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[490px] h-[616px] min-h-screen border-t-4 border-combination-100 max-w-none p-6"
+              className="w-[375px] h-[616px] min-h-screen border-t-4 border-combination-100 overflow-scroll p-6"
             >
               <div className="flex justify-between items-center mb-4">
                 <Link
