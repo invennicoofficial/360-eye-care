@@ -2,7 +2,7 @@ const TitleCommon = ({ title, position = "start", css = "" }) => {
   return (
     <div className={`flex flex-col items-${position}`}>
       <h3
-        className={`${css} text-combination-200 text-[40px] font-extrabold mt-2`}
+        className={`${css} text-combination-200 text-[40px] font-extrabold mt-2 font-poppins`}
       >
         {title}
       </h3>
