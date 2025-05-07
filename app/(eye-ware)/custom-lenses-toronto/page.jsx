@@ -134,12 +134,12 @@ const page = () => {
           description={DataDescription}
           image={CustomLensesImage}
         />
-        <p className="text-neutral-500">
+        <p className="text-neutral-500 px-4">
           {" "}
           There are several common reasons why people choose custom contact
           lenses:
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-4">
           {ContactFeatures &&
             ContactFeatures.map((item, index) => (
               <span className="flex flex-col gap-2 text-neutral-500 ">
@@ -150,14 +150,14 @@ const page = () => {
               </span>
             ))}
         </div>
-        <p className="text-[#204066] font-bold text-4xl mt-16 flex flex-col">
+        <p className="text-[#204066] font-bold text-4xl mt-16 flex flex-col px-4">
           Benefits of Custom Contact Lenses
           <span className="text-neutral-500 font-normal text-[16px]">
             Custom contact lenses offer several benefits compared to standard
             lenses:
           </span>
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-4">
           {Benefits &&
             Benefits.map((item, index) => (
               <span className="flex flex-col gap-2 text-neutral-500 ">
@@ -168,7 +168,7 @@ const page = () => {
               </span>
             ))}
         </div>
-        <p className="text-[#204066] font-bold text-4xl mt-16 flex  flex-col">
+        <p className="text-[#204066] font-bold text-4xl mt-16 flex  flex-col px-4">
           Our Custom Contact Lens Services
           <span className="text-neutral-500 font-normal text-[16px]">
             Our clinic offers a comprehensive range of services for custom
@@ -177,7 +177,7 @@ const page = () => {
             services include:
           </span>
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-4">
           {CustomContactLensServices &&
             CustomContactLensServices.map((item, index) => (
               <span className="flex flex-col gap-2 text-neutral-500 ">
@@ -195,14 +195,14 @@ const page = () => {
             lenses.
           </p>
         </div>
-        <p className="text-[#204066] font-bold text-4xl mt-16 flex  flex-col">
+        <p className="text-[#204066] font-bold text-4xl mt-16 flex  flex-col px-4">
           Types of Custom Contact Lenses We Offer
           <span className="text-neutral-500 font-normal text-[16px]">
             We offer a range of custom contact lenses to meet the diverse needs
             of our patients. Our custom contact lens services include:
           </span>
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-8">
           {WeOffer &&
             WeOffer.map((item, index) => (
               <span className="flex flex-col gap-2 text-neutral-500 ">

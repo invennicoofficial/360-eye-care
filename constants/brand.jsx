@@ -22,8 +22,14 @@ import Brand21 from "../public/Brand/brand21.webp";
 import Brand22 from "../public/Brand/brand22.webp";
 import Brand23 from "../public/Brand/brand23.webp";
 import Brand24 from "../public/Brand/brand24.webp";
+import Vercase from "../public/Brand/Versace.webp";
+import Prada from "../public/Brand/Prada.webp";
+import RudyProject from "../public/Brand/Rudy.webp";
 
 export {
+  Vercase,
+  Prada,
+  RudyProject,
   Brand1,
   Brand2,
   Brand3,

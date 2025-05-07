@@ -60,7 +60,7 @@ export const BeforeAfterSlider = () => {
   }, []);
 
   return (
-    <div className="w-full lg:w-2/5">
+    <div className="w-full ">
       <div
         ref={containerRef}
         className="relative h-[400px] w-full cursor-col-resize select-none overflow-hidden rounded touch-none"

@@ -47,7 +47,7 @@ const page = () => {
     <main className="pt-[110px] bg-[#F6F7F5]">
       <SubHeader text="Eyeglasses Selection Guide" />
       <div className="max-w-6xl mx-auto ">
-        <div className="w-full flex flex-row justify-center min-w-max">
+        <div className="max-w-6xl mx-auto flex flex-row md:flex-nowrap flex-wrap ">
           {cardData.map((card, index) => (
             <InfoCard
               key={index}
@@ -79,7 +79,7 @@ const page = () => {
       />
       <SelectionGuide />
       <div className="max-w-6xl mx-auto my-6">
-        <p>
+        <p className="text-neutral-500 text-base mb-2 px-4">
           After you’ve selected your frame it’s important to get complete
           fitting measurements of the frame on your face to ensure acurate and
           optimized vision through your new lenses

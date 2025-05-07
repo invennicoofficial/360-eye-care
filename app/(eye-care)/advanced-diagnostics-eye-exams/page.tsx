@@ -8,7 +8,6 @@ import AdvancedDiagnosisService from "../../../components/AdvancedDiagnosisServi
 import { advanceddiagnosticsbenefitsData } from "../../../constants/Constants";
 import Benefits from "../../../components/Benefits";
 
-
 const page = () => {
   return (
     <main className="pt-[110px]">
@@ -51,7 +50,6 @@ const page = () => {
       />
 
       <AdvancedDiagnosisService />
-
     </main>
   );
 };

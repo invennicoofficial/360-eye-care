@@ -290,22 +290,23 @@ const pages = () => {
   return (
     <main className="pt-[110px] bg-[#F6F7F5]">
       <SubHeader text="Eyeglasses" />
-      <div className="max-w-6xl mx-auto my-16 flex flex-wrap justify-between">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 my-8 md:my-16 flex flex-wrap justify-between">
         <div className="w-full">
-          <div className="max-w-7xl mx-auto py-16 flex justify-between">
-            <div className="flex flex-col gap-2 w-[50%]">
-              <h3 className="text-combination-200 text-[40px] font-extrabold mt-2">
+          {/* Hero section - Made responsive */}
+          <div className="max-w-7xl mx-auto py-8 md:py-16 flex flex-col md:flex-row justify-between">
+            <div className="flex flex-col gap-2 w-full md:w-[50%] mb-6 md:mb-0">
+              <h3 className="text-combination-200 text-2xl md:text-[40px] font-extrabold mt-2">
                 Find Your Perfect Eyeglasses in Toronto Here
               </h3>
-              <hr className="w-24 h-1 bg-combination-100 mb-3" />
-              <p className="text-neutral-500  tracking-wider text-lg leading-relaxed">
+              <hr className="w-16 md:w-24 h-1 bg-combination-100 mb-3" />
+              <p className="text-neutral-500 tracking-wider text-base md:text-lg leading-relaxed">
                 Discover a diverse range of premium fashion and handmade
                 designer eyeglasses and sunglasses at 360 Eyecare. Our
                 collection includes renowned brands like Lafont, Vanni, Tom
                 Ford, Burberry, and more. Explore our pages on{" "}
                 <Link
                   href="/dry-eye"
-                  className="/dry-eye text-combination-200 hover:text-combination-100"
+                  className="text-combination-200 hover:text-combination-100"
                 >
                   Prescription Lenses
                 </Link>{" "}
@@ -319,35 +320,37 @@ const pages = () => {
                 to learn about the lens options we offer. Our experienced
                 opticians will help you find the perfect frames to suit your
                 style and vision needs. If you have a specific frame in mind
-                from our selection of brands, let us know, and we’ll ensure it’s
-                available for you. and{" "}
+                from our selection of brands, let us know, and we'll ensure it's
+                available for you.
               </p>
             </div>
-            <div className="w-[50%] pl-4">
+            <div className="w-full md:w-[50%] md:pl-4">
               <Image
                 src={eyeglasses}
                 alt="Eye care professionals with patients"
-                className="object-cover w-[45%]"
+                className="object-cover w-full md:w-[45%] mx-auto md:mx-0"
                 width={578}
                 height={668}
-                style={{ height: "100%", width: "100%" }}
+                style={{ height: "auto", width: "100%" }}
               />
             </div>
           </div>
         </div>
 
         <div className="w-full">
-          <div className="w-full flex items-center justify-between flex-col">
-            <h2 className="text-combination-200 text-[40px] font-extrabold mt-2">
+          {/* Collection title section - Made responsive */}
+          <div className="w-full flex items-center justify-between flex-col text-center px-4">
+            <h2 className="text-combination-200 text-2xl md:text-[40px] font-extrabold mt-2">
               Explore Our Designer Eyeglasses Collection
             </h2>
-            <hr className="w-20 h-[3px] bg-combination-100 mb-3" />
-            <p className="text-neutral-500">
+            <hr className="w-16 md:w-20 h-[3px] bg-combination-100 mb-3" />
+            <p className="text-neutral-500 max-w-2xl mx-auto">
               Discover a wide range of premium eyeglasses in Beaches and
               Rosedale from top brands.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          {/* Brand cards grid - Made responsive */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-6 md:mt-10 px-4">
             {brands.map((brand, index) => (
               <Card
                 key={index}
@@ -361,7 +364,7 @@ const pages = () => {
           </div>
         </div>
       </div>
-      {/* Left: Icon + Heading */}
+      {/* Book Exam section - Component should handle its own responsiveness */}
       <BookExamCommon
         icon={<FaUserMd />}
         title="Need Assistance?"
@@ -369,10 +372,11 @@ const pages = () => {
           { label: "Beaches", number: "416-698-3937" },
           { label: "Rosedale", number: "416-901-2725" },
         ]}
-        description="Our team is here to help. Whether you have questions about our services or need support, we’re just a phone call away."
+        description="Our team is here to help. Whether you have questions about our services or need support, we're just a phone call away."
         buttonText="Book Appointment"
         buttonLink="/book-appointment"
       />
+      {/* Details Description section - Component should handle its own responsiveness */}
       <DetailsDescripton
         title="Committed to Your Eye Health"
         description={whyChooseData}
@@ -382,7 +386,8 @@ const pages = () => {
         noCatalog
         reverse
       />
-      <div className="max-w-7xl mx-auto py-16 flex  items-center justify-center flex-col">
+      {/* Blog section title - Made responsive */}
+      <div className="max-w-7xl mx-auto py-8 md:py-16 flex items-center justify-center flex-col px-4 text-center">
         <TitleCommon title="Explore Our Eyeglasses Blogs" position="center" />
         <p>Stay informed about the latest trends and innovations in eyewear.</p>
       </div>
