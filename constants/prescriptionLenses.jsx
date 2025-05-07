@@ -11,6 +11,7 @@ import ContactLensImage from "../public/prescriptionLenses/Contact-lenses-girl.w
 import DailyDisposableLenses from "../public/prescriptionLenses/Daily-disposable-lenses.webp";
 import wearContactLenses from "../public/prescriptionLenses/wear-contact-lenses.webp";
 import eyeglassesFrame from "../public/prescriptionLenses/eyeglasses-frame.webp";
+import ourCustomLensesImage from "../public/prescriptionLenses/Custom-Lenses.webp";
 
 export {
   glassCleanerImage,
@@ -26,4 +27,5 @@ export {
   DailyDisposableLenses,
   wearContactLenses,
   eyeglassesFrame,
+  ourCustomLensesImage,
 };
