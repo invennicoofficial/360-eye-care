@@ -9,6 +9,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetClose,
 } from "../components/components/ui/sheet";
 import {
   Collapsible,
@@ -20,6 +21,7 @@ import { cn } from "../components/lib/utils";
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [openCollapsible, setOpenCollapsible] = useState(null);
+  const [sheetOpen, setSheetOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -151,6 +153,11 @@ const NavBar = () => {
     setOpenCollapsible(openCollapsible === index ? null : index);
   };
 
+  // Function to close the sheet
+  const closeSheet = () => {
+    setSheetOpen(false);
+  };
+
   return (
     <div className="w-full bg-white shadow-sm border-b border-neutral-200 fixed z-50">
       <div
@@ -193,7 +200,7 @@ const NavBar = () => {
                         href={item.link}
                         className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 ${
                           isActive
-                            ? "text-brand-blue border-b-2 border-brand-blue"
+                            ? "text-combination-100"
                             : "text-combination-200"
                         } hover:text-combination-100 hover:bg-gray-50`}
                         aria-current={isActive ? "page" : undefined}
@@ -210,7 +217,7 @@ const NavBar = () => {
                     )}
 
                     {item.dropdown && openCollapsible === index && (
-                      <div className="absolute left-0 mt-0 w-60 bg-white shadow-card rounded-b-md z-10 animate-fade-in">
+                      <div className="absolute left-0 mt-0 w-60 bg-white rounded-b-md z-10 animate-fade-in">
                         <ul className="py-2 px-4">
                           {item.dropdown.map((subItem, subIndex) => {
                             const isSubItemActive = pathname === subItem.link;
@@ -288,7 +295,7 @@ const NavBar = () => {
             </Link>
           </div>
 
-          <Sheet>
+          <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <button
                 className="inline-flex items-center justify-center p-2 rounded-md text-neutral-700 hover:text-brand-blue hover:bg-neutral-100 focus:outline-none transition-colors duration-200"
@@ -299,10 +306,14 @@ const NavBar = () => {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[490px] h-[616px] min-h-screen   border-t-4 border-combination-100 max-w-none p-6"
+              className="w-[490px] h-[616px] min-h-screen border-t-4 border-combination-100 max-w-none p-6"
             >
               <div className="flex justify-between items-center mb-4">
-                <Link href="/" className="flex items-center">
+                <Link
+                  href="/"
+                  onClick={closeSheet}
+                  className="flex items-center"
+                >
                   <div className="w-24">
                     <Image
                       src={EyeCareLogo}
@@ -313,14 +324,14 @@ const NavBar = () => {
                     />
                   </div>
                 </Link>
-                <SheetTrigger asChild>
+                <SheetClose asChild>
                   <button
                     className="p-2 rounded-md text-neutral-700 hover:text-brand-blue hover:bg-neutral-100"
                     aria-label="Close mobile menu"
                   >
                     <X className="h-6 w-6" aria-hidden="true" />
                   </button>
-                </SheetTrigger>
+                </SheetClose>
               </div>
               <nav className="flex flex-col space-y-2">
                 {navItems.map((item, index) => {
@@ -373,6 +384,7 @@ const NavBar = () => {
                                   href={subItem.link}
                                   target="_blank"
                                   rel="noopener noreferrer"
+                                  onClick={closeSheet}
                                   className={cn(
                                     "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
                                     isSubItemActive
@@ -394,50 +406,54 @@ const NavBar = () => {
                                   ></span>
                                 </a>
                               ) : (
-                                <Link
-                                  key={subIndex}
-                                  href={subItem.link}
-                                  className={cn(
-                                    "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
-                                    isSubItemActive
-                                      ? "text-brand-blue font-medium bg-gray-100"
-                                      : "text-neutral-700"
-                                  )}
-                                  aria-current={
-                                    isSubItemActive ? "page" : undefined
-                                  }
-                                >
-                                  {subItem.name}
-                                  {isSubItemActive && (
-                                    <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                                  )}
-                                  <span
+                                <SheetClose asChild>
+                                  <Link
+                                    key={subIndex}
+                                    href={subItem.link}
                                     className={cn(
-                                      "absolute left-4 bottom-2 h-[2px]",
+                                      "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
                                       isSubItemActive
-                                        ? "w-[calc(100%-2rem)] bg-combination-100"
-                                        : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                        ? "text-brand-blue font-medium bg-gray-100"
+                                        : "text-neutral-700"
                                     )}
-                                  ></span>
-                                </Link>
+                                    aria-current={
+                                      isSubItemActive ? "page" : undefined
+                                    }
+                                  >
+                                    {subItem.name}
+                                    {isSubItemActive && (
+                                      <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                                    )}
+                                    <span
+                                      className={cn(
+                                        "absolute left-4 bottom-2 h-[2px]",
+                                        isSubItemActive
+                                          ? "w-[calc(100%-2rem)] bg-combination-100"
+                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                      )}
+                                    ></span>
+                                  </Link>
+                                </SheetClose>
                               );
                             })}
                           </CollapsibleContent>
                         </Collapsible>
                       ) : (
-                        <Link
-                          href={item.link}
-                          className={cn(
-                            "px-4 py-3 text-base font-medium block",
-                            isActive ? "text-brand-blue" : "text-neutral-700"
-                          )}
-                          aria-current={isActive ? "page" : undefined}
-                        >
-                          {item.name}
-                          {isActive && (
-                            <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
-                          )}
-                        </Link>
+                        <SheetClose asChild>
+                          <Link
+                            href={item.link}
+                            className={cn(
+                              "px-4 py-3 text-base font-medium block",
+                              isActive ? "text-brand-blue" : "text-neutral-700"
+                            )}
+                            aria-current={isActive ? "page" : undefined}
+                          >
+                            {item.name}
+                            {isActive && (
+                              <span className="ml-2 w-2 h-2 rounded-full bg-brand-blue inline-block"></span>
+                            )}
+                          </Link>
+                        </SheetClose>
                       )}
                     </div>
                   );
