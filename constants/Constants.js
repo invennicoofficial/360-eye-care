@@ -717,6 +717,36 @@ export const eyeemergencyData = [
   },
 ];
 
+export const selectionGuideData = [
+  {
+    id: "01",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Face Shape",
+    description:
+      "Consider your face shape for flattering frames. Match frames to complement your face shape for stylish looks.",
+  },
+  {
+    id: "02",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Color and Style",
+    description:
+      "Choose colors and styles that suit your personality. Select frames that reflect your style and enhance your features.",
+  },
+  {
+    id: "03",
+    icon: "/Icons/Optometry-Icon1.webp",
+    title: "Comfort and Fit",
+    description:
+      "Ensure frames fit comfortably for daily wear. Check for proper fit to avoid discomfort and ensure clarity.",
+  },
+  {
+    id: "04",
+    icon: "/Icons/Optometry-Icon2.webp",
+    title: "Lens Options",
+    description:
+      "Explore lens types for your vision needs. Discuss lens options with our optician for optimal vision correction.",
+  },
+];
 export const laservisiondata = [
   {
     id: "01",

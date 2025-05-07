@@ -7,6 +7,7 @@ import DetailsDescripton from "../../../components/common/DetailsDescripton";
 import { eyeglassesFrame } from "../../../constants/prescriptionLenses";
 import BookExamCommon from "../../../components/common/BookExampCommon";
 import { FaUserMd } from "react-icons/fa";
+import SelectionGuide from "../../../components/SelectionGuide";
 
 const page = () => {
   const whyChooseData = [
@@ -83,6 +84,7 @@ const page = () => {
           optimized vision through your new lenses
         </p>
       </div>
+      <SelectionGuide />
     </main>
   );
 };

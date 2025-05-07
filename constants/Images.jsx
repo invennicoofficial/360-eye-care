@@ -106,11 +106,13 @@ import glassesImage from "../public/eyeglasses-yorkville-Toronto.webp";
 import VirtualConsultImage from "../public/virtualconsultimage.webp";
 import virtualfaqimg from "../public/virtualfaqimage.jpg";
 
+import ColorfulGlassesImage from "../public/colourfulglesses.webp";
 export {
   EyeCareLogo,
   glassesImage,
   VirtualConsultImage,
   virtualfaqimg,
+  ColorfulGlassesImage,
   HoyaImage,
   beaches360Image,
   findeyedoctorImage,
