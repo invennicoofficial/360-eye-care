@@ -250,6 +250,13 @@ const NavBar = () => {
                                     }
                                   >
                                     {subItem.name}
+                                    <span
+                                      className={`absolute left-4 bottom-2 h-[2px] ${
+                                        isSubItemActive
+                                          ? "w-[calc(100%-2rem)] bg-combination-100"
+                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                      }`}
+                                    ></span>
                                   </Link>
                                 )}
                               </li>
