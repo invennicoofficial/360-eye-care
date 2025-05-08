@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import SubHeader from "../../../components/SubHeader";
 import Link from "next/link";
 import FormSection from "../../../components/FormSection";
@@ -6,6 +7,18 @@ import Image from "next/image";
 import { bookEyeExamImage, OptometryImage } from "../../../constants/Images";
 
 const page = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://scheduler.getsetpro.com/js/scheduler.js";
+    script.type = "module";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <main className="pt-[110px]">
       <SubHeader text="BOOK AN EYE EXAM" />
@@ -64,7 +77,6 @@ const page = () => {
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
             Book an Eye Exam in the Beaches Toronto
           </h2>
-
           <p className="text-neutral-500 text-base md:text-lg mb-4">
             Choose which of our Optometrists you would like to schedule your
             appointment with, or simply choose 'Next Appointment' for the
@@ -72,6 +84,9 @@ const page = () => {
             the available slots and click 'Request' to submit your appointment
             request
           </p>
+          <div>
+            <gsp-scheduler account_id="3709"></gsp-scheduler>
+          </div>
         </div>
 
         {/* Right column on desktop, bottom on mobile */}

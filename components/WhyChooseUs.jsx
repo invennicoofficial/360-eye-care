@@ -7,7 +7,7 @@ import { cardData } from "../constants/Constants";
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-full bg-brand-blue px-4 py-16 md:py-20">
+    <div className="w-full bg-brand-blue px-4 py-16 md:py-20 font-lora">
       <div className="flex flex-col gap-4 items-center justify-center">
         <h3 className="text-3xl md:text-4xl font-bold text-white text-center font-poppins">
           Why Choose Us?
