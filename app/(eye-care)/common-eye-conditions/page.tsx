@@ -1,5 +1,6 @@
 import React from "react";
 import SubHeader from "../../../components/SubHeader";
+import { TiTick } from "react-icons/ti";
 import {
   eyeCareServiceImage,
   eyeconditionImage,
@@ -50,7 +51,12 @@ const page = () => {
       <EyeConditionsPage />
 
       <CommonEyeSlider />
-      <Banner2 />
+      <Banner2
+        title="Need Expert Eye Care?"
+        description="Our team of optometrists is ready to assist you. Schedule an appointment today for personalized eye care."
+        ctaText="Book Your Eye Exam"
+        ctaLink="/book-eye-exam"
+      />
 
       {/* Second content section */}
       <div className="max-w-6xl mx-auto my-8 sm:my-16 px-4 sm:px-0 flex flex-col-reverse sm:flex-row-reverse justify-between items-start">
@@ -71,21 +77,8 @@ const page = () => {
               "Friendly and knowledgeable staff dedicated to your comfort and satisfaction.",
             ].map((item, i) => (
               <li key={i} className="flex items-start sm:items-center">
-                <svg
-                  className="w-7 h-7 text-combination-100 mr-2 mt-1 flex-shrink-0"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5 13L9 17L19 7"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <span className="text-neutral-700 text-sm">{item}</span>
+                <TiTick size={20} className="text-combination-100" />
+                <span className="text-neutral-700 text-sm ml-2">{item}</span>
               </li>
             ))}
           </ul>

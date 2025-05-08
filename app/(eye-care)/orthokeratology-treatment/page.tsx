@@ -142,7 +142,7 @@ const page = () => {
         description="For exceptional eye care, schedule your eye exam at our Beaches and Rosedale, Toronto locations today!"
         rosedale={true}
         ctaText="Book an Eye Exam"
-        ctaLink="/"
+        ctaLink="https://360rosedale.mypatientportal.xyz/dashboard"
       />
 
       <div className="max-w-6xl mx-auto my-8 sm:my-16 px-4 sm:px-0">

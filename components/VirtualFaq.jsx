@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
 import { faqVirtualConsult } from "../constants/Constants";
-import { virtualfagimg, virtualfaqimg } from "../constants/Images";
+import { virtualfaqimg } from "../constants/Images";
 // FAQ Item Component
 const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
   return (
@@ -96,7 +96,7 @@ const VirtualFaq = () => {
             <div className="flex flex-row items-end">
               <div className="w-12 h-36 bg-combination-100" />
               <Image
-                src={virtualfagimg}
+                src={virtualfaqimg}
                 alt="Virtual Consult FAQ"
                 width={555}
                 height={390}

@@ -72,7 +72,9 @@ const CommonEyeSlider = () => {
                       isActive ? "filter brightness-0 invert" : ""
                     }`}
                   />
-                  <span className="font-semibold text-sm">{service.label}</span>
+                  <span className="font-semibold text-sm ">
+                    {service.label}
+                  </span>
                   <svg
                     className={`ml-auto w-5 h-5 transition-transform ${
                       isActive ? "transform rotate-180" : ""
@@ -109,7 +111,7 @@ const CommonEyeSlider = () => {
 
         {/* Desktop Tabs */}
         <div className="hidden md:block">
-          <div className="flex flex-wrap justify-around gap-4 mb-10">
+          <div className="flex flex-wrap justify-around gap-4 mb-10 bg-white py-6 px-2">
             {commonEyeServices.map((service, index) => {
               const isActive = selected === index;
               return (
@@ -123,7 +125,7 @@ const CommonEyeSlider = () => {
                   }`}
                 >
                   {isActive && (
-                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-teal-500" />
+                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-combination-100" />
                   )}
                   <Image
                     src={service.icon}
@@ -132,7 +134,7 @@ const CommonEyeSlider = () => {
                       isActive ? "filter brightness-0 invert" : ""
                     }`}
                   />
-                  <div className="font-semibold text-sm lg:text-base">
+                  <div className="font-semibold text-sm lg:text-base ">
                     {service.label}
                   </div>
                 </button>

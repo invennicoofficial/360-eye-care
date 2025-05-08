@@ -128,7 +128,7 @@ const Optometry = () => {
         </div>
 
         {/* Desktop Tabs */}
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           <div className="flex flex-wrap justify-around gap-4 mb-10">
             {services.map((service, index) => {
               const isActive = selected === index;
@@ -143,7 +143,7 @@ const Optometry = () => {
                   }`}
                 >
                   {isActive && (
-                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-teal-500" />
+                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-combination-100" />
                   )}
                   <Image
                     src={service.icon}

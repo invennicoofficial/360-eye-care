@@ -130,7 +130,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="https://fonts.gstatic.com" as="style" />
       </head>
       <body
-        className={`font-sans antialiased ${poppins.className} ${roboto.className} ${lora.className}`}
+        className={`font-sans antialiased ${poppins.className} ${roboto.className} ${lora.className} overflow-x-hidden`}
       >
         <NavBar />
         {children}

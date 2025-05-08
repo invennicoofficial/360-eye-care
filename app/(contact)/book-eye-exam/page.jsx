@@ -71,7 +71,7 @@ const page = () => {
       </div>
 
       {/* Second section - Book an Eye Exam in the Beaches Toronto */}
-      <div className="max-w-5xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col md:flex-row-reverse items-start justify-between">
+      <div className="max-w-5xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col-reverse md:flex-row-reverse items-start justify-between">
         {/* Left column on desktop, top on mobile */}
         <div className="w-full md:w-[45%] mb-8 md:mb-0">
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">

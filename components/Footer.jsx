@@ -96,7 +96,7 @@ const Footer = () => {
                 aria-hidden="true"
               />
               <p className="text-base">
-                <span className="sr-only">Phone:</span>
+                <span className="mr-2">Phone:</span>
                 <a href="tel:4166983937" className="hover:text-combination-100">
                   416-698-3937
                 </a>
@@ -110,7 +110,7 @@ const Footer = () => {
                 aria-hidden="true"
               />
               <p className="text-base">
-                <span className="sr-only">Fax:</span>
+                <span className="mr-2">Fax:</span>
                 416-698-1161
               </p>
             </div>
@@ -189,7 +189,7 @@ const Footer = () => {
                 aria-hidden="true"
               />
               <p className="text-base">
-                <span className="sr-only">Phone:</span>
+                <span className="mr-2">Phone:</span>
                 <a href="tel:4169012725" className="hover:text-combination-100">
                   416-901-2725
                 </a>
@@ -203,7 +203,7 @@ const Footer = () => {
                 aria-hidden="true"
               />
               <p className="text-base">
-                <span className="sr-only">Fax:</span>
+                <span className="mr-2">Fax:</span>
                 416-901-2727
               </p>
             </div>

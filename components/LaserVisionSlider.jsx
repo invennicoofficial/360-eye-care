@@ -38,7 +38,7 @@ const LaserVisionSlider = () => {
   };
 
   return (
-    <div className="w-full py-8 md:py-16 bg-white">
+    <div className="w-full py-8 md:py-16 bg-[#F9F9F9]">
       <div className="flex flex-col justify-center items-center px-4">
         <h3 className="text-3xl md:text-4xl font-bold text-brand-blue mb-2 text-center">
           Types of Laser Vision Correction Procedures
@@ -50,7 +50,7 @@ const LaserVisionSlider = () => {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-8 md:mt-12 px-4">
+      <div className="max-w-6xl mx-auto mt-8 md:mt-12 px-4 ">
         {/* Mobile Accordion Layout */}
         <div className="md:hidden">
           {laservisionService.map((service, index) => {
@@ -108,8 +108,8 @@ const LaserVisionSlider = () => {
         </div>
 
         {/* Desktop Tabs */}
-        <div className="hidden md:block">
-          <div className="flex flex-wrap justify-around gap-4 mb-10">
+        <div className="hidden md:block bg-white">
+          <div className="flex flex-wrap justify-around gap-4 mb-10 py-2 px-4">
             {laservisionService.map((service, index) => {
               const isActive = selected === index;
               return (
@@ -123,7 +123,7 @@ const LaserVisionSlider = () => {
                   }`}
                 >
                   {isActive && (
-                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-teal-500" />
+                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-combination-100" />
                   )}
                   <Image
                     src={service.icon}

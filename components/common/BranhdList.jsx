@@ -1,95 +1,137 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
 import { FaChevronCircleRight } from "react-icons/fa";
 import slugify from "slugify";
 
-const BrandList = ({ brands }) => {
-  // For mobile view, distribute brands more evenly
-  const groupBrandsForMobile = () => {
-    const total = brands.length;
-    const itemsPerColumn = Math.ceil(total / 2);
-    return [brands.slice(0, itemsPerColumn), brands.slice(itemsPerColumn)];
-  };
-
-  // For desktop view, maintain the original distribution
-  const groupBrandsForDesktop = () => {
-    const columns = [[], [], []];
-    const total = brands.length;
-    const counts = [5, 4, total - 9];
-
-    let currentIndex = 0;
-    for (let i = 0; i < counts.length; i++) {
-      columns[i] = brands.slice(currentIndex, currentIndex + counts[i]);
-      currentIndex += counts[i];
-    }
-
-    return columns;
-  };
-
-  // Use different groupings based on screen size with CSS display properties
-  const mobileColumns = groupBrandsForMobile();
-  const desktopColumns = groupBrandsForDesktop();
+const BrandList = ({
+  brands = [
+    { name: "LaFont" },
+    { name: "Tom Ford" },
+    { name: "Maui Jim" },
+    { name: "Oakley" },
+    { name: "Persol" },
+    { name: "Kate Spade" },
+    { name: "Michael Kors" },
+    { name: "Ray-Ban Kids" },
+    { name: "Versace" },
+    { name: "Prada" },
+    { name: "Burberry" },
+    { name: "Rudy Project" },
+    { name: "Ray-Ban" },
+  ],
+}) => {
+  // For desktop view, distribute brands into 3 columns
+  const firstColumn = brands.slice(0, 5);
+  const secondColumn = brands.slice(5, 9);
+  const thirdColumn = brands.slice(9);
 
   return (
-    <div className="w-full py-6 md:py-8 px-4 md:px-0">
+    <div className="w-full py-10 px-8 md:px-0">
       <div className="max-w-6xl mx-auto">
         {/* Mobile Layout - 2 columns */}
-        <div className="grid grid-cols-2 gap-4 md:hidden">
-          {mobileColumns.map((column, columnIndex) => (
-            <div key={`mobile-column-${columnIndex}`} className="flex flex-col">
-              <div className="flex flex-col space-y-3">
-                {column.map((brand, brandIndex) => (
-                  <div
-                    key={`mobile-brand-${columnIndex}-${brandIndex}`}
-                    className="flex items-center"
+        <div className="grid grid-cols-1 gap-6  md:hidden">
+          <div className="flex flex-col space-y-4">
+            {brands
+              .slice(0, Math.ceil(brands.length / 2))
+              .map((brand, index) => (
+                <div
+                  key={`mobile-brand-left-${index}`}
+                  className="flex items-center"
+                >
+                  <Link
+                    href={`#${slugify(brand.name, { lower: true })}`}
+                    className="flex items-center text-[#204066] hover:text-combination-100 transition-colors"
                   >
-                    <Link
-                      href={`#${slugify(brand.name, { lower: true })}`}
-                      className="flex items-center text-[#204066] hover:text-teal-500 transition-colors"
-                    >
-                      <span className="text-[#41bdc8] mr-1.5">
-                        <FaChevronCircleRight size={12} />
-                      </span>
-                      <span className="font-medium text-sm">{brand.name}</span>
-                    </Link>
-                  </div>
-                ))}
+                    <span className="text-[#41bdc8] mr-2">
+                      <FaChevronCircleRight size={16} />
+                    </span>
+                    <span className="text-base font-extrabold">
+                      {brand.name}
+                    </span>
+                  </Link>
+                </div>
+              ))}
+          </div>
+          <div className="flex flex-col space-y-4">
+            {brands.slice(Math.ceil(brands.length / 2)).map((brand, index) => (
+              <div
+                key={`mobile-brand-right-${index}`}
+                className="flex items-center"
+              >
+                <Link
+                  href={`/brands/${slugify(brand.name, { lower: true })}`}
+                  className="flex items-center text-slate-700 hover:text-combination-100 transition-colors"
+                >
+                  <span className="text-combination-100 mr-2">
+                    <FaChevronCircleRight size={16} />
+                  </span>
+                  <span className="text-base font-extrabold">{brand.name}</span>
+                </Link>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Desktop Layout - 3 columns with dividers */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8">
-          {desktopColumns.map((column, columnIndex) => (
-            <div key={`column-${columnIndex}`} className="flex flex-row">
-              <div className="flex flex-col space-y-4 pr-4">
-                {column.map((brand, brandIndex) => (
-                  <div
-                    key={`brand-${columnIndex}-${brandIndex}`}
-                    className="flex items-center"
-                  >
-                    <Link
-                      href={`#${slugify(brand.name, { lower: true })}`}
-                      className="flex items-center text-[#204066] hover:text-teal-500 transition-colors"
-                    >
-                      <span className="text-[#41bdc8] mr-2">
-                        <FaChevronCircleRight size={13} />
-                      </span>
-                      <span className="font-medium">{brand.name}</span>
-                    </Link>
-                  </div>
-                ))}
+        <div className="hidden md:flex justify-between">
+          {/* First Column */}
+          <div className="w-1/3 flex flex-col space-y-4 pr-4">
+            {firstColumn.map((brand, index) => (
+              <div key={`brand-col1-${index}`} className="flex items-center">
+                <Link
+                  href={`#${slugify(brand.name, { lower: true })}`}
+                  className="flex items-center text-[#204066] hover:text-combination-100 transition-colors"
+                >
+                  <span className="text-[#41bdc8] mr-2">
+                    <FaChevronCircleRight size={16} />
+                  </span>
+                  <span className="text-base font-extrabold">{brand.name}</span>
+                </Link>
               </div>
+            ))}
+          </div>
 
-              {columnIndex < desktopColumns.length - 1 && (
-                <div className="flex justify-center pl-14 items-center">
-                  <hr className="w-[2px] h-full bg-gray-200" />
-                </div>
-              )}
-            </div>
-          ))}
+          {/* Divider */}
+          <div className="hidden md:block w-px bg-gray-300 mx-4"></div>
+
+          {/* Second Column */}
+          <div className="w-1/3 flex flex-col space-y-4 px-4">
+            {secondColumn.map((brand, index) => (
+              <div key={`brand-col2-${index}`} className="flex items-center">
+                <Link
+                  href={`#${slugify(brand.name, { lower: true })}`}
+                  className="flex items-center text-[#204066] hover:text-combination-100 transition-colors"
+                >
+                  <span className="text-[#41bdc8] mr-2">
+                    <FaChevronCircleRight size={16} />
+                  </span>
+                  <span className="text-base font-extrabold">{brand.name}</span>
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          {/* Divider */}
+          <div className="hidden md:block w-px bg-gray-300 mx-4"></div>
+
+          {/* Third Column */}
+          <div className="w-1/3 flex flex-col space-y-4 pl-4">
+            {thirdColumn.map((brand, index) => (
+              <div key={`brand-col3-${index}`} className="flex items-center">
+                <Link
+                  href={`/brands/${slugify(brand.name, { lower: true })}`}
+                  className="flex items-center text-slate-700 hover:text-combination-100 transition-colors"
+                >
+                  <span className="text-combination-100 mr-2">
+                    <FaChevronCircleRight size={16} />
+                  </span>
+                  <span className="text-base font-extrabold">{brand.name}</span>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -23,8 +23,8 @@ const page = () => {
   return (
     <main className="pt-[80px] md:pt-[110px] bg-[#F6F7F5]">
       <SubHeader text="Sunglasses" />
-      <div className="w-full flex flex-col items-center justify-start my-2 px-4 md:px-0">
-        <h3 className="text-combination-200 text-2xl md:text-3xl lg:text-[37px] font-extrabold mt-2 text-center">
+      <div className="w-full flex flex-col items-center justify-start my-2 px-4 md:px-0 pt-14">
+        <h3 className="text-combination-200 text-2xl md:text-3xl lg:text-[37px] font-extrabold mt-2 mb-4  text-center">
           Explore Our Sunglasses Shop in Toronto
         </h3>
         <hr className="w-16 md:w-20 h-[3px] bg-combination-100 mb-3" />

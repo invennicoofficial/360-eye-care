@@ -15,7 +15,7 @@ import {
 
 const page = () => {
   return (
-    <main className="pt-[110px]">
+    <main className="pt-[110px] bg-[#F9F9F9]">
       <SubHeader text="Laser Vision Correction" />
       {/* First content section */}
       <div className="max-w-6xl mx-auto my-8 sm:my-16 px-4 sm:px-0 flex flex-col sm:flex-row justify-between items-start">

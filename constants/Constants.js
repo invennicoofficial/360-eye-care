@@ -57,15 +57,15 @@ export const OptometryServices = [
     description:
       "Our eye exams help detect issues early and ensure your vision is at its best.",
     buttonText: "Book Your Eye Exam",
-    buttonLink: "/book-exam",
+    buttonLink: "/book-eye-exam",
   },
   {
-    imageLink: "/homeIcons/Eyewear Collection.png",
+    imageLink: "/homeIcons/eyewearCollection.png",
     title: "Eyewear Collection",
     description:
       "Choose from our handcrafted and designer frames to suit your style and vision needs",
     buttonText: "Our Eyewear Collections",
-    buttonLink: "/",
+    buttonLink: "/eyeglasses",
   },
 ];
 // export const cardData = [
@@ -107,14 +107,14 @@ export const slides = [
     title: "360 Eyecare",
     subtitle: "Your Neighbourhood Optometry Clinic",
     buttonText: "Book an Eye Exam",
-    buttonLink: "book-exam",
+    buttonLink: "/book-eye-exam",
     image: "/Slider1.webp",
   },
   {
     title: "Toronto Optometrists",
     subtitle: "Providing You with Expert Eye Care",
     buttonText: "About Us",
-    buttonLink: "about-us",
+    buttonLink: "/about-us",
     image: "/Slider2.webp",
   },
 ];

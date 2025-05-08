@@ -6,10 +6,11 @@ import {
   UnderstandImage4,
 } from "../constants/Images";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const EyeConditionsPage = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-[#F9F9F9]">
       {/* Main container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header Section */}
@@ -37,9 +38,12 @@ const EyeConditionsPage = () => {
                   eye exams routinely as recommended by your optometrist.
                 </p>
 
-                <button className="bg-combination-100 text-white hover:text-combination-100 px-8 py-3 rounded-full hover:bg-combination-200 transition duration-300 w-max">
+                <Link
+                  href={"/book-eye-exam"}
+                  className="bg-combination-100 text-white hover:text-combination-100 px-8 py-3 rounded-full hover:bg-combination-200 transition duration-300 w-max"
+                >
                   Book Your Eye Exam
-                </button>
+                </Link>
               </div>
 
               {/* Right Column with Image */}

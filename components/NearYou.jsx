@@ -36,7 +36,7 @@ const NearYou = () => {
             </div>
           </div>
           <Link
-            href="/toronto-beaches-optometrist"
+            href="/toronto-beaches-optometrist/"
             className="flex justify-end w-full mt-8 md:mr-20 md-0"
           >
             <button className="bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white px-4 md:px-6 py-2 md:py-3 rounded font-semibold w-[140px] md:w-[162px] h-[45px] md:h-[52px] text-sm md:text-base">
@@ -64,7 +64,7 @@ const NearYou = () => {
             </div>
           </div>
           <Link
-            href={"/toronto-rosedale-optometrist"}
+            href={"/toronto-rosedale-optometrist/"}
             className="flex justify-end w-full mt-8 md:mr-20 md-0"
           >
             <button className="bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white px-4 md:px-6 py-2 md:py-3 rounded font-semibold w-[200px] md:w-[240px] h-[45px] md:h-[54px] text-sm md:text-base">

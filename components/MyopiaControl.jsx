@@ -313,7 +313,7 @@ const MyopiaControl = () => {
   ];
 
   return (
-    <div className="w-full py-8 md:py-16 bg-gray-50">
+    <div className="w-full py-8 md:py-16 bg-[#F9F9F9]">
       <div className="flex flex-col justify-center items-center px-4">
         <h3 className="text-3xl md:text-4xl font-bold text-combination-200 mb-3 text-center">
           Myopia Control Treatment Methods
@@ -384,8 +384,8 @@ const MyopiaControl = () => {
         </div>
 
         {/* Desktop Tabs */}
-        <div className="hidden md:block">
-          <div className="flex flex-wrap justify-around gap-4 mb-10">
+        <div className="hidden md:block bg-white">
+          <div className="flex flex-wrap justify-around gap-4 mb-10 py-6 px-4">
             {treatments.map((treatment, index) => {
               const isActive = selected === index;
               return (
@@ -399,7 +399,7 @@ const MyopiaControl = () => {
                   }`}
                 >
                   {isActive && (
-                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-teal-500" />
+                    <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-combination-100" />
                   )}
                   <img
                     src={treatment.icon}
@@ -417,7 +417,7 @@ const MyopiaControl = () => {
           </div>
 
           {/* Desktop Content Area */}
-          <div className="relative rounded-lg p-8 min-h-[500px] shadow-sm ">
+          <div className="relative rounded-lg p-8 min-h-[500px] shadow-sm bg-[#F9F9F9] ">
             <h2 className="text-2xl font-bold text-blue-600 mb-3">
               {treatments[selected]?.title}
             </h2>

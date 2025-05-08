@@ -19,7 +19,7 @@ const LaserVisionService = ({ data, image, imageTitle, imageDesc }) => {
           ))}
         </div>
 
-        <div className="w-full lg:w-80 flex justify-center">
+        <div className="w-full lg:w-[600px] flex justify-center">
           <div className="flex flex-col">
             <Image
               src={image}

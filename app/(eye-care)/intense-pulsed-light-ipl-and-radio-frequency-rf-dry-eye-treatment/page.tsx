@@ -488,9 +488,9 @@ const page = () => {
         </p>
         <div className="bg-white py-12">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col md:flex-row gap-8 ">
               {/* Left content */}
-              <div className="flex-1 space-y-6">
+              <div className="flex-1 space-y-6 w-[60%]">
                 <h1 className="text-3xl md:text-3xl font-extrabold text-combination-200">
                   Seek Relief from Dry Eyes Today
                 </h1>
@@ -501,39 +501,13 @@ const page = () => {
                 </p>
 
                 <div className="py-4">
-                  <h2 className="text-xl text-center text-slate-700 mb-6">
-                    Make an Appointment with:
-                  </h2>
-
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-md hover:bg-gray-100 transition-colors cursor-pointer">
-                      <span className="font-medium text-slate-700">
-                        Next Appointment
-                      </span>
-                      <ChevronRight className="text-purple-500" />
-                    </div>
-
-                    <div className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-md hover:bg-gray-100 transition-colors cursor-pointer">
-                      <span className="font-medium text-slate-700">
-                        Dr. Harmandeep Gill
-                      </span>
-                      <ChevronRight className="text-purple-500" />
-                    </div>
-
-                    <div className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-md hover:bg-gray-100 transition-colors cursor-pointer">
-                      <span className="font-medium text-slate-700">
-                        Dr. Sam Baraam
-                      </span>
-                      <ChevronRight className="text-purple-500" />
-                    </div>
-
-                    <div className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-md hover:bg-gray-100 transition-colors cursor-pointer">
-                      <span className="font-medium text-slate-700">
-                        Dr. Anita Sritharan
-                      </span>
-                      <ChevronRight className="text-purple-500" />
-                    </div>
-                  </div>
+                  <iframe
+                    src="https://oes.eyecarepro.net/w/c/48NWLwkoqicRpYspwAoB?height=350&width=700&src=https%3A%2F%2Fwww.360eyecare.ca%2Fintense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment%2F&title=Advanced%20Dry%20Eye%20Treatments%20%7C%20IPL%20and%20RF%20Eye%20Treatment%20Toronto"
+                    id="48NWLwkoqicRpYspwAoB"
+                    width={436}
+                    height={350}
+                    title="Advanced Dry Eye Treatments | IPL and RF Eye Treatment Toronto"
+                  />
                 </div>
               </div>
 

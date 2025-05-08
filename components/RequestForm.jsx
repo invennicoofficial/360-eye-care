@@ -1,7 +1,7 @@
 "use client";
+import { VirtualConsultImage } from "constants/Images";
 import Image from "next/image";
 import { useState } from "react";
-import { VirtualConsultImage } from "../constants/Images";
 
 const RequestForm = () => {
   const [formData, setFormData] = useState({

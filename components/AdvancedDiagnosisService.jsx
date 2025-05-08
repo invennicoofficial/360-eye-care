@@ -39,7 +39,7 @@ const AdvancedDiagnosisService = () => {
   };
 
   return (
-    <div className="w-full py-8 md:py-16 bg-white">
+    <div className="w-full py-8 md:py-16 bg-[#F9F9F9]">
       <div className="flex flex-col justify-center items-center px-4">
         <h3 className="text-3xl md:text-4xl font-bold text-brand-blue mb-2 text-center">
           Advanced Diagnostic Tools for Comprehensive Eye Exams
@@ -111,8 +111,8 @@ const AdvancedDiagnosisService = () => {
         </div>
 
         {/* Desktop Tabs */}
-        <div className="hidden md:block">
-          <div className="flex flex-nowrap justify-center gap-2 mb-10">
+        <div className="hidden md:block bg-white">
+          <div className="flex flex-nowrap justify-center gap-2 mb-10 py-6 px-4">
             {advanceddiagnosticsService.map((tool, index) => {
               const isActive = selected === index;
               return (
