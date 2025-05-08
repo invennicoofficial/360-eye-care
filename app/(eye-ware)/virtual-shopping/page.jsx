@@ -1,8 +1,10 @@
 import SubHeader from "../../../components/SubHeader";
-import DetailsDescripton from "../../../components/common/DetailsDescripton";
+
 import { EyewearCollection } from "../../../constants/prescriptionLenses";
-import TitleCommon from "../../../components/common/TitleCommon";
+import { TiTick } from "react-icons/ti";
 import VirtualShopppingFaq from "../../../components/VirtualShopppingFaq";
+import VirtualForm from "../../../components/VirtualForm";
+import DetailsDescription from "components/common/DetailsDescripton";
 
 const Page = () => {
   const dataDescription = [
@@ -15,18 +17,42 @@ const Page = () => {
       <SubHeader text="Shop Virtually with an Optician" />
 
       <section className="my-10">
-        <DetailsDescripton
+        <DetailsDescription
           title="Introducing Miyosmart Lenses: Revolutionizing Vision"
           description={dataDescription}
           image={EyewearCollection}
         />
       </section>
 
-      <section className="my-12">
-        <TitleCommon
-          title="Maui Jim: “What lenses are best suited for your outdoor Lifestyle?”"
-          position="center"
-        />
+      <section className="py-8 md:py-12 px-4 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 md:gap-8">
+        <div className="w-full md:w-1/2">
+          <VirtualForm />
+        </div>
+        <div className="w-full md:w-1/2 mb-6 md:mb-0">
+          <h2 className="text-3xl md:text-4xl font-bold text-combination-200 mb-4">
+            Book Your FREE Virtual Shopping Experience!
+          </h2>
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
+          <p className="text-neutral-500 text-base mt-2 mb-6">
+            You can learn more about the eyewear brands we carry before your
+            virtual appointment. If you have any favourites, or specific styles
+            and colours that you are interested in, please let us know!
+          </p>
+          <div className="flex flex-col gap-3">
+            {[
+              "Choose from a variety of styles and shapes",
+              "Try on frames virtually with our innovative technology",
+              "Enjoy free shipping and returns on all orders",
+            ].map((item) => (
+              <div className="flex items-center gap-3" key={item}>
+                <div className="flex-shrink-0">
+                  <TiTick className="text-combination-100 text-2xl" />
+                </div>
+                <p className="text-combination-200 text-base">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
       <VirtualShopppingFaq />
     </main>

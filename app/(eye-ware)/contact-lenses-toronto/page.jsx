@@ -10,6 +10,7 @@ import {
 import TitleCommon from "../../../components/common/TitleCommon";
 import FAQItem from "../../../components/common/FAQItem";
 import { useState } from "react";
+import Link from "next/link";
 
 const Page = () => {
   const [openFAQs, setOpenFAQs] = useState([]);
@@ -25,13 +26,13 @@ const Page = () => {
       id: 1,
       question: "Can I wear contact lenses?",
       answer:
-        "The answer depends on each patient. However, with today’s technology and the advancements that have been made in this field, we are able to find solutions for most patients. Whether you have been diagnosed with astigmatism or presbyopia, you can correct the condition with toric soft lenses or bifocal contact lenses respectively. In other words, you may actually be a better candidate for contacts than you assume.",
+        "The answer depends on each patient. However, with today's technology and the advancements that have been made in this field, we are able to find solutions for most patients. Whether you have been diagnosed with astigmatism or presbyopia, you can correct the condition with toric soft lenses or bifocal contact lenses respectively. In other words, you may actually be a better candidate for contacts than you assume.",
     },
     {
       id: 2,
       question: "Are contacts uncomfortable?",
       answer:
-        "Assume you were deemed a candidate and had a proper fit with no complications it typically only takes a brief period for you to adapt to the contacts and you won’t notice any difference.",
+        "Assume you were deemed a candidate and had a proper fit with no complications it typically only takes a brief period for you to adapt to the contacts and you won't notice any difference.",
     },
     {
       id: 3,
@@ -49,7 +50,7 @@ const Page = () => {
       id: 5,
       question: "Can contact lenses cause eye problems?",
       answer:
-        "Yes, they can cause eye problems. There are certain eye complications that may arise due to the use of contacts. However, if you follow your optometrist’s instructions regarding how to wear them, how to take care of them, how frequently they should be replaced, and how long to wear them then your risk of complications is reduced.",
+        "Yes, they can cause eye problems. There are certain eye complications that may arise due to the use of contacts. However, if you follow your optometrist's instructions regarding how to wear them, how to take care of them, how frequently they should be replaced, and how long to wear them then your risk of complications is reduced.",
     },
     {
       id: 6,
@@ -78,7 +79,7 @@ const Page = () => {
   ];
 
   return (
-    <main className="pt-[80px] md:pt-[110px] pb-8">
+    <main className="pt-[110px] pb-8">
       <SubHeader text="Contact Lenses" />
       <div className="max-w-[1172px] mx-auto px-4 sm:px-6 md:px-8 mt-4 flex flex-col md:flex-row gap-6 md:gap-8">
         <div className="w-full md:w-1/2">
@@ -87,6 +88,7 @@ const Page = () => {
             alt="Contact Lens"
             className="w-full h-auto object-cover rounded-md"
             sizes="(max-width: 768px) 100vw, 50vw"
+            priority
           />
         </div>
         <div className="w-full md:w-1/2 text-sm md:text-base">
@@ -118,7 +120,7 @@ const Page = () => {
           <TitleCommon
             title="Are you looking to switch to contact lenses?"
             position="start"
-            css="text-combination-200 text-3xl md:text-4xl font-extrabold mt-2"
+            css="text-combination-200 text-2xl sm:text-3xl md:text-4xl font-extrabold mt-2"
           />
           <p className="text-neutral-500 mt-4">
             Switching from prescription glasses to contact lenses starts with an
@@ -150,21 +152,154 @@ const Page = () => {
             alt="Daily Disposable Lenses"
             className="w-full h-auto object-cover rounded-md"
             sizes="(max-width: 768px) 100vw, 30vw"
+            loading="eager"
           />
         </div>
       </div>
 
+      <div className="bg-[#29305f] !text-white py-6 px-4 sm:px-6 md:px-8 mt-8">
+        <TitleCommon
+          css="text-white text-2xl sm:text-3xl"
+          title="Types of Contact Lenses"
+          position="center"
+        />
+
+        <div className="max-w-[1172px] mx-auto flex flex-col lg:flex-row">
+          <div className="w-full lg:w-1/2 px-0 sm:px-2 lg:pr-6">
+            <TitleCommon
+              css="text-white text-xl sm:text-2xl mt-6 sm:mt-8"
+              title="Daily Soft Contact Lenses"
+              position="start"
+            />
+            <p className="text-white my-3 text-sm sm:text-base">
+              Daily soft contact lenses are the most popular choice for almost
+              everyone as they are comfortable and have a very low adaptation
+              period. These contact lenses allow oxygen to pass through and are
+              less likely to have protein built on them over time as they are
+              replaced on a daily basis. Soft contact lenses are made of soft
+              plastic lenses or silicone hydrogel.
+            </p>
+            <TitleCommon
+              css="text-white text-xl sm:text-2xl mt-5 sm:mt-6"
+              title="Hard Contact Lenses or RGP Lenses"
+              position="start"
+            />
+            <p className="text-white my-3 text-sm sm:text-base">
+              Hard Contact Lenses are designed in a way that allows oxygen to
+              reach the ocular surface. These lenses are hard and smaller than
+              soft contact lenses. They provide better visual outcome than soft
+              lenses for patients with irregular corneal surface such as
+              keratoconus patients. They generally can be worn for longer
+              periods of time but need to be cleaned regularly.
+            </p>
+            <TitleCommon
+              css="text-white text-xl sm:text-2xl mt-5 sm:mt-6"
+              title="Hybrid Lenses"
+              position="start"
+            />
+            <p className="text-white my-3 text-sm sm:text-base">
+              Hybrid lenses have a central optic zone which is made of Gas
+              Permeable materials and the rest is made of soft material. They
+              typically provide better eye care comfort than hard lenses due to
+              the integration of the soft lens component.
+            </p>
+            <TitleCommon
+              css="text-white text-xl sm:text-2xl mt-5 sm:mt-6"
+              title="Bifocal Lenses"
+              position="start"
+            />
+            <p className="text-white my-3 text-sm sm:text-base">
+              Bifocal contact lenses work just like bifocal glasses offering
+              clear vision at different distances. Bifocal or multifocal lenses
+              are used to correct astigmatism as well.
+            </p>
+            <TitleCommon
+              css="text-white text-xl sm:text-2xl mt-5 sm:mt-6"
+              title="Multifocal lenses"
+              position="start"
+            />
+            <p className="text-white my-3 text-sm sm:text-base">
+              Multifocal lenses are similar to progressive lenses in glasses.
+              They have more than one power to correct vision at different
+              distances to provide clear vision at all times.
+            </p>
+            <p className="text-white my-3 text-sm sm:text-base font-medium">
+              Learn more about Multifocal Contact Lenses
+            </p>
+          </div>
+
+          <div className="w-full lg:w-1/2 px-0 sm:px-2 lg:pl-6 mt-6 lg:mt-0">
+            <TitleCommon
+              css="text-white text-xl sm:text-2xl mt-0 sm:mt-8"
+              title="Keratoconus Lenses"
+              position="start"
+            />
+            <p className="text-white my-3 text-sm sm:text-base">
+              Keratoconus is a condition in which the cornea loses its natural
+              round shape and starts bulging, and thinning and is associated
+              with reduced vision. It results in irregular astigmatism. At 360
+              Eyecare, our optometrists utilize labs that specialize in RGP
+              keratoconus lenses for optimum results.
+            </p>
+            <TitleCommon
+              css="text-white text-xl sm:text-2xl mt-5 sm:mt-6"
+              title="Orthokeratology Lenses"
+              position="start"
+            />
+            <p className="text-white my-3 text-sm sm:text-base">
+              We also offer Orthokeratology (ortho-k) lens treatment: it is an
+              overnight vision correction, which can help reshape your cornea to
+              reduce refractive errors, temporarily. It involves the fitting of
+              specially designed gas-permeable contact lenses, which you can
+              wear overnight. While you are asleep, the lenses gently reshape
+              the front surface of your eye (cornea) so that you can see clearly
+              the following day after you remove the lenses. For best results,
+              it is suggested that you wear the lenses every night.
+            </p>
+            <p className="text-white mt-2 text-sm sm:text-base">
+              For the right candidate, Orthokeratology lenses can be prescribed
+              to:
+            </p>
+            <ul className="list-disc pl-5 text-white my-2 text-sm sm:text-base">
+              <li className="mb-1">
+                Correct refractive errors, primarily mild to moderate levels of
+                Myopia
+              </li>
+              <li className="mb-1">
+                Slow the progression of childhood myopia.
+              </li>
+              <li>
+                However, some mild astigmatism, hyperopia, and in some cases,
+                presbyopia can also be corrected.
+              </li>
+            </ul>
+
+            <p className="text-white my-3 text-sm sm:text-base">
+              The type and amount of refractive error that can be effectively
+              managed with orthokeratology differ for each case. A comprehensive
+              eye exam should help determine a specific plan to manage vision
+              correction in each case. At 360 Eyecare our optometrists will
+              discuss available lens options for your specific needs and
+              prognosis for each at the time of your consult.
+            </p>
+            <p className="text-white mb-4 text-sm sm:text-base font-medium">
+              Learn more about Orthokeratology
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="max-w-[1172px] mx-auto px-4 sm:px-6 md:px-8 mt-8">
         <TitleCommon
           title="Frequently Asked Questions About Contact Lenses"
           position="start"
+          css="text-2xl sm:text-3xl"
         />
         <p className="text-sm md:text-base text-neutral-500 mt-4">
           While some people enjoy making a fashion statement with a pair of chic
           eyeglasses, others prefer doing without them. Contact lenses are great
           for this. They also provide a full field of unobstructed view, which
           is great for sports. A lot of facts and myths have been spread about
-          contacts; let’s look at some of them and whether they are true or not:
+          contacts; let's look at some of them and whether they are true or not:
         </p>
         <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8 mt-6">
           <div className="w-full md:w-1/2">
@@ -173,10 +308,11 @@ const Page = () => {
               alt="Wearing Contact Lenses"
               className="w-full h-auto object-cover rounded-md"
               sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
             />
           </div>
           <div className="w-full md:w-1/2">
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {faqData.map((faq) => (
                 <FAQItem
                   key={faq.id}
@@ -192,135 +328,14 @@ const Page = () => {
           For any further questions or if you would like to book your contact
           lens fit and consultation today at one of our 360 Eyecare offices in
           Toronto, please call or email us at your convenience. Or, you can
-          browse our online contact lens shop!
+          browse our online{" "}
+          <Link
+            className="text-combination-200 hover:text-combination-100"
+            href="/contact-lenses-toronto"
+          >
+            contact lens shop
+          </Link>
         </p>
-      </div>
-      <div className="bg-[#29305f] !text-white py-4">
-        <TitleCommon
-          css="text-white"
-          title="Types of Contact Lenses"
-          position="center"
-        />
-
-        <div className="max-w-[1172px] mx-auto flex">
-          <div className="w-[50%]">
-            <TitleCommon
-              css="text-white !text-[30px]"
-              title="Daily Soft Contact Lenses"
-              position="start"
-            />
-            <p className="text-white my-4">
-              Daily soft contact lenses are the most popular choice for almost
-              everyone as they are comfortable and have a very low adaptation
-              period. These contact lenses allow oxygen to pass through and are
-              less likely to have protein built on them over time as they are
-              replaced on a daily basis. Soft contact lenses are made of soft
-              plastic lenses or silicone hydrogel.
-            </p>
-            <TitleCommon
-              css="text-white !text-[30px]"
-              title="Hard Contact Lenses or RGP Lenses"
-              position="start"
-            />
-            <p className="text-white my-4">
-              Hard Contact Lenses are designed in a way that allows oxygen to
-              reach the ocular surface. These lenses are hard and smaller than
-              soft contact lenses. They provide better visual outcome than soft
-              lenses for patients with irregular corneal surface such as
-              keratoconus patients. They generally can be worn for longer
-              periods of time but need to be cleaned regularly.
-            </p>
-            <TitleCommon
-              css="text-white !text-[30px]"
-              title="Hybrid Lenses"
-              position="start"
-            />
-            <p className="text-white my-4">
-              Hybrid lenses have a central optic zone which is made of Gas
-              Permeable materials and the rest is made of soft material. They
-              typically provide better eye care comfort than hard lenses due to
-              the integration of the soft lens component.
-            </p>
-            <TitleCommon
-              css="text-white !text-[30px]"
-              title="Bifocal Lenses"
-              position="start"
-            />
-            <p className="text-white my-4">
-              Bifocal contact lenses work just like bifocal glasses offering
-              clear vision at different distances. Bifocal or multifocal lenses
-              are used to correct astigmatism as well.
-            </p>
-            <TitleCommon
-              css="text-white !text-[30px]"
-              title="Multifocal lenses"
-              position="start"
-            />
-            <p className="text-white my-4">
-              Multifocal lenses are similar to progressive lenses in glasses.
-              They have more than one power to correct vision at different
-              distances to provide clear vision at all times.
-            </p>
-            <p className="text-white my-4">
-              Learn more about Multifocal Contact Lenses
-            </p>
-          </div>
-
-          <div className="w-[50%]">
-            <TitleCommon
-              css="text-white !text-[30px]"
-              title="Keratoconus Lenses"
-              position="start"
-            />
-            <p className="text-white my-4">
-              Keratoconus is a condition in which the cornea loses its natural
-              round shape and starts bulging, and thinning and is associated
-              with reduced vision. It results in irregular astigmatism. At 360
-              Eyecare, our optometrists utilize labs that specialize in RGP
-              keratoconus lenses for optimum results.
-            </p>
-            <TitleCommon
-              css="text-white !text-[30px]"
-              title="Orthokeratology Lenses"
-              position="start"
-            />
-            <p className="text-white my-4">
-              We also offer Orthokeratology (ortho-k) lens treatment: it is an
-              overnight vision correction, which can help reshape your cornea to
-              reduce refractive errors, temporarily. It involves the fitting of
-              specially designed gas-permeable contact lenses, which you can
-              wear overnight. While you are asleep, the lenses gently reshape
-              the front surface of your eye (cornea) so that you can see clearly
-              the following day after you remove the lenses. For best results,
-              it is suggested that you wear the lenses every night.
-            </p>
-            <p className="text-white mt-2">
-              For the right candidate, Orthokeratology lenses can be prescribed
-              to:
-            </p>
-            <ul className="list-disc pl-5 text-white my-2">
-              <li>
-                Correct refractive errors, primarily mild to moderate levels of
-                Myopia
-              </li>
-              <li>Slow the progression of childhood myopia.</li>
-              <li>
-                However, some mild astigmatism, hyperopia, and in some cases,
-                presbyopia can also be corrected.
-              </li>
-            </ul>
-
-            <p className="text-white my-4">
-              The type and amount of refractive error that can be effectively
-              managed with orthokeratology differ for each case. A comprehensive
-              eye exam should help determine a specific plan to manage vision
-              correction in each case. At 360 Eyecare our optometrists will
-              discuss available lens options for your specific needs and
-              prognosis for each at the time of your consult.
-            </p>
-            <p className="text-white">Learn more about Orthokeratology</p>
-          </div>
-        </div>
       </div>
     </main>
   );

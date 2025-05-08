@@ -94,7 +94,7 @@ const VirtualShopppingFaq = () => {
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           {/* Left side with image and contact info */}
           <div className="lg:w-2/5">
-            <div className="flex flex-row items-start">
+            <div className="flex flex-row items-end">
               <div className="w-12 h-36 bg-combination-100" />
               <div className="flex-1">
                 <Image

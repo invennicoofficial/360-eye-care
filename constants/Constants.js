@@ -532,7 +532,7 @@ export const services = [
 export const eyeExamTools = [
   {
     label: "Visual Acuity & Snellen Chart",
-    icon: <FaEye className="w-8 h-8" />,
+    icon: <FaEye size={24} />,
     image: "/eyeexam/eyeexam1.webp",
     title: "Visual Acuity & The Snellen Chart",
     description:
@@ -555,7 +555,7 @@ export const eyeExamTools = [
     label: "The Phoropter",
     height: "355",
     width: "533",
-    icon: <FaMedkit className="w-8 h-8" />,
+    icon: <FaMedkit size={24} />,
     image: "/eyeexam/eyeexam2.webp",
     title: "The Phoropter",
 
@@ -570,7 +570,7 @@ export const eyeExamTools = [
     label: "The Slit Lamp",
     height: "243",
     width: "243",
-    icon: <FaLightbulb className="w-8 h-8" />,
+    icon: <FaLightbulb size={24} />,
     image: "/eyeexam/eyeexam3.webp",
     title: "The Slit Lamp",
     content:
@@ -584,7 +584,7 @@ export const eyeExamTools = [
     label: "The Auto Refractor",
     height: "291",
     width: "244",
-    icon: <FaRobot className="w-8 h-8" />,
+    icon: <FaRobot size={24} />,
     image: "/eyeexam/eyeexam4.webp",
     title: "The Auto Refractor",
     content:
@@ -599,7 +599,7 @@ export const eyeExamTools = [
     label: "The Retinal Camera",
     height: "286",
     width: "531",
-    icon: <FaCamera className="w-8 h-8" />,
+    icon: <FaCamera size={24} />,
     image: "/eyeexam/eyeexam5.webp",
     title: "The Retinal Camera",
 
@@ -617,7 +617,7 @@ export const eyeExamTools = [
     label: "The OCT",
     height: "354",
     width: "531",
-    icon: <FaMicroscope className="w-8 h-8" />,
+    icon: <FaMicroscope size={24} />,
     image: "/eyeexam/eyeexam6.webp",
     title: "The OCT (Optical Coherence Tomography)",
     content:
@@ -631,7 +631,7 @@ export const eyeExamTools = [
     label: "The Visual Fields Test",
     height: "354",
     width: "531",
-    icon: <FaSearchLocation className="w-8 h-8" />,
+    icon: <FaSearchLocation size={24} />,
     image: "/eyeexam/eyeexam7.webp",
     title: "The Visual Fields Test",
 
@@ -1881,25 +1881,25 @@ export const virtualShoppingFaqs = [
   {
     id: 1,
     question: "Is there a cost for booking a virtual shopping appointment?",
-    answer: 
-      "Nope! There are absolutely no costs or fees to book a virtual shopping appointment. If you enjoy the virtual experience of shopping with us, you're welcome to book more than once."
+    answer:
+      "Nope! There are absolutely no costs or fees to book a virtual shopping appointment. If you enjoy the virtual experience of shopping with us, you're welcome to book more than once.",
   },
   {
     id: 2,
     question: "What happens if I can't make it or need to cancel?",
-    answer: 
-      "If you can't make it to your shopping timeslot, please kindly email virtual@360eyecare.ca and let us know your name and timeslot. We understand things come up and there are no penalties for canceling a timeslot."
+    answer:
+      "If you can't make it to your shopping timeslot, please kindly email virtual@360eyecare.ca and let us know your name and timeslot. We understand things come up and there are no penalties for canceling a timeslot.",
   },
   {
     id: 3,
     question: "How do I make an appointment to shop virtually?",
-    answer: 
-      "We provide all of our virtual shopping appointments via Zoom. Once you have received confirmation of your timeslot, our staff will provide you with a meeting link when appropriate. To ensure a smooth experience and to make the most of your time, please have Zoom installed/set up prior to your timeslot. Our staff can provide basic setup assistance for your timeslot upon request."
+    answer:
+      "We provide all of our virtual shopping appointments via Zoom. Once you have received confirmation of your timeslot, our staff will provide you with a meeting link when appropriate. To ensure a smooth experience and to make the most of your time, please have Zoom installed/set up prior to your timeslot. Our staff can provide basic setup assistance for your timeslot upon request.",
   },
   {
     id: 4,
     question: "What happens during a virtual shopping experience?",
-    answer: 
-      "Our virtual experiences provide one-on-one appointments with our opticians in half-hour timeslots. During this time you get a personalized walk-through of our wide selection of frames. Whether you want to pick out frames from the comfort of your home or get selections and suggestions tailored to you by our experienced opticians, our shopping experience gives you a completely private, personalized, and exclusive frame selection experience."
-  }
+    answer:
+      "Our virtual experiences provide one-on-one appointments with our opticians in half-hour timeslots. During this time you get a personalized walk-through of our wide selection of frames. Whether you want to pick out frames from the comfort of your home or get selections and suggestions tailored to you by our experienced opticians, our shopping experience gives you a completely private, personalized, and exclusive frame selection experience.",
+  },
 ];
