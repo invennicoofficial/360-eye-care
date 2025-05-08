@@ -34,6 +34,7 @@ import BookExamCommon from "../../../components/common/BookExampCommon";
 import DetailsDescripton from "../../../components/common/DetailsDescripton";
 import { glassCleanerImage } from "../../../constants/prescriptionLenses";
 import TitleCommon from "../../../components/common/TitleCommon";
+import HoverCard from "../../../components/HoverCard";
 // todo : need to change the redirection link
 
 const pages = () => {
@@ -391,6 +392,58 @@ const pages = () => {
         <p>Stay informed about the latest trends and innovations in eyewear.</p>
       </div>
       {/* todo: card need to add  */}
+
+      <div className="bg-combination-200 md:py-24 md:px-16 py-16 px-12">
+        <div className="max-w-8xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6 gap-14">
+            {/* Card 1 */}
+            <HoverCard
+              title="How to Remove Scratches From Glasses"
+              description="Learn effective methods to keep your glasses looking new."
+              iconSrc="glasses"
+              iconAlt="Glasses icon"
+              linkHref="https://www.360eyecare.ca/how-to-remove-scratches-from-glasses/"
+              listItems={[
+                "Should you use baking soda and water paste?",
+                "Should you use toothpaste?",
+                "What about vehicle wax to fill in scratches?",
+                "Are there professional scratch removal kits?",
+              ]}
+            />
+
+            {/* Card 2 */}
+            <HoverCard
+              title="Eyeglasses Across History"
+              description="Discover the evolution of eyeglasses and their impact."
+              iconSrc="history"
+              iconAlt="History icon"
+              linkHref="https://www.360eyecare.ca/eyeglasses-across-history/"
+              listItems={[
+                "Early vision aids in ancient civilizations.",
+                "The invention of the first spectacles.",
+                "Eyewear styles through the centuries.",
+                "Eyeglasses in modern fashion and technology.",
+                "The role of eyeglasses in enhancing vision and daily life.",
+              ]}
+            />
+
+            {/* Card 3 */}
+            <HoverCard
+              title="Glasses Shopping Guide – Frame Selection"
+              description="Tips for choosing the perfect frames to suit your style."
+              iconSrc="shopping"
+              iconAlt="Shopping icon"
+              linkHref="https://www.360eyecare.ca/glasses-shopping-guide-frame-selection/"
+              listItems={[
+                "Consider your face shape.",
+                "Match frames to your skin tone.",
+                "Choose a frame style that complements your lifestyle.",
+                "Experiment with different colors and materials.",
+              ]}
+            />
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
