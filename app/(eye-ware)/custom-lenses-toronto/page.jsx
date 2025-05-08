@@ -130,7 +130,7 @@ const page = () => {
   return (
     <main className="pt-[110px] bg-[#F6F7F5]">
       <SubHeader text="Custom Contact Lenses" />
-      <div className="max-w-6xl mx-auto my-16 flex flex-wrap justify-between">
+      <div className="max-w-7xl mx-auto my-16 flex flex-wrap justify-between">
         <DetailsDescripton
           title="Custom Lenses in Toronto: Tailored to You"
           description={DataDescription}

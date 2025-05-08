@@ -17,13 +17,13 @@ const Card = ({
   return (
     <div
       className={`
-        relative bg-white shadow-sm p-5 transition-all duration-500 ease-out h-auto flex flex-col
-        origin-center transform scale-100 border-4 ${
-          isHovered
-            ? "scale-105 shadow-lg border-combination-200 z-10 bg-combination-200"
-            : "border-gray-100"
-        }
-            `}
+      relative bg-white shadow-sm p-5 transition-all duration-300 ease-out h-auto flex flex-col
+      origin-center transform border-4 ${
+        isHovered
+          ? "-translate-y-2 shadow-lg border-combination-200 z-10 bg-combination-200"
+          : "translate-y-0 border-gray-100"
+      }
+    `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
