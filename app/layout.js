@@ -13,15 +13,6 @@ const poppins = Poppins({
   fallback: ["system-ui", "arial"],
 });
 
-const lora = Lora({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-roboto",
-  display: "swap",
-  preload: true,
-  fallback: ["system-ui", "arial"],
-});
-
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
