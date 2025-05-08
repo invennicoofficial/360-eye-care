@@ -31,9 +31,11 @@ const HeroCarousel = () => {
         >
           {/* Background image */}
           <div className="absolute inset-0">
-            <img
+            <Image
               src={slide.image}
               alt="Background image"
+              width={1920}
+              height={1080}
               className="w-full h-full object-cover"
               loading="eager"
               fetchPriority="high"
