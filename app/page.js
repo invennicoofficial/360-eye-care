@@ -7,6 +7,7 @@ import Associate from "../components/Associate";
 import LatestEyeCareInsight from "../components/LatestEyeCareInsight";
 import Banner from "../components/Banner";
 import HeroSection from "../components/HeroSection";
+import Script from "next/script";
 
 export const metadata = {
   title: "360 Eye Care - Expert Optometry Services in Toronto",

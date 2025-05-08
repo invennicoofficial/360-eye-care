@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Script from "next/script";
 
 export default function ReviewCarousel() {
   const [reviews, setReviews] = useState([]);
@@ -202,15 +203,15 @@ export default function ReviewCarousel() {
       <div className="h-1 w-32 bg-combination-100 mb-10"></div>
 
       {/* Left arrow */}
-      <button
+      {/* <button
         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10"
         onClick={handlePrev}
         aria-label="Previous reviews"
       >
         <ChevronLeft size={24} className="text-gray-600" />
-      </button>
+      </button> */}
 
-      <div className="flex flex-row gap-4 overflow-hidden">
+      {/* <div className="flex flex-row gap-4 overflow-hidden">
         {visibleReviews.map((review) => (
           <div
             key={review.id}
@@ -278,17 +279,17 @@ export default function ReviewCarousel() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Right arrow */}
-      <button
+      {/* <button
         className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10"
         onClick={handleNext}
         aria-label="Next reviews"
       >
         <ChevronRight size={24} className="text-gray-600" />
-      </button>
-
+      </button> */}
+{/* 
       <div className="flex justify-center mt-8 gap-2">
         {reviews.slice(0, 10).map((_, index) => (
           <button
@@ -300,6 +301,17 @@ export default function ReviewCarousel() {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
+      </div> */}
+      <Script
+        src="https://static.elfsight.com/platform/platform.js"
+        strategy="lazyOnload"
+        async
+      />
+      <div className="w-full flex justify-center mt-12">
+        <div
+          className="elfsight-app-d5b3e636-8374-43a4-ad09-38333d56348a"
+          data-elfsight-app-lazy
+        />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { BeachImage, YorkVilleRosedale } from "../constants/Images";
 import HappyClientBeaches from "./HappyClientBeaches";
 import HappyClientYorkVilla from "./HappyClientYorkVilla";
 import Link from "next/link";
+
 const NearYou = () => {
   return (
     <div className="bg-white w-full py-8 md:py-16">
