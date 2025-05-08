@@ -1,4 +1,4 @@
-import { Poppins, Roboto } from "next/font/google";
+import { Poppins, Roboto, Lora } from "next/font/google";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "./globals.css";
@@ -7,6 +7,15 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
   display: "swap",
   preload: true,
   fallback: ["system-ui", "arial"],
@@ -123,7 +132,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="https://fonts.gstatic.com" as="style" />
       </head>
       <body
-        className={`font-sans antialiased ${poppins.className} ${roboto.className}`}
+        className={`font-sans antialiased ${poppins.className} ${roboto.className} ${lora.className}`}
       >
         <NavBar />
         {children}

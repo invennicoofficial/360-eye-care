@@ -36,7 +36,7 @@ const page = () => {
 
   const whyChooseLink = [
     {
-      title: "Learn More",
+      title: "Book An Appointment",
       href: "/",
     },
   ];
@@ -196,6 +196,7 @@ const page = () => {
         image={glassCleanerImage}
         bullets={whyChooseDataBullets}
         url={whyChooseLink}
+        noCatalog={true}
         reverse
       />
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-start my-2">
@@ -378,7 +379,7 @@ const page = () => {
                   </div>
                 ))}
             </div>
-            <p className="text-start text-neutral-500">
+            <p className="text-start text-neutral-500 mb-5">
               Whatever your eye needs and prescription requirements are, our
               opticians at 360 Eyecare are here to find the best lens option for
               you. Contact our office today to speak to one of our opticians
