@@ -469,14 +469,14 @@ const page = () => {
           </Link>{" "}
           at{" "}
           <Link
-            href={"/"}
+            href={"/toronto-beaches-optometrist"}
             className="text-combination-200 hover:text-combination-100"
           >
             360 Eyecare Beaches
           </Link>{" "}
           and{" "}
           <Link
-            href={"/"}
+            href={"/toronto-rosedale-optometrist"}
             className="text-combination-200 hover:text-combination-100"
           >
             360 Eyecare Yorkville Rosedale

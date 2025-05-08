@@ -25,11 +25,15 @@ const Banner = ({
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl px-4">
-        <h1 className="text-[40px] font-bold mb-3 text-white">{title}</h1>
-        <p className="text-base mb-4 tracking-wide">{description}</p>
+        <h1 className="text-[40px] font-bold mb-3 text-white font-poppins">
+          {title}
+        </h1>
+        <p className="text-base mb-4 tracking-wide font-poppins">
+          {description}
+        </p>
         <Link
           href={buttonUrl}
-          className="inline-block px-[25px] py-[10px] bg-combination-100 text-white hover:text-combination-100 font-medium rounded hover:bg-combination-200 transition-colors"
+          className="inline-block px-[25px] text-sm py-[10px] bg-combination-100 text-white hover:text-combination-100 font-medium rounded hover:bg-combination-200 transition-colors"
         >
           {buttonText}
         </Link>

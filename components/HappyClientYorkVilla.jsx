@@ -196,7 +196,7 @@ export default function ReviewCarousel() {
 
   return (
     <div className="w-full max-w-6xl mx-auto p-4 relative">
-      <h1 className="text-4xl font-bold text-brand-blue mb-6">
+      <h1 className="text-4xl font-bold text-brand-blue mb-6 font-poppins">
         Happy Clients of Yorkville Rosedale!
       </h1>
       <div className="h-1 w-32 bg-combination-100 mb-10"></div>

@@ -10,6 +10,7 @@ import { TfiBriefcase } from "react-icons/tfi";
 import { TfiUser } from "react-icons/tfi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useEffect, useState, useCallback } from "react";
+import Link from "next/link";
 
 const PediatricOptometristsUI = () => {
   const [experience, setExperience] = useState(0);
@@ -102,12 +103,13 @@ const PediatricOptometristsUI = () => {
                   your child.
                 </p>
 
-                <button
+                <Link
+                  href="/book-eye-exam"
                   className="bg-combination-100 text-white hover:text-combination-100 px-6 py-3 rounded-full hover:bg-white hover:border hover:border-combination-100 transition duration-300 w-max"
                   aria-label="Book Your Pediatric Eye Examination"
                 >
                   Book Your Pediatric Eye Examination
-                </button>
+                </Link>
               </div>
             </div>
 

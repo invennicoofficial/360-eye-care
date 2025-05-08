@@ -43,8 +43,8 @@ const SectionDivider = () => (
 const FeatureItem = ({ title, description }) => (
   <div>
     <div className="flex items-center gap-2 mb-2">
-      <FaCaretRight size={20} className="text-combination-200 flex-shrink-0" />
-      <p className="text-blue-900 font-semibold text-lg">{title}</p>
+      <FaCaretRight size={20} className="text-combination-100 flex-shrink-0" />
+      <p className="text-combination-200 font-semibold text-lg">{title}</p>
     </div>
     <p className="text-neutral-500 pl-7">{description}</p>
   </div>
@@ -57,12 +57,12 @@ const AboutUs = () => {
       <AboutUsSection cardData={cardData} />
 
       {/* Why Choose Us Section */}
-      <section className="w-full bg-[#F6F7F5] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row bg-white shadow-md overflow-hidden">
+      <section className="w-full px-4 sm:mx-10 bg-white py-8 sm:py-16">
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row bg-white overflow-hidden">
             {/* Image Container */}
-            <div className="lg:w-1/2">
-              <div className="relative h-full">
+            <div className="lg:w-1/2 w-full">
+              <div className="relative ">
                 <Image
                   src={MeetOptometryImage}
                   alt="Eye care professionals with patients"
@@ -75,9 +75,9 @@ const AboutUs = () => {
             </div>
 
             {/* Content Container */}
-            <div className="lg:w-1/2 p-8 lg:p-10 flex flex-col gap-6">
+            <div className="lg:w-1/2 p-4 sm:p-8 lg:p-10 flex flex-col gap-4 sm:gap-6">
               <div className="flex flex-col">
-                <h2 className="text-3xl lg:text-4xl font-bold text-combination-200 mb-6">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-combination-200 mb-4 sm:mb-6">
                   Why Choose Us for Your Optometric Needs?
                 </h2>
                 <SectionDivider />
@@ -95,7 +95,7 @@ const AboutUs = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-6 mt-2">
+              <div className="flex flex-col gap-4 sm:gap-6 mt-2">
                 <FeatureItem
                   title="Payment Options"
                   description="We also offer direct billing to your insurance providers (as your plan allows)."
@@ -112,28 +112,28 @@ const AboutUs = () => {
 
       {/* Our Vision Section */}
       <section className="bg-[#F6F7F5] w-full">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="flex flex-col gap-2 lg:w-1/2">
-              <h3 className="text-combination-200 text-3xl lg:text-4xl font-bold">
+        <div className="max-w-7xl mx-auto py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8">
+            <div className="flex flex-col gap-2 w-full lg:w-1/2">
+              <h3 className="text-combination-200 text-2xl sm:text-3xl lg:text-4xl font-bold">
                 Our Vision
               </h3>
               <SectionDivider />
-              <p className="text-neutral-500 tracking-wider text-lg leading-relaxed">
+              <p className="text-neutral-500 tracking-wider text-base sm:text-lg leading-relaxed">
                 360 Eyecare's vision is to consistently provide our patients and
                 customers with a full scope, customer service oriented eye care
                 experience utilizing the most cutting edge technology. We strive
                 to provide the best in class care through our comprehensive eye
                 exams, our optical store, and our specialty{" "}
                 <Link
-                  href="/dry-eye"
+                  href="/dry-eye-syndrome-keratograph-i-pen"
                   className="text-combination-200 hover:text-combination-100 transition-colors"
                 >
                   dry eye
                 </Link>{" "}
                 and{" "}
                 <Link
-                  href="/myopia-control"
+                  href="/myopia-control-clinic"
                   className="text-combination-200 hover:text-combination-100 transition-colors"
                 >
                   myopia control clinics
@@ -141,7 +141,7 @@ const AboutUs = () => {
                 .
               </p>
             </div>
-            <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
+            <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
               <BeforeAfterSlider />
             </div>
           </div>

@@ -102,12 +102,12 @@ const HeroCarousel = () => {
                     <div className="flex flex-row items-center">
                       <div className="w-[15px] h-[320px] bg-white hidden md:block" />
                       {/* Title and subtitle */}
-                      <div className="flex flex-col md:pl-5 text-center md:text-left w-full">
+                      <div className="flex flex-col md:pl-5 text-center md:text-left w-full ">
                         <motion.h1
                           initial={{ y: 60, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
                           transition={{ duration: 0.8, ease: "easeOut" }}
-                          className="font-heading text-[42px] md:text-[78px] font-bold text-brand-blue mb-2"
+                          className="font-lora text-[42px] md:text-[78px] font-bold text-brand-blue mb-2 "
                         >
                           {slide.title}
                         </motion.h1>
@@ -120,7 +120,7 @@ const HeroCarousel = () => {
                             ease: "easeOut",
                             delay: 0.2,
                           }}
-                          className="font-heading text-[28px] font-semibold md:text-[40px] text-brand-blue mb-8"
+                          className="font-lora text-[28px] font-semibold md:text-[40px] text-brand-blue mb-8"
                         >
                           {slide.subtitle}
                         </motion.h2>

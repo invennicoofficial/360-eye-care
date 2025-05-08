@@ -15,7 +15,7 @@ const LatestEyeCareInsight = () => {
           {/* Left Side - Blog Content */}
           <div className="w-full lg:w-3/5">
             <div className="flex flex-col mb-10">
-              <h2 className="text-4xl font-bold text-brand-blue mb-2">
+              <h2 className="text-4xl font-bold text-brand-blue mb-2 font-poppins">
                 Latest Eye Care Insights
               </h2>
               <div className="h-1 w-32 bg-combination-100 mb-4"></div>

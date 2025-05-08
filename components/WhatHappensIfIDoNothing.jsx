@@ -4,11 +4,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { whatifidonothing } from "../constants/Images";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
 // Placeholder for images until you have actual imports
 const placeholderIcons = {
   discomfort: "/api/placeholder/62/62",
@@ -206,9 +201,7 @@ const ConsequenceCard = ({ id, icon, title, description }) => {
             height={62}
           />
           <p
-            className={`${
-              playfair.className
-            } text-5xl text-[#31505E] opacity-30 transform transition-transform duration-300 ease-in-out ${
+            className={`font-lora text-5xl text-[#31505E] opacity-30 transform transition-transform duration-300 ease-in-out ${
               isHovered ? "scale-90" : "scale-100"
             }`}
           >

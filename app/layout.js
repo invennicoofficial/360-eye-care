@@ -2,6 +2,7 @@ import { Poppins, Roboto } from "next/font/google";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "./globals.css";
+import { Lora } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,6 +20,12 @@ const roboto = Roboto({
   display: "swap",
   preload: true,
   fallback: ["system-ui", "arial"],
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-lora",
 });
 
 export const metadata = {

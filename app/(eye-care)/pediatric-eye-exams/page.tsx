@@ -68,7 +68,13 @@ const page = () => {
       <IntroSection />
       <PediatricOptometristsUI />
       <PediatricSlider />
-      <Banner2 />
+      <Banner2
+        title="Need Pediatric Eye Care?"
+        description="Contact us today to schedule your child’s pediatric eye exam in Toronto."
+        rosedale={true}
+        ctaText="Book A Pediatric Eye Exam"
+        ctaLink="/book-eye-exam"
+      />
       <div className="max-w-6xl mx-auto my-8 sm:my-16 px-4 sm:px-0 flex flex-col sm:flex-row-reverse justify-between items-start">
         <div className="flex flex-col gap-4 w-full sm:w-[585px] sm:ml-12 mb-8 sm:mb-0">
           <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900]">

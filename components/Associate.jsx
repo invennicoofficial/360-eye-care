@@ -6,7 +6,7 @@ const Associate = ({ rows }) => {
     <div className="py-16 bg-white">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
-          <h2 className="text-4xl font-bold text-brand-blue  mb-4 text-center">
+          <h2 className="text-4xl font-bold text-brand-blue  mb-4 text-center font-poppins">
             We are proudly associated with
           </h2>
           <div className="h-1 w-32 bg-combination-100 mb-12"></div>

@@ -10,13 +10,13 @@ const GivingBack = () => {
 
       <div className="bg-neutral-400 pt-8 md:pt-12 pb-8 md:pb-15 px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl mx-auto gap-6 md:gap-8">
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:w-[60%]">
             <div className="text-brand-subheader text-3xl md:text-4xl font-bold mb-2">
               Giving Back
             </div>
             <hr className="w-20 h-1 bg-combination-100 mb-4" />
 
-            <p className="text-base text-neutral-500 mb-5 tracking-wider leading-7 md:leading-8 font-normal">
+            <p className="text-base text-neutral-500 mb-5  leading-7 md:leading-8 font-normal">
               360 Eyecare is proud to announce our continued sponsorship of
               <Link
                 href="https://givingsight.org/"
@@ -32,7 +32,7 @@ const GivingBack = () => {
               glasses to underserved communities around the world.
             </p>
 
-            <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+            <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
               Our participation in the World Sight Day Challenge is a key
               component of our commitment. This initiative addresses the
               staggering statistic that over 1.1 billion people are blind or
@@ -49,14 +49,14 @@ const GivingBack = () => {
               alt="Giving back initiative"
               width={585}
               height={338}
-              className="w-full md:w-auto max-w-full h-auto"
+              className="w-full md:w-[585px] max-w-full h-auto"
               priority
             />
           </div>
         </div>
 
         <div className="flex flex-col gap-3 max-w-7xl mx-auto mt-6">
-          <p className="text-base text-neutral-500 mb-5 tracking-wider leading-7 md:leading-8 font-normal">
+          <p className="text-base text-neutral-500 mb-5  leading-7 md:leading-8 font-normal">
             "We are honored to support Optometry Giving Sight and to be a part
             of the solution to global vision impairment," said Dr. Sam Baraam,
             Optometrist and Founder at 360 Eyecare. "Our ongoing commitment to
@@ -65,7 +65,7 @@ const GivingBack = () => {
             services reach those who need them the most, helping to create a
             world where everyone has the opportunity to see clearly."
           </p>
-          <p className="text-base text-neutral-500 mb-5 tracking-wider leading-7 md:leading-8 font-normal">
+          <p className="text-base text-neutral-500 mb-5  leading-7 md:leading-8 font-normal">
             360 Eyecare's sponsorship and participation in the World Sight Day
             Challenge are part of our broader mission to provide comprehensive
             eye care and promote the importance of vision health. We believe
@@ -73,7 +73,7 @@ const GivingBack = () => {
             making it accessible to all, regardless of geographic or economic
             barriers.
           </p>
-          <p className="text-base text-neutral-500 mb-5 tracking-wider leading-7 md:leading-8 font-normal">
+          <p className="text-base text-neutral-500 mb-5  leading-7 md:leading-8 font-normal">
             For more information about our sponsorship and how you can support
             Optometry Giving Sight, please visit{" "}
             <Link
@@ -90,7 +90,7 @@ const GivingBack = () => {
             <h3 className="text-combination-200 font-bold text-xl">
               About 360 Eyecare
             </h3>
-            <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+            <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
               360 Eyecare is a leading eye care provider based in Toronto,
               offering a full range of optometric services, including
               comprehensive eye exams, advanced diagnostics, and personalized
@@ -103,7 +103,7 @@ const GivingBack = () => {
             <h3 className="text-combination-200 font-bold text-xl">
               About Optometry Giving Sight
             </h3>
-            <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+            <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
               Optometry Giving Sight is a global initiative that aims to
               eliminate avoidable blindness and vision impairment due to
               uncorrected refractive error. The organization funds sustainable
@@ -113,7 +113,7 @@ const GivingBack = () => {
             </p>
           </div>
 
-          <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+          <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
             For additional information or inquiries, please contact us at{" "}
             <Link
               href="mailto:info@360eyecare.ca"
@@ -149,21 +149,21 @@ const GivingBack = () => {
         </div>
         <hr className="w-20 h-1 bg-combination-100 mb-4" />
 
-        <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+        <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
           360 Eyecare is delighted to announce its proud sponsorship as a
           Platinum sponsor of Neil McNeil Catholic High School's AAA Sr. Boys
           Volleyball team for the fall/winter 2019 season. The team competed in
           the prestigious OFSAA Sr. Boys AAA Volleyball Championship, showcasing
           their exceptional talent and dedication
         </p>
-        <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+        <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
           The championship event, held over three thrilling days from November
           20th to November 23rd, took place at Centennial College's Progress
           Campus. This sponsorship underscores 360 Eyecare's commitment to
           supporting local youth and promoting excellence in athletics within
           the community.
         </p>
-        <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+        <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
           "We are incredibly proud to support the Neil McNeil Catholic High
           School's AAA Sr. Boys Volleyball team. Their hard work, teamwork, and
           sportsmanship resonate with our values at 360 Eyecare. We are excited
@@ -171,7 +171,7 @@ const GivingBack = () => {
           celebrating their continued success." said Dr. Sam Baraam, Optometrist
           and Founder at 360 Eyecare.
         </p>
-        <p className="text-base text-neutral-500 tracking-wider leading-7 md:leading-8 font-normal">
+        <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
           360 Eyecare remains dedicated to fostering community engagement and
           encouraging young athletes to achieve their highest potential.
         </p>

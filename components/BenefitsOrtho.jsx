@@ -5,11 +5,6 @@ import React, { useState } from "react";
 import { PatientScaledImage } from "../constants/Images";
 import { Orthokeratology } from "../constants/Constants";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
 const BenefitsOrtho = () => {
   return (
     <div className="w-full bg-brand-blue px-4 py-16 md:py-20">
@@ -59,9 +54,7 @@ const FeatureCard = ({ id, icon, title, description }) => {
         <div className="flex justify-between items-start">
           <Image src={icon} alt={`Feature Icon ${id}`} width={62} height={62} />
           <p
-            className={` ${
-              playfair.className
-            } text-5xl md:text-6xl text-brand-blue transform transition-transform duration-300 ease-in-out ${
+            className={`font-lora text-5xl md:text-6xl text-brand-blue transform transition-transform duration-300 ease-in-out ${
               isHovered ? "scale-90" : "scale-100"
             }`}
           >

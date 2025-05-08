@@ -186,7 +186,7 @@ export default function ReviewCarousel() {
   if (loading) {
     return (
       <div className="w-full max-w-6xl mx-auto p-4">
-        <h1 className="text-4xl font-bold text-brand-blue mb-6">
+        <h1 className="text-4xl font-bold text-brand-blue mb-6 font-poppins">
           Happy Clients of The Beaches!
         </h1>
         <div className="h-1 w-32 bg-blue-300 mb-10"></div>
@@ -289,7 +289,7 @@ export default function ReviewCarousel() {
       >
         <ChevronRight size={24} className="text-gray-600" />
       </button> */}
-{/* 
+      {/* 
       <div className="flex justify-center mt-8 gap-2">
         {reviews.slice(0, 10).map((_, index) => (
           <button

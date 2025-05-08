@@ -90,7 +90,7 @@ const PediatricOptometric = () => {
         {/* Content container */}
         <div className="w-full lg:w-1/2 flex flex-col space-y-6 px-4 lg:px-10 pt-6 lg:pt-8">
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue leading-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue leading-tight font-poppins">
             Specialized Pediatric Optometric Services in Toronto
           </h2>
 

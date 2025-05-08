@@ -101,8 +101,10 @@ module.exports = {
         },
       },
       fontFamily: {
+        lora: ["Lora"],
         sans: ["Roboto", "Arial", "sans-serif"],
         heading: ["Montserrat", "Roboto", "sans-serif"],
+        poppins: ["Poppins", "Arial", "sans-serif"],
       },
       fontSize: {
         xs: [

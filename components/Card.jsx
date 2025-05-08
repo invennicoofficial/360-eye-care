@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 // Card Component
 const Card = ({
@@ -17,7 +18,7 @@ const Card = ({
   return (
     <div
       className={`
-      relative bg-white shadow-sm p-5 transition-all duration-300 ease-out h-auto flex flex-col
+      relative bg-white shadow-sm p-8 transition-all duration-300 ease-out h-auto flex flex-col
       origin-center transform border-4 ${
         isHovered
           ? "-translate-y-2 shadow-lg border-combination-200 z-10 bg-combination-200"
@@ -44,19 +45,28 @@ const Card = ({
         </div>
       )}
 
-      <h3 className="text-xl font-bold text-combination-200 mb-2">{title}</h3>
+      <h3 className="text-xl font-bold text-combination-200 mb-2 font-poppins">
+        {title}
+      </h3>
 
       {subtitle && (
-        <h4 className="text-md font-medium text-gray-700 mb-3">{subtitle}</h4>
+        <h4 className="text-md font-medium text-gray-700 mb-3 font-poppins leading-relaxed mt-2">
+          {subtitle}
+        </h4>
       )}
 
-      <p className="text-gray-600 mb-5 flex-grow">{description}</p>
+      <p className="text-[#888888]  font-poppins tracking-wider mb-5 flex-grow leading-relaxed">
+        {description}
+      </p>
 
       {catalogLink && (
         <div className="mt-auto">
-          <button className="inline-block bg-combination-200 text-white py-2 px-4 rounded text-sm font-medium hover:bg-combination-100 transition-colors duration-200">
+          <Link
+            href={catalogLink}
+            className="inline-block bg-combination-200 text-white py-2 px-4 rounded text-sm font-medium hover:bg-combination-100 transition-colors duration-200"
+          >
             {`${title} Catalog`}
-          </button>
+          </Link>
         </div>
       )}
     </div>

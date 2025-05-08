@@ -1,20 +1,15 @@
 "use client";
-import { Playfair_Display } from "next/font/google";
+
 import Image from "next/image";
 import React, { useState } from "react";
 import { PatientScaledImage } from "../constants/Images";
 import { cardData } from "../constants/Constants";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
 const WhyChooseUs = () => {
   return (
     <div className="w-full bg-brand-blue px-4 py-16 md:py-20">
       <div className="flex flex-col gap-4 items-center justify-center">
-        <h3 className="text-3xl md:text-4xl font-bold text-white text-center">
+        <h3 className="text-3xl md:text-4xl font-bold text-white text-center font-poppins">
           Why Choose Us?
         </h3>
         <div className="w-16 h-0.5 bg-combination-100" />
@@ -71,9 +66,7 @@ const FeatureCard = ({ id, icon, title, description }) => {
         <div className="flex justify-between items-start">
           <Image src={icon} alt={`Feature Icon ${id}`} width={62} height={62} />
           <p
-            className={` ${
-              playfair.className
-            } text-5xl md:text-6xl text-brand-blue transform transition-transform duration-300 ease-in-out ${
+            className={`font-lora text-5xl md:text-6xl text-brand-blue transform transition-transform duration-300 ease-in-out ${
               isHovered ? "scale-90" : "scale-100"
             }`}
           >

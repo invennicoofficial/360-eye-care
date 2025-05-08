@@ -209,9 +209,12 @@ const Symptoms = () => {
       </section>
 
       <div className="flex justify-center mt-8">
-        <button className="bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white py-3 px-8 rounded-md w-full sm:w-auto">
+        <Link
+          href="/book-eye-exam"
+          className="bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white py-3 px-8 rounded-md w-full sm:w-auto"
+        >
           Get Dry Eye Treatment Today
-        </button>
+        </Link>
       </div>
 
       <section className="md:mt-10 mt-6">

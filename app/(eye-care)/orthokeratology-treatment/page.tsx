@@ -137,7 +137,13 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Banner2 />
+      <Banner2
+        title="Book Your Eye Exam"
+        description="For exceptional eye care, schedule your eye exam at our Beaches and Rosedale, Toronto locations today!"
+        rosedale={true}
+        ctaText="Book an Eye Exam"
+        ctaLink="/"
+      />
 
       <div className="max-w-6xl mx-auto my-8 sm:my-16 px-4 sm:px-0">
         <h3 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900] mb-2">

@@ -93,8 +93,8 @@ const page = () => {
           <AboutUsSection cardData={cardData} />
         </div>
 
-        <div className="max-w-6xl mx-auto flex flex-col gap-4 my-8 sm:my-12 px-4 sm:px-6 md:px-8">
-          <p className="text-neutral-500 text-base tracking-wide leading-relaxed">
+        <div className="max-w-7xl mx-auto flex flex-col gap-4 my-8 sm:my-12 px-4 sm:px-6 md:px-8">
+          <p className="text-neutral-500 text-base  leading-relaxed">
             Eye exams have come a long way over the decades, and are very
             different from the ones your parents and grandparents might have
             had, though the core components are similar. In a city like Toronto,
@@ -102,17 +102,17 @@ const page = () => {
             can vary a lot, from the very quick and basic to a more thorough
             exam much like going to your family physician for a yearly physical.
           </p>
-          <p className="text-neutral-500 text-base tracking-wide leading-relaxed">
+          <p className="text-neutral-500 text-base  leading-relaxed">
             At{" "}
             <Link
-              href={"/eye-care/eye-exams"}
+              href={"/toronto-beaches-optometrist"}
               className="text-combination-200 hover:text-combination-100"
             >
               360 Eyecare Beaches
             </Link>{" "}
             and
             <Link
-              href={"/eye-care/eye-exams"}
+              href={"/toronto-yorkville-optometrist"}
               className="text-combination-200 hover:text-combination-100"
             >
               {" "}
@@ -120,7 +120,7 @@ const page = () => {
             </Link>
             , we provide comprehensive eye exams to all ages. Our{" "}
             <Link
-              href={"/eye-care/eye-exams"}
+              href={"/"}
               className="text-combination-200 hover:text-combination-100"
             >
               optometrists in Toronto
@@ -128,7 +128,7 @@ const page = () => {
             see patients as early as 6 months of age and diagnose and treat
             vision and eye conditions of all stages.
             <Link
-              href={"/eye-care/eye-exams"}
+              href={"/optometrists/"}
               className="text-combination-200 hover:text-combination-100"
             >
               Our optometrists
@@ -136,21 +136,21 @@ const page = () => {
             leverage the most innovative technology in the industry to help
             perform a thorough and precise examination.
           </p>
-          <p className="text-neutral-500 text-base tracking-wide leading-relaxed">
+          <p className="text-neutral-500 text-base  leading-relaxed">
             Our goal is to help everyone in the Toronto area (The Beaches,
             Yorkville, Rosedale and nearby) see to their maximum potential with
             optimum optical lenses and visual aids because we know how important
             your ocular health is. We strive to provide the full circle of care
             to all our patients.
           </p>
-          <p className="text-neutral-500 text-base tracking-wide leading-relaxed mb-6">
+          <p className="text-neutral-500 text-base  leading-relaxed mb-6">
             So what are some of the tests and devices you'll come across in the
             modern eye exam?
           </p>
 
           <div className="flex justify-center sm:justify-start mb-8 sm:mb-10">
             <Link
-              href="/beaches-book-an-appointment"
+              href="/book-eye-exam"
               className="px-6 sm:px-8 py-2 flex justify-center items-center bg-combination-100 text-white text-nowrap font-bold rounded-full hover:bg-combination-200 transition-colors w-full sm:w-[220px]"
             >
               Book an Eye Exam Today!
@@ -161,7 +161,7 @@ const page = () => {
             The Basics of a Comprehensive Eye Exam
           </h3>
           <hr className="w-24 h-1 bg-combination-100 mb-3" />
-          <p className="text-neutral-500 text-base tracking-wide leading-relaxed">
+          <p className="text-neutral-500 text-base  leading-relaxed">
             An eye exam covers more than a single prescription check. An
             optometrist will systematically go through several visual
             assessments and health screenings throughout the appointment. What
@@ -169,7 +169,7 @@ const page = () => {
             the optometrist quite a lot about the physical condition of your
             eyes during the exam.
           </p>
-          <p className="text-neutral-500 text-base tracking-wide leading-relaxed">
+          <p className="text-neutral-500 text-base  leading-relaxed">
             These checks include:
           </p>
 
@@ -179,7 +179,7 @@ const page = () => {
                 <h4 className="text-combination-200 text-base sm:text-[18px] font-bold mb-2 sm:mb-3">
                   {item.head}
                 </h4>
-                <p className="text-neutral-500 text-sm sm:text-base tracking-wide leading-relaxed">
+                <p className="text-neutral-500 text-sm sm:text-base  leading-relaxed">
                   {item.para}
                 </p>
               </div>
@@ -205,14 +205,14 @@ const page = () => {
                 Check Yearly, See Clearly
               </h3>
               <hr className="w-24 h-1 bg-combination-100 mb-3" />
-              <p className="text-neutral-500 text-sm sm:text-base tracking-wide leading-relaxed mb-6">
+              <p className="text-neutral-500 text-sm sm:text-base  leading-relaxed mb-6">
                 Book your eye exams in Toronto with our optometrists today at
                 any of our 360 Eyecare locations at The Beaches or Yorkville
                 Rosedale. We look forward to providing you with the complete
                 circle of care for all your eye care and eyewear needs.
               </p>
               <Link
-                href="/beaches-book-an-appointment"
+                href="/book-eye-exam"
                 className="inline-block px-6 sm:px-8 py-2 bg-combination-100 text-white font-bold rounded-full hover:bg-combination-200 transition-colors w-full sm:w-auto text-center"
               >
                 Book an Eye Exam
@@ -230,7 +230,7 @@ const page = () => {
           The Importance of Eye Examinations
         </h3>
         <hr className="w-24 h-1 bg-combination-100 mb-3" />
-        <p className="text-neutral-500 text-sm sm:text-base tracking-wide leading-relaxed">
+        <p className="text-neutral-500 text-sm sm:text-base  leading-relaxed">
           As you can see, the eye exam has come a long way from the early days
           as technology has advanced, allowing doctors to assess and evaluate
           ocular conditions earlier than they had in the past. And with early
@@ -241,31 +241,26 @@ const page = () => {
           and checks, so it is important to inquire ahead of time as to what the
           eye exam consists of and whether that is right for you and your needs.
         </p>
-        <p className="text-neutral-500 text-sm sm:text-base tracking-wide leading-relaxed">
+        <p className="text-neutral-500 text-sm sm:text-base  leading-relaxed">
           Don't see your question answered here? Feel free to contact us via
           phone, email, or by also using our website, or even drop by one of our
           Toronto clinic and chat with us in person. We are more than happy to
           help.
         </p>
-        <p className="text-neutral-500 text-sm sm:text-base tracking-wide leading-relaxed">
+        <p className="text-neutral-500 text-sm sm:text-base  leading-relaxed">
           At 360 Eyecare, we believe in offering our patients the full scope of
           eye health needs, and our comprehensive eye exams reflect that vision.
           Please reach out to either of our locations to book your next eye exam
           in Toronto today:{" "}
           <Link
-            href=""
+            href="/toronto-rosedale-optometrist"
             className="text-combination-200 hover:text-combination-100"
           >
             360 Eyecare – Yorkville Rosedale{" "}
           </Link>
-          ,{" "}
+          , or{" "}
           <Link
-            href=""
-            className="text-combination-200 hover:text-combination-100"
-          ></Link>{" "}
-          or{" "}
-          <Link
-            href=""
+            href="/toronto-beaches-optometrist"
             className="text-combination-200 hover:text-combination-100"
           >
             360 Eyecare – Beaches
