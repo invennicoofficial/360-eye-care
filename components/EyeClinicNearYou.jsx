@@ -7,7 +7,7 @@ const EyeClinicNearYou = () => {
       <h2 className="text-combination-200 text-3xl md:text-[37px] font-extrabold mb-4">
         Eye Clinics Near You – 360 Eyecare Locations in Toronto
       </h2>
-      <hr className="w-20 h-1 bg-combination-100 mb-8" />
+      <hr className="w-[65px] h-[2px] bg-combination-100 mb-8" />
 
       <div className="flex flex-col md:flex-row gap-8">
         {/* Beaches Location */}
@@ -15,7 +15,7 @@ const EyeClinicNearYou = () => {
           <h3 className="text-combination-200 text-2xl md:text-[37px] font-extrabold mb-2 leading-10">
             360 Eyecare Beaches – Your Local Eye Clinic in The Beaches
           </h3>
-          <hr className="w-20 h-1 bg-combination-100 mb-4" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
           <p className="text-neutral-500 text-base mb-4">
             Located in The Beaches, Toronto, this clinic offers top-quality eye
             care, including:
@@ -58,7 +58,7 @@ const EyeClinicNearYou = () => {
           <h3 className="text-combination-200 text-2xl md:text-[37px] font-extrabold mb-2 leading-10">
             360 Eyecare Yorkville – Premium Optometry Care
           </h3>
-          <hr className="w-20 h-1 bg-combination-100 mb-4" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
           <p className="text-neutral-500 text-base mb-4">
             Conveniently located in Yorkville and Rosedale, this optometry
             clinic provides:
@@ -81,7 +81,7 @@ const EyeClinicNearYou = () => {
             📍 Looking for an 'eye doctor near Yorkville' or 'optometrist near
             Rosedale'? Visit{" "}
             <Link
-              href="/toronto-yorkville-optometrist"
+              href="/toronto-rosedale-optometrist"
               className="text-combination-200 hover:text-combination-100"
             >
               360 Eyecare Yorkville

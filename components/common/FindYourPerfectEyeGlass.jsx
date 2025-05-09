@@ -12,6 +12,7 @@ import {
   perceptioneyecare,
   progressionofmyopia,
 } from "constants/prescriptionLenses";
+import Link from "next/link";
 
 const FindYourPerfectEyeGlass = () => {
   return (
@@ -48,9 +49,12 @@ const FindYourPerfectEyeGlass = () => {
                     average of 59%.
                   </p>
 
-                  <button className="mt-6 bg-combination-100 text-white hover:text-combination-100 px-6 py-3 rounded-full hover:bg-combination-200 transition duration-300 w-max">
+                  <Link
+                    href="/book-eye-exam"
+                    className="mt-6 bg-combination-100 text-white hover:text-combination-100 px-6 py-3 rounded-full hover:bg-combination-200 transition duration-300 w-max"
+                  >
                     Book Your Eye Exam
-                  </button>
+                  </Link>
                 </div>
               </div>
 

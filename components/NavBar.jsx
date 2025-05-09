@@ -159,7 +159,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-full bg-white shadow-sm border-b border-neutral-200 fixed z-50">
+    <div className="w-full !font-poppins bg-white shadow-sm border-b border-neutral-200 fixed z-50">
       <div
         className={`max-w-7xl mx-auto px-[15px] transition-all duration-300 ${
           isScrolled ? "py-0" : "py-5"
@@ -189,7 +189,7 @@ const NavBar = () => {
                 return (
                   <li
                     key={index}
-                    className="relative font-sans"
+                    className="relative font-poppins"
                     onMouseEnter={() =>
                       item.dropdown && toggleCollapsible(index)
                     }
@@ -198,18 +198,18 @@ const NavBar = () => {
                     {item.link ? (
                       <Link
                         href={item.link}
-                        className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 ${
+                        className={`font-poppins px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 ${
                           isActive
                             ? "text-combination-100"
                             : "text-combination-200"
-                        } hover:text-combination-100 hover:bg-gray-50`}
+                        } hover:text-combination-100 hover:bg-gray-50 `}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {item.name}
                       </Link>
                     ) : (
                       <span
-                        className={`px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200`}
+                        className={`font-poppins px-4 py-2 inline-flex items-center text-base rounded-md font-bold transition-colors duration-200 text-combination-200`}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {item.name}
@@ -217,7 +217,11 @@ const NavBar = () => {
                     )}
 
                     {item.dropdown && openCollapsible === index && (
-                      <div className="absolute left-0 mt-0 w-60 bg-white rounded-b-md z-10 animate-fade-in">
+                      <div
+                        className={`absolute mt-0 w-60 bg-white rounded-b-md z-10 animate-fade-in ${
+                          index === navItems.length - 1 ? "right-0" : "left-0"
+                        } `}
+                      >
                         <ul className="py-2 px-4">
                           {item.dropdown.map((subItem, subIndex) => {
                             const isSubItemActive = pathname === subItem.link;
@@ -273,7 +277,7 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden flex items-center justify-between h-16">
+        <div className="md:hidden flex items-center justify-between h-16 z-50">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <div className="w-24">
@@ -406,7 +410,7 @@ const NavBar = () => {
                                     className={cn(
                                       "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
                                       isSubItemActive
-                                        ? "text-brand-blue font-medium bg-gray-100"
+                                        ? "text-brand-blue font-medium font-poppins bg-gray-100"
                                         : "text-neutral-700"
                                     )}
                                     aria-current={
@@ -434,7 +438,7 @@ const NavBar = () => {
                           <Link
                             href={item.link}
                             className={cn(
-                              "px-4 py-3 text-base font-medium block",
+                              "px-4 py-3 text-base font-poppins font-medium block ",
                               isActive ? "text-brand-blue" : "text-neutral-700"
                             )}
                             aria-current={isActive ? "page" : undefined}

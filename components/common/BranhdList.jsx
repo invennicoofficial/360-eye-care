@@ -121,7 +121,7 @@ const BrandList = ({
             {thirdColumn.map((brand, index) => (
               <div key={`brand-col3-${index}`} className="flex items-center">
                 <Link
-                  href={`/brands/${slugify(brand.name, { lower: true })}`}
+                  href={`#${slugify(brand.name, { lower: true })}`}
                   className="flex items-center text-slate-700 hover:text-combination-100 transition-colors"
                 >
                   <span className="text-combination-100 mr-2">

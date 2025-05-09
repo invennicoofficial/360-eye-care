@@ -26,7 +26,7 @@ const DetailsDescription = ({
         {description?.map((item, index) => (
           <p
             key={index}
-            className="text-neutral-500 tracking-wider text-base md:text-lg leading-relaxed"
+            className="text-neutral-500  text-base md:text-lg leading-relaxed"
           >
             {item}
           </p>
@@ -35,7 +35,7 @@ const DetailsDescription = ({
         {bullets?.map((item, index) => (
           <div key={index} className="flex items-center gap-2">
             <FaCheck size={14} color="#40bcc8" />
-            <p className="text-combination-200 tracking-wider text-sm leading-relaxed">
+            <p className="text-combination-200  text-sm leading-relaxed">
               {item}
             </p>
           </div>

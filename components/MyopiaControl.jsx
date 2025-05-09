@@ -318,7 +318,7 @@ const MyopiaControl = () => {
         <h3 className="text-3xl md:text-4xl font-bold text-combination-200 mb-3 text-center">
           Myopia Control Treatment Methods
         </h3>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base font-normal text-center max-w-6xl">
           Beyond preventive measures, there are several treatment methods
           available to help control myopia progression in children. Here's a

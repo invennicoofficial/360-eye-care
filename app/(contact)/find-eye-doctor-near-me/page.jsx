@@ -16,7 +16,7 @@ const page = () => {
           <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-extrabold mb-3 md:mb-4">
             BOOK AN EYE EXAM
           </h2>
-          <hr className="w-16 md:w-20 h-1 bg-combination-100 mb-3 md:mb-4" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-3 md:mb-4" />
 
           <p className="text-neutral-500 text-sm sm:text-base md:text-lg mb-4">
             You can now use our online booking tools to select your own
@@ -62,7 +62,7 @@ const page = () => {
               <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-extrabold mb-3 md:mb-4">
                 Book Eye Exam Near You Today!
               </h2>
-              <hr className="w-16 md:w-20 h-1 bg-combination-100 mb-3 md:mb-4" />
+              <hr className="w-[65px] h-[2px] bg-combination-100 mb-3 md:mb-4" />
               <p className="mb-3 md:mb-4 text-sm sm:text-base">
                 Your vision is important—don't wait to{" "}
                 <Link
@@ -94,7 +94,7 @@ const page = () => {
               <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-extrabold mb-3 md:mb-4">
                 Call to Book an Appointment Now!
               </h2>
-              <hr className="w-16 md:w-20 h-1 bg-combination-100 mb-3 md:mb-4" />
+              <hr className="w-[65px] h-[2px] bg-combination-100 mb-3 md:mb-4" />
               <p className="text-xl sm:text-2xl md:text-[30px] font-extrabold mb-2 md:mb-4 leading-relaxed">
                 Beaches:{" "}
                 <Link
@@ -122,7 +122,7 @@ const page = () => {
         <h2 className="text-2xl sm:text-3xl md:text-[37px] font-extrabold text-combination-200 mb-3 md:mb-4">
           How to Find the Best Optometrist Near You in Toronto?
         </h2>
-        <div className="h-1 w-16 bg-combination-100 mb-6 md:mb-8"></div>
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-3 md:mb-4" />
 
         {/* 1. Search Online */}
         <div className="mb-6 md:mb-8">
@@ -198,7 +198,7 @@ const page = () => {
         <h2 className="text-2xl sm:text-3xl md:text-[37px] font-extrabold text-combination-200 mb-3 md:mb-4">
           Frequently Asked Questions (FAQs)
         </h2>
-        <div className="h-1 w-16 bg-combination-100 mb-6 md:mb-8"></div>
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-3 md:mb-4" />
 
         {/* FAQ 1 */}
         <div className="mb-5 md:mb-6">

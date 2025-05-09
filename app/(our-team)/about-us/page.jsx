@@ -77,7 +77,7 @@ const AboutUs = () => {
             {/* Content Container */}
             <div className="lg:w-1/2 p-4 sm:p-8 lg:p-10 flex flex-col gap-4 sm:gap-6">
               <div className="flex flex-col">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-combination-200 mb-4 sm:mb-6">
+                <h2 className="font-poppins text-2xl sm:text-3xl lg:text-4xl font-bold text-combination-200 mb-4 sm:mb-6">
                   Why Choose Us for Your Optometric Needs?
                 </h2>
                 <SectionDivider />

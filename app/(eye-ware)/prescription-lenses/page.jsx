@@ -37,7 +37,7 @@ const page = () => {
   const whyChooseLink = [
     {
       title: "Book An Appointment",
-      href: "/",
+      href: "/book-eye-exam",
     },
   ];
 
@@ -150,17 +150,17 @@ const page = () => {
     <main className="pt-[110px]">
       <SubHeader text="Prescription Lenses" />
       <DetailsDescripton
-        title="Find Your Perfect Eyeglasses in Toronto Here"
+        title="Prescription Lenses in Toronto: Tailored to You"
         description={data}
         image={eyeCareAccessoriesImage}
       />
 
-      <div className="w-full flex flex-col items-center justify-start my-2">
+      <div className="w-full flex flex-col md:items-center justify-start my-2 p-4">
         <h3 className="text-combination-200 text-[40px] font-extrabold mt-2">
           Types of Prescription Lenses
         </h3>
         <hr className=" w-24 h-[3px] bg-combination-100 mb-3" />
-        <p className="max-w-5xl text-neutral-500 text-base text-center">
+        <p className="max-w-5xl text-neutral-500 text-base md:text-center">
           When it comes to choosing the best prescription lenses for your
           glasses, you have several options available. Two popular choices are
           single-vision lenses and progressive lenses.
@@ -188,7 +188,7 @@ const page = () => {
         ]}
         description="Our experts are here to assist you in finding the perfect prescription lenses for your needs."
         buttonText="Book Appointment"
-        buttonLink="/book-appointment"
+        buttonLink="/book-eye-exam"
       />
       <DetailsDescripton
         title="Why Choose Our Prescription Lenses?"
@@ -199,10 +199,10 @@ const page = () => {
         noCatalog={true}
         reverse
       />
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-start my-2">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-start my-2 p-4">
         <TitleCommon
           title="Guidelines to consider before purchasing and getting your new glasses fitted:"
-          position="start"
+          position="center"
         />
         <p className="text-start">
           Several measurements and considerations go into making a pair of
@@ -211,7 +211,7 @@ const page = () => {
           professional eyecare provider will measure and take into consideration
           the following:
         </p>
-        <div className="w-full flex flex-col mt-2 items-start justify-start">
+        <div className="w-full flex flex-col mt-2 items-start justify-start mb-6">
           {dashBulltestData &&
             dashBulltestData.map((item, index) => (
               <div key={index}>

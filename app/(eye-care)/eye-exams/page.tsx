@@ -189,7 +189,7 @@ const page = () => {
 
         <div className="bg-white">
           <div className="p-4 sm:p-6 md:p-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6 sm:gap-8">
-            <div className="flex items-center">
+            <div className="flex items-end">
               <div className="w-[30px] h-[180px] bg-gray-200 hidden md:block"></div>
               <Image
                 src={SpectacleImage}
@@ -201,7 +201,7 @@ const page = () => {
             </div>
 
             <div className="max-w-xl px-2 sm:px-0">
-              <h3 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-bold mt-2">
+              <h3 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-bold mt-2 mb-4">
                 Check Yearly, See Clearly
               </h3>
               <hr className="w-24 h-1 bg-combination-100 mb-3" />
@@ -213,7 +213,7 @@ const page = () => {
               </p>
               <Link
                 href="/book-eye-exam"
-                className="inline-block px-6 sm:px-8 py-2 bg-combination-100 text-white font-bold rounded-full hover:bg-combination-200 transition-colors w-full sm:w-auto text-center"
+                className="inline-block px-6 sm:px-8 py-2 w-[220px] bg-combination-100 text-white font-bold rounded-full hover:bg-combination-200 transition-colors text-center"
               >
                 Book an Eye Exam
               </Link>

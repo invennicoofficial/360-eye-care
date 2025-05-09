@@ -223,7 +223,7 @@ const Symptoms = () => {
             <h2 className="text-combination-200 text-2xl md:text-[37px] font-bold mb-4">
               InMode IPL for Dry Eye Relief
             </h2>
-            <hr className="w-20 h-1 bg-combination-100 mb-4" />
+            <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
             <p className="text-neutral-500">
               InMode IPL therapy is an advanced and effective technology that is
               a core part of our treatment options. But what exactly is IPL, and
@@ -284,7 +284,7 @@ const Symptoms = () => {
         <h2 className="text-combination-200 text-2xl md:text-[37px] font-bold mb-4">
           The Benefits of IPL:
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500">
           Compared to some traditional dry eye treatments, IPL offers several
           attractive benefits:
@@ -329,7 +329,7 @@ const Symptoms = () => {
         <h2 className="text-combination-200 text-2xl md:text-[37px] font-bold mt-4 mb-4">
           InMode RF for Dry Eye Relief
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500">
           At 360 Eyecare Clinics, we continually seek advanced solutions for dry
           eye relief, and one such innovation is InMode Radiofrequency (RF)
@@ -342,7 +342,7 @@ const Symptoms = () => {
         <h2 className="text-combination-200 text-xl md:text-[30px] font-bold mt-4 mb-4">
           RF's Role in Dry Eye Relief:
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500">
           Dry eye can be linked to a decrease in collagen production and overall
           eyelid health. Here's how RF aims to address these issues:
@@ -363,7 +363,7 @@ const Symptoms = () => {
         <h2 className="text-combination-200 text-xl md:text-[30px] font-bold mt-4 mb-4">
           The Advantages of RF:
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500">
           Much like IPL, InMode RF therapy boasts some appealing benefits for
           dry eye sufferers:

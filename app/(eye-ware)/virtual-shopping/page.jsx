@@ -29,10 +29,10 @@ const Page = () => {
           <VirtualForm />
         </div>
         <div className="w-full md:w-1/2 mb-6 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold text-combination-200 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-combination-200 mb-4">
             Book Your FREE Virtual Shopping Experience!
           </h2>
-          <hr className="w-20 h-1 bg-combination-100 mb-4" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
           <p className="text-neutral-500 text-base mt-2 mb-6">
             You can learn more about the eyewear brands we carry before your
             virtual appointment. If you have any favourites, or specific styles

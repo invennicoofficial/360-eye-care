@@ -283,7 +283,7 @@ const pages = () => {
   const whyChooseLink = [
     {
       title: "Learn More",
-      href: "/",
+      href: "/about-us",
     },
   ];
 
@@ -295,24 +295,24 @@ const pages = () => {
           {/* Hero section - Made responsive */}
           <div className="max-w-7xl mx-auto py-8 md:py-16 flex flex-col md:flex-row justify-between">
             <div className="flex flex-col gap-2 w-full md:w-[50%] mb-6 md:mb-0">
-              <h3 className="text-combination-200 text-2xl md:text-[40px] font-extrabold mt-2">
+              <h3 className="text-combination-200 text-2xl md:text-[37px] font-extrabold mt-2 leading-normal ">
                 Find Your Perfect Eyeglasses in Toronto Here
               </h3>
               <hr className="w-16 md:w-24 h-1 bg-combination-100 mb-3" />
-              <p className="text-neutral-500 tracking-wider text-base md:text-lg leading-relaxed">
+              <p className="text-neutral-500  text-base md:text-base leading-relaxed">
                 Discover a diverse range of premium fashion and handmade
                 designer eyeglasses and sunglasses at 360 Eyecare. Our
                 collection includes renowned brands like Lafont, Vanni, Tom
                 Ford, Burberry, and more. Explore our pages on{" "}
                 <Link
-                  href="/dry-eye"
+                  href="/prescription-lenses/"
                   className="text-combination-200 hover:text-combination-100"
                 >
                   Prescription Lenses
                 </Link>{" "}
                 and{" "}
                 <Link
-                  href="/myopia-control"
+                  href="/contact-lenses-toronto"
                   className="text-combination-200 hover:text-combination-100"
                 >
                   Custom Lenses
@@ -340,11 +340,11 @@ const pages = () => {
         <div className="w-full">
           {/* Collection title section - Made responsive */}
           <div className="w-full flex items-center justify-between flex-col text-center px-4">
-            <h2 className="text-combination-200 text-2xl md:text-[40px] font-extrabold mt-2 mb-4">
+            <h2 className="text-combination-200 text-2xl md:text-[40px] font-extrabold font-poppins mt-2 mb-4">
               Explore Our Designer Eyeglasses Collection
             </h2>
-            <hr className="w-16 md:w-20 h-[3px] bg-combination-100 mb-3" />
-            <p className="text-neutral-500 max-w-2xl mx-auto">
+            <hr className="w-16 md:w-24 h-[3px] bg-combination-100 mb-3" />
+            <p className="text-neutral-500 max-w-3xl mx-auto">
               Discover a wide range of premium eyeglasses in Beaches and
               Rosedale from top brands.
             </p>
@@ -374,7 +374,7 @@ const pages = () => {
         ]}
         description="Our team is here to help. Whether you have questions about our services or need support, we're just a phone call away."
         buttonText="Book Appointment"
-        buttonLink="/book-appointment"
+        buttonLink="/book-eye-exam"
       />
       {/* Details Description section - Component should handle its own responsiveness */}
       <DetailsDescripton

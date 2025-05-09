@@ -17,7 +17,7 @@ const page = () => {
         <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900] mb-4">
           Introduction
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base mb-2">
           Myopia, or nearsightedness, is a common vision condition where distant
           objects appear blurry. However, recent years have seen a troubling
@@ -48,7 +48,7 @@ const page = () => {
             <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900] mb-4">
               Myopia Control Treatment
             </h2>
-            <hr className="w-20 h-1 bg-combination-100 mb-4" />
+            <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
             <p className="text-neutral-500 text-base mb-2">
               Myopia Control Treatment is a specialized program designed to slow
               or halt the progression of myopia in children. By addressing
@@ -102,7 +102,7 @@ const page = () => {
         <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900] mb-4">
           Factors Contributing to Myopia Progression
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base mb-4">
           While the exact cause of myopia remains under investigation, several
           factors contribute to its progression, particularly in children.
@@ -135,7 +135,7 @@ const page = () => {
         <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[30px] font-[900] mb-4 mt-6">
           Recommendations for prevention
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base mb-4">
           Fortunately, there are steps you can take to promote healthy vision
           habits and potentially slow myopia progression:

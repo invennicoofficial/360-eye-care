@@ -149,7 +149,7 @@ const page = () => {
         <h3 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900] mb-2">
           Myopia Control with Orthokeratology
         </h3>
-        <hr className="w-20 h-1 bg-combination-100 mb-8" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-8" />
         <h2 className="text-combination-200 text-2xl sm:text-[30px] font-[900] mb-2">
           How Orthokeratology Works?What is myopia and how is it managed?
         </h2>

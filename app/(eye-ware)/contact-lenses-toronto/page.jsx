@@ -120,7 +120,7 @@ const Page = () => {
           <TitleCommon
             title="Are you looking to switch to contact lenses?"
             position="start"
-            css="text-combination-200 text-2xl sm:text-3xl md:text-4xl font-extrabold mt-2"
+            css="text-combination-200 text-2xl sm:text-3xl md:text-4xl font-extrabold font-poppins mt-2"
           />
           <p className="text-neutral-500 mt-4">
             Switching from prescription glasses to contact lenses starts with an
@@ -159,7 +159,7 @@ const Page = () => {
 
       <div className="bg-[#29305f] !text-white py-6 px-4 sm:px-6 md:px-8 mt-8">
         <TitleCommon
-          css="text-white text-2xl sm:text-3xl"
+          css="text-white text-2xl sm:text-3xl font-poppins"
           title="Types of Contact Lenses"
           position="center"
         />
@@ -292,7 +292,7 @@ const Page = () => {
         <TitleCommon
           title="Frequently Asked Questions About Contact Lenses"
           position="start"
-          css="text-2xl sm:text-3xl"
+          css="text-2xl sm:text-3xl font-poppins"
         />
         <p className="text-sm md:text-base text-neutral-500 mt-4">
           While some people enjoy making a fashion statement with a pair of chic

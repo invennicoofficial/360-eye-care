@@ -76,7 +76,7 @@ const PediatricSlider = () => {
                     }`}
                   />
                   <span className="font-semibold text-sm">{service.label}</span>
-                  <svg
+                  {/* <svg
                     className={`ml-auto w-5 h-5 transition-transform ${
                       isActive ? "transform rotate-180" : ""
                     }`}
@@ -90,14 +90,14 @@ const PediatricSlider = () => {
                       strokeWidth="2"
                       d="M19 9l-7 7-7-7"
                     />
-                  </svg>
+                  </svg> */}
                 </button>
                 <AnimatePresence>
                   {isActive && (
                     <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
+                      initial={{ opacity: 0, height: 0, y: -20 }}
+                      animate={{ opacity: 1, height: "auto", y: 0 }}
+                      exit={{ opacity: 0, height: 0, y: -20 }}
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >

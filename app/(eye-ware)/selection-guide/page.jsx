@@ -75,7 +75,7 @@ const page = () => {
         ]}
         description="Book an appointment with our Opticians for personalized eyewear recommendations."
         buttonText="Book An Appointment"
-        buttonLink="/book-appointment"
+        buttonLink="/book-eye-exam"
       />
       <SelectionGuide />
       <div className="max-w-6xl mx-auto my-6">

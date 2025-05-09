@@ -83,7 +83,7 @@ const page = () => {
             ))}
           </ul>
           <Link href="/book-eye-exam" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md mt-4 sm:mt-0">
+            <button className="w-[280px] sm:w-auto bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md mt-4 sm:mt-0">
               Book Your Eye Exam Today
             </button>
           </Link>

@@ -18,7 +18,7 @@ const Page = () => {
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
             360 Eyecare - Beaches
           </h2>
-          <hr className="w-20 h-1 bg-combination-100 mb-8" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-8" />
 
           {/* Let's Talk Section */}
           <div className="mb-10 flex items-center">
@@ -123,7 +123,7 @@ const Page = () => {
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
             360 Eyecare - Yorkville Rosedale
           </h2>
-          <hr className="w-20 h-1 bg-combination-100 mb-8" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-8" />
 
           {/* Let's Talk Section */}
           <div className="mb-10 flex items-center">

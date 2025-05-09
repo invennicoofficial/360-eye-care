@@ -88,14 +88,14 @@ const VirtualShopppingFaq = () => {
           <h2 className="text-4xl font-bold text-combination-200 mb-2">
             Virtual Shopping FAQ
           </h2>
-          <hr className="w-20 h-1 bg-combination-100" />
+          <hr className="w-[65px] h-[2px] bg-combination-100" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           {/* Left side with image and contact info */}
           <div className="lg:w-2/5">
             <div className="flex flex-row items-end">
-              <div className="w-12 h-36 bg-combination-100" />
+              <hr className="w-[65px] h-[2px] bg-combination-100" />
               <div className="flex-1">
                 <Image
                   src={virtualshoppingfagimg}

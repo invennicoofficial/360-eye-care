@@ -25,7 +25,7 @@ const IntroSection = () => (
       <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold">
         Dry Eye Clinic
       </h2>
-      <hr className="w-20 h-1 bg-combination-100 mb-4" />
+      <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
       <p className="text-neutral-500 text-base md:text-lg mb-4">
         For millions of Canadians, dry eye is a daily irritant that disrupts
         their comfort and clarity of vision.
@@ -74,7 +74,7 @@ const UnderstandingDryEye = () => (
       <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold">
         Understanding Dry Eye
       </h2>
-      <hr className="w-20 h-1 bg-combination-100 mb-4" />
+      <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
       <p className="text-neutral-500 text-base md:text-lg mb-4">
         Dry eye, technically known as Dry Eye Disease (DED), is more than just a
         lack of tears. It's a complex condition affecting the tear film, a
@@ -129,7 +129,7 @@ const SectionTitle = ({ title }) => (
     <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold">
       {title}
     </h2>
-    <hr className="w-20 h-1 bg-combination-100 mb-4" />
+    <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
   </>
 );
 
@@ -138,7 +138,7 @@ const MGDSection = () => (
     <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold">
       Meibomian Gland Dysfunction (MGD)
     </h2>
-    <hr className="w-20 h-1 bg-combination-100 mb-4" />
+    <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
 
     <p>
       Meibomian gland dysfunction (MGD) is a common but often underdiagnosed
@@ -297,7 +297,7 @@ const page = () => {
         <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold">
           Long-Term Eye Care Habits
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <ul className="list-disc list-inside space-y-6 md:space-y-8 md:mt-8 mt-4">
           {[
             {

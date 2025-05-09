@@ -22,7 +22,7 @@ const page = () => {
   const whyChooseLink = [
     {
       title: "Book an Appointment",
-      href: "/book-appointment",
+      href: "/book-eye-exam",
     },
   ];
 

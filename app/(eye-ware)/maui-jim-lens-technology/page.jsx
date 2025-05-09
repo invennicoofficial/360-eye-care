@@ -53,18 +53,23 @@ const page = () => {
   return (
     <main className="pt-[110px] bg-[#F6F7F5]">
       <SubHeader text="Maui Jim Lens Technology" />
-      <div className="max-w-[1172px] w-full px-4 sm:px-6 mx-auto">
+      <div className="max-w-7xl w-full px-4 sm:px-6 mx-auto my-16">
         <div className="flex flex-col md:flex-row flex-wrap justify-between items-center my-4 gap-6">
           <div className="w-full md:w-[45%]">
-            <TitleCommon
+            {/* <TitleCommon
               title="Maui Jim: What lenses are best suited for your outdoor Lifestyle ? "
               position="start"
-              css={"text-[30px] leading-[1.2]"}
-            />
+              css={"text-[37px]"}
+            /> */}
+            <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-bold mt-2 mb-4 leading-normal">
+              Maui Jim: What lenses are best suited for your outdoor Lifestyle ?
+            </h2>
+            <hr className="w-[65px] h-[2px] bg-combination-100 mb-3" />
           </div>
-          <div className="w-full md:w-[45%] mx-auto md:mx-0">
+          <div className="w-full md:w-[40%] mx-auto  md:mx-0">
             <Image src={Brand6} alt="MauiJimImage" />
           </div>
+
           <p className="text-neutral-500 text-base">
             All of Maui Jim's sunglasses come polarized as a standard. Based on
             your lifestyle and the sports you may play Maui Jim has specifically

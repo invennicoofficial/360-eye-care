@@ -37,7 +37,7 @@ const page = () => {
         ))}
 
         <div className="w-full flex flex-col items-start justify-start my-4 md:my-6">
-          <h3 className="text-combination-200 text-2xl md:text-3xl lg:text-[37px] font-extrabold">
+          <h3 className="text-combination-200 text-2xl md:text-3xl lg:text-[37px] font-extrabold font-poppins">
             Custom Lenses Are Fitted To Each Patient
           </h3>
           <hr className="w-16 md:w-20 h-[3px] bg-combination-100 mt-2 mb-4" />

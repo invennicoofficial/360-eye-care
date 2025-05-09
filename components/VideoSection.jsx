@@ -25,7 +25,7 @@ const VideoSection = () => {
 
           <div className="relative ">
             {isVideoPlaying ? (
-              <div className=" aspect-video w-[560px] h-[315px] ">
+              <div className=" aspect-video md:w-[560px] md:h-[315px] w-full h-full ">
                 <iframe
                   width="560"
                   height="315"
@@ -71,7 +71,7 @@ const VideoSection = () => {
           <h3 className="text-combination-200 text-3xl font-bold mb-2">
             BOOK YOUR APPOINTMENT
           </h3>
-          <hr className="w-20 h-1 bg-combination-100 mb-8" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-8" />
           <FormSection />
         </div>
       </div>

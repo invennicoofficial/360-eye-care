@@ -124,7 +124,7 @@ const page = () => {
   const whyChooseLink = [
     {
       title: "Learn More",
-      href: "/",
+      href: "/book-eye-exam",
     },
   ];
   return (
@@ -225,7 +225,7 @@ const page = () => {
         ]}
         description="Get started with custom lenses tailored to your unique vision needs. Our experts are ready to assist you"
         buttonText="Book An Appointment"
-        buttonLink="/book-appointment"
+        buttonLink="/book-eye-exam"
       />
       <DetailsDescripton
         title="Why Choose Our Custom Lenses?"
@@ -244,7 +244,7 @@ const page = () => {
         </h1>
 
         {/* Foreground text */}
-        <h2 className=" ml-4 text-3xl md:text-4xl font-extrabold text-combination-200 z-10 ">
+        <h2 className="ml-4 text-3xl md:text-4xl font-extrabold font-poppins text-combination-200 z-10">
           Frequently Asked Questions
         </h2>
 

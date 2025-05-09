@@ -14,7 +14,7 @@ const EyeExamTools = () => {
         <h3 className="text-2xl md:text-4xl font-bold text-combination-200 mb-2 text-center">
           Eye Exam Tools and Technology
         </h3>
-        <hr className="w-12 h-[3px] bg-combination-200 mb-3 sm:mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-3 sm:mb-4" />
         <p className="text-neutral-500 text-sm sm:text-base font-normal text-center max-w-3xl px-2">
           But hold on a moment. Phoropter? Visual fields? Retinal camera? There
           are still a lot of terms here that can be confusing. Let's break it

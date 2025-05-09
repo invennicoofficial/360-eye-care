@@ -30,7 +30,7 @@ const page = () => {
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
             BOOK AN EYE EXAM
           </h2>
-          <hr className="w-20 h-1 bg-combination-100 mb-4" />
+          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
 
           <p className="text-neutral-500 text-base md:text-lg mb-4">
             You can now use our online booking tools to select your own
@@ -74,7 +74,7 @@ const page = () => {
       <div className="max-w-5xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col-reverse md:flex-row-reverse items-start justify-between">
         {/* Left column on desktop, top on mobile */}
         <div className="w-full md:w-[45%] mb-8 md:mb-0">
-          <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
+          <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
             Book an Eye Exam in the Beaches Toronto
           </h2>
           <p className="text-neutral-500 text-base md:text-lg mb-4">
@@ -84,13 +84,13 @@ const page = () => {
             the available slots and click 'Request' to submit your appointment
             request
           </p>
-          <div>
+          <div className="z-[-1]">
             <gsp-scheduler account_id="3709"></gsp-scheduler>
           </div>
         </div>
 
         {/* Right column on desktop, bottom on mobile */}
-        <div className="w-full md:w-[45%] flex justify-center">
+        <div className="w-full md:w-[45%] flex justify-center ">
           <Image
             src={OptometryImage}
             alt="optometry image"
