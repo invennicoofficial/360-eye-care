@@ -78,7 +78,7 @@ const page = () => {
           alt="Lumecca Before and After Treatment"
           width={1200}
           height={518}
-          className="w-[1200px] h-[518px] object-contain"
+          className="md:w-[1200px] md:h-[518px] w-[470px] h-[280px] object-contain"
         />
 
         <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
@@ -138,7 +138,7 @@ const page = () => {
           controls
           muted
           src="https://www.360eyecare.ca/wp-content/uploads/2024/08/Lumecca-Animation-with-Intro-2019-online-video-cutter.com-2.mp4"
-          className="w-[1200px] h-[618px]"
+          className="md:w-[1200px] md:h-[618px] w-[470px] h-[280px]"
         />
         <h3 className="text-combination-200 text-3xl md:text-[24px]  my-6 font-bold ">
           Benefits of Inmode IPL Therapy
@@ -268,7 +268,7 @@ const page = () => {
           controls
           muted
           src="https://www.360eyecare.ca/wp-content/uploads/2024/06/video2.mp4"
-          className="w-[1200px] h-[618px]"
+          className="md:w-[1200px] md:h-[618px] w-[470px] h-[280px]"
         />
 
         <h3 className="text-combination-200 text-3xl md:text-[30px]  my-6 font-bold ">
@@ -327,7 +327,7 @@ const page = () => {
           alt="Forma-I RF Treatment Before & After"
           width={1200}
           height={518}
-          className="w-[1200px] h-[518px] object-contain"
+          className="md:w-[1200px] md:h-[518px] w-[470px] h-[280px] object-contain"
         />
 
         <h3 className="text-combination-200 text-3xl md:text-[30px]  my-6 font-bold ">
@@ -503,7 +503,7 @@ const page = () => {
                   <iframe
                     src="https://oes.eyecarepro.net/w/c/48NWLwkoqicRpYspwAoB?height=350&width=700&src=https%3A%2F%2Fwww.360eyecare.ca%2Fintense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment%2F&title=Advanced%20Dry%20Eye%20Treatments%20%7C%20IPL%20and%20RF%20Eye%20Treatment%20Toronto"
                     id="48NWLwkoqicRpYspwAoB"
-                    className="w-[323px] md:w-[490px] h-[350px]"
+                    className="w-[425px] md:w-[490px] h-[350px]"
                     title="Advanced Dry Eye Treatments | IPL and RF Eye Treatment Toronto"
                   />
                 </div>
