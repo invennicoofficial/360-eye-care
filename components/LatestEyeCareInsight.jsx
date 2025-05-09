@@ -13,7 +13,7 @@ const LatestEyeCareInsight = () => {
       <div className="max-w-7xl mx-auto">
         <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">
           {/* Left Side - Blog Content */}
-          <div className="w-full lg:w-3/5">
+          <div className="w-full lg:w-[60%]">
             <div className="flex flex-col mb-10">
               <h2 className="text-4xl font-bold text-brand-blue mb-2 font-poppins">
                 Latest Eye Care Insights
@@ -28,7 +28,7 @@ const LatestEyeCareInsight = () => {
             {/* Blog Post */}
             <div className="flex flex-col md:flex-row gap-6">
               {/* Post Image */}
-              <div className="w-full md:w-1/3">
+              <div className="w-full md:w-[70%]">
                 <Image
                   src={IrritatingEyeImage}
                   alt="Man with eye irritation"
@@ -64,7 +64,10 @@ const LatestEyeCareInsight = () => {
           </div>
 
           {/* Right Side - Before/After Slider */}
-          <BeforeAfterSlider />
+          <div className="md:w-[40%] w-full">
+            {" "}
+            <BeforeAfterSlider />
+          </div>
         </div>
       </div>
     </div>

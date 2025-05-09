@@ -16,7 +16,7 @@ const DetailsDescription = ({
     <div
       className={`max-w-7xl mx-auto py-8 md:py-16 px-4 sm:px-6 lg:px-8 flex flex-col ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
-      } gap-6 md:gap-10 justify-between`}
+      } gap-6 md:gap-10 justify-between items-start`}
     >
       <div className="flex flex-col gap-2 w-full md:w-1/2">
         <h3 className="text-combination-200 text-3xl md:text-4xl font-extrabold mt-2">
@@ -26,16 +26,16 @@ const DetailsDescription = ({
         {description?.map((item, index) => (
           <p
             key={index}
-            className="text-neutral-500  text-base md:text-lg leading-relaxed"
+            className="text-neutral-500  text-base  leading-normal mb-4"
           >
             {item}
           </p>
         ))}
 
         {bullets?.map((item, index) => (
-          <div key={index} className="flex items-center gap-2">
-            <FaCheck size={14} color="#40bcc8" />
-            <p className="text-combination-200  text-sm leading-relaxed">
+          <div key={index} className="flex items-start gap-2">
+            <FaCheck size={20} className="text-combination-100 mt-1" />
+            <p className="ml-2 text-combination-200  text-base leading-relaxed">
               {item}
             </p>
           </div>
@@ -51,7 +51,8 @@ const DetailsDescription = ({
           </Link>
         ))}
       </div>
-      <div className="w-full md:w-1/2 mt-6 md:mt-0">
+      <div className="w-full md:w-1/2 mt-6 md:mt-0 flex flex-row items-end">
+        <div className="w-[30px] h-[180px] bg-combination-100" />
         <Image
           src={image}
           alt="Eye care professionals with patients"

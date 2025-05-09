@@ -23,12 +23,12 @@ const page = () => {
   return (
     <main className="pt-[80px] md:pt-[110px] bg-[#F6F7F5] py-8 md:py-12">
       <SubHeader text="Custom Lenses" />
-      <div className="max-w-6xl mx-auto mt-2 px-4 md:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto mt-2 px-4 md:px-6 py-8 lg:px-8">
         {topData.map((item, index) => (
           <div key={index} className="w-full">
             {item.description.map((desc, descIndex) => (
               <div key={descIndex} className="mb-4 md:mb-6">
-                <p className="font-[600] text-neutral-500 text-sm md:text-base">
+                <p className=" text-neutral-500 text-sm md:text-base">
                   {desc.replace("custom lenses toronto", "")}
                 </p>
               </div>
@@ -37,7 +37,7 @@ const page = () => {
         ))}
 
         <div className="w-full flex flex-col items-start justify-start my-4 md:my-6">
-          <h3 className="text-combination-200 text-2xl md:text-3xl lg:text-[37px] font-extrabold font-poppins">
+          <h3 className="text-combination-200 text-2xl md:text-3xl lg:text-[37px] font-extrabold font-poppins mb-2">
             Custom Lenses Are Fitted To Each Patient
           </h3>
           <hr className="w-16 md:w-20 h-[3px] bg-combination-100 mt-2 mb-4" />
@@ -47,9 +47,7 @@ const page = () => {
           <div key={index} className="w-full">
             {item.description.map((desc, descIndex) => (
               <div key={descIndex} className="mb-4 md:mb-6">
-                <p className="font-[600] text-neutral-500 text-sm md:text-base">
-                  {desc}
-                </p>
+                <p className=" text-neutral-500 text-sm md:text-base">{desc}</p>
               </div>
             ))}
           </div>

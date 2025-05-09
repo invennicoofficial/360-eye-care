@@ -14,7 +14,7 @@ const GivingBack = () => {
             <div className="text-brand-subheader text-3xl md:text-4xl font-bold mb-2">
               Giving Back
             </div>
-            <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+            <hr className="w-20 h-1 bg-combination-100 mb-4" />
 
             <p className="text-base text-neutral-500 mb-5  leading-7 md:leading-8 font-normal">
               360 Eyecare is proud to announce our continued sponsorship of
@@ -147,7 +147,7 @@ const GivingBack = () => {
           360 Eyecare Proudly Sponsors Neil McNeil Catholic High School's AAA
           Sr. Boys Volleyball Team
         </div>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
 
         <p className="text-base text-neutral-500  leading-7 md:leading-8 font-normal">
           360 Eyecare is delighted to announce its proud sponsorship as a

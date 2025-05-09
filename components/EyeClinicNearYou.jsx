@@ -15,7 +15,7 @@ const EyeClinicNearYou = () => {
           <h3 className="text-combination-200 text-2xl md:text-[37px] font-extrabold mb-2 leading-10">
             360 Eyecare Beaches – Your Local Eye Clinic in The Beaches
           </h3>
-          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
           <p className="text-neutral-500 text-base mb-4">
             Located in The Beaches, Toronto, this clinic offers top-quality eye
             care, including:
@@ -58,7 +58,7 @@ const EyeClinicNearYou = () => {
           <h3 className="text-combination-200 text-2xl md:text-[37px] font-extrabold mb-2 leading-10">
             360 Eyecare Yorkville – Premium Optometry Care
           </h3>
-          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
           <p className="text-neutral-500 text-base mb-4">
             Conveniently located in Yorkville and Rosedale, this optometry
             clinic provides:

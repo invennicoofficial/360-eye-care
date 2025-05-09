@@ -8,7 +8,7 @@ export default function MyopiaControlPage() {
         <h1 className="text-3xl font-extrabold text-combination-200 mb-4">
           Monitoring and Follow-up
         </h1>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
 
         <p className="text-neutral-500 text-base mb-2">
           Once a myopia control treatment plan is established, regular follow-up
@@ -140,7 +140,7 @@ export default function MyopiaControlPage() {
         <h2 className="text-3xl font-bold text-combination-200 mb-4">
           Final Thoughts
         </h2>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base mb-2">
           Myopia, or nearsightedness, is a growing concern for children. The
           Myopia Control Clinic offers a comprehensive approach to managing and

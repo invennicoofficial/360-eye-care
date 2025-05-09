@@ -21,7 +21,7 @@ const page = () => {
         <h3 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
           Advanced Dry Eye Treatments
         </h3>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base md:text-lg mb-4">
           Dry eye syndrome is a common condition that affects millions of people
           worldwide, causing discomfort, visual disturbances, and a significant
@@ -44,7 +44,7 @@ const page = () => {
         <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
           Inmode IPL Therapy for Dry Eye
         </h2>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         <Image
           src={LummericaImage}
           alt="Inmode IPL Therapy"
@@ -84,7 +84,7 @@ const page = () => {
         <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
           Step-by-Step Process of IPL Treatment
         </h2>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         {[
           {
             head: "1. Consultation and Evaluation:",
@@ -143,7 +143,7 @@ const page = () => {
         <h3 className="text-combination-200 text-3xl md:text-[24px]  my-6 font-bold ">
           Benefits of Inmode IPL Therapy
         </h3>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         {[
           {
             head: "Reduces Inflammation:",
@@ -229,7 +229,7 @@ const page = () => {
         <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
           Expected Outcomes
         </h2>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base md:text-lg mb-4">
           Patients undergoing Inmode IPL therapy can expect a reduction in dry
           eye symptoms such as redness, burning, itching, and foreign body
@@ -252,7 +252,7 @@ const page = () => {
         <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
           Inmode RF Therapy for Dry Eye
         </h2>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         <Image
           src={FormaImage}
           alt="formai image"
@@ -333,7 +333,7 @@ const page = () => {
         <h3 className="text-combination-200 text-3xl md:text-[30px]  my-6 font-bold ">
           Why Choose 360 Eyecare for Advanced Dry Eye Treatments?
         </h3>
-        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+        <hr className="w-20 h-1 bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base md:text-lg mb-4">
           Our clinic specializes in the diagnosis and treatment of dry eye
           syndrome, offering a wealth of expertise to ensure you receive the
@@ -445,7 +445,7 @@ const page = () => {
           </div>
         ))}
 
-        <h3 className="text-combination-200 text-3xl md:text-[30px] font-extrabold  mb-4 font-bold ">
+        <h3 className="text-combination-200 text-3xl md:text-[30px] font-extrabold  mb-4  ">
           Why 360 Eyecare Stands Out?
         </h3>
         <p className="text-neutral-500 text-base md:text-lg mb-4">
@@ -499,13 +499,11 @@ const page = () => {
                   Contact us to schedule an appointment and find relief from dry
                   eye symptoms with advanced dry eye treatments.
                 </p>
-
-                <div className="py-4">
+                <div className="w-[60%]">
                   <iframe
                     src="https://oes.eyecarepro.net/w/c/48NWLwkoqicRpYspwAoB?height=350&width=700&src=https%3A%2F%2Fwww.360eyecare.ca%2Fintense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment%2F&title=Advanced%20Dry%20Eye%20Treatments%20%7C%20IPL%20and%20RF%20Eye%20Treatment%20Toronto"
                     id="48NWLwkoqicRpYspwAoB"
-                    width={436}
-                    height={350}
+                    className="w-[323px] md:w-[490px] h-[350px]"
                     title="Advanced Dry Eye Treatments | IPL and RF Eye Treatment Toronto"
                   />
                 </div>

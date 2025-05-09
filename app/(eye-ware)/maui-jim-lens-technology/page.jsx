@@ -51,7 +51,7 @@ const page = () => {
     },
   ];
   return (
-    <main className="pt-[110px] bg-[#F6F7F5]">
+    <main className="pt-[110px] bg-[#F6F7F5] pb-10">
       <SubHeader text="Maui Jim Lens Technology" />
       <div className="max-w-7xl w-full px-4 sm:px-6 mx-auto my-16">
         <div className="flex flex-col md:flex-row flex-wrap justify-between items-center my-4 gap-6">

@@ -8,6 +8,7 @@ import { eyeglassesFrame } from "../../../constants/prescriptionLenses";
 import BookExamCommon from "../../../components/common/BookExampCommon";
 import { FaUserMd } from "react-icons/fa";
 import SelectionGuide from "../../../components/SelectionGuide";
+import Link from "next/link";
 
 const page = () => {
   const whyChooseData = [
@@ -82,7 +83,13 @@ const page = () => {
         <p className="text-neutral-500 text-base mb-2 px-4">
           After you’ve selected your frame it’s important to get complete
           fitting measurements of the frame on your face to ensure acurate and
-          optimized vision through your new lenses
+          optimized vision through your{" "}
+          <Link
+            className="text-combination-200 hover:text-combination-100"
+            href={"/prescription-lenses/"}
+          >
+            new lenses
+          </Link>
         </p>
       </div>
     </main>

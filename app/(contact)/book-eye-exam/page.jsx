@@ -30,7 +30,7 @@ const page = () => {
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
             BOOK AN EYE EXAM
           </h2>
-          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
 
           <p className="text-neutral-500 text-base md:text-lg mb-4">
             You can now use our online booking tools to select your own

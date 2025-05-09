@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SubHeader from "../../../components/SubHeader";
 import Image from "next/image";
-import { eyeglasses } from "../../../constants/Images";
+import { eyeglasses, eyeglassescommitted } from "../../../constants/Images";
 import { FaUserMd } from "react-icons/fa";
 import {
   Brand1,
@@ -380,7 +380,7 @@ const pages = () => {
       <DetailsDescripton
         title="Committed to Your Eye Health"
         description={whyChooseData}
-        image={glassCleanerImage}
+        image={eyeglassescommitted}
         bullets={whyChooseDataBullets}
         url={whyChooseLink}
         noCatalog

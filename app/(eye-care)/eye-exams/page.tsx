@@ -148,10 +148,10 @@ const page = () => {
             modern eye exam?
           </p>
 
-          <div className="flex justify-center sm:justify-start mb-8 sm:mb-10">
+          <div className="flex  sm:justify-start mb-8 sm:mb-10">
             <Link
               href="/book-eye-exam"
-              className="px-6 sm:px-8 py-2 flex justify-center items-center bg-combination-100 text-white text-nowrap font-bold rounded-full hover:bg-combination-200 transition-colors w-full sm:w-[220px]"
+              className="px-6 sm:px-8 py-2 flex justify-center items-center bg-combination-100 text-white text-nowrap font-bold rounded-full hover:bg-combination-200 transition-colors  w-[240px]"
             >
               Book an Eye Exam Today!
             </Link>

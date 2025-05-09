@@ -14,7 +14,7 @@ const CareerOpportunities = () => {
           <div className="text-brand-subheader text-3xl md:text-4xl font-bold mb-2">
             Join Our Team and Make a Difference
           </div>
-          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
 
           <p className="text-base text-neutral-500">
             Our eye clinic is dedicated to providing exceptional care to our

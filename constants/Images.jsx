@@ -16,7 +16,7 @@ import BeachImage from "../public/Toronto-Beaches.webp";
 import YorkVilleRosedale from "../public/YorkvillaRosedale.webp";
 import IrritatingEyeImage from "../public/irritatingeye.webp";
 import WithOutSpecImage from "../public/withoutSpec.webp";
-import WithSpecImage from "../public/withSpect.webp";
+import WithSpecImage from "../public/withSpect.png";
 import MedicalTeamImage from "../public/Medical-team.webp";
 import BgFooterImage from "../public/footer-bg.jpg";
 import GivingBackImage from "../public/giving-back.webp";
@@ -106,11 +106,13 @@ import glassesImage from "../public/eyeglasses-yorkville-Toronto.webp";
 import VirtualConsultImage from "../public/virtualconsultimage.webp";
 import virtualfaqimg from "../public/virtualfaqimage.jpg";
 import virtualshoppingfagimg from "../public/virtual-shopping.jpg";
+import eyeglassescommitted from "../public/eye-glasses-committed.jpg";
 
 import ColorfulGlassesImage from "../public/colourfulglesses.webp";
 export {
   EyeCareLogo,
   virtualshoppingfagimg,
+  eyeglassescommitted,
   glassesImage,
   VirtualConsultImage,
   virtualfaqimg,

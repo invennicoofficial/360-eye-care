@@ -20,9 +20,9 @@ const FindYourPerfectEyeGlass = () => {
       {/* Main container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between gap-12 mb-16">
+        <div className="flex flex-col md:flex-row justify-between gap-6  mb-16">
           {/* Left Column */}
-          <div className="w-full md:max-w-[712px]">
+          <div className="w-full md:max-w-[55%]">
             <h1 className="text-3xl sm:text-4xl font-bold text-combination-200 mb-4">
               Understanding Miyosmart: A Breakthrough in Myopia Control
             </h1>
@@ -51,9 +51,9 @@ const FindYourPerfectEyeGlass = () => {
 
                   <Link
                     href="/book-eye-exam"
-                    className="mt-6 bg-combination-100 text-white hover:text-combination-100 px-6 py-3 rounded-full hover:bg-combination-200 transition duration-300 w-max"
+                    className="mt-6 font-bold bg-combination-100 text-white hover:text-combination-100 px-6 py-3 rounded-full hover:bg-combination-200 transition duration-300 w-max"
                   >
-                    Book Your Eye Exam
+                    Book An Exam
                   </Link>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const FindYourPerfectEyeGlass = () => {
           </div>
 
           {/* Right Column */}
-          <div className="w-full md:w-[380px] flex flex-col gap-6">
+          <div className="w-full md:w-[40%] flex flex-col gap-6">
             {/* Images */}
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="w-full sm:w-1/2">

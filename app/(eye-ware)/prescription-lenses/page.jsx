@@ -202,7 +202,7 @@ const page = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-start my-2 p-4">
         <TitleCommon
           title="Guidelines to consider before purchasing and getting your new glasses fitted:"
-          position="center"
+          position="start"
         />
         <p className="text-start">
           Several measurements and considerations go into making a pair of
@@ -239,14 +239,14 @@ const page = () => {
           title="Top Brands for Prescription Lenses"
           position="center"
         />
-        <p className="text-center">
+        <p className="text-center mb-6">
           Prescription lenses are an essential part of your eyeglasses,
           correcting your vision and helping you see the world clearly. But with
           so many brands on the market, how do you choose the right one? Here
           are some of the top brands for prescription lenses, each with its own
           strengths and specializations:{" "}
         </p>
-        <div className="w-full flex flex-col items-start justify-start">
+        <div className="w-full flex flex-col items-start justify-start ">
           <TitleCommon title="HOYA" position="start" />
           <p className="text-start text-neutral-500">
             Hoya is a leading Japanese manufacturer of ophthalmic lenses, known

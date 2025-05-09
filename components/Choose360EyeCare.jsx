@@ -15,7 +15,7 @@ const Choose360EyeCare = () => {
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-extrabold mb-4">
             Why Choose 360 Eyecare?
           </h2>
-          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
           <ul className="list-inside mb-6">
             {[
               {
@@ -60,7 +60,7 @@ const Choose360EyeCare = () => {
           <h2 className="text-combination-200 text-3xl md:text-[37px] font-extrabold mb-4">
             Comprehensive Eye Care Services in Toronto Near You
           </h2>
-          <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
+          <hr className="w-20 h-1 bg-combination-100 mb-4" />
           <ul className="list-inside mb-6">
             {[
               {

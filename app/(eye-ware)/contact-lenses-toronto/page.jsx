@@ -109,8 +109,14 @@ const Page = () => {
           </p>
           <p className="text-neutral-500 mt-4">
             If you want to shop for contact lenses in Toronto, you can visit 360
-            Eyecare Beaches and 360 Eyecare Yorkville Rosedale. All types of
-            contact lenses are available at our optical store.
+            Eyecare Beaches and{" "}
+            <Link
+              href={"toronto-rosedale-optometrist/"}
+              className="text-combination-200 hover:text-combination-100"
+            >
+              360 Eyecare Yorkville Rosedale
+            </Link>
+            . All types of contact lenses are available at our optical store.
           </p>
         </div>
       </div>
@@ -120,7 +126,7 @@ const Page = () => {
           <TitleCommon
             title="Are you looking to switch to contact lenses?"
             position="start"
-            css="text-combination-200 text-2xl sm:text-3xl md:text-4xl font-extrabold font-poppins mt-2"
+            css="text-combination-200 text-2xl sm:text-3xl md:text-[37px] leading-[1.2] font-extrabold font-poppins mt-2"
           />
           <p className="text-neutral-500 mt-4">
             Switching from prescription glasses to contact lenses starts with an
