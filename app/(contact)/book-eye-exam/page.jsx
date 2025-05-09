@@ -42,7 +42,7 @@ const page = () => {
           {/* Buttons - stacked on mobile, side by side on desktop */}
           <div className="flex flex-col sm:flex-row sm:justify-between gap-4 mt-5 mb-8 w-[280px] md:w-auto">
             <Link
-              href="/book-appointment"
+              href="#book-appointment"
               className="bg-combination-200  hover:bg-combination-100 hover:text-combination-200 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md text-center"
             >
               Book At the Beaches
@@ -84,7 +84,7 @@ const page = () => {
             the available slots and click 'Request' to submit your appointment
             request
           </p>
-          <div className="z-[-1]">
+          <div className="z-[-1]" id="book-appointment">
             <gsp-scheduler account_id="3709"></gsp-scheduler>
           </div>
         </div>

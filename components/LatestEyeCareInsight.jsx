@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import { BeforeAfterSlider } from "./BeforeSlider";
 import { IrritatingEyeImage } from "../constants/Images";
+import Link from "next/link";
 
 const LatestEyeCareInsight = () => {
   return (
@@ -40,14 +41,22 @@ const LatestEyeCareInsight = () => {
 
               {/* Post Content */}
               <div className="w-full md:w-2/3 flex flex-col gap-4">
-                <div className="flex items-center gap-6 text-neutral-500 text-sm">
+                <div className="flex items-center gap-2 text-neutral-500 text-sm">
                   <div className="flex items-center gap-2">
                     <MdOutlineDateRange className="text-combination-100" />
-                    <span>April 21, 2025</span>
+                    <Link
+                      href="https://www.360eyecare.ca/affordable-laser-eye-surgery-toronto-options/"
+                      className=" hover:text-combination-100"
+                    >
+                      April 21, 2025
+                    </Link>
                   </div>
+                  //
                   <div className="flex items-center gap-2">
                     <FaUser className="text-combination-100" />
-                    <span>360Eyecare</span>
+                    <Link href="/" className=" hover:text-combination-100">
+                      360Eyecare
+                    </Link>
                   </div>
                 </div>
 
