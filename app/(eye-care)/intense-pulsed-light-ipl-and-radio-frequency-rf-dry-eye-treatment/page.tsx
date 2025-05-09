@@ -503,7 +503,7 @@ const page = () => {
                   <iframe
                     src="https://oes.eyecarepro.net/w/c/48NWLwkoqicRpYspwAoB?height=350&width=700&src=https%3A%2F%2Fwww.360eyecare.ca%2Fintense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment%2F&title=Advanced%20Dry%20Eye%20Treatments%20%7C%20IPL%20and%20RF%20Eye%20Treatment%20Toronto"
                     id="48NWLwkoqicRpYspwAoB"
-                    className="w-[425px] md:w-[490px] h-[350px]"
+                    className="max-w-[450px] max-w-w-[490px] w-[323px] md:w-[490px] h-[350px]"
                     title="Advanced Dry Eye Treatments | IPL and RF Eye Treatment Toronto"
                   />
                 </div>
