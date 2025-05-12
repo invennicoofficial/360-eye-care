@@ -95,7 +95,7 @@ const VirtualShopppingFaq = () => {
           {/* Left side with image and contact info */}
           <div className="lg:w-2/5">
             <div className="flex flex-row items-end">
-              <hr className="w-[65px] h-[2px] bg-combination-100" />
+              <hr className="w-[65px] h-[140px] bg-combination-100" />
               <div className="flex-1">
                 <Image
                   src={virtualshoppingfagimg}
