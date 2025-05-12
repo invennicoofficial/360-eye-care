@@ -1903,3 +1903,280 @@ export const virtualShoppingFaqs = [
       "Our virtual experiences provide one-on-one appointments with our opticians in half-hour timeslots. During this time you get a personalized walk-through of our wide selection of frames. Whether you want to pick out frames from the comfort of your home or get selections and suggestions tailored to you by our experienced opticians, our shopping experience gives you a completely private, personalized, and exclusive frame selection experience.",
   },
 ];
+
+// FAQ Data
+export const dryFaqdata = [
+  {
+    id: 1,
+    question: "What is dry eye?",
+    answer:
+      "Dry eye is a common condition where your eyes do not produce enough tears or the right quality of tears to keep the eyes moist and comfortable. This can lead to irritation, redness, and discomfort.",
+  },
+  {
+    id: 2,
+    question: "What causes dry eye?",
+    answer:
+      "Dry eye can be caused by a variety of factors, including aging, hormonal changes, environmental conditions, certain medications, and prolonged screen time. Other causes include underlying health conditions like autoimmune diseases and eyelid issues that affect tear production.",
+  },
+  {
+    id: 3,
+    question: "What are the symptoms of dry eye?",
+    answer:
+      "Common symptoms of dry eye include a stinging or burning sensation, gritty feeling, redness, sensitivity to light, blurred vision, and excessive tearing. If you experience these symptoms frequently, you may have dry eye syndrome.",
+  },
+  {
+    id: 4,
+    question: "How is dry eye diagnosed?",
+    answer:
+      "An eye care professional can diagnose dry eye through a comprehensive eye exam. They may use tests to measure tear production, tear film quality, and the overall health of your eyes.",
+  },
+  {
+    id: 5,
+    question: "How can I prevent dry eye?",
+    answer:
+      "Preventing dry eye involves proper hydration, regular blink exercises, ergonomic adjustments to reduce eye strain, and maintaining a healthy diet rich in Omega 3. Using a humidifier, avoiding smoke and pollution, practicing good eyelid hygiene, and using artificial tears can also help alleviate dry eye symptoms.",
+  },
+  {
+    id: 6,
+    question: "What treatments are available for dry eye disease?",
+    answer:
+      "Treatment options for dry eye include over-the-counter artificial tears, prescription eye drops, lifestyle changes, and in some cases, medical procedures. Advanced treatments like dry eye treatment with RF (Radiofrequency) and IPL (intense pulse light) are also available at specialized clinics like 360 Eyecare Clinics.",
+  },
+  {
+    id: 7,
+    question: "Can dry eye be cured?",
+    answer:
+      "While there is no permanent cure for dry eye, the condition can be managed effectively with the right treatment and lifestyle adjustments. Regular eye exams and following your eye care professional's recommendations can help keep symptoms under control.",
+  },
+  {
+    id: 8,
+    question: "Is dry eye a serious condition?",
+    answer:
+      "While dry eye is usually not serious in the early stages, it can cause significant discomfort and affect your quality of life. In severe cases, it can lead to complications like eye infections or damage to the corneal surface. It is important to seek treatment if you experience persistent symptoms.",
+  },
+  {
+    id: 9,
+    question: "Can contact lenses cause dry eye?",
+    answer:
+      "Yes, contact lenses can contribute to dry eye by reducing tear film stability and increasing evaporation. If you wear contact lenses and experience dry eye symptoms, discuss alternative options or solutions with your eye care professional.",
+  },
+  {
+    id: 10,
+    question: "Are there any home remedies for dry eye?",
+    answer:
+      "Home remedies for dry eye include staying hydrated, using warm compresses, practicing good eyelid hygiene, and taking regular breaks from screen time. However, it is important to consult with an eye care professional for a comprehensive treatment plan tailored to your specific needs.",
+  },
+];
+
+export const torontoBeachesFaqData = [
+  {
+    id: 1,
+    question: "Can I visit your clinic for urgent eye care needs?",
+    answer:
+      "Yes, 360 Eyecare provides emergency services at our Eye Clinic in The Beaches, handling eye injuries, infections, and sudden vision problems.",
+  },
+  {
+    id: 2,
+    question: "Do you offer contact lens fittings and consultations?",
+    answer:
+      "Yes, our Optometry provides comprehensive contact lens fittings, including options for Ortho-K lenses for myopia control.",
+  },
+  {
+    id: 3,
+    question:
+      "Do you provide laser vision correction consultations in The Beaches?",
+    answer:
+      "Yes, our Optometrist in The Beaches team offers laser vision correction consultations to guide you through pre- and post-operative care.",
+  },
+  {
+    id: 4,
+    question: "How often should I have an eye exam?",
+    answer: (
+      <>
+        <p>{"=>"} Adults (19–64): Every 1–2 years</p>
+        <p>
+          {"=>"} Children (0–18) & Seniors (65+): Annually or as recommended by
+          your optometrist
+        </p>
+      </>
+    ),
+  },
+  {
+    id: 5,
+    question: "Do you accept vision insurance?",
+    answer: (
+      <>
+        Yes! We accept most vision insurance plans.{" "}
+        <Link href="" className="underline">
+          Learn more
+        </Link>{" "}
+        about coverage.
+      </>
+    ),
+  },
+];
+
+export const RosedaleFaqData = [
+  {
+    id: 1,
+    question:
+      "Do you offer emergency eye care services in Yorkville and Rosedale Toronto?",
+    answer:
+      "Yes, our Eye Doctors in Yorkville and Rosedale are available to treat urgent eye issues such as infections, injuries, and sudden vision changes.",
+  },
+  {
+    id: 2,
+    question: "Do you offer consultations for laser vision correction?",
+    answer:
+      "Yes, our Optometrists in Yorkville and Rosedale provide laser vision correction consultations, including pre- and post-operative care.",
+  },
+  {
+    id: 3,
+    question: "Can I bring my child for an eye exam at your clinic?",
+    answer:
+      "Absolutely! We provide pediatric Eye Exams in Yorkville and Rosedale, ensuring early detection and management of vision problems in children.",
+  },
+];
+
+export const eyeCareServiceData = [
+  {
+    id: 1,
+    head: "Comprehensive Eye Exams",
+    icon: "/location/icons/eyeExam.svg",
+    para: (
+      <>
+        Regular{" "}
+        <Link href="" className="underline">
+          eye exams in Toronto{" "}
+        </Link>
+        are essential for maintaining good vision and early detection of eye
+        diseases. Our thorough eye exams for children, adults, and seniors
+        ensure you enjoy clear vision and long-term eye health.",
+      </>
+    ),
+  },
+  {
+    id: 2,
+    head: "Advanced Dry Eye Treatment – IPL & RF Therapy",
+    icon: "/location/icons/dryeye.svg",
+    para: (
+      <>
+        If you suffer from dry, irritated, or fatigued eyes, our{" "}
+        <Link href="" className="underline">
+          Intense Pulsed Light{" "}
+        </Link>{" "}
+        (IPL) and Radiofrequency (RF) treatments offer lasting relief by
+        addressing the root cause of dry eye disease. Our{" "}
+        <Link href="" className="underline">
+          eye doctors
+        </Link>{" "}
+        provide customized treatment plans to help restore your eye comfort.
+      </>
+    ),
+  },
+  {
+    id: 3,
+    head: "Pediatric Eye Care",
+    icon: "/location/icons/eyeTest.svg",
+    para: "Children’s vision plays a crucial role in their learning and development. Our pediatric eye exams in The Beaches detect early vision issues such as nearsightedness, lazy eye (amblyopia), and eye coordination problems, ensuring your child sees the world clearly.",
+  },
+  {
+    id: 4,
+    head: "Emergency Eye Care – Immediate Attention When You Need It Most",
+    icon: "/location/icons/emergencyeye.svg",
+    para: "Eye emergencies require urgent medical attention. If you experience sudden vision loss, severe eye pain, flashes of light, eye infections, or injuries, contact us immediately for emergency care.",
+  },
+  {
+    id: 5,
+    head: "Eyewear & Contact Lens Fittings",
+    icon: "/location/icons/contactLens.svg",
+    para: "If you are looking for stylish and functional eyewear, we carry a wide range of designer frames, prescription glasses, and specialty contact lenses. Our opticians will ensure you have the perfect fit for your lifestyle and vision needs.",
+  },
+];
+
+export const choose360eyeCareData = [
+  {
+    id: 1,
+    head: "Led by the Best Optometrist in The Beaches, Toronto",
+    icon: "/location/icons/checkup.svg",
+    para: "Our founder, Dr. Sam Baraam, is a highly respected optometrist known for expertise, compassionate care, and dedication to patient well-being.",
+  },
+  {
+    id: 2,
+    head: "State-of-the-Art Technology & Personalized Eye Care",
+    icon: "/location/icons/eyeExamination.svg",
+    para: "We use cutting-edge diagnostic tools to provide accurate assessments and customized treatment plans for optimal vision health.",
+  },
+  {
+    id: 3,
+    head: "Comprehensive Eye Care for All Ages",
+    icon: "/location/icons/comprehensive.svg",
+    para: "We offer eyecare services for every stage of life from pediatric eye exams to senior vision care.",
+  },
+  {
+    id: 4,
+    head: "Convenient Booking Options",
+    icon: "/location/icons/testing.svg",
+    para: "While we welcome walk-ins when possible, we offer online and phone bookings to provide efficient service with minimal wait times.",
+  },
+];
+
+export const RosedaleeyeCareServiceData = [
+  {
+    id: 1,
+    head: "Comprehensive Eye Exams",
+    icon: "/location/icons/eyeExam.svg",
+    para: "Regular vision check-ups are essential for maintaining healthy eyesight and detecting potential issues early. Our detailed eye exams in Yorkville and Rosedale assess vision clarity, eye health, and overall ocular function, providing personalized recommendations for corrective lenses or treatment if needed.",
+  },
+  {
+    id: 2,
+    head: "Advanced Dry Eye Treatment – IPL and RF Therapy",
+    icon: "/location/icons/dryeye.svg",
+    para: "Chronic dry eye can significantly impact your comfort and daily activities. Our innovative Intense Pulsed Light (IPL) and Radiofrequency (RF) treatments target the underlying causes of dry eye, offering long-lasting relief and improved tear production.",
+  },
+  {
+    id: 3,
+    head: "Pediatric Eye Care",
+    icon: "/location/icons/eyeTest.svg",
+    para: "Early detection of vision problems is crucial for children’s learning and development. Our pediatric eye exams in Yorkville and Rosedale assess visual acuity, eye coordination, and common conditions like myopia and amblyopia, ensuring your child gets the best start in eye health.",
+  },
+  {
+    id: 4,
+    head: "Emergency Eye Care",
+    icon: "/location/icons/emergencyeye.svg",
+    para: "Sudden vision loss, severe eye pain, or injuries require immediate care. Our optometrists provide emergency eye services to address infections, foreign objects, retinal concerns, and more, helping you protect your vision when it matters most.",
+  },
+  {
+    id: 5,
+    head: "Designer Eyewear & Contact Lenses",
+    icon: "/location/icons/contactLens.svg",
+    para: "Yorkville and Rosedale are known for their style; your eyewear should be no exception. Our boutique selection of designer frames, precision prescription lenses, and specialty contact lenses ensures you find eyewear that complements both your look and lifestyle.",
+  },
+];
+
+export const Rosedalechoose360eyeCareData = [
+  {
+    id: 1,
+    head: "Led by a Top-Rated Optometrist",
+    icon: "/location/icons/checkup.svg",
+    para: "Our founder, Dr. Sam Baraam, is highly regarded for his expertise, compassionate approach, and commitment to cutting-edge eye care.",
+  },
+  {
+    id: 2,
+    head: "Advanced Technology for Precision Eye Health",
+    icon: "/location/icons/eyeExamination.svg",
+    para: "Our clinic utilizes the latest diagnostic tools to detect and manage vision conditions early, ensuring the best outcomes for your eye health.",
+  },
+  {
+    id: 3,
+    head: "Customized Eye Care for Every Stage of Life",
+    icon: "/location/icons/comprehensive.svg",
+    para: "We provide specialized services for children, adults, and seniors, addressing everything from vision correction to age-related eye diseases.",
+  },
+  {
+    id: 4,
+    head: "Flexible Appointment Booking",
+    icon: "/location/icons/testing.svg",
+    para: "While walk-ins are welcome when possible, we encourage online and phone bookings for a seamless and efficient experience.",
+  },
+];

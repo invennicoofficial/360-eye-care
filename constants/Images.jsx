@@ -110,10 +110,19 @@ import virtualshoppingfagimg from "../public/virtual-shopping.jpg";
 import eyeglassescommitted from "../public/eye-glasses-committed.jpg";
 
 import ColorfulGlassesImage from "../public/colourfulglesses.webp";
+
+import locationHeroBeaches from "../public/location/HeroBeaches.png";
+import locationHeroYorkVille from "../public/location/HeroYorkville.png";
+import FounderImage from "../public/location/founder.png";
+import eyeCareServicesImage from "../public/location/eyeServiceImage.png";
 export {
   EyeCareLogo,
   virtualshoppingfagimg,
+  FounderImage,
+  locationHeroBeaches,
   eyeglassescommitted,
+  eyeCareServicesImage,
+  locationHeroYorkVille,
   glassesImage,
   VirtualConsultImage,
   virtualfaqimg,
@@ -219,5 +228,5 @@ export {
   eyechairrosedale,
   SpectacleImage,
   eyeglasses,
-  GirWithSpecImage
+  GirWithSpecImage,
 };
