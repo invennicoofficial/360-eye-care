@@ -6,8 +6,8 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { LuMonitorDot, LuScanEye } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
-import { BeforeAfterSlider } from "../../../components/BeforeSlider";
 import { MeetOptometryImage } from "../../../constants/Images";
+import { ImageSlider } from "components/common/ImageSlider";
 
 // Card data organized in one place for better maintenance
 const cardData = [
@@ -113,7 +113,7 @@ const AboutUs = () => {
       {/* Our Vision Section */}
       <section className="bg-[#F6F7F5] w-full">
         <div className="max-w-7xl mx-auto py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8">
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-6 sm:gap-8">
             <div className="flex flex-col gap-2 w-full lg:w-1/2">
               <h3 className="text-combination-200 text-2xl sm:text-3xl lg:text-4xl font-bold">
                 Our Vision
@@ -141,8 +141,8 @@ const AboutUs = () => {
                 .
               </p>
             </div>
-            <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-              <BeforeAfterSlider />
+            <div className="md:w-[40%] w-full aspect-[4/4]">
+              <ImageSlider />
             </div>
           </div>
         </div>

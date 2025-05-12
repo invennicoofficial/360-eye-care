@@ -16,6 +16,7 @@ import BeachImage from "../public/Toronto-Beaches.webp";
 import YorkVilleRosedale from "../public/YorkvillaRosedale.webp";
 import IrritatingEyeImage from "../public/irritatingeye.webp";
 import WithOutSpecImage from "../public/withoutSpec.webp";
+import GirWithSpecImage from "../public/withSpect3.webp";
 import WithSpecImage from "../public/withSpect.png";
 import MedicalTeamImage from "../public/Medical-team.webp";
 import BgFooterImage from "../public/footer-bg.jpg";
@@ -218,4 +219,5 @@ export {
   eyechairrosedale,
   SpectacleImage,
   eyeglasses,
+  GirWithSpecImage
 };

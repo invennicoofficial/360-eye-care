@@ -1,10 +1,9 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { MdOutlineDateRange } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import Image from "next/image";
 
-import { BeforeAfterSlider } from "./BeforeSlider";
+import { ImageSlider } from "./common/ImageSlider";
 import { IrritatingEyeImage } from "../constants/Images";
 import Link from "next/link";
 
@@ -12,7 +11,7 @@ const LatestEyeCareInsight = () => {
   return (
     <div className="w-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">
+        <div className="w-full flex flex-col lg:flex-row  items-start gap-8">
           {/* Left Side - Blog Content */}
           <div className="w-full lg:w-[60%]">
             <div className="flex flex-col mb-10">
@@ -40,7 +39,7 @@ const LatestEyeCareInsight = () => {
               </div>
 
               {/* Post Content */}
-              <div className="w-full md:w-2/3 flex flex-col gap-4">
+              <div className="w-full md:w-2/3 flex flex-col ">
                 <div className="flex items-center gap-2 text-neutral-500 text-sm">
                   <div className="flex items-center gap-2">
                     <MdOutlineDateRange className="text-combination-100" />
@@ -72,10 +71,8 @@ const LatestEyeCareInsight = () => {
             </div>
           </div>
 
-          {/* Right Side - Before/After Slider */}
-          <div className="md:w-[40%] w-full">
-            {" "}
-            <BeforeAfterSlider />
+          <div className="md:w-[28%] w-full aspect-[4/4]">
+            <ImageSlider />
           </div>
         </div>
       </div>
