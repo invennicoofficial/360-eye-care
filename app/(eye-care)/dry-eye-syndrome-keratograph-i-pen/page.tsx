@@ -17,6 +17,7 @@ import Image from "next/image";
 import WhatHappensIfIDoNothing from "../../../components/WhatHappensIfIDoNothing";
 import Symptoms from "../../../components/Symptoms";
 import DryFaqs from "../../../components/DryFaqs";
+import { dryFaqdata } from "constants/Constants";
 
 // Section components to improve modularity
 const IntroSection = () => (
@@ -332,7 +333,7 @@ const page = () => {
       </div>
       <DryEyeVideoSection />
 
-      <DryFaqs />
+      <DryFaqs faqData={dryFaqdata} title="Dry Eye FAQs" />
     </main>
   );
 };
