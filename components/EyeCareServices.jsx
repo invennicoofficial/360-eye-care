@@ -35,13 +35,14 @@ const EyeCareServices = ({
                         setOpenIndex(item.id === openIndex ? null : item.id)
                       }
                     >
-                      <div className="flex flex-row gap-3">
-                        <div className="bg-combination-100 w-7 h-7 rounded-[6px] flex justify-center items-center">
+                      <div className="flex flex-row gap-3 md:items-start items-center ">
+                        <div className="bg-combination-100 w-7 h-7 rounded-[6px] flex justify-center items-center shrink-0 ">
                           <Image
                             src={item.icon}
                             alt="Eye Care Service"
                             width={24}
                             height={24}
+                            className="object-contain"
                           />
                         </div>
                         <p className="text-[#28305F] font-[600] text-[18px]">
