@@ -83,11 +83,11 @@ const RequestForm = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      console.log("Form Data:", formData);
+      // console.log("Form Data:", formData);
       // Here you would typically send the data to a server
       alert("Form submitted successfully!");
     } else {
-      console.log("Form validation failed");
+      // console.log("Form validation failed");
     }
   };
 

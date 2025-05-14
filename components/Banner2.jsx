@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { FaUserMd } from "react-icons/fa";
 
@@ -16,7 +17,12 @@ const Banner2 = ({
         {/* Left: Icon + Heading */}
         <div className="flex  md:flex-row items-start md:items-start gap-4 text-white text-center md:text-left">
           <div className="text-5xl md:text-6xl mb-2 md:mb-0">
-            <FaUserMd />
+            <Image
+              src="/Icons/bannerboy.png"
+              alt="Banner Boy"
+              width={64}
+              height={64}
+            />
           </div>
           <div className="flex flex-col ">
             <h2 className="text-2xl md:text-3xl font-semibold leading-tight text-white md:w-[380px] w-full">
@@ -46,7 +52,7 @@ const Banner2 = ({
         {/* Right: CTA Button */}
         <div className="w-full md:w-auto  shrink-0">
           <Link href={ctaLink}>
-            <button className="bg-combination-200 hover:text-combination-100 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md">
+            <button className="bg-combination-200  text-white hover:text-combination-100  hover:bg-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md">
               {ctaText}
             </button>
           </Link>

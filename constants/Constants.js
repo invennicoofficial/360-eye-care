@@ -991,28 +991,28 @@ export const faqDatapediatric = [
 export const Orthokeratology = [
   {
     id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
+
     title: "Non-Surgical and Reversible",
     description:
       "Unlike LASIK or other refractive surgeries, Ortho-K is non-invasive and completely reversible. If the patient discontinues wearing the lenses, the cornea gradually returns to its original shape.",
   },
   {
     id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
+
     title: "Freedom from Daytime Eyewear",
     description:
       "Ortho-K allows patients to experience clear vision without glasses or contact lenses during the day, which can be especially beneficial for athletes, swimmers, and individuals in dusty or dry environments.",
   },
   {
     id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/homeIcons/doctorwithbp.png",
     title: "Slows Myopia Progression in Children",
     description:
       "Research has shown that Ortho-K can help slow the progression of myopia in children, reducing the risk of developing high myopia and associated complications later in life.",
   },
   {
     id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/homeIcons/vision.png",
     title: "Comfort and Convenience",
     description:
       "For those who find daytime contact lenses uncomfortable or inconvenient, Ortho-K provides a comfortable alternative that fits seamlessly into their nighttime routine.",
@@ -2009,7 +2009,6 @@ export const bookeyeexamFaqdata = [
       "Absolutely! Our optometrists are highly skilled in pediatric eye care, offering thorough exams to check for conditions like myopia, amblyopia, and strabismus. We make the experience comfortable and fun for your child.",
   },
 ];
-
 
 export const torontoBeachesFaqData = [
   {

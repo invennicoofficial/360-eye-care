@@ -66,14 +66,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://360eyecare.ca",
+    url: "360-eye-care/public/360Logo.webp",
     title: "360 Eye Care - Your Complete Eye Care Solution in Toronto",
     description:
       "360 Eyecare provides comprehensive eye care services in Toronto. Expert optometrists offering eye exams, dry eye treatment, myopia control, diagnostics, and quality eyewear. Book your appointment today!",
     siteName: "360 Eye Care",
     images: [
       {
-        url: "https://360eyecare.ca/og-image.jpg",
+        url: "360-eye-care/public/360Logo.webp",
         width: 1200,
         height: 630,
         alt: "360 Eye Care - Your Complete Eye Care Solution",
@@ -88,7 +88,7 @@ export const metadata = {
       "360 Eyecare provides comprehensive eye care services in Toronto. Expert optometrists offering eye exams, dry eye treatment, myopia control, diagnostics, and quality eyewear. Book your appointment today!",
     images: [
       {
-        url: "https://360eyecare.ca/twitter-image.jpg",
+        url: "360-eye-care/public/360Logo.webp",
         alt: "360 Eye Care - Your Complete Eye Care Solution",
       },
     ],

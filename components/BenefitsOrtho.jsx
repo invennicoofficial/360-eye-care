@@ -16,7 +16,7 @@ const BenefitsOrtho = () => {
       </div>
 
       <div className="max-w-7xl mx-auto mt-12 flex flex-col lg:flex-row gap-8 justify-center">
-        <div className="w-full lg:w-auto flex flex-wrap justify-center gap-6 md:gap-8">
+        <div className="w-full lg:w-auto flex flex-wrap justify-center gap-6 md:gap-12">
           {Orthokeratology.map((card) => (
             <FeatureCard
               key={card.id}
@@ -52,7 +52,14 @@ const FeatureCard = ({ id, icon, title, description }) => {
       />
       <div className="p-6 md:p-10 flex flex-col gap-3 bg-brand-line">
         <div className="flex justify-between items-start">
-          <Image src={icon} alt={`Feature Icon ${id}`} width={62} height={62} />
+          {icon && (
+            <Image
+              src={icon}
+              alt={`Feature Icon ${id}`}
+              width={62}
+              height={62}
+            />
+          )}
           <p
             className={`font-lora text-5xl md:text-6xl text-brand-blue transform transition-transform duration-300 ease-in-out ${
               isHovered ? "scale-90" : "scale-100"

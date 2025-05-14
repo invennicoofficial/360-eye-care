@@ -18,7 +18,7 @@ const page = () => {
       <SubHeader text="Orthokeratology Treatment" />
       <div className="max-w-6xl mx-auto my-6 sm:my-16 px-4 sm:px-0 flex flex-col sm:flex-row justify-between items-start">
         <div className="flex flex-col gap-4 w-full sm:w-[585px] sm:mr-10 mb-6 sm:mb-0">
-          <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900]">
+          <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900] leading-[2]">
             What is Orthokeratology (Ortho-K) treatment?
           </h2>
           <hr className="w-20 h-1 bg-combination-100 mb-2" />
@@ -32,9 +32,9 @@ const page = () => {
             the lenses on at bedtime and allow it to work overnight. By the time
             you wake up, your vision will have improved.
           </p>
-          <Link href="/book-eye-exam" className="md:w-[220px] w-[220px]">
-            <div className="bg-combination-100 hover:text-combination-100 hover:bg-combination-200 text-white font-bold py-3 px-8 rounded-md transition-colors duration-200 shadow-md text-center sm:text-left">
-              Book an eye exam
+          <Link href="/book-eye-exam" className="md:w-[290px] w-[220px]">
+            <div className="bg-combination-100 hover:text-combination-100 hover:bg-combination-200 text-white font-bold py-3 px-8 rounded-md transition-colors duration-200 shadow-md text-center sm:text-left text-nowrap">
+              Get Ortho-k Lenses Today!
             </div>
           </Link>
         </div>
@@ -146,7 +146,7 @@ const page = () => {
         title="Book Your Eye Exam"
         description="For exceptional eye care, schedule your eye exam at our Beaches and Rosedale, Toronto locations today!"
         rosedale={true}
-        ctaText="Book an Eye Exam"
+        ctaText="Book An Eye Exam"
         ctaLink="https://360rosedale.mypatientportal.xyz/dashboard"
       />
 
@@ -168,15 +168,21 @@ const page = () => {
           of focus, leading to blurry vision for distant objects.
         </p>
         <p className="text-neutral-500 text-base mb-2">
-          Myopia management is a treatment program prescribed by eye doctors to
-          stop or slow down the progression of myopia. A recent study predicted
-          that by the year 2050 half of the world's population will be
-          classified as myopic, or near-sighted. Of that portion of the
-          population, 10% will develop myopia of 5.00D (diopters) or stronger.
-          Childhood myopia can cause eye disorders and pathologies later in
-          life, some of which are sight-threatening. With that in mind, research
-          has been ongoing into ways to manage, mitigate, and minimize the
-          effects of myopia, particularly in children when caught early enough.
+          <Link
+            href="/myopia-control-clinic/"
+            className="text-combination-200 hover:text-combination-100"
+          >
+            Myopia management
+          </Link>{" "}
+          is a treatment program prescribed by eye doctors to stop or slow down
+          the progression of myopia. A recent study predicted that by the year
+          2050 half of the world's population will be classified as myopic, or
+          near-sighted. Of that portion of the population, 10% will develop
+          myopia of 5.00D (diopters) or stronger. Childhood myopia can cause eye
+          disorders and pathologies later in life, some of which are
+          sight-threatening. With that in mind, research has been ongoing into
+          ways to manage, mitigate, and minimize the effects of myopia,
+          particularly in children when caught early enough.
         </p>
 
         <h2 className="text-combination-200 text-2xl sm:text-[30px] font-[900] mb-2">
