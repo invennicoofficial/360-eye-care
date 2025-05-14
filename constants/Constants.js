@@ -432,27 +432,27 @@ export const orgImages = [
 export const cardData = [
   {
     id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/homeIcons/book.png",
     title: "Expertise",
     description:
       "Experienced optometrists committed to delivering quality eye care.",
   },
   {
     id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/homeIcons/medical.png",
     title: "Eye Care For All Ages",
     description: "We offer essential eye care services for every age group.",
   },
   {
     id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/homeIcons/doctorwithbp.png",
     title: "Personalized Treatment",
     description:
       "Get personalized eye care from the best optometrists in Toronto.",
   },
   {
     id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/homeIcons/vision.png",
     title: "Modern Optical Centre",
     description:
       "Full scope and family friendly optical store for your eyewear needs.",

@@ -10,9 +10,9 @@ import HeroSection from "../components/HeroSection";
 import Script from "next/script";
 
 export const metadata = {
-  title: "360 Eye Care - Comprehensive Optometry Services in Toronto",
+  title: "Toronto Optometrists | Eye Doctor | Optometry Clinic - 360 Eyecare",
   description:
-    "360 Eyecare offers expert optometry services in Toronto including eye exams, contact lenses, myopia control, and treatment for dry eyes. Book an appointment today for personalized family eye care.",
+    "360 Eyecare is full scope, family-friendly optometry clinic with amazing team of qualified Toronto Optometrists. Best eye doctors in Toronto.",
   keywords: [
     "Toronto eye care",
     "optometrist Toronto",
@@ -25,19 +25,25 @@ export const metadata = {
     "family eye care",
     "360 Eyecare",
   ],
+  image: {
+    url: "https://www.360eyecare.ca/360Logo.webp",
+    width: 1200,
+    height: 630,
+    alt: "360 Eye Care Toronto - Eye Exam and Vision Clinic",
+  },
   alternates: {
     canonical: "https://www.360eyecare.ca",
   },
   openGraph: {
     type: "website",
     url: "https://www.360eyecare.ca",
-    title: "360 Eye Care - Comprehensive Optometry Services in Toronto",
+    title: "Toronto Optometrists | Eye Doctor | Optometry Clinic - 360 Eyecare",
     description:
-      "Trusted optometrists in Toronto providing eye exams, glasses, contact lenses, dry eye therapy, and more. Visit 360 Eyecare for advanced vision solutions.",
+      "360 Eyecare is full scope, family-friendly optometry clinic with amazing team of qualified Toronto Optometrists. Best eye doctors in Toronto.",
     siteName: "360 Eyecare",
     images: [
       {
-        url: "https://www.360eyecare.ca/360Logo.webp",
+        url: "/public/360Logo.webp",
         width: 1200,
         height: 630,
         alt: "360 Eye Care Toronto - Eye Exam and Vision Clinic",
