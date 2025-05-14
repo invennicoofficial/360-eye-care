@@ -9,7 +9,7 @@ const MyopiaControl = () => {
   const treatments = [
     {
       label: "Spectacle Therapy",
-      icon: "/api/placeholder/48/48",
+      icon: "/homeIcons/eyetest.png",
       // title: "Spectacle Therapy",
       description:
         "Spectacle therapy with specialized lenses can play a role in myopia control. These lenses are designed to manipulate how light enters the eye, potentially slowing down the elongation of the eyeball.",
@@ -35,10 +35,10 @@ const MyopiaControl = () => {
                 <ul className="space-y-6 list-disc list-inside">
                   <li>
                     <strong className="text-gray-500 ">Technology:</strong>{" "}
-                    <span className="text-neutral-600">
+                    <span className="text-neutral-600 text-combination-200">
                       <Link
                         href="/miyosmart"
-                        className="text-gray-500  underline hover:text-gray-500 -dark"
+                        className="text-combination-200 hover:text-combination-100"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -77,7 +77,7 @@ const MyopiaControl = () => {
                       <strong>Source: </strong>
                       <Link
                         href="https://www.hoyavision.com/ca/vision-products/myopia/miyosmart/"
-                        className="text-brand-blue underline hover:text-brand-blue-dark"
+                        className=" text-combination-200 hover:text-combination-100"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -133,7 +133,7 @@ const MyopiaControl = () => {
                         <strong>[Source: </strong>
                         <Link
                           href="https://reviewofmm.com/zeiss-shares-data-on-myocare-efficacy-at-arvo-2024/"
-                          className="text-brand-blue underline hover:text-brand-blue-dark"
+                          className="text-combination-200 hover:text-combination-100"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -163,7 +163,7 @@ const MyopiaControl = () => {
     },
     {
       label: "Orthokeratology (Ortho-K)",
-      icon: "/api/placeholder/48/48",
+      icon: "/homeIcons/ortho1.png",
       // title: "Orthokeratology (Ortho-K)",
       description:
         "Ortho-K involves wearing specially designed rigid gas permeable contact lenses overnight. These lenses gently reshape the cornea while you sleep, providing clear vision throughout the day without the need for daytime glasses or contacts.",
@@ -174,7 +174,7 @@ const MyopiaControl = () => {
               <strong className="text-gray-500 ">How It Works:</strong>{" "}
               <Link
                 href="orthokeratology-treatment/"
-                className="text-brand-blue underline hover:text-brand-blue-dark"
+                className="text-combination-200 hover:text-combination-100"
               >
                 Ortho-K lenses
               </Link>{" "}
@@ -204,7 +204,7 @@ const MyopiaControl = () => {
     },
     {
       label: "Soft Contact Lenses",
-      icon: "/api/placeholder/48/48",
+      icon: "/homeIcons/contactlens.png",
       // title: "Soft Contact Lenses for Myopia Control",
       description:
         "While traditional soft contact lenses primarily correct vision, newer designs incorporate specific features to potentially slow myopia progression.",
@@ -232,7 +232,10 @@ const MyopiaControl = () => {
               <strong className="text-gray-500 ">Clinical Studies:</strong>A
               3-year clinical trial demonstrated a significant decrease in
               myopia progression in children wearing MiSight lenses compared to{" "}
-              <Link href={"/prescription-lenses"} className="text-brand-blue">
+              <Link
+                href={"/prescription-lenses"}
+                className="text-combination-200 hover:text-combination-100"
+              >
                 single vision lenses{" "}
               </Link>
               [Source:{" "}
@@ -240,7 +243,7 @@ const MyopiaControl = () => {
                 href={
                   "https://www.myopiaprofile.com/articles/five-things-we-know-about-misight"
                 }
-                className="text-brand-blue"
+                className="text-combination-200 hover:text-combination-100"
               >
                 The MiSight 1 day clinical trial
               </Link>
@@ -252,7 +255,7 @@ const MyopiaControl = () => {
     },
     {
       label: "Atropine Therapy",
-      icon: "/api/placeholder/48/48",
+      icon: "/homeIcons/atro.png",
       // title: "Atropine Therapy",
       description:
         "Atropine eye drops have been used for many years to dilate the pupil during eye exams. Recent research suggests that low-dose atropine drops can be a safe and effective method for myopia control.",
@@ -284,7 +287,7 @@ const MyopiaControl = () => {
                 href={
                   "https://www.aoa.org/news/clinical-eye-care/diseases-and-conditions/atropine-in-myopia-control?sso=y"
                 }
-                className="text-brand-blue"
+                className="text-combination-200 hover:text-combination-100"
               >
                 American Optometric Association
               </Link>
@@ -345,13 +348,15 @@ const MyopiaControl = () => {
                     src={treatment.icon}
                     alt={treatment.label}
                     className={`h-8 w-auto mr-3 ${
-                      isActive ? "filter brightness-0 invert" : ""
+                      isActive
+                        ? "filter brightness-0 invert text-combination-100"
+                        : ""
                     }`}
                   />
                   <span className="font-semibold text-sm">
                     {treatment.label}
                   </span>
-                  <svg
+                  {/* <svg
                     className={`ml-auto w-5 h-5 transition-transform ${
                       isActive ? "transform rotate-180" : ""
                     }`}
@@ -365,7 +370,7 @@ const MyopiaControl = () => {
                       strokeWidth="2"
                       d="M19 9l-7 7-7-7"
                     />
-                  </svg>
+                  </svg> */}
                 </button>
                 {isActive && (
                   <div className="bg-gray-50 rounded-lg px-4 py-6 mb-4">
@@ -392,7 +397,7 @@ const MyopiaControl = () => {
                 <button
                   key={treatment.label}
                   onClick={() => setSelected(index)}
-                  className={`relative flex flex-col items-center justify-center w-48 p-4 text-center cursor-pointer transition-all duration-200 ${
+                  className={`relative flex flex-col items-center justify-center w-auto p-4 text-center cursor-pointer transition-all duration-200 ${
                     isActive
                       ? "bg-combination-100 text-white shadow-md"
                       : "bg-gray-50 text-slate-800 hover:bg-gray-100"
@@ -401,15 +406,19 @@ const MyopiaControl = () => {
                   {isActive && (
                     <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-combination-100" />
                   )}
-                  <img
-                    src={treatment.icon}
-                    alt={treatment.label}
-                    className={`mx-auto mb-2 h-8 w-auto ${
-                      isActive ? "filter brightness-0 invert" : ""
-                    }`}
-                  />
-                  <div className="font-semibold text-sm lg:text-base">
-                    {treatment.label}
+                  <div className="flex items-start flex-col md:justify-center ">
+                    <div className="flex justify-center items-center ">
+                      <img
+                        src={treatment.icon}
+                        alt={treatment.label}
+                        className={`mx-auto mb-2 w-[40px] h-[40px] items-start ${
+                          isActive ? "filter brightness-0 invert" : ""
+                        }`}
+                      />
+                    </div>
+                    <div className="font-semibold text-sm lg:text-base text-nowrap">
+                      {treatment.label}
+                    </div>
                   </div>
                 </button>
               );
