@@ -70,7 +70,7 @@ const page = () => {
           function. This results in improved secretion of oils, leading to a
           more stable and healthy tear film.
         </p>
-        <h2 className="text-combination-200 text-3xl md:text-[30px] font-bold mb-4 mt-6">
+        <h2 className="text-combination-200 text-3xl md:text-[22px] font-bold mb-4 mt-6">
           IPL Before and After Treatment
         </h2>
         <Image
@@ -121,7 +121,7 @@ const page = () => {
             para: "For optimal results, multiple IPL sessions are usually recommended. These sessions are typically spaced two to four weeks apart. The number of sessions required depends on the severity of the dry eye and the individual's response to the treatment.",
           },
         ].map((item, index) => (
-          <div key={index} className="mt-4">
+          <div key={index} className="mt-4 ml-4">
             <h3 className="text-base text-gray-500 font-bold mb-3">
               {item.head}
             </h3>
@@ -138,7 +138,7 @@ const page = () => {
           controls
           muted
           src="https://www.360eyecare.ca/wp-content/uploads/2024/08/Lumecca-Animation-with-Intro-2019-online-video-cutter.com-2.mp4"
-          className="md:w-[1200px] md:h-[618px] w-[470px] h-[280px]"
+          className="w-full h-full"
         />
         <h3 className="text-combination-200 text-3xl md:text-[24px]  my-6 font-bold ">
           Benefits of Inmode IPL Therapy
@@ -177,7 +177,7 @@ const page = () => {
           </div>
         ))}
 
-        <h2 className="text-combination-200 text-3xl md:text-[24px]  mt-6 mb-4 font-bold ">
+        <h2 className="text-combination-200 text-3xl md:text-[30px]  mt-6 mb-4 font-bold ">
           IPL Contraindications
         </h2>
         <div>
@@ -226,10 +226,10 @@ const page = () => {
           </ul>
         </div>
 
-        <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
+        <h2 className="text-combination-200 text-3xl md:text-[30px] font-bold mb-4 mt-6">
           Expected Outcomes
         </h2>
-        <hr className="w-20 h-1 bg-combination-100 mb-4" />
+
         <p className="text-neutral-500 text-base md:text-lg mb-4">
           Patients undergoing Inmode IPL therapy can expect a reduction in dry
           eye symptoms such as redness, burning, itching, and foreign body
@@ -268,7 +268,7 @@ const page = () => {
           controls
           muted
           src="https://www.360eyecare.ca/wp-content/uploads/2024/06/video2.mp4"
-          className="md:w-[1200px] md:h-[618px] w-[470px] h-[280px]"
+          className="md:w-[1200px] md:h-[518px] w-[470px] h-[280px]"
         />
 
         <h3 className="text-combination-200 text-3xl md:text-[30px]  my-6 font-bold ">
@@ -362,10 +362,7 @@ const page = () => {
             head: "RF Eye Treatment (Radiofrequency Therapy):",
             para: "We offer Inmode RF eye treatment, which uses controlled heat to stimulate collagen production and improve meibomian gland function, resulting in a healthier tear film and reduced dry eye symptoms.",
           },
-          {
-            head: "Non-Invasive and Quick:",
-            para: "IPL therapy is a non-invasive procedure that requires no incisions or injections. Each session typically lasts around 20 minutes, making it a convenient option for patients with busy schedules.",
-          },
+
           {
             head: "The OCULUS Keratograph® 5M",
             para: "The OCULUS Keratograph® 5M is an advanced corneal topographer with a built-in real keratometer and a color camera optimized for external imaging. Unique features include examining the meibomian glands, non-invasive tear film break-up time, and the tear meniscus height measurement and evaluating the lipid layer.",
