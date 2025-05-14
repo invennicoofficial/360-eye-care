@@ -43,13 +43,13 @@ const GivingBack = () => {
               vision impairment.
             </p>
           </div>
-          <div className="w-full md:w-auto flex justify-center md:justify-end">
+          <div className="w-full md:w-[50%] md:h-[338px] flex justify-center md:justify-end">
             <Image
               src={GivingBackImage}
               alt="Giving back initiative"
               width={585}
               height={338}
-              className="w-full md:w-[585px] max-w-full h-auto"
+              className="w-full md:w-[585px] md:h-[338px] max-w-full h-auto"
               priority
             />
           </div>
@@ -130,15 +130,15 @@ const GivingBack = () => {
           src="/associate/associate7.webp"
           alt="Winning awards"
           width={585}
-          height={123}
-          className="w-full md:w-auto max-w-full h-auto"
+          height={122}
+          className="w-full md:w-[585px] md:h-[122px] max-w-full h-auto"
         />
         <Image
           src="/associate/associate6.webp"
           alt="Optometry giving image"
           width={450}
           height={267}
-          className="w-full md:w-auto max-w-full h-auto"
+          className="w-full md:w-[450px] md:h-[267px] max-w-full h-auto"
         />
       </div>
 
@@ -182,21 +182,21 @@ const GivingBack = () => {
           alt="Winning awards"
           width={167}
           height={187}
-          className="w-40 md:w-auto h-auto"
+          className="w-40 md:w-[167px] md:h-[187px] h-auto"
         />
         <Image
           src="/giveback/giveback2.webp"
           alt="Optometry giving image"
           width={380}
           height={147}
-          className="w-full max-w-sm md:w-auto h-auto"
+          className="w-full max-w-sm md:w-[380px] md:h-[147px] h-auto"
         />
         <Image
           src="/giveback/giveback3.webp"
           alt="Winning awards"
           width={187}
           height={187}
-          className="w-40 md:w-auto h-auto"
+          className="w-40 md:w-[187px] md:h-[187px] h-auto"
         />
       </div>
     </main>
