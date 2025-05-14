@@ -129,13 +129,13 @@ export const optometrists = [
     image: SamBarramImage,
     description: (
       <>
-        <span className="font-bold">Dr. Sam Baraam</span> is a certified
-        optometrist with advanced training in specialty contact lenses, dry eye
-        and ocular surface disease management.
+        Dr. Sam Baraam is a certified optometrist with advanced training in
+        specialty contact lenses, dry eye and ocular surface disease management.
       </>
     ),
 
-    longDescription: `Dr. Sam Baraam is a dedicated optometrist committed to providing accessible, patient-centered, and comprehensive eye care, including specialty services. He completed his post-secondary education in Cellular Biology at the University of Western Ontario before earning his Doctor of Optometry degree from the prestigious Pennsylvania College of Optometry at Salus University.
+    longDescription: `
+    Dr. Sam Baraam is a dedicated optometrist committed to providing accessible, patient-centered, and comprehensive eye care, including specialty services. He completed his post-secondary education in Cellular Biology at the University of Western Ontario before earning his Doctor of Optometry degree from the prestigious Pennsylvania College of Optometry at Salus University.
 
 During his training, Dr. Baraam gained extensive experience in ocular disease at the world-renowned Veterans Affairs Hospital in Connecticut and at SightMD, a leading refractive laser surgery and cataract center in Philadelphia. He further received advanced training in pediatrics and binocular vision, earning clinical honors from the Eye Institute at Salus University; an accolade awarded to those demonstrating both academic and clinical excellence.
 
@@ -143,7 +143,7 @@ Passionate about supporting patients with ocular surface disease, dry eye manage
 
 Beyond his clinical practice, Dr. Baraam participated in the SOSH mission team, where he provided essential eye care to thousands of patients in underserved villages in Belize. He is certified by the Canadian National Boards (CSAO) and has successfully completed all three parts of the U.S. National Board Examinations (NBEO). As an active member of both the Ontario Association of Optometrists and the Canadian Association of Optometrists, he remains at the forefront of his field.
 
-Dr. Baraam is the founder and president of 360 Eyecare, practicing at the Beaches and Yorkville locations. Outside of work, he enjoys running, cycling, and spending quality time with his family and friends.`,
+Dr. Baraam is the founder and president of 360 Eyecare, practicing at the Beaches and Yorkville locations. Outside of work, he enjoys running, cycling, and spending quality time with his family and friends`,
   },
   {
     id: 2,
@@ -158,7 +158,7 @@ Dr. Sritharan earned both her Honours Bachelor of Science Degree majoring in Bio
 
 She is licensed by the College of Optometrists of Ontario and certified to prescribe Therapeutic Pharmaceutical Agents. She is also a member of the Ontario Association of Optometrists and the Canadian Association of Optometrists.
 
-On her spare time, she enjoys baking, swimming, and travelling.`,
+On her spare time, she enjoys baking, swimming, and travelling`,
   },
   {
     id: 3,
@@ -175,7 +175,7 @@ Dr. Chen is licensed by the College of Optometrists of Ontario and is certified 
 
 Dr. Chen is excited to be a member of the distinguished team at 360 Eyecare and practices out of the Downtown office – Rosedale. She conducts eye examinations with full fluency in English and Mandarin.
 
-In her spare time, she enjoys exercising, travelling, reading, and being a foodie.`,
+In her spare time, she enjoys exercising, travelling, reading, and being a foodie`,
   },
   {
     id: 4,
@@ -188,7 +188,7 @@ In her spare time, she enjoys exercising, travelling, reading, and being a foodi
 
 During his final year of optometry school, he completed his training in Detroit, Michigan at the John D. Dingell Veterans Affairs Medical Centre. While at the hospital, he gained clinical experience in the treatment and management of ocular diseases.
 
-Dr. Gill works at the Yorkville location in Toronto. Outside of patient care, Dr. Gill enjoys photography, basketball, and squash.`,
+Dr. Gill works at the Yorkville location in Toronto. Outside of patient care, Dr. Gill enjoys photography, basketball, and squash`,
   },
   {
     id: 5,
@@ -201,7 +201,7 @@ Dr. Gill works at the Yorkville location in Toronto. Outside of patient care, Dr
 
 Dr. Shahid is an active member of the Ontario Association of Optometrists and the Canadian Association of Optometrists and is certified to prescribe Therapeutic Pharmaceutical Agents. Outside of the clinic, she has published an article in glaucoma research and has presented at the American Academy of Optometry. She has also received various honours during her clinical training, including membership with the Golden Key International Optometric Honour Society and Beta Sigma Kappa Honour Society.
 
-Dr. Shahid is passionate about providing thorough eye care and building trusting relationships with her patients. She is fluent in English and Urdu. During her spare time, she loves travelling, reading and photography.`,
+Dr. Shahid is passionate about providing thorough eye care and building trusting relationships with her patients. She is fluent in English and Urdu. During her spare time, she loves travelling, reading and photography`,
   },
   {
     id: 6,
@@ -216,7 +216,7 @@ She gained a plethora of practical experience during her rotations at the Detroi
 
 Dr. Swatch enjoys learning and staying abreast of the latest developments in eye care in order to best serve her patients’ needs. In her spare time, she loves to bake and is an avid fashion and interior design lover.
 
-She currently works at the Yorkville Rosedale location and looks forward to serving the community.`,
+She currently works at the Yorkville Rosedale location and looks forward to serving the community`,
   },
 ];
 
@@ -432,27 +432,27 @@ export const orgImages = [
 export const cardData = [
   {
     id: "01",
-    icon: "/homeIcons/book.png",
+    icon: "/Icons/Optometry-Icon1.webp",
     title: "Expertise",
     description:
       "Experienced optometrists committed to delivering quality eye care.",
   },
   {
     id: "02",
-    icon: "/homeIcons/monitor.png",
+    icon: "/Icons/Optometry-Icon2.webp",
     title: "Eye Care For All Ages",
     description: "We offer essential eye care services for every age group.",
   },
   {
     id: "03",
-    icon: "/homeIcons/monitor.png",
+    icon: "/Icons/Optometry-Icon1.webp",
     title: "Personalized Treatment",
     description:
       "Get personalized eye care from the best optometrists in Toronto.",
   },
   {
     id: "04",
-    icon: "/homeIcons/visioneye.png",
+    icon: "/Icons/Optometry-Icon2.webp",
     title: "Modern Optical Centre",
     description:
       "Full scope and family friendly optical store for your eyewear needs.",
@@ -462,7 +462,7 @@ export const cardData = [
 export const services = [
   {
     label: "Eye Exams",
-    icon: "/homeIcons/eyeexam.png",
+    icon: EyeExamIcon,
     image: EyeExamImage,
     title: "Comprehensive Eye Exams by Top Toronto Optometrists",
     description:
@@ -477,7 +477,7 @@ export const services = [
   },
   {
     label: "Contact Lens Fitting",
-    icon: "/homeIcons/contactlens.png",
+    icon: ContactLensIcon,
     image: ContactLensImage,
     title: "Professional Contact Lens Fittings for You",
     description:
@@ -492,7 +492,7 @@ export const services = [
   },
   {
     label: "Myopia Control",
-    icon: "/homeIcons/mypio.png",
+    icon: MyopiaIcon,
     image: MyopiaImage,
     title: "Effective Myopia Control Solutions for Children",
     description:
@@ -508,7 +508,7 @@ export const services = [
   },
   {
     label: "Dry Eye Treatment",
-    icon: "/homeIcons/dryeye.png",
+    icon: DryEyeIcon,
     image: DryEyeImage,
     title: "Effective Dry Eye Treatment Solutions",
     description:
@@ -523,7 +523,7 @@ export const services = [
   },
   {
     label: "Pediatric Eye Care",
-    icon: "/homeIcons/pediatric.png",
+    icon: PediatricIcon,
     image: PediatricEyeCareImage,
     title: "Comprehensive Pediatric Optometric Services in Toronto",
     description:
