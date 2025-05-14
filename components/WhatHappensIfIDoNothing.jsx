@@ -22,49 +22,49 @@ const placeholderIcons = {
 const consequenceData = [
   {
     id: "01",
-    icon: placeholderIcons.discomfort,
+    icon: "/eyecare/persistent.png",
     title: "Persistent Discomfort",
     description:
       "Symptoms like dryness, irritation, burning, and redness may worsen over time, leading to ongoing discomfort and reduced quality of life.",
   },
   {
     id: "02",
-    icon: placeholderIcons.qualityOfLife,
+    icon: "/eyecare/reduced.png",
     title: "Reduced Quality of Life",
     description:
       "Chronic eye discomfort and visual disturbances can significantly impact daily activities, work performance, and overall well-being.",
   },
   {
     id: "03",
-    icon: placeholderIcons.vision,
+    icon: "/eyecare/compromised.png",
     title: "Compromised Vision",
     description:
       "Severe or untreated MGD may lead to blurry vision, affecting visual clarity and quality.",
   },
   {
     id: "04",
-    icon: placeholderIcons.corneal,
+    icon: "/eyecare/corneal.png",
     title: "Corneal Damage",
     description:
       "Chronic dryness and tear film instability can increase the risk of corneal damage, including epithelial erosions and corneal ulcers.",
   },
   {
     id: "05",
-    icon: placeholderIcons.inflammation,
+    icon: "/eyecare/inflammation.png",
     title: "Inflammation",
     description:
       "Inadequate lubrication and inflammation associated with MGD can contribute to ongoing eyelid (blepharitis) and eye surface (conjunctivitis) inflammation, potentially causing long-term damage.",
   },
   {
     id: "06",
-    icon: placeholderIcons.contactLenses,
+    icon: "/eyecare/complications.png",
     title: "Complications with Contact Lenses",
     description:
       "Individuals who wear contact lenses may experience increased discomfort, dryness, and intolerance to lenses due to compromised tear film and ocular surface health.",
   },
   {
     id: "07",
-    icon: placeholderIcons.tearFilm,
+    icon: "/eyecare/decreased.png",
     title: "Decreased Tear Film Stability",
     description:
       "Without proper gland function, the tear film may become unstable, increasing tear evaporation and exacerbating dry eye symptoms.",

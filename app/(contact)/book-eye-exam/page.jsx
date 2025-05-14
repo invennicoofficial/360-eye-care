@@ -11,9 +11,14 @@ import {
   PatientScaledImage,
 } from "../../../constants/Images";
 import AboutUsSection from "components/AboutUsSection";
-import { eyeexamsCardData } from "constants/Constants";
+import {
+  bookEyeExamCardData,
+  bookeyeexamFaqdata,
+  eyeexamsCardData,
+} from "constants/Constants";
 import BeforeAppointmentSection from "../../../components/BeforeYourAppoinment";
 import BeforeYourAppoinment from "../../../components/BeforeYourAppoinment";
+import DryFaqs from "components/DryFaqs";
 
 const page = () => {
   useEffect(() => {
@@ -34,18 +39,18 @@ const page = () => {
         <div className="flex lg:flex-row  flex-col ">
           {[
             {
-              title: "BOOK at Beaches",
+              title: "Book at Beaches",
               description:
-                "You can now use our online booking tools to select your own appointment date and time. Click a location to book your appointment in real-time.",
+                "Struggling with blurry vision or eye strain? Let’s get to the root of it together. Your clearer sight is just a click away.",
               ctaText: "Book at Beaches",
               ctaLink: "#book-appointment",
               ctabgColor: "bg-[#28305F]",
               bgColor: "bg-combination-100",
             },
             {
-              title: "BOOK at Yorkville",
+              title: "Book at Yorkville",
               description:
-                "You can now use our online booking tools to select your own appointment date and time. Click a location to book your appointment in real-time.",
+                "Your next eye exam could change how you see the world. Let’s take care of your vision together. It’s just a click away.",
               ctaText: "Book at Yorkville",
               ctaLink: "https://360rosedale.mypatientportal.xyz/dashboard",
               ctabgColor: "bg-combination-100",
@@ -79,7 +84,7 @@ const page = () => {
           })}
         </div>
         <div className="bg-white px-4 sm:px-10 md:pb-12 pb-8">
-          <AboutUsSection cardData={eyeexamsCardData} />
+          <AboutUsSection cardData={bookEyeExamCardData} />
         </div>
 
         <BeforeYourAppoinment />
@@ -101,17 +106,22 @@ const page = () => {
             <div className="w-full md:w-[50%] flex flex-col border-2 border-[#28305F] p-4 md:p-8">
               <div className="w-full flex flex-col gap-5">
                 <h2 className="font-[700] text-[24px] md:text-[28px] text-[#28305F] font-poppins">
-                  Have a Question?
+                  Do You Have Questions?
                 </h2>
                 <p className="text-neutral-500 text-base md:text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Have questions before booking? Fill out the form below, and
+                  we’ll get back to you shortly.
                 </p>
                 <QuestionForm />
               </div>
             </div>
           </div>
         </div>
+
+        <DryFaqs
+          faqData={bookeyeexamFaqdata}
+          title="Frequently Asked Questions"
+        />
       </div>
     </main>
   );

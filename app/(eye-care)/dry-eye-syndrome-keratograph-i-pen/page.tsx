@@ -52,7 +52,7 @@ const IntroSection = () => (
         leading to more serious complications.
       </p>
       <Link href="/book-eye-exam">
-        <button className="bg-combination-200 hover:text-combination-100 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md">
+        <button className="bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white font-bold py-3 px-8 rounded-md transition-colors duration-200 shadow-md">
           Book an eye exam
         </button>
       </Link>
