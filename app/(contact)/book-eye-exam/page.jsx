@@ -4,7 +4,16 @@ import SubHeader from "../../../components/SubHeader";
 import Link from "next/link";
 import FormSection from "../../../components/FormSection";
 import Image from "next/image";
-import { bookEyeExamImage, OptometryImage } from "../../../constants/Images";
+import QuestionForm from "../../../components/QuestionForm";
+import {
+  bookEyeExamImage,
+  OptometryImage,
+  PatientScaledImage,
+} from "../../../constants/Images";
+import AboutUsSection from "components/AboutUsSection";
+import { eyeexamsCardData } from "constants/Constants";
+import BeforeAppointmentSection from "../../../components/BeforeYourAppoinment";
+import BeforeYourAppoinment from "../../../components/BeforeYourAppoinment";
 
 const page = () => {
   useEffect(() => {
@@ -21,83 +30,87 @@ const page = () => {
 
   return (
     <main className="pt-[110px]">
-      <SubHeader text="BOOK AN EYE EXAM" />
+      <div className="max-w-[1550px] mx-auto">
+        <div className="flex lg:flex-row  flex-col ">
+          {[
+            {
+              title: "BOOK at Beaches",
+              description:
+                "You can now use our online booking tools to select your own appointment date and time. Click a location to book your appointment in real-time.",
+              ctaText: "Book at Beaches",
+              ctaLink: "#book-appointment",
+              ctabgColor: "bg-[#28305F]",
+              bgColor: "bg-combination-100",
+            },
+            {
+              title: "BOOK at Yorkville",
+              description:
+                "You can now use our online booking tools to select your own appointment date and time. Click a location to book your appointment in real-time.",
+              ctaText: "Book at Yorkville",
+              ctaLink: "https://360rosedale.mypatientportal.xyz/dashboard",
+              ctabgColor: "bg-combination-100",
+              bgColor: "bg-[#28305F]",
+            },
+          ].map((item, index) => {
+            return (
+              <div
+                key={item.title}
+                className={`md:w-[50%] md:h-[593px] w-full h-[296px]   flex gap-5 justify-center items-center ${item.bgColor}`}
+              >
+                <div className="w-[415px] h-[236px] flex flex-col gap-5 text-center md:text-left">
+                  <h2 className="font-[700] md:text-[40px] text-[28px] text-white font-poppins">
+                    {item.title}
+                  </h2>
+                  <p className="text-white font-poppins font-medium md:text-base text-[14px] text-center md:text-left">
+                    {item.description}
+                  </p>
 
-      {/* First section - Book an Eye Exam */}
-      <div className="max-w-6xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col md:flex-row justify-between">
-        {/* Left column - text and form */}
-        <div className="w-full md:w-[45%] mb-8 md:mb-0">
-          <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4">
-            BOOK AN EYE EXAM
-          </h2>
-          <hr className="w-20 h-1 bg-combination-100 mb-4" />
+                  <div className="flex justify-center items-center md:items-center md:justify-start">
+                    <Link
+                      href={item.ctaLink}
+                      className={`${item.ctabgColor} text-center   text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md md:text-left w-[218px] h-[56px] flex justify-center items-center text-base `}
+                    >
+                      {item.ctaText}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="bg-white px-4 sm:px-10 md:pb-12 pb-8">
+          <AboutUsSection cardData={eyeexamsCardData} />
+        </div>
 
-          <p className="text-neutral-500 text-base md:text-lg mb-4">
-            You can now use our online booking tools to select your own
-            appointment date and time. Click a location to book your appointment
-            in real-time. Otherwise, please feel free to use the form below to
-            get in touch with our team.
-          </p>
+        <BeforeYourAppoinment />
 
-          {/* Buttons - stacked on mobile, side by side on desktop */}
-          <div className="flex flex-col sm:flex-row sm:justify-between gap-4 mt-5 mb-8 w-[280px] md:w-auto">
-            <Link
-              href="#book-appointment"
-              className="bg-combination-200  hover:bg-combination-100 hover:text-combination-200 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md text-center"
-            >
-              Book At the Beaches
-            </Link>
-            <Link
-              href="https://360rosedale.mypatientportal.xyz/dashboard"
-              className="bg-combination-200 hover:bg-combination-100 hover:text-combination-200 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md text-center"
-            >
-              Book At Yorkville Rosedale
-            </Link>
+        <div className="max-w-7xl mx-auto my-8 md:my-16 px-4 md:px-0">
+          <div className="flex flex-col md:flex-row justify-between items-start">
+            {/* Image container - hidden on mobile, visible on md and above */}
+            <div className="hidden md:block border-2 border-[#28305F]">
+              <Image
+                src={PatientScaledImage}
+                alt="patient-scaled-image"
+                width={570}
+                height={759}
+                className="object-cover w-[570px] max-h-[759px]"
+              />
+            </div>
+
+            {/* Form container - full width on mobile, 50% on desktop */}
+            <div className="w-full md:w-[50%] flex flex-col border-2 border-[#28305F] p-4 md:p-8">
+              <div className="w-full flex flex-col gap-5">
+                <h2 className="font-[700] text-[24px] md:text-[28px] text-[#28305F] font-poppins">
+                  Have a Question?
+                </h2>
+                <p className="text-neutral-500 text-base md:text-lg">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <QuestionForm />
+              </div>
+            </div>
           </div>
-
-          <FormSection />
-        </div>
-
-        {/* Right column - image */}
-        <div className="w-full md:w-[45%] flex justify-center">
-          <Image
-            src={bookEyeExamImage}
-            alt="Book Eye Exam"
-            width={585}
-            height={919}
-            className="w-full max-w-[585px] h-auto object-contain"
-          />
-        </div>
-      </div>
-
-      {/* Second section - Book an Eye Exam in the Beaches Toronto */}
-      <div className="max-w-5xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col-reverse md:flex-row-reverse items-start justify-between">
-        {/* Left column on desktop, top on mobile */}
-        <div className="w-full md:w-[45%] mb-8 md:mb-0">
-          <h2 className="text-combination-200 text-3xl md:text-[37px] font-bold mb-4 mt-6">
-            Book an Eye Exam in the Beaches Toronto
-          </h2>
-          <p className="text-neutral-500 text-base md:text-lg mb-4">
-            Choose which of our Optometrists you would like to schedule your
-            appointment with, or simply choose 'Next Appointment' for the
-            soonest available openings. Select your preferred date and time from
-            the available slots and click 'Request' to submit your appointment
-            request
-          </p>
-          <div className="z-[-1]" id="book-appointment">
-            <gsp-scheduler account_id="3709"></gsp-scheduler>
-          </div>
-        </div>
-
-        {/* Right column on desktop, bottom on mobile */}
-        <div className="w-full md:w-[45%] flex justify-center ">
-          <Image
-            src={OptometryImage}
-            alt="optometry image"
-            width={466}
-            height={600}
-            className="w-full max-w-[466px] h-auto object-contain"
-          />
         </div>
       </div>
     </main>

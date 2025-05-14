@@ -20,7 +20,7 @@ const BeforeYourAppoinment = () => {
     <div className="w-full bg-[#28305F] py-12 px-4 md:px-0">
       <div className="max-w-7xl mx-auto md:px-[60px] flex flex-col md:flex-row md:justify-between gap-10">
         {/* Contact Information Column */}
-        <div className="w-full md:w-[60%] flex flex-col gap-6">
+        <div className="w-full md:w-[50%] flex flex-col gap-6">
           {/* Section Title */}
           <div className="text-center md:text-left">
             <h2 className="font-poppins font-semibold text-white text-2xl md:text-[28px] tracking-wide">
@@ -132,7 +132,7 @@ const BeforeYourAppoinment = () => {
 
         {/* Booking Section */}
         <div className="w-full md:w-[44%] flex flex-col gap-6">
-          <h2 className="font-poppins font-semibold text-2xl text-white  md:text-[36px] tracking-wide text-center md:text-left">
+          <h2 className="font-poppins font-semibold text-2xl text-white  md:text-[36px] tracking-wide text-center md:text-left leading-normal">
             Book Your Eye Exam Today at Our Beaches Optometry
           </h2>
 

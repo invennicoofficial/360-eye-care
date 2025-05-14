@@ -12,7 +12,7 @@ const HeroCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 100000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -44,104 +44,118 @@ const HeroCarousel = () => {
           </div>
 
           {/* Content */}
-          <div className="relative flex items-center justify-center md:justify-start h-full">
+          <div className="relative  flex md:items-end  md:justify-start items-center justify-center md:ml-[-140px] md:mt-[-80px] mt-0 ml-[0px] h-full">
             <div className="container mx-auto  md:px-8 flex">
               <div className="w-full text-neutral-900 animate-slide-up">
                 {/* White box with border */}
                 <div className="relative md:pl-8 pt-8 pb-12">
                   <div className="flex flex-col items-center md:items-start md:py-0 my-6">
-                    <div className="flex items-end">
-                      <div className="w-[335px] h-[15px] hidden md:block bg-white" />
-                      {/* Icons */}
-                      <div className="items-center gap-4 mb-6 hidden md:flex">
-                        {/* First icon - animate from top to bottom */}
-                        <motion.div
-                          initial={{ y: -50, opacity: 0 }}
-                          animate={{ y: 0, opacity: 1 }}
-                          transition={{ duration: 0.8, ease: "easeOut" }}
-                          className="w-14 h-14 text-primary-600 flex items-center justify-center"
-                        >
-                          <Image
-                            src="/Icons/HeroIcon1.webp"
-                            alt="Eye chart icon"
-                            width={38}
-                            height={53}
-                          />
-                        </motion.div>
+                    <div className="flex flex-row items-center md:items-center mb-[-24px]">
+                      <div className="flex items-center gap-5">
+                        <div className="w-[335px] h-[15px] hidden md:block bg-white" />
+                        {/* Icons */}
+                        <div className="items-center gap-4 hidden md:flex">
+                          {/* First icon - animate from top to bottom */}
+                          <motion.div
+                            key={`icon1-${activeSlide}`}
+                            initial={{ y: -50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="w-14 h-14 text-primary-600 flex items-center justify-center"
+                          >
+                            <Image
+                              src="/Icons/HeroIcon1.webp"
+                              alt="Eye chart icon"
+                              width={38}
+                              height={53}
+                            />
+                          </motion.div>
 
-                        {/* Middle icon - smooth fade/zoom in */}
-                        <motion.div
-                          initial={{ scale: 0.8, opacity: 0 }}
-                          animate={{ scale: 1, opacity: 1 }}
-                          transition={{ duration: 0.9, ease: "easeInOut" }}
-                          className="w-14 h-14 text-primary-600 flex items-center justify-center"
-                        >
-                          <Image
-                            src="/Icons/HeroIcon2.webp"
-                            alt="Eye examination icon"
-                            width={48}
-                            height={48}
-                          />
-                        </motion.div>
+                          {/* Middle icon - smooth fade/zoom in */}
+                          <motion.div
+                            key={`icon2-${activeSlide}`}
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.9, ease: "easeInOut" }}
+                            className="w-14 h-14 text-primary-600 flex items-center justify-center"
+                          >
+                            <Image
+                              src="/Icons/HeroIcon2.webp"
+                              alt="Eye examination icon"
+                              width={48}
+                              height={48}
+                            />
+                          </motion.div>
 
-                        {/* Third icon - animate from bottom to top */}
-                        <motion.div
-                          initial={{ y: 50, opacity: 0 }}
-                          animate={{ y: 0, opacity: 1 }}
-                          transition={{ duration: 0.8, ease: "easeOut" }}
-                          className="w-14 h-14 text-primary-600 flex items-center justify-center"
-                        >
-                          <Image
-                            src="/Icons/HeroIcon3.webp"
-                            alt="Eye test equipment icon"
-                            width={68}
-                            height={48}
-                          />
-                        </motion.div>
+                          {/* Third icon - animate from bottom to top */}
+                          <motion.div
+                            key={`icon3-${activeSlide}`}
+                            initial={{ y: 50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="w-14 h-14 text-primary-600 flex items-center justify-center"
+                          >
+                            <Image
+                              src="/Icons/HeroIcon3.webp"
+                              alt="Eye test equipment icon"
+                              width={68}
+                              height={48}
+                            />
+                          </motion.div>
+                        </div>
                       </div>
                     </div>
-                    <div className="flex flex-row items-center md:items-center">
+                    <div className="flex flex-row items-center md:items-center ">
                       <div className="w-[15px] h-[320px] bg-white hidden md:block" />
                       {/* Title and subtitle */}
-                      <div className="flex flex-col md:pl-5 text-center  w-full md:p-0 pt-6 ">
+                      <div className="flex flex-col md:pl-5 text-center md:text-left w-full md:p-0 pt-6 ">
                         <motion.h1
+                          key={`title-${activeSlide}`}
                           initial={{ y: 60, opacity: 0 }}
-                          animate={{ y: 0, opacity: 1 }}
-                          transition={{ duration: 0.8, ease: "easeOut" }}
                           className="font-lora text-[28px] md:text-[78px] font-bold text-brand-blue md:mb-2 mb-1 text-nowrap"
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            duration: 0.6,
+                            ease: "easeIn",
+                            delay: 0.1,
+                          }}
                         >
                           {slide.title}
                         </motion.h1>
 
                         <motion.h2
-                          initial={{ y: 60, opacity: 0 }}
+                          key={`subtitle-${activeSlide}`}
                           animate={{ y: 0, opacity: 1 }}
                           transition={{
-                            duration: 1.1,
-                            ease: "easeOut",
-                            delay: 0.2,
+                            duration: 0.6,
+                            ease: "easeIn",
+                            delay: 0.1,
                           }}
-                          className="font-lora text-[24px] font-semibold md:text-[40px] text-brand-blue md:mb-8 mb-4"
+                          initial={{ y: 60, opacity: 0 }}
+                          className="font-lora text-[24px] font-semibold md:text-[40px] text-brand-blue md:mb-8 mb-6"
                         >
                           {slide.subtitle}
                         </motion.h2>
                       </div>
                     </div>
-                    <div className="flex flex-row items-start gap-5 justify-center ">
-                      <div className="w-[193px] h-[15px] bg-white hidden md:block" />
-                      <MotionLink
-                        href={slide.buttonLink}
-                        initial={{ y: 60, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{
-                          duration: 0.9,
-                          ease: "easeOut",
-                          delay: 0.4,
-                        }}
-                        className="inline-block bg-combination-100 text-white hover:bg-brand-blue hover:text-combination-100 font-medium md:py-3 md:px-8 py-2 px-4 rounded transition-colors duration-200 shadow-button md:w-auto text-sm md:text-base"
-                      >
-                        {slide.buttonText}
-                      </MotionLink>
+                    <div className="flex flex-row items-start -mt-[20px]">
+                      <div className="flex flex-row items-center gap-8 justify-center ">
+                        <div className="w-[193px] h-[15px] bg-white hidden md:block" />
+                        <MotionLink
+                          key={`button-${activeSlide}`}
+                          href={slide.buttonLink}
+                          initial={{ y: 60, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            duration: 0.9,
+                            ease: "easeOut",
+                            delay: 0.4,
+                          }}
+                          className="inline-block bg-combination-100 text-white hover:bg-brand-blue hover:text-combination-100 font-medium md:py-3 md:px-8 py-2 px-4 rounded transition-colors duration-200 shadow-button md:w-auto text-sm md:text-base"
+                        >
+                          {slide.buttonText}
+                        </MotionLink>
+                      </div>
                     </div>
                   </div>
                 </div>

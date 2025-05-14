@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { optometrists } from "../constants/Constants";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OptometristTeam() {
   const router = useRouter();
@@ -68,14 +69,19 @@ function OptometristCard({ name, image, description, slug, onReadMore }) {
         </div>
         {/* Bottom border on hover */}
         <div
-          className={`absolute bottom-0 left-0 w-full h-1 transition-all duration-300 ${
+          className={`absolute bottom-0 left-0 w-full h-2 transition-all duration-300 ${
             isHovered ? "bg-[#5BC4BC]" : "bg-transparent"
           }`}
         />
       </div>
+      <Link
+        href={`/team-members/${slug}`}
+        className="font-semibold text-lg text-[#2D3B55] text-center bg-[#FAFAFA] py-3 mb-2 cursor-pointer"
+      >
+        {name}
+      </Link>
 
       <div className="p-6 text-center flex-grow">
-        <h4 className="font-semibold text-lg text-[#2D3B55] mb-2">{name}</h4>
         <p className="text-gray-600 text-sm mb-10">{description}</p>
       </div>
 
