@@ -1,72 +1,49 @@
-"use client";
-import { useParams } from "next/navigation";
-import { optometrists } from "../../../../constants/Constants";
-import SubHeader from "../../../../components/SubHeader";
-import Image from "next/image";
-import Link from "next/link";
+// Fixed Page.js (Server Component)
+import { optometrists } from "../../../../constants/Constants.js";
+import TeamMember from "./TeamMember";
 
-const TeamMember = () => {
-  const { slug } = useParams();
-  const doctor = optometrists.find((doctor) => doctor.slug == slug);
+export async function generateMetadata({ params }) {
+  const doctor = optometrists.find((doc) => doc.slug == params.slug);
 
   if (!doctor) {
-    return (
-      <main className="pt-[110px] px-4">
-        <SubHeader text="Team Member Not Found" />
-        <p className="text-neutral-500 text-lg mt-4">
-          Sorry, we couldn't find the team member you're looking for.
-        </p>
-      </main>
-    );
+    return {
+      title: "Team Member Not Found | Your Clinic",
+      description: "We couldn't find this team member.",
+    };
   }
 
-  return (
-    <main className="pt-[110px]">
-      <SubHeader text={doctor.name} />
+  const firstSentence = doctor.longDescription
+    ? doctor.longDescription.split(".")[0] + "."
+    : "";
 
-      <div className="px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 items-start md:py-20 py-10">
-          <div className="w-full md:w-[25%]">
-            <Image
-              src={doctor.image}
-              alt={doctor.name}
-              width={275}
-              height={275}
-              className="md:w-[275px] md:h-[275px] w-full h-full object-contain"
-            />
-          </div>
+  const description = doctor.shortDescription || firstSentence;
 
-          <div className="flex flex-col mt-6 md:mt-0 md:w-[70%]">
-            <p className="text-combination-200 text-2xl font-bold mb-4">
-              {doctor.name}
-            </p>
-            {doctor.longDescription &&
-              doctor.longDescription
-                .split(". ")
-                .reduce((acc, sentence, index) => {
-                  const paragraphSize = 3;
-                  const paraIndex = Math.floor(index / paragraphSize);
-                  if (!acc[paraIndex]) acc[paraIndex] = [];
-                  acc[paraIndex].push(sentence);
-                  return acc;
-                }, [])
-                .map((sentences, idx) => (
-                  <p key={idx} className="text-neutral-500 text-lg mb-4">
-                    {sentences.join(". ") + "."}
-                  </p>
-                ))}
+  return {
+    title: `${doctor.name} | Optometrist at Your Clinic`,
+    description: description,
+    openGraph: {
+      title: `${doctor.name} | Optometrist`,
+      description: description,
+      images: [
+        {
+          url: doctor.image,
+          width: 800,
+          height: 600,
+          alt: doctor.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${doctor.name} | Optometrist`,
+      description: description,
+      images: [typeof doctor.image === "string" ? doctor.image : null],
+    },
+  };
+}
 
-            <Link
-              href="/book-eye-exam"
-              className="inline-block w-full md:w-[240px] bg-combination-100 text-white hover:bg-brand-blue hover:text-combination-100 font-medium py-3 px-8 rounded transition-colors duration-200 shadow-button text-center"
-            >
-              Book an Appointment
-            </Link>
-          </div>
-        </div>
-      </div>
-    </main>
-  );
-};
+export default function TeamMemberPage({ params }) {
+  const doctor = optometrists.find((doc) => doc.slug == params.slug);
 
-export default TeamMember;
+  return <TeamMember doctor={doctor} />;
+}

@@ -71,14 +71,14 @@ const NavBar = () => {
         { name: "Dry Eye Clinic", link: "/dry-eye-syndrome-keratograph-i-pen" },
         {
           name: "IPL and RF Treatment",
-          link: "/intense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment/",
+          link: "/intense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment",
         },
         { name: "Myopia Control Clinic", link: "/myopia-control-clinic" },
         { name: "Orthokeratology", link: "/orthokeratology-treatment" },
         { name: "Pediatric Eye Exams", link: "/pediatric-eye-exams" },
         {
           name: "Advanced Diagnostics",
-          link: "/advanced-diagnostics-eye-exams/",
+          link: "/advanced-diagnostics-eye-exams",
         },
         { name: "Laser Vision Correction", link: "/laser-vision-correction" },
         { name: "Eye Emergencies", link: "/eye-emergencies" },
