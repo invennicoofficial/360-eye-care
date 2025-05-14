@@ -1977,6 +1977,40 @@ export const dryFaqdata = [
   },
 ];
 
+export const bookeyeexamFaqdata = [
+  {
+    id: 1,
+    question: "What should I expect during my eye exam?",
+    answer:
+      "During your eye exam, our optometrists will assess your vision, eye health, and screen for common conditions. Expect a comfortable, thorough check-up including tests for clear vision and overall eye function.",
+  },
+  {
+    id: 2,
+    question: "How often should I have an eye exam?",
+    answer:
+      "It’s recommended to have an eye exam every 1–2 years, depending on age and health. If you experience vision changes or discomfort, more frequent exams may be necessary. Regular exams ensure early detection of eye conditions.",
+  },
+  {
+    id: 3,
+    question: "Do you offer treatments for dry eyes?",
+    answer:
+      "Yes, we offer effective treatments for dry eyes, including lifestyle advice, prescription drops, and advanced therapies like Inmode IPL and RF. Our team will help find the best treatment for your unique symptoms.",
+  },
+  {
+    id: 4,
+    question: "How can I prepare for my eye exam?",
+    answer:
+      "For your eye exam, bring your prescription glasses or contacts, and any relevant medical history. Avoid wearing eye makeup or contact lenses on the day of your exam to ensure accurate testing results.",
+  },
+  {
+    id: 5,
+    question: "Are your optometrists experienced with children’s eye care?",
+    answer:
+      "Absolutely! Our optometrists are highly skilled in pediatric eye care, offering thorough exams to check for conditions like myopia, amblyopia, and strabismus. We make the experience comfortable and fun for your child.",
+  },
+];
+
+
 export const torontoBeachesFaqData = [
   {
     id: 1,
@@ -2210,6 +2244,30 @@ export const eyeexamsCardData = [
     title: "Comprehensive Testing",
     description:
       "An eye exam at our center includes various tests to assess your eye health.",
+    bgColor: "bg-combination-100",
+  },
+];
+
+export const bookEyeExamCardData = [
+  {
+    icon: FaUserDoctor,
+    title: "Annual Checkups",
+    description:
+      "Don’t skip your annual eye exam. Yearly checkups catch changes early. Stay ahead",
+    bgColor: "bg-combination-100",
+  },
+  {
+    icon: LuScanEye,
+    title: "Regular Eye Exams",
+    description:
+      "Stay ahead of vision changes. Regular eye exams make all the difference",
+    bgColor: "bg-combination-200",
+  },
+  {
+    icon: TbBrandVisualStudio,
+    title: "Comprehensive Testing",
+    description:
+      "See the whole picture. Comprehensive eye testing gives a full picture of your vision",
     bgColor: "bg-combination-100",
   },
 ];

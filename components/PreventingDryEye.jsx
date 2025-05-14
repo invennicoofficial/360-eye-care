@@ -17,8 +17,8 @@ const PreventingDryEye = () => {
         </p>
 
         <ul className="space-y-8">
-          <li className="flex">
-            <span className="text-lg mr-2">•</span>
+          <li className="flex ml-6">
+            <span className="text-lg mr-2 mb-10">•</span>
             <div>
               <span className="font-bold">Proper Hydration:</span> Dry eyes
               crave hydration, so staying well-hydrated is important. Drink
@@ -28,7 +28,7 @@ const PreventingDryEye = () => {
             </div>
           </li>
 
-          <li className="flex">
+          <li className="flex ml-6 ">
             <span className="text-lg mr-2">•</span>
             <div>
               <span className="font-bold">Blink Exercises:</span> We blink
@@ -42,7 +42,7 @@ const PreventingDryEye = () => {
             </div>
           </li>
 
-          <li className="flex flex-col">
+          <li className="flex flex-col mt-6">
             <div className="flex">
               <span className="text-lg mr-2">•</span>
               <div>

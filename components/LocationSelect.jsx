@@ -80,7 +80,7 @@ const LocationSelect = ({ onChange, value }) => {
 
   return (
     <div className="relative w-full" ref={dropdownRef}>
-      {/* Search Input */}
+      {/* Search Input with Chevron */}
       <div className="relative">
         <input
           ref={inputRef}
@@ -90,20 +90,32 @@ const LocationSelect = ({ onChange, value }) => {
           onClick={handleInputFocus}
           onFocus={handleInputFocus}
           placeholder={selectedLocation || "Search locations..."}
-          className="w-full bg-gray-50 border border-gray-300 px-4 py-4 rounded text-gray-700 focus:outline-none focus:ring-1 focus:ring-combination-100"
+          className="w-full bg-gray-100 border border-gray-300 px-4 py-4 pr-10 rounded text-gray-700 focus:outline-none focus:ring-1 focus:ring-combination-100"
         />
 
-        {/* Clear button when a location is selected */}
-        {selectedLocation && !searchTerm && (
+        {/* Dropdown Chevron */}
+        <div
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
+          onClick={toggleDropdown}
+        >
+          {isOpen ? (
+            <ChevronUpIcon className="h-5 w-5 text-gray-500" />
+          ) : (
+            <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+          )}
+        </div>
+
+        {/* Clear button when a location is selected - positioned before chevron */}
+        {/* {selectedLocation && !searchTerm && (
           <button
             type="button"
             onClick={clearSelection}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            className="absolute right-10 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
             aria-label="Clear selection"
           >
             ✕
           </button>
-        )}
+        )} */}
       </div>
 
       {/* Blue Stripe Header when Dropdown is Open */}
@@ -119,7 +131,7 @@ const LocationSelect = ({ onChange, value }) => {
           {filteredLocations.map((location, index) => (
             <div
               key={index}
-              className="p-4 hover:bg-gray-100 cursor-pointer text-gray-600"
+              className="p-4 hover:bg-[#0173A9] hover:text-white cursor-pointer text-gray-600"
               onClick={() => handleLocationSelect(location)}
             >
               {location}
@@ -133,5 +145,40 @@ const LocationSelect = ({ onChange, value }) => {
     </div>
   );
 };
+
+// Chevron Icons
+const ChevronDownIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M19 9l-7 7-7-7"
+    />
+  </svg>
+);
+
+const ChevronUpIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M5 15l7-7 7 7"
+    />
+  </svg>
+);
 
 export default LocationSelect;
