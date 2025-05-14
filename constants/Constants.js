@@ -508,7 +508,7 @@ export const services = [
   },
   {
     label: "Dry Eye Treatment",
-    icon: DryEyeIcon,
+    icon: "/homeIcons/dryTest.png",
     image: DryEyeImage,
     title: "Effective Dry Eye Treatment Solutions",
     description:
@@ -523,7 +523,7 @@ export const services = [
   },
   {
     label: "Pediatric Eye Care",
-    icon: PediatricIcon,
+    icon: "/homeIcons/pedi.png",
     image: PediatricEyeCareImage,
     title: "Comprehensive Pediatric Optometric Services in Toronto",
     description:
