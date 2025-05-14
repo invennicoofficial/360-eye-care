@@ -72,7 +72,7 @@ const VideoSection = () => {
             BOOK YOUR APPOINTMENT
           </h3>
           <hr className="w-[65px] h-[2px] bg-combination-100 mb-8" />
-          <FormSection />
+          <FormSection css="max-w-xl" />
         </div>
       </div>
     </div>

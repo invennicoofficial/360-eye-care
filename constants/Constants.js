@@ -126,7 +126,7 @@ export const optometrists = [
     id: 1,
     name: "Dr. Sam Baraam",
     slug: "dr-sam-baraam",
-    image: SamBarramImage,
+    image: SamBarramImage.src,
     description: (
       <>
         Dr. Sam Baraam is a certified optometrist with advanced training in
@@ -149,7 +149,7 @@ Dr. Baraam is the founder and president of 360 Eyecare, practicing at the Beache
     id: 2,
     name: "Dr. Anita Sritharan",
     slug: "dr-anita-sritharan",
-    image: AnitaSritharanImage,
+    image: AnitaSritharanImage.src,
     description:
       "Dr. Anita Sritharan is dedicated to providing patient-centered eye care and developing unique treatment plans based on individual needs.",
     longDescription: `Dr. Anita Sritharan is a dedicated optometrist providing full-scope optometry with a special interest in dry eye treatments and myopia control. She has extensive experience managing conditions such as blepharitis, meibomian gland dysfunction, ocular rosacea, styes, and chalazions. To offer her patients the most effective treatments, she provides advanced in-office treatments, including intense pulsed light (IPL) and radio frequency (RF Therapy). Additionally, Dr. Sritharan specializes in fitting specialty contact lenses, including RGPs and OrthoK lenses.
@@ -164,7 +164,7 @@ On her spare time, she enjoys baking, swimming, and travelling`,
     id: 3,
     name: "Dr. Gina Chen",
     slug: "dr-gina-chen",
-    image: GinaChenImage,
+    image: GinaChenImage.src,
     description:
       "Dr. Gina Chen is a passionate optometrist specializing in Orthokeratology lenses and enjoys practicing comprehensive eye care.",
     longDescription: `Dr. Gina Chen received both her Doctor of Optometry degree and Bachelor of Science degree with honours from the University of Waterloo. During her clinical studies, she obtained extensive training with a focus in retinal diseases, cataracts, and dry eye diseases at the Eye Associates of Pinellas in Pinellas Park, Florida.
@@ -181,7 +181,7 @@ In her spare time, she enjoys exercising, travelling, reading, and being a foodi
     id: 4,
     name: "Dr. Harmandeep Gill",
     slug: "dr-harmandeep-gill",
-    image: GillImage,
+    image: GillImage.src,
     description:
       "Dr. Harmandeep Gill completed his Bachelor of Science in Biochemistry and Molecular Biology at University of Toronto.",
     longDescription: `Dr. Harmandeep Gill completed his Bachelor of Science in Biochemistry and Molecular Biology at the University of Toronto. He went on to receive his Doctor of Optometry from the University of Waterloo.
@@ -194,7 +194,7 @@ Dr. Gill works at the Yorkville location in Toronto. Outside of patient care, Dr
     id: 5,
     name: "Dr. Alina Shahid",
     slug: "dr-alina-shahid",
-    image: AlinaShahidImage,
+    image: AlinaShahidImage.src,
     description:
       "Dr. Shahid is passionate about providing thorough eye care and building trusting relationships with her patients.",
     longDescription: `Dr. Alina Shahid graduated from McMaster University with her Bachelor of Science, majoring in Molecular Biology and Genetics. She then completed her Doctor of Optometry from Illinois College of Optometry in Chicago. Dr. Shahid has clinical experience serving diverse patient populations, with extensive training in ocular disease, contact lenses, pediatrics and dry eye disease. Her special interests include the treatment and management of glaucoma, myopia control and refractive surgery co-management. She is licensed to practice optometry in both the U.S. and Canada.
@@ -207,7 +207,7 @@ Dr. Shahid is passionate about providing thorough eye care and building trusting
     id: 6,
     name: "Dr. Deepinder Swatch",
     slug: "dr-deepinder-swatch",
-    image: swatchImage,
+    image: swatchImage.src,
     description:
       "Dr. Deepinder Swatch has been certified to treat and manage ocular disease and is dedicated to providing thorough eye care.",
     longDescription: `Dr. Deepinder Swatch graduated from the University of Toronto with her Hon. Bachelor of Science in Biology, Chemistry and Philosophy in 2000. She then attended the Illinois College of Optometry and obtained her Doctorate of Optometry in 2005.

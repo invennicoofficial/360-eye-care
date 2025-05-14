@@ -5,7 +5,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import LocationSelect from "./LocationSelect";
 import Image from "next/image";
 
-const FormSection = () => {
+const FormSection = ({ css }) => {
   // React Hook Form setup
   const {
     register,
@@ -108,7 +108,7 @@ const FormSection = () => {
 
   return (
     <form
-      className="flex flex-col gap-4 max-w-xl w-full"
+      className={`flex flex-col gap-4   w-full ${css}`}
       onSubmit={handleSubmit(onSubmit)}
     >
       {/* Hidden input for location to register with react-hook-form */}

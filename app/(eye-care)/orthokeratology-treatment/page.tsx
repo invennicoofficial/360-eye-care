@@ -1,6 +1,7 @@
 import React from "react";
 import SubHeader from "../../../components/SubHeader";
 import Link from "next/link";
+import FormSection from "../../../components/FormSection";
 import {
   OrthoImage,
   OrthoImage2,
@@ -18,15 +19,18 @@ const page = () => {
       <div className="max-w-6xl mx-auto my-6 sm:my-16 px-4 sm:px-0 flex flex-col sm:flex-row justify-between items-start">
         <div className="flex flex-col gap-4 w-full sm:w-[585px] sm:mr-10 mb-6 sm:mb-0">
           <h2 className="text-combination-200 text-2xl sm:text-3xl md:text-[37px] font-[900]">
-            Emergency Eye Care When Every Second Counts
+            What is Orthokeratology (Ortho-K) treatment?
           </h2>
           <hr className="w-20 h-1 bg-combination-100 mb-2" />
           <p className="text-neutral-500 text-base mb-2">
-            Most people believe that eye injuries are common in the workplace,
-            especially in manufacturing and construction industries. Contrary to
-            this, nearly half (44.8%) of all eye-related injuries (eye
-            emergencies) occurred at home. This is according to findings
-            published by the American Society of Ocular Trauma (ASOT).
+            Orthokeratology, also known as Ortho-K or CRT (Corneal Reshaping
+            Therapy) is a non-surgical procedure used to improve vision so that
+            the need for glasses or daytime contact lenses is eliminated
+            completely. The procedure involves the use of special therapeutic
+            gas-permeable contact lenses to reshape and flatten your cornea to
+            reduce refractive errors while you are asleep. You only need to put
+            the lenses on at bedtime and allow it to work overnight. By the time
+            you wake up, your vision will have improved.
           </p>
           <Link href="/book-eye-exam" className="md:w-[220px] w-[220px]">
             <div className="bg-combination-100 hover:text-combination-100 hover:bg-combination-200 text-white font-bold py-3 px-8 rounded-md transition-colors duration-200 shadow-md text-center sm:text-left">
@@ -52,12 +56,13 @@ const page = () => {
         </h2>
         <hr className="w-20 h-1 bg-combination-100 mb-2" />
         <p className="text-neutral-500 text-base mb-2">
-          Orthokeratology, also known as Ortho-K, is a non-surgical treatment
-          that uses specially designed contact lenses to reshape the cornea
-          overnight, allowing you to see clearly without glasses or contact
-          lenses during the day. This innovative approach is particularly
-          beneficial for individuals with mild to moderate myopia
-          (nearsightedness) and astigmatism.
+          Ortho-K lenses are worn overnight, gently reshaping the cornea while
+          the patient sleeps. The cornea is the clear front surface of the eye
+          that focuses light onto the retina. By altering its shape, these
+          lenses correct the way light enters the eye, thus improving vision.
+          Upon waking and removing the lenses, the patient can enjoy clear
+          vision throughout the day without the need for additional corrective
+          eyewear.
         </p>
         <h2 className="text-combination-200 text-2xl sm:text-[30px] font-[900] mb-2">
           The Ortho-K Fitting Process
@@ -151,7 +156,7 @@ const page = () => {
         </h3>
         <hr className="w-[65px] h-[2px] bg-combination-100 mb-8" />
         <h2 className="text-combination-200 text-2xl sm:text-[30px] font-[900] mb-2">
-          How Orthokeratology Works?What is myopia and how is it managed?
+          What is myopia and how is it managed?
         </h2>
         <hr className="w-20 h-1 bg-combination-100 mb-3" />
         <p className="text-neutral-500 text-base mb-2">
@@ -237,38 +242,11 @@ const page = () => {
             </h3>
             <hr className="w-20 h-1 bg-combination-100 mb-6 sm:mb-8" />
 
-            <form className="flex flex-col gap-4 max-w-3xl">
-              <LocationSelect />
-
-              {["*Name:", "*Email:", "*Phone Number:", "Date of Birth"].map(
-                (placeholder, idx) => (
-                  <input
-                    key={idx}
-                    className="w-full bg-gray-50 border border-gray-300 px-4 py-3 sm:py-4 rounded text-gray-700 focus:outline-none focus:ring-1 focus:ring-combination-100"
-                    placeholder={placeholder}
-                  />
-                )
-              )}
-
-              <textarea
-                className="w-full bg-gray-50 border border-gray-300 px-4 py-3 sm:py-4 rounded resize-none text-gray-700 focus:outline-none focus:ring-1 focus:ring-combination-100"
-                placeholder="Message:"
-                rows={4}
-              />
-
-              <div className="flex mt-6 sm:mt-8">
-                <button
-                  type="button"
-                  className="bg-combination-200 hover:bg-combination-100 text-white font-medium text-base sm:text-lg px-8 sm:px-12 py-3 rounded-full cursor-pointer w-full sm:w-auto"
-                >
-                  Send
-                </button>
-              </div>
-            </form>
+            <FormSection css="max-w-3xl" />
           </div>
 
           {/* Right: Info and Image */}
-          <div className="flex flex-col w-full lg:w-[30%] mt-8 lg:mt-0">
+          <div className="flex flex-col w-full lg:w-[40%] mt-8 lg:mt-0">
             <h3 className="text-combination-200 text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4">
               Experience Clear Vision with Orthokeratology in Toronto
             </h3>
