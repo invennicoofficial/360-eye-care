@@ -32,7 +32,7 @@ const TeamMember = () => {
               alt={doctor.name}
               width={275}
               height={275}
-              className="w-[275px] h-[275px] object-contain"
+              className="md:w-[275px] md:h-[275px] w-full h-full object-contain"
             />
           </div>
 

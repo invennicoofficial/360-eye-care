@@ -119,7 +119,7 @@ const AboutUs = () => {
                 Our Vision
               </h3>
               <SectionDivider />
-              <p className="text-neutral-500 tracking-wider text-base sm:text-lg leading-relaxed">
+              <p className="text-neutral-500 tracking-wide text-base sm:text-lg leading-relaxed">
                 360 Eyecare's vision is to consistently provide our patients and
                 customers with a full scope, customer service oriented eye care
                 experience utilizing the most cutting edge technology. We strive
