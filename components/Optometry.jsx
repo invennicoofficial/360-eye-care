@@ -26,7 +26,7 @@ const Optometry = () => {
 
           {/* Content */}
           <div className="w-full">
-            <h2 className="text-xl font-bold text-brand-blue mb-2">
+            <h2 className="text-xl font-bold text-brand-blue mb-2 ">
               {service.title}
             </h2>
             <p className="text-neutral-600 text-sm mb-4">
@@ -89,6 +89,8 @@ const Optometry = () => {
                   <Image
                     src={service.icon}
                     alt={service.label}
+                    width={24}
+                    height={24}
                     className={`h-8 w-auto mr-3 ${
                       isActive ? "filter brightness-0 invert" : ""
                     }`}
@@ -142,7 +144,7 @@ const Optometry = () => {
                   className={`relative flex flex-col items-center justify-center w-40 lg:w-48 p-4  text-center cursor-pointer transition-all duration-200 ${
                     isActive
                       ? "bg-combination-100 text-white shadow-md"
-                      : "bg-gray-50 text-slate-800 hover:bg-gray-100"
+                      : "bg-gray-50 text-combination-200 hover:text-combination-100 hover:bg-gray-100"
                   }`}
                 >
                   {isActive && (
@@ -151,11 +153,13 @@ const Optometry = () => {
                   <Image
                     src={service.icon}
                     alt={service.label}
-                    className={`mx-auto mb-2 h-8 w-auto ${
+                    width={42}
+                    height={42}
+                    className={`mx-auto mb-2  ${
                       isActive ? "filter brightness-0 invert" : ""
                     }`}
                   />
-                  <div className="font-semibold text-sm lg:text-base">
+                  <div className="font-semibold text-sm lg:text-base ">
                     {service.label}
                   </div>
                 </button>
@@ -188,7 +192,7 @@ const Optometry = () => {
 
                   {/* Right content */}
                   <div className="md:w-1/2">
-                    <h2 className="text-2xl font-bold text-brand-blue mb-4">
+                    <h2 className="text-2xl font-bold text-brand-blue mb-4 ">
                       {services[selected]?.title}
                     </h2>
                     <p className="text-neutral-600 mb-6 text-[15px]">
