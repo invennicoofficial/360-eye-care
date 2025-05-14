@@ -60,7 +60,9 @@ const PediatricOptometric = () => {
     {
       value: staffCount,
       suffix: "+",
-      label: "Skilled Optometrists and Staff",
+      label: "Skilled",
+      label2: "Optometrists and",
+      label3: "Staff",
     },
     {
       value: patientsCount,
@@ -70,12 +72,12 @@ const PediatricOptometric = () => {
   ];
 
   return (
-    <section className="py-12 px-4 md:px-6 lg:px-0 w-full max-w-6xl mx-auto">
+    <section className="py-20 px-4 md:px-6 lg:px-0 w-full max-w-6xl mx-auto">
       {/* Main content container - side by side on desktop, stacked on mobile */}
       <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
         {/* Image container - full width on mobile, half on desktop */}
         <div className="w-full lg:w-1/2">
-          <div className="relative w-full aspect-[4/3] lg:h-auto overflow-hidden rounded-lg shadow-md">
+          <div className="relative w-full aspect-[4/3] lg:h-auto overflow-hidden  shadow-md">
             <Image
               src={PediatricEyeCareImage}
               alt="Pediatric Eye Care Service"
@@ -88,14 +90,14 @@ const PediatricOptometric = () => {
         </div>
 
         {/* Content container */}
-        <div className="w-full lg:w-1/2 flex flex-col space-y-6 px-4 lg:px-10 pt-6 lg:pt-8">
+        <div className="w-full lg:w-[65%] flex flex-col space-y-6 px-4 lg:px-10 pt-6 lg:pt-8">
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue leading-tight font-poppins">
+          <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-combination-200 leading-tight font-poppins">
             Specialized Pediatric Optometric Services in Toronto
           </h2>
 
           {/* Description */}
-          <p className="text-lg text-gray-500">
+          <p className="text-[15px] text-neutral-500">
             Our optometrists provide comprehensive eye exams and treatments for
             children.
           </p>
@@ -105,7 +107,9 @@ const PediatricOptometric = () => {
             {servicesList.map((service, index) => (
               <div key={index} className="flex items-center gap-3">
                 <TfiCheckBox className="text-brand-blue text-lg flex-shrink-0" />
-                <p className="text-gray-500">{service}</p>
+                <p className="text-gray-500 text-[14px] text-nowrap">
+                  {service}
+                </p>
               </div>
             ))}
           </div>
@@ -114,17 +118,29 @@ const PediatricOptometric = () => {
           <div className="w-full h-px bg-gray-200"></div>
 
           {/* Stats section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-center mt-14">
             {statsData.map((stat, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center md:items-start"
               >
-                <p className="text-4xl md:text-5xl font-bold text-brand-blue">
-                  {stat.value.toLocaleString()}
-                  {stat.suffix}
-                </p>
-                <p className="text-gray-500 mt-2">{stat.label}</p>
+                <div className="flex flex-col justify-center items-center">
+                  <p className="text-4xl md:text-5xl font-bold text-brand-blue">
+                    {stat.value.toLocaleString()}
+                    {stat.suffix}
+                  </p>
+                  <p className="text-gray-500  text-center">{stat.label}</p>
+                  {stat.label2 && (
+                    <p className="text-gray-500 mt-1 text-center">
+                      {stat.label2}
+                    </p>
+                  )}
+                  {stat.label3 && (
+                    <p className="text-gray-500 mt-1 text-center">
+                      {stat.label3}
+                    </p>
+                  )}
+                </div>
               </div>
             ))}
           </div>

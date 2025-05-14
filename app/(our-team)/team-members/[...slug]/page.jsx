@@ -25,18 +25,18 @@ const TeamMember = () => {
       <SubHeader text={doctor.name} />
 
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-4 items-start md:py-20 py-10">
-          <div className="w-full">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 items-start md:py-20 py-10">
+          <div className="w-full md:w-[25%]">
             <Image
               src={doctor.image}
               alt={doctor.name}
-              width={450}
-              height={500}
-              className="w-[450px] h-[500px] "
+              width={275}
+              height={275}
+              className="w-[275px] h-[275px] object-contain"
             />
           </div>
 
-          <div className="flex flex-col mt-6 md:mt-0">
+          <div className="flex flex-col mt-6 md:mt-0 md:w-[70%]">
             <p className="text-combination-200 text-2xl font-bold mb-4">
               {doctor.name}
             </p>
@@ -58,7 +58,7 @@ const TeamMember = () => {
 
             <Link
               href="/book-eye-exam"
-              className="inline-block w-full md:w-[220px] bg-combination-100 text-white hover:bg-brand-blue hover:text-combination-100 font-medium py-3 px-8 rounded transition-colors duration-200 shadow-button text-center"
+              className="inline-block w-full md:w-[240px] bg-combination-100 text-white hover:bg-brand-blue hover:text-combination-100 font-medium py-3 px-8 rounded transition-colors duration-200 shadow-button text-center"
             >
               Book an Appointment
             </Link>

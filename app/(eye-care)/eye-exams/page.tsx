@@ -9,29 +9,7 @@ import Image from "next/image";
 import { SpectacleImage } from "../../../constants/Images";
 import FaqPlusMinus from "../../../components/FaqPlusMinus";
 import EyeExamTools from "../../../components/EyeExamTools";
-const cardData = [
-  {
-    icon: FaUserDoctor,
-    title: "Annual Checkups",
-    description:
-      "Experts recommend an annual comprehensive eye exam to check for harmful eye conditions.",
-    bgColor: "bg-combination-100",
-  },
-  {
-    icon: LuScanEye,
-    title: "Regular Exams",
-    description:
-      "Regular eye exams are important, regardless of age or physical condition.",
-    bgColor: "bg-combination-200",
-  },
-  {
-    icon: TbBrandVisualStudio,
-    title: "Comprehensive Testing",
-    description:
-      "An eye exam at our center includes various tests to assess your eye health.",
-    bgColor: "bg-combination-100",
-  },
-];
+import { eyeexamsCardData } from "constants/Constants";
 
 const comprehensiveEyeExam = [
   {
@@ -90,7 +68,7 @@ const page = () => {
       <div className="bg-[#F6F7F5]">
         <SubHeader text="Comprehensive Eye Exams in Toronto" />
         <div className="bg-white px-4 sm:px-10 md:pb-12 pb-8">
-          <AboutUsSection cardData={cardData} />
+          <AboutUsSection cardData={eyeexamsCardData} />
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col gap-4 my-8 sm:my-12 px-4 sm:px-6 md:px-8">

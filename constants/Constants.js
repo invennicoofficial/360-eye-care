@@ -50,6 +50,9 @@ import {
   FaMedkit,
   FaSearchLocation,
 } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
+import { LuScanEye } from "react-icons/lu";
+import { TbBrandVisualStudio } from "react-icons/tb";
 export const OptometryServices = [
   {
     imageLink: "/homeIcons/Comprehensive Eye Exams.png",
@@ -124,8 +127,14 @@ export const optometrists = [
     name: "Dr. Sam Baraam",
     slug: "dr-sam-baraam",
     image: SamBarramImage,
-    description:
-      "Dr. Sam Baraam is a certified optometrist with advanced training in specialty contact lenses, dry eye and ocular surface disease management.",
+    description: (
+      <>
+        <span className="font-bold">Dr. Sam Baraam</span> is a certified
+        optometrist with advanced training in specialty contact lenses, dry eye
+        and ocular surface disease management.
+      </>
+    ),
+
     longDescription: `Dr. Sam Baraam is a dedicated optometrist committed to providing accessible, patient-centered, and comprehensive eye care, including specialty services. He completed his post-secondary education in Cellular Biology at the University of Western Ontario before earning his Doctor of Optometry degree from the prestigious Pennsylvania College of Optometry at Salus University.
 
 During his training, Dr. Baraam gained extensive experience in ocular disease at the world-renowned Veterans Affairs Hospital in Connecticut and at SightMD, a leading refractive laser surgery and cataract center in Philadelphia. He further received advanced training in pediatrics and binocular vision, earning clinical honors from the Eye Institute at Salus University; an accolade awarded to those demonstrating both academic and clinical excellence.
@@ -2178,5 +2187,29 @@ export const Rosedalechoose360eyeCareData = [
     head: "Flexible Appointment Booking",
     icon: "/location/icons/testing.svg",
     para: "While walk-ins are welcome when possible, we encourage online and phone bookings for a seamless and efficient experience.",
+  },
+];
+
+export const eyeexamsCardData = [
+  {
+    icon: FaUserDoctor,
+    title: "Annual Checkups",
+    description:
+      "Experts recommend an annual comprehensive eye exam to check for harmful eye conditions.",
+    bgColor: "bg-combination-100",
+  },
+  {
+    icon: LuScanEye,
+    title: "Regular Exams",
+    description:
+      "Regular eye exams are important, regardless of age or physical condition.",
+    bgColor: "bg-combination-200",
+  },
+  {
+    icon: TbBrandVisualStudio,
+    title: "Comprehensive Testing",
+    description:
+      "An eye exam at our center includes various tests to assess your eye health.",
+    bgColor: "bg-combination-100",
   },
 ];
