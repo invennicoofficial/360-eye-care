@@ -27,7 +27,9 @@ const HeroCarousel = () => {
         <div
           key={index}
           className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
-            activeSlide === index ? "opacity-100" : "opacity-0"
+            activeSlide === index
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
           }`}
         >
           {/* Background image */}
@@ -141,9 +143,10 @@ const HeroCarousel = () => {
                     <div className="flex flex-row items-start -mt-[20px]">
                       <div className="flex flex-row items-center gap-8 justify-center ">
                         <div className="w-[193px] h-[15px] bg-white hidden md:block" />
+
                         <MotionLink
-                          key={`button-${activeSlide}`}
                           href={slide.buttonLink}
+                          key={`button-${activeSlide}`}
                           initial={{ y: 60, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
                           transition={{

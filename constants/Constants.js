@@ -432,27 +432,27 @@ export const orgImages = [
 export const cardData = [
   {
     id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/homeIcons/book.png",
     title: "Expertise",
     description:
       "Experienced optometrists committed to delivering quality eye care.",
   },
   {
     id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/homeIcons/monitor.png",
     title: "Eye Care For All Ages",
     description: "We offer essential eye care services for every age group.",
   },
   {
     id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/homeIcons/monitor.png",
     title: "Personalized Treatment",
     description:
       "Get personalized eye care from the best optometrists in Toronto.",
   },
   {
     id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/homeIcons/visioneye.png",
     title: "Modern Optical Centre",
     description:
       "Full scope and family friendly optical store for your eyewear needs.",
@@ -462,7 +462,7 @@ export const cardData = [
 export const services = [
   {
     label: "Eye Exams",
-    icon: EyeExamIcon,
+    icon: "/homeIcons/eyeexam.png",
     image: EyeExamImage,
     title: "Comprehensive Eye Exams by Top Toronto Optometrists",
     description:
@@ -477,7 +477,7 @@ export const services = [
   },
   {
     label: "Contact Lens Fitting",
-    icon: ContactLensIcon,
+    icon: "/homeIcons/contactlens.png",
     image: ContactLensImage,
     title: "Professional Contact Lens Fittings for You",
     description:
@@ -492,7 +492,7 @@ export const services = [
   },
   {
     label: "Myopia Control",
-    icon: MyopiaIcon,
+    icon: "/homeIcons/mypio.png",
     image: MyopiaImage,
     title: "Effective Myopia Control Solutions for Children",
     description:
@@ -508,7 +508,7 @@ export const services = [
   },
   {
     label: "Dry Eye Treatment",
-    icon: DryEyeIcon,
+    icon: "/homeIcons/dryeye.png",
     image: DryEyeImage,
     title: "Effective Dry Eye Treatment Solutions",
     description:
@@ -523,7 +523,7 @@ export const services = [
   },
   {
     label: "Pediatric Eye Care",
-    icon: PediatricIcon,
+    icon: "/homeIcons/pediatric.png",
     image: PediatricEyeCareImage,
     title: "Comprehensive Pediatric Optometric Services in Toronto",
     description:

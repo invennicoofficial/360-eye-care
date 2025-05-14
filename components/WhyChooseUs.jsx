@@ -29,13 +29,13 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="w-full lg:w-80 flex justify-center">
-          <div className="relative w-80 h-auto md:h-full max-h-[569px]">
+          <div className="relative w-[380px] h-auto md:h-full max-h-[569px]">
             <Image
               src={PatientScaledImage}
               alt="patient-scaled-image"
               width={380}
               height={569}
-              className="object-cover w-full h-full"
+              className="object-cover md:w-full w-[380px] h-[569px] md:h-full"
             />
           </div>
         </div>
@@ -74,8 +74,10 @@ const FeatureCard = ({ id, icon, title, description }) => {
           </p>
         </div>
 
-        <p className="text-xl font-bold text-white">{title}</p>
-        <p className="text-white text-opacity-80">{description}</p>
+        <p className="text-2xl font-poppins font-semibold text-white">
+          {title}
+        </p>
+        <p className="text-white/85 text-base font-semibold">{description}</p>
       </div>
     </div>
   );
