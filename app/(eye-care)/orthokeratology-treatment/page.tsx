@@ -51,7 +51,7 @@ const page = () => {
             the lenses on at bedtime and allow it to work overnight. By the time
             you wake up, your vision will have improved.
           </p>
-          <Link href="/book-eye-exam" className="md:w-[290px] w-[220px]">
+          <Link href="/book-eye-exam" className="md:w-[290px] w-[290px]">
             <div className="bg-combination-100 hover:text-combination-100 hover:bg-combination-200 text-white font-bold py-3 px-8 rounded-md transition-colors duration-200 shadow-md text-center sm:text-left text-nowrap">
               Get Ortho-k Lenses Today!
             </div>

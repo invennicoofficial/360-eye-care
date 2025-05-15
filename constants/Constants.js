@@ -930,7 +930,7 @@ export const pediatricEyeService = [
   },
   {
     label: "Pediatric Eye Exams",
-    icon: MyopiaIcon,
+    icon: "/homeIcons/pedi.png",
     image: PediatricEyeImage,
     title: "Comprehensive Pediatric Eye Exams in Toronto",
     description:
@@ -938,7 +938,7 @@ export const pediatricEyeService = [
   },
   {
     label: "Contact Lens Fitting",
-    icon: MyopiaIcon,
+    icon: "/homeIcons/contactlens.png",
     image: ContactLenspediaImage,
     title: "Expert Contact Lens Fitting for Children",
     description:
@@ -946,7 +946,7 @@ export const pediatricEyeService = [
   },
   {
     label: "Sports Vision",
-    icon: MyopiaIcon,
+    icon: "/homeIcons/mypio.png",
     image: SportsVisionImage,
     title: "Enhancing Sports Performance Through Vision Training",
     description:
