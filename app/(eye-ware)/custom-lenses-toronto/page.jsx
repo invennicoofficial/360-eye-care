@@ -39,7 +39,7 @@ export async function generateMetadata() {
 
 const page = () => {
   return (
-    <main className="pt-[110px] bg-[#F6F7F5]">
+    <main className="pt-[110px] bg-[#F6F7F5] pb-10">
       <SubHeader text="Custom Contact Lenses" />
       <div className="max-w-7xl mx-auto my-16 flex flex-wrap justify-between">
         <DetailsDescripton
@@ -73,12 +73,14 @@ const page = () => {
         <div className="flex flex-col gap-4 px-4">
           {Benefits &&
             Benefits.map((item, index) => (
-              <span className="flex flex-col gap-2 text-neutral-500 ">
-                <p className="font-semibold text-[#204066] text-[20px]">
-                  {index + 1}. {item.title}:
-                </p>
-                {item.desc}
-              </span>
+              <div key={item.title}>
+                <span className="flex flex-col gap-2 text-neutral-500 ">
+                  <p className="font-semibold text-[#204066] text-[20px]">
+                    {index + 1}. {item.title}:
+                  </p>
+                  {item.desc}
+                </span>
+              </div>
             ))}
         </div>
         <p className="text-[#204066] font-bold text-4xl mt-16 flex  flex-col px-4">
@@ -148,7 +150,7 @@ const page = () => {
         reverse
       />
 
-      <div className="max-w-6xl mx-auto h-auto mb-14">
+      <div className="max-w-6xl mx-auto h-auto">
         {/* Background "FAQ" text */}
         <h1 className="relative text-[120px] font-extrabold text-gray-200 top-10 left-4 z-0 select-none">
           FAQ

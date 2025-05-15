@@ -50,7 +50,7 @@ const consequenceData = [
   },
   {
     id: "05",
-    icon: "/eyecare/inflammation.png",
+    icon: "/eyecare/Inflammation.png",
     title: "Inflammation",
     description:
       "Inadequate lubrication and inflammation associated with MGD can contribute to ongoing eyelid (blepharitis) and eye surface (conjunctivitis) inflammation, potentially causing long-term damage.",

@@ -12,12 +12,14 @@ export const InfoCard = ({ icon: Icon, title, description, bgColor }) => {
 
       {/* Icon with container */}
       <div className="flex items-center justify-center w-14 h-14 mb-2 md:mb-0">
-        <Icon size={42} className="text-white" />
+        <Icon size={45} className="text-white" />
       </div>
 
       {/* Text Content */}
       <div className="text-center md:text-left px-4 md:px-0">
-        <h3 className="text-white text-xl font-semibold mb-3">{title}</h3>
+        <h3 className="text-white text-xl font-bold mb-3 text-nowrap">
+          {title}
+        </h3>
         <p className="text-white text-base">{description}</p>
       </div>
     </div>

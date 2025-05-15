@@ -83,7 +83,7 @@ const page = () => {
     <main className="pt-[110px]">
       <div className="bg-[#F6F7F5]">
         <SubHeader text="Comprehensive Eye Exams in Toronto" />
-        <div className="bg-white px-4 sm:px-10 md:pb-12 pb-8">
+        <div className="bg-[#F6F7F5] px-4 sm:px-10 md:pb-12 pb-8">
           <AboutUsSection cardData={eyeexamsCardData} />
         </div>
 
@@ -147,7 +147,7 @@ const page = () => {
               href="/book-eye-exam"
               className="px-6 sm:px-8 py-2 flex justify-center items-center bg-combination-100 text-white text-nowrap font-bold rounded-full hover:bg-combination-200 transition-colors  w-[240px]"
             >
-              Book an Eye Exam Today!
+              Book an Eye Exam
             </Link>
           </div>
 

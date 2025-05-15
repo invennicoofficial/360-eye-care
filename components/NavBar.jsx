@@ -277,7 +277,7 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden flex items-center justify-between h-16 z-50">
+        <div className="md:hidden flex items-center justify-between h-16 z-50 overflow-scroll">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <div className="w-24">

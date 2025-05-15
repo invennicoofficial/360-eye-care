@@ -181,7 +181,7 @@ const pages = () => {
       tagline: "Seraphin Eyeglasses: Vintage-Inspired Styles with Modern Flair",
       description:
         "Seraphin eyeglasses offer vintage-inspired styles with a modern flair. Crafted with attention to detail and quality materials, Seraphin frames are perfect for those who appreciate classic aesthetics. Whether you're looking for bold shapes or subtle sophistication, Seraphin has a frame to match your unique style.",
-      catalogLink: "https://seraphin.com/",
+      catalogLink: "https://www.ogieyewear.com/seraphin",
       logoImg: Brand13,
     },
     {

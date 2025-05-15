@@ -50,7 +50,7 @@ const EyeCareServices = ({
                         </p>
                       </div>
 
-                      <div className="flex justify-center items-center border border-[#E1E6EB] rounded-[6px] w-[22px] h-[22px]">
+                      <div className="flex justify-center items-center border border-[#E1E6EB] rounded-[6px] w-[22px] h-[22px] shrink-0">
                         <Image
                           src={`${
                             item.id === openIndex
@@ -102,7 +102,7 @@ const EyeCareServices = ({
             return (
               <div
                 key={index}
-                className="md:w-[285px] w-full md:h-[352px] h-[252px] border-[#E1E6EB] border-[1px] rounded-[8px] p-5"
+                className="md:w-[285px] w-full md:h-[352px] h-full  border-[#E1E6EB] border-[1px] rounded-[8px] p-5"
               >
                 <div className="flex flex-col gap-3">
                   <div className="bg-combination-100 w-[60px] h-[60px] rounded-[8px] flex justify-center items-center">
