@@ -2,6 +2,33 @@ import React from "react";
 import SubHeader from "../../../components/SubHeader";
 import { FaPlay } from "react-icons/fa6";
 
+export async function generateMetadata() {
+  return {
+    title: "Direct Billing to Insurance | Vision Insurance Plans Toronto",
+    description:
+      "We accept vision insurance plans in Toronto! We provide direct billing (submit claims to your insurance provider on your behalf).",
+    openGraph: {
+      title: "Direct Billing to Insurance | Vision Insurance Plans Toronto",
+      description:
+        "We accept vision insurance plans in Toronto! We provide direct billing (submit claims to your insurance provider on your behalf).",
+      url: "https://www.360eyecare.ca/direct-billing/",
+      siteName: "360 Eyecare",
+      type: "website",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2025/01/360eyecare-direct-billing.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Direct Billing",
+        },
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/direct-billing/",
+    },
+  };
+}
+
 const plans = [
   "Great West Life",
   "Green Shield",

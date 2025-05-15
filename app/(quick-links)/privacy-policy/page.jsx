@@ -2,6 +2,33 @@ import Link from "next/link";
 import SubHeader from "../../../components/SubHeader";
 import React from "react";
 
+export async function generateMetadata() {
+  return {
+    title: "Privacy Policy - 360 Eyecare",
+    description:
+      "We use your data to fulfill orders, communicate with you, prevent fraud, and improve the site. Read our privacy policy to find out more.",
+    openGraph: {
+      title: "Privacy Policy - 360 Eyecare",
+      description:
+        "We use your data to fulfill orders, communicate with you, prevent fraud, and improve the site. Read our privacy policy to find out more.",
+      url: "https://www.360eyecare.ca/privacy-policy/",
+      siteName: "360 Eyecare",
+      type: "website",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2025/01/360eyecare-privacy-policy.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Privacy Policy",
+        },
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/privacy-policy/",
+    },
+  };
+}
+
 const PrivacyPolicy = () => {
   return (
     <main className="pt-[110px]">

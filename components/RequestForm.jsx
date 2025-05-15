@@ -18,6 +18,11 @@ const RequestForm = () => {
 
   const [errors, setErrors] = useState({});
   const [showTimeDropdown, setShowTimeDropdown] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState({
+    success: false,
+    message: "",
+  });
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -79,15 +84,60 @@ const RequestForm = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      // console.log("Form Data:", formData);
-      // Here you would typically send the data to a server
-      alert("Form submitted successfully!");
-    } else {
-      // console.log("Form validation failed");
+      setIsSubmitting(true);
+      setSubmitStatus({ success: false, message: "" });
+
+      try {
+        const response = await fetch("/api/virtual-consult", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          // Success
+          setSubmitStatus({
+            success: true,
+            message: data.message || "Form submitted successfully!",
+          });
+
+          // Reset form
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phoneNumber: "",
+            dateOfBirth: "",
+            preferredDate: "",
+            preferredTime: "",
+            reasonForVisit: "",
+            consentAgreed: false,
+          });
+        } else {
+          // API returned an error
+          setSubmitStatus({
+            success: false,
+            message: data.error || "An error occurred. Please try again.",
+          });
+        }
+      } catch (error) {
+        // Network or other error
+        setSubmitStatus({
+          success: false,
+          message:
+            "Connection error. Please check your internet and try again.",
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -242,7 +292,7 @@ const RequestForm = () => {
                     errors.preferredTime ? "border-red-500" : "border-gray-300"
                   } p-2 rounded text-left flex justify-between items-center bg-white`}
                 >
-                  <span>
+                  <span className="text-nowrap">
                     {formData.preferredTime || "—Please choose an option—"}
                   </span>
                   <svg
@@ -271,7 +321,7 @@ const RequestForm = () => {
                       —Please choose an option—
                     </div>
                     <div
-                      className="p-2 hover:bg-gray-100 cursor-pointer"
+                      className="p-2 hover:bg-combination-100 hover:text-white cursor-pointer"
                       onClick={() => {
                         setFormData({ ...formData, preferredTime: "Morning" });
                         setShowTimeDropdown(false);
@@ -281,7 +331,7 @@ const RequestForm = () => {
                       Morning
                     </div>
                     <div
-                      className="p-2 hover:bg-gray-100 cursor-pointer"
+                      className="p-2 hover:bg-combination-100 hover:text-white cursor-pointer"
                       onClick={() => {
                         setFormData({
                           ...formData,
@@ -294,7 +344,7 @@ const RequestForm = () => {
                       Afternoon
                     </div>
                     <div
-                      className="p-2 hover:bg-gray-100 cursor-pointer"
+                      className="p-2 hover:bg-combination-100 hover:text-white cursor-pointer"
                       onClick={() => {
                         setFormData({ ...formData, preferredTime: "Evening" });
                         setShowTimeDropdown(false);
@@ -336,9 +386,40 @@ const RequestForm = () => {
           <div className="pt-4">
             <button
               onClick={handleSubmit}
-              className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-6 rounded-full tracking-wider"
+              disabled={isSubmitting}
+              className={`${
+                isSubmitting
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-gray-500 hover:bg-gray-600"
+              } text-white py-2 px-6 rounded-full tracking-wider flex items-center`}
             >
-              Submit
+              {isSubmitting ? (
+                <>
+                  <svg
+                    className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+                  Processing...
+                </>
+              ) : (
+                "Submit"
+              )}
             </button>
           </div>
 
@@ -375,6 +456,18 @@ const RequestForm = () => {
               </p>
             )}
           </div>
+
+          {submitStatus.message && (
+            <div
+              className={`p-4 mb-6 rounded ${
+                submitStatus.success
+                  ? "bg-green-100 text-green-800"
+                  : "bg-red-100 text-red-800"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
         </div>
       </div>
 

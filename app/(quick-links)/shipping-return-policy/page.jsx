@@ -1,6 +1,33 @@
 import SubHeader from "../../../components/SubHeader";
 import React from "react";
 
+export async function generateMetadata() {
+  return {
+    title: "Shipping and Return Policy - 360 Eyecare",
+    description:
+      "Check out our shipping and return policy to learn more about our products and policies. Contact us at info@360eyecare.ca for any questions.",
+    openGraph: {
+      title: "Shipping and Return Policy - 360 Eyecare",
+      description:
+        "Check out our shipping and return policy to learn more about our products and policies. Contact us at info@360eyecare.ca for any questions.",
+      url: "https://www.360eyecare.ca/shipping-return-policy/",
+      siteName: "360 Eyecare",
+      type: "website",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2025/01/360eyecare-shipping-return.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Shipping and Returns",
+        },
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/shipping-return-policy/",
+    },
+  };
+}
+
 const ShippingReturnPolicy = () => {
   return (
     <main className="pt-[110px]">

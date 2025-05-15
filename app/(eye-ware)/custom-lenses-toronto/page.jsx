@@ -8,125 +8,36 @@ import {
 import BookExamCommon from "components/common/BookExampCommon";
 import Faqs from "components/Faqs";
 import { customlensfaqs } from "constants/Constants";
+import {
+  DataDescription,
+  ContactFeatures,
+  Benefits,
+  CustomContactLensServices,
+  WeOffer,
+  whyChooseData,
+  CustomLensesBullets,
+  whyChooseLink,
+} from "./customData";
+export async function generateMetadata() {
+  return {
+    title: "Custom Lenses Toronto | Digital Lenses | 360 Eyecare",
+    description:
+      "Get custom contact lenses in Toronto for a perfect fit and enhanced vision. Enjoy comfort, precision, and personalized solutions.",
+    openGraph: {
+      title: "Custom Lenses Toronto | Digital Lenses | 360 Eyecare",
+      description:
+        "Get custom contact lenses in Toronto for a perfect fit and enhanced vision. Enjoy comfort, precision, and personalized solutions.",
+      url: "https://www.360eyecare.ca/custom-lenses-toronto/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/custom-lenses-toronto/",
+    },
+  };
+}
 
 const page = () => {
-  const DataDescription = [
-    "Custom contact lenses are specially made to fit the unique characteristics of an individual’s eyes. Unlike standard contact lenses, which come in pre-set sizes and parameters, custom lenses are crafted based on detailed measurements of the eye’s shape, size, and curvature. This customization ensures a better fit, improved comfort, and optimal vision correction for the wearer.",
-    "Standard contact lenses are mass-produced and designed to fit a wide range of eye shapes and sizes. While these lenses work well for many people, they may not provide the necessary level of comfort or vision correction for individuals with specific needs. Custom lenses, on the other hand, are tailored to address these specific requirements, making them a preferred choice for many contact lens wearers.",
-  ];
-
-  const ContactFeatures = [
-    {
-      title: " Irregular Corneas",
-      desc: "Individuals with irregular corneas, such as those with keratoconus or corneal scarring, may find that standard contact lenses do not provide adequate vision correction. Custom lenses can be designed to match the shape of the irregular cornea, providing better visual acuity and comfort.",
-    },
-    {
-      title: "High Prescriptions",
-      desc: "People with high degrees of nearsightedness, farsightedness, or astigmatism may require custom lenses to achieve optimal vision correction. Custom lenses can be made with higher optical powers and specialized designs to meet these needs.",
-    },
-    {
-      title: "Astigmatism",
-      desc: "Individuals with astigmatism may find that standard contact lenses do not provide clear vision. Custom lenses can be designed to correct astigmatism more effectively, resulting in sharper vision.",
-    },
-    {
-      title: "Comfort",
-      desc: "Some people have difficulty wearing standard contact lenses due to discomfort or irritation. Custom lenses can be made with materials and designs that are more comfortable for the individual, leading to a better wearing experience.",
-    },
-    {
-      title: "Post-Surgical Needs",
-      desc: "After certain eye surgeries, such as corneal transplants or refractive surgeries, the shape of the eye may be altered, making standard lenses less effective. Custom lenses can be designed to fit the post-surgical eye shape, providing improved vision correction.",
-    },
-  ];
-
-  const Benefits = [
-    {
-      title: "Improved Comfort and Fi",
-      desc: "Custom lenses are tailored to the specific curvature and size of an individual’s eye, providing a more comfortable wearing experience. The precise fit reduces the likelihood of lens movement and discomfort throughout the day.",
-    },
-    {
-      title: "Enhanced Vision Correction",
-      desc: "Custom lenses can correct a wide range of vision problems, including astigmatism, irregular corneas, and high prescriptions. These lenses can improve visual acuity and clarity by providing a more precise and personalized correction.",
-    },
-    {
-      title: "Personalized Solutions for Various Eye Conditions:",
-      desc: "Custom lenses can be designed to address specific eye conditions, such as keratoconus, corneal irregularities, and post-surgical complications. These lenses provide a tailored solution that standard lenses may not be able to achieve.",
-    },
-    {
-      title: "Reduced Risk of Complications",
-      desc: "The customized fit of custom lenses reduces the risk of complications such as dryness, irritation, and corneal abrasions. These lenses minimize the potential for discomfort and eye health issues by ensuring a proper fit.",
-    },
-    {
-      title: "Improved Quality of Life",
-      desc: "For individuals with complex vision needs, custom lenses can significantly improve their quality of life. By providing clear, comfortable vision, these lenses allow individuals to engage in daily activities with confidence and ease.",
-    },
-  ];
-
-  const CustomContactLensServices = [
-    {
-      title: "Initial Consultation",
-      desc: "During the initial consultation, our optometrist will perform a thorough eye examination to assess your vision and eye health. This examination will help determine if custom contact lenses are the right option for you.",
-    },
-    {
-      title: "Custom Lens Selection",
-      desc: "Based on the results of your examination, our optometrist will recommend the most suitable custom contact lens option for your specific needs. This may include lenses for astigmatism, keratoconus, irregular corneas, or high prescriptions.",
-    },
-    {
-      title: " Custom Lens Fitting",
-      desc: "Once the lens type has been determined, our optometrist will take detailed measurements of your eyes to ensure a precise fit. These measurements will be used to create comfortable custom lenses and provide optimal vision correction.",
-    },
-    {
-      title: "Lens Ordering and Manufacturing",
-      desc: "After the fitting, your custom contact lens order will be placed with our trusted manufacturing partners. These lenses are made to the exact specifications provided by our optometrist to ensure a perfect fit.",
-    },
-    {
-      title: "Lens Dispensing and Training",
-      desc: "Once your lenses arrive, we will provide a thorough fitting session to ensure you know how to properly insert, remove, and care for your custom lenses. We will also guide proper lens hygiene and maintenance to ensure the longevity of your lenses.",
-    },
-    {
-      title: " Follow-up Appointments",
-      desc: "Regular follow-up appointments will be scheduled to monitor your progress and ensure that your custom lenses are providing the desired vision correction. Adjustments may be made as needed to ensure optimal comfort and vision.",
-    },
-  ];
-
-  const WeOffer = [
-    {
-      title: "Rigid Gas Permeable (RGP) Lenses",
-      desc: "RGP lenses are made from a durable plastic that allows oxygen to pass through to the cornea, ensuring eye health and comfort. These lenses provide crisp vision and are suitable for various vision corrections, including astigmatism and presbyopia.",
-    },
-    {
-      title: "Orthokeratology (OrthoK) Lenses",
-      desc: "OrthoK lenses are specially designed to reshape the cornea overnight, temporarily correcting nearsightedness. These lenses are worn while sleeping and removed during the day, providing clear vision without the need for glasses or contacts during waking hours.",
-    },
-    {
-      title: "Scleral Lenses",
-      desc: "Scleral lenses are large, gas-permeable lenses that vault over the cornea and rest on the sclera (the white part of the eye). These lenses are ideal for individuals with irregular corneas, dry eyes, or other corneal irregularities, providing improved comfort and vision correction.",
-    },
-    {
-      title: "Hybrid Lenses",
-      desc: "Hybrid lenses combine a rigid gas permeable center with a soft lens skirt, offering the clarity of RGP lenses with the comfort of soft lenses. These lenses are suitable for individuals with irregular corneas or astigmatism who may find traditional RGP lenses uncomfortable.",
-    },
-    {
-      title: "Other Specialized Options",
-      desc: "In addition to the above, we offer other specialized custom contact lens options to meet specific vision needs. This includes lenses for post-surgical correction, keratoconus, and other complex eye conditions.",
-    },
-  ];
-
-  const whyChooseData = [
-    "Looking for custom contact lenses in Toronto? Look no further than our expertly crafted lenses! Our lenses are designed for superior vision and unparalleled comfort, making them the perfect choice for anyone looking for a reliable and effective solution. Experience the difference for yourself and try our custom lenses today!",
-  ];
-
-  const CustomLensesBullets = [
-    "Precision-made to match your unique prescription.",
-    "Enhanced durability for long-lasting wear.",
-    "Customized fit for all-day comfort.",
-  ];
-
-  const whyChooseLink = [
-    {
-      title: "Learn More",
-      href: "/book-eye-exam",
-    },
-  ];
   return (
     <main className="pt-[110px] bg-[#F6F7F5]">
       <SubHeader text="Custom Contact Lenses" />

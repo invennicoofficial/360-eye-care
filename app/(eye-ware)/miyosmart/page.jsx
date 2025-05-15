@@ -8,6 +8,24 @@ import {
 } from "../../../constants/prescriptionLenses";
 import Image from "next/image";
 import FindYourPerfectEyeGlass from "components/common/FindYourPerfectEyeGlass";
+export async function generateMetadata() {
+  return {
+    title: "Miyosmart Lenses Toronto | Myopia Control in Beaches & Rosedale",
+    description:
+      "MiyoSmart lenses Toronto are an easy, safe, and non-evasive solution for myopia progression, particularly in young children.",
+    openGraph: {
+      title: "Miyosmart Lenses Toronto | Myopia Control in Beaches & Rosedale",
+      description:
+        "MiyoSmart lenses Toronto are an easy, safe, and non-evasive solution for myopia progression, particularly in young children.",
+      url: "https://www.360eyecare.ca/miyosmart/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/miyosmart/",
+    },
+  };
+}
 
 const page = () => {
   const dataDescription = [

@@ -10,6 +10,25 @@ import TitleCommon from "../../../components/common/TitleCommon";
 import Link from "next/link";
 import BookExamCommon from "../../../components/common/BookExampCommon";
 import { FaUserMd } from "react-icons/fa";
+export async function generateMetadata() {
+  return {
+    title: "Prescription Lenses Toronto | Single Vision and Progressive Lenses",
+    description:
+      "Find custom prescription lenses in Toronto, crafted for clarity and comfort. Tailored for clear, comfortable vision.",
+    openGraph: {
+      title:
+        "Prescription Lenses Toronto | Single Vision and Progressive Lenses",
+      description:
+        "Find custom prescription lenses in Toronto, crafted for clarity and comfort. Tailored for clear, comfortable vision.",
+      url: "https://www.360eyecare.ca/prescription-lenses/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/prescription-lenses/",
+    },
+  };
+}
 
 const page = () => {
   const data = [

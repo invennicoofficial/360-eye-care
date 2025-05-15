@@ -11,6 +11,25 @@ import Banner2 from "../../../components/Banner2";
 import Link from "next/link";
 import EyeConditionsPage from "../../../components/EyeConditionsPage";
 
+export async function generateMetadata() {
+  return {
+    title: "Common Eye Conditions and Treatments",
+    description:
+      "Get expert care for eye conditions like cataracts and glaucoma. Our skilled optometrists provide tailored care for your vision needs.",
+    openGraph: {
+      title: "Common Eye Conditions and Treatments",
+      description:
+        "Get expert care for eye conditions like cataracts and glaucoma. Our skilled optometrists provide tailored care for your vision needs.",
+      url: "https://www.360eyecare.ca/common-eye-conditions/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/common-eye-conditions/",
+    },
+  };
+}
+
 const page = () => {
   return (
     <main className="pt-[110px] bg-[#F9F9F9]">

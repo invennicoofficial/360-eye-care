@@ -37,6 +37,25 @@ import TitleCommon from "../../../components/common/TitleCommon";
 import HoverCard from "../../../components/HoverCard";
 // todo : need to change the redirection link
 
+export async function generateMetadata() {
+  return {
+    title: "Eyeglasses Toronto | Optical Store Beaches and Rosedale",
+    description:
+      "At 360 Eyecare we carry a wide selection of premium fashion and handmade designer eyeglasses. Get your favourite eyeglasses from our store.",
+    openGraph: {
+      title: "Eyeglasses Toronto | Optical Store Beaches and Rosedale",
+      description:
+        "At 360 Eyecare we carry a wide selection of premium fashion and handmade designer eyeglasses. Get your favourite eyeglasses from our store.",
+      url: "https://www.360eyecare.ca/eye-glasses/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/eye-glasses/",
+    },
+  };
+}
+
 const pages = () => {
   const brands = [
     // Image 1 - Top Row

@@ -8,6 +8,25 @@ import AdvancedDiagnosisService from "../../../components/AdvancedDiagnosisServi
 import { advanceddiagnosticsbenefitsData } from "../../../constants/Constants";
 import Benefits from "../../../components/Benefits";
 
+export async function generateMetadata() {
+  return {
+    title: "Advanced Diagnostics in Modern Eye Exams | 360 Eyecare",
+    description:
+      "Experience advanced diagnostics for eye exams, including OCT, Corneal Topography, and Retinal Imaging for precise care.",
+    openGraph: {
+      title: "Advanced Diagnostics in Modern Eye Exams | 360 Eyecare",
+      description:
+        "Experience advanced diagnostics for eye exams, including OCT, Corneal Topography, and Retinal Imaging for precise care.",
+      url: "https://www.360eyecare.ca/advanced-diagnostics-eye-exams/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/advanced-diagnostics-eye-exams/",
+    },
+  };
+}
+
 const page = () => {
   return (
     <main className="pt-[110px] bg-[#F9F9F9]">

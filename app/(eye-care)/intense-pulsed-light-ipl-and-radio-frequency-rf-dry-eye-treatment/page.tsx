@@ -11,6 +11,25 @@ import {
   OptometryImage,
 } from "../../../constants/Images";
 import { ChevronRight } from "lucide-react";
+export async function generateMetadata() {
+  return {
+    title: "Advanced Dry Eye Treatments | IPL and RF Eye Treatment Toronto",
+    description:
+      "Are you looking for advanced dry eye treatments in Toronto? We offer IPL (Intense Pulsed Light) And RF (Radio Frequency) eye treatements.",
+    openGraph: {
+      title: "Advanced Dry Eye Treatments | IPL and RF Eye Treatment Toronto",
+      description:
+        "Are you looking for advanced dry eye treatments in Toronto? We offer IPL (Intense Pulsed Light) And RF (Radio Frequency) eye treatements.",
+      url: "https://www.360eyecare.ca/intense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical:
+        "https://www.360eyecare.ca/intense-pulsed-light-ipl-and-radio-frequency-rf-dry-eye-treatment/",
+    },
+  };
+}
 
 const page = () => {
   return (

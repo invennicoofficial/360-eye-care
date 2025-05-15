@@ -2,6 +2,33 @@ import React from "react";
 import SubHeader from "../../../components/SubHeader";
 import Link from "next/link";
 
+export async function generateMetadata() {
+  return {
+    title: "Terms and Conditions | 360 Eyecare",
+    description:
+      "Terms of Service and Conditions of 360 Eyecare Website. Contact us at info@360eyecare.ca with any questions",
+    openGraph: {
+      title: "Terms and Conditions | 360 Eyecare",
+      description:
+        "Terms of Service and Conditions of 360 Eyecare Website. Contact us at info@360eyecare.ca with any questions",
+      url: "https://www.360eyecare.ca/terms-conditions/",
+      siteName: "360 Eyecare",
+      type: "website",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2025/01/360eyecare-terms-conditions.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Terms & Conditions",
+        },
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/terms-conditions/",
+    },
+  };
+}
+
 const TermsConditions = () => {
   return (
     <main className="pt-[110px]">

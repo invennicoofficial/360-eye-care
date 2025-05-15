@@ -25,15 +25,6 @@ export const metadata = {
     "family eye care",
     "360 Eyecare",
   ],
-  image: {
-    url: "https://www.360eyecare.ca/360Logo.webp",
-    width: 1200,
-    height: 630,
-    alt: "360 Eye Care Toronto - Eye Exam and Vision Clinic",
-  },
-  alternates: {
-    canonical: "https://www.360eyecare.ca",
-  },
   openGraph: {
     type: "website",
     url: "https://www.360eyecare.ca",
@@ -43,7 +34,7 @@ export const metadata = {
     siteName: "360 Eyecare",
     images: [
       {
-        url: "/public/360Logo.webp",
+        url: "/360Logo.webp",
         width: 1200,
         height: 630,
         alt: "360 Eye Care Toronto - Eye Exam and Vision Clinic",
@@ -56,7 +47,10 @@ export const metadata = {
     description:
       "Book your eye exam with 360 Eyecare, Toronto's trusted optometrists for family vision care, myopia control, and dry eye treatment.",
     site: "@360eyecare", // Replace with your actual Twitter handle if available
-    images: ["https://www.360eyecare.ca/360Logo.webp"],
+    images: ["/360Logo.webp"],
+  },
+  alternates: {
+    canonical: "https://www.360eyecare.ca",
   },
   robots: {
     index: true,

@@ -35,6 +35,32 @@ const InformationData = [
       "https://www.affirm.ca/apps/prequal/?public_api_key=UZQTPQF12DC6FIUA&referring_url=https%3a%2f%2fpaybright.com&device_id=&use_promo=true&page_type=banner&locale=en_CA",
   },
 ];
+export async function generateMetadata() {
+  return {
+    title: "Payment Plans | Affirm | 360 Eyecare",
+    description:
+      "We are now offering flexible payment plans to all of our patients and customers through Affirm. Available on both of our clinic locations.",
+    openGraph: {
+      title: "Payment Plans | Affirm | 360 Eyecare",
+      description:
+        "We are now offering flexible payment plans to all of our patients and customers through Affirm. Available on both of our clinic locations.",
+      url: "https://www.360eyecare.ca/payment-plans/",
+      siteName: "360 Eyecare",
+      type: "website",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2025/01/360eyecare-payment-plans.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Payment Plans",
+        },
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/payment-plans/",
+    },
+  };
+}
 
 const Page = () => {
   return (

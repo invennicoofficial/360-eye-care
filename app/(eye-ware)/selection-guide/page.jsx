@@ -9,6 +9,24 @@ import BookExamCommon from "../../../components/common/BookExampCommon";
 import { FaUserMd } from "react-icons/fa";
 import SelectionGuide from "../../../components/SelectionGuide";
 import Link from "next/link";
+export async function generateMetadata() {
+  return {
+    title: "Eyeglasses Selection Guide: Choose the Perfect Pair",
+    description:
+      "Whether you are buying eyeglasses or sunglasses, 360 Eyecare Eyeglasses Selection Guide will help you know which important factor to consider",
+    openGraph: {
+      title: "Eyeglasses Selection Guide: Choose the Perfect Pair",
+      description:
+        "Whether you are buying eyeglasses or sunglasses, 360 Eyecare Eyeglasses Selection Guide will help you know which important factor to consider",
+      url: "https://www.360eyecare.ca/buying-eyeglasses-selection-guide/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/buying-eyeglasses-selection-guide/",
+    },
+  };
+}
 
 const page = () => {
   const whyChooseData = [

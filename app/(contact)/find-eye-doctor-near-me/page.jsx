@@ -6,6 +6,33 @@ import Image from "next/image";
 import EyeClinicNearYou from "../../../components/EyeClinicNearYou";
 import Choose360EyeCare from "../../../components/Choose360EyeCare";
 
+export async function generateMetadata() {
+  return {
+    title: "Eye Doctor Near Me: Optometrist Near Beaches Yorkville Rosedale",
+    description:
+      "Are you looking for optometrist near in Beaches, Yorkville and Rosedale, Toronto? Just look for Eye Doctor Near Me.",
+    openGraph: {
+      title: "Eye Doctor Near Me: Optometrist Near Beaches Yorkville Rosedale",
+      description:
+        "Are you looking for optometrist near in Beaches, Yorkville and Rosedale, Toronto? Just look for Eye Doctor Near Me.",
+      url: "https://www.360eyecare.ca/find-eye-doctor-near-me/",
+      siteName: "360 Eyecare",
+      type: "website",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2025/01/360eyecare-find-eye-doctor.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Find an Eye Doctor at 360 Eyecare Toronto",
+        },
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/find-eye-doctor-near-me/",
+    },
+  };
+}
+
 const page = () => {
   return (
     <main className="pt-[70px] sm:pt-[110px]">

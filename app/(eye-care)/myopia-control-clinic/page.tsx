@@ -6,6 +6,24 @@ import { myopiaImage } from "../../../constants/Images";
 import Image from "next/image";
 import MyopiaControl from "../../../components/MyopiaControl";
 import MyopiaControlPage from "../../../components/MyopiaControlPage";
+export async function generateMetadata() {
+  return {
+    title: "Myopia Control Clinic in Toronto | 360 Eyecare",
+    description:
+      "Visit our Myopia Control Clinic in Beaches and Rosedale, Toronto. Get your myopia treatment done today. Ensure healthy vision for the future.",
+    openGraph: {
+      title: "Myopia Control Clinic in Toronto | 360 Eyecare",
+      description:
+        "Visit our Myopia Control Clinic in Beaches and Rosedale, Toronto. Get your myopia treatment done today. Ensure healthy vision for the future.",
+      url: "https://www.360eyecare.ca/myopia-control-clinic/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/myopia-control-clinic/",
+    },
+  };
+}
 
 const page = () => {
   return (

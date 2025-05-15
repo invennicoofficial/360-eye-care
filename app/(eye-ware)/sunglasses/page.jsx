@@ -3,6 +3,25 @@ import BrandList from "../../../components/common/BranhdList";
 import BrandCommon from "../../../components/common/BrandCommon";
 import { data } from "./data";
 
+export async function generateMetadata() {
+  return {
+    title: "Sunglasses Shop in Toronto | Sunglasses Near Me",
+    description:
+      "Explore our Sunglasses shop in toronto. Shop for top brands and styles of top-quality sun glasses to protect and maintain healthy vision.",
+    openGraph: {
+      title: "Sunglasses Shop in Toronto | Sunglasses Near Me",
+      description:
+        "Explore our Sunglasses shop in toronto. Shop for top brands and styles of top-quality sun glasses to protect and maintain healthy vision.",
+      url: "https://www.360eyecare.ca/sunglasses-catalog/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/sunglasses-catalog/",
+    },
+  };
+}
+
 const page = () => {
   const sunglassBrands = [
     { name: "LaFont" },

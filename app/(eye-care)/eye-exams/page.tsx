@@ -1,15 +1,31 @@
 import React from "react";
 import SubHeader from "../../../components/SubHeader";
 import AboutUsSection from "../../../components/AboutUsSection";
-import { FaUserDoctor } from "react-icons/fa6";
-import { LuScanEye } from "react-icons/lu";
-import { TbBrandVisualStudio } from "react-icons/tb";
+
 import Link from "next/link";
 import Image from "next/image";
 import { SpectacleImage } from "../../../constants/Images";
 import FaqPlusMinus from "../../../components/FaqPlusMinus";
 import EyeExamTools from "../../../components/EyeExamTools";
 import { eyeexamsCardData } from "constants/Constants";
+export async function generateMetadata() {
+  return {
+    title: "Eye Exams Toronto - Book an Eye Tests at Beaches and Yorkville",
+    description:
+      "Eye exams Toronto for comprehensive eye examination to all ages. Get your eyes tested at our eye clinic at The Beaches, Yorkville, Rosedale.",
+    openGraph: {
+      title: "Eye Exams Toronto - Book an Eye Tests at Beaches and Yorkville",
+      description:
+        "Eye exams Toronto for comprehensive eye examination to all ages. Get your eyes tested at our eye clinic at The Beaches, Yorkville, Rosedale.",
+      url: "https://www.360eyecare.ca/eye-exams/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/eye-exams/",
+    },
+  };
+}
 
 const comprehensiveEyeExam = [
   {

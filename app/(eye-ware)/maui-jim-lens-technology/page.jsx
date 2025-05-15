@@ -7,6 +7,25 @@ import {
   MjGlassesBeachReflection,
 } from "../../../constants/prescriptionLenses";
 
+export async function generateMetadata() {
+  return {
+    title: "Maui Jim Lens Toronto | Polarized Sunglasses",
+    description:
+      "Maui Jim lens techology Toronto. Polarized sunglasses, different lens and tint options, with specific lens options for outdoor activities.",
+    openGraph: {
+      title: "Maui Jim Lens Toronto | Polarized Sunglasses",
+      description:
+        "Maui Jim lens techology Toronto. Polarized sunglasses, different lens and tint options, with specific lens options for outdoor activities.",
+      url: "https://www.360eyecare.ca/maui-jim-lens-technology/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/maui-jim-lens-technology/",
+    },
+  };
+}
+
 const page = () => {
   const data1 = [
     {

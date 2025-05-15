@@ -5,6 +5,24 @@ import { TiTick } from "react-icons/ti";
 import VirtualShopppingFaq from "../../../components/VirtualShopppingFaq";
 import VirtualForm from "../../../components/VirtualForm";
 import DetailsDescription from "components/common/DetailsDescripton";
+export async function generateMetadata() {
+  return {
+    title: "Virtual Shopping for Eyewear | 360 Eyecare",
+    description:
+      "Try on eyeglasses virtually with our expert Opticians. Book your free Virtual Shopping appointment and enjoy free shipping!",
+    openGraph: {
+      title: "Virtual Shopping for Eyewear | 360 Eyecare",
+      description:
+        "Try on eyeglasses virtually with our expert Opticians. Book your free Virtual Shopping appointment and enjoy free shipping!",
+      url: "https://www.360eyecare.ca/virtual-shopping/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/virtual-shopping/",
+    },
+  };
+}
 
 const Page = () => {
   const dataDescription = [

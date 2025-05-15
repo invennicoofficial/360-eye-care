@@ -19,6 +19,24 @@ import {
 } from "../../../constants/Constants";
 import PediatricSlider from "../../../components/PediatricSlider";
 import LaserVisionService from "../../../components/LaserVisionService";
+export async function generateMetadata() {
+  return {
+    title: "Pediatric Optometrist Toronto | Children Eye Exams and Tests",
+    description:
+      "Pediatric Optometrist Toronto for children eye examinations and tests. Keep your child eyes happy and healthy with regular eye exams.",
+    openGraph: {
+      title: "Pediatric Optometrist Toronto | Children Eye Exams and Tests",
+      description:
+        "Pediatric Optometrist Toronto for children eye examinations and tests. Keep your child eyes happy and healthy with regular eye exams.",
+      url: "https://www.360eyecare.ca/pediatric-eye-exams/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/pediatric-eye-exams/",
+    },
+  };
+}
 
 // Section components to improve modularity
 const IntroSection = () => (

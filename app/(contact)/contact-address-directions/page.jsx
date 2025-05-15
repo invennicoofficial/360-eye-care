@@ -7,6 +7,33 @@ import { MdOutlineAttachEmail } from "react-icons/md";
 import { PiPhoneCall } from "react-icons/pi";
 import { GrMapLocation } from "react-icons/gr";
 
+export async function generateMetadata() {
+  return {
+    title: "Address and Directions | Toronto Eyecare Clinic | 360 Eyecare",
+    description:
+      "Visit 360 Eyecare in Beaches & Rosedale for eye exams, glasses & sunglasses. Get address and directions for both locations.",
+    openGraph: {
+      title: "Address and Directions | Toronto Eyecare Clinic | 360 Eyecare",
+      description:
+        "Visit 360 Eyecare in Beaches & Rosedale for eye exams, glasses & sunglasses. Get address and directions for both locations.",
+      url: "https://www.360eyecare.ca/contact-address-directions/",
+      siteName: "360 Eyecare",
+      type: "website",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2025/01/360eyecare-contact-directions.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Contact and Directions",
+        },
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/contact-address-directions/",
+    },
+  };
+}
+
 const Page = () => {
   return (
     <main className="pt-[110px]">

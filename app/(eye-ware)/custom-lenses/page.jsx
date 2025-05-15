@@ -1,5 +1,24 @@
 import SubHeader from "../../../components/SubHeader";
 
+export async function generateMetadata() {
+  return {
+    title: "Custom Lenses: Precision Fit & Enhanced Vision at 360 Eyecare",
+    description:
+      "Experience superior visual correction with custom lenses in Toronto. Personalized digital ophthalmic lenses for optimal comfort and precision.",
+    openGraph: {
+      title: "Custom Lenses: Precision Fit & Enhanced Vision at 360 Eyecare",
+      description:
+        "Experience superior visual correction with custom lenses in Toronto. Personalized digital ophthalmic lenses for optimal comfort and precision.",
+      url: "https://www.360eyecare.ca/custom-lenses/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/custom-lenses/",
+    },
+  };
+}
+
 const page = () => {
   const topData = [
     {

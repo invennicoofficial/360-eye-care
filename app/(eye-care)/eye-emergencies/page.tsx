@@ -5,6 +5,25 @@ import Image from "next/image";
 import CommonEmergency from "../../../components/CommonEmergency";
 // Import the new component
 
+export async function generateMetadata() {
+  return {
+    title: "Eye Emergencies and Injuries Toronto | Walk-in Eye Clinic",
+    description:
+      "For eye emergencies, seek early medical attention by visiting our optometrist or emergency room. Protect your vision from serious injury.",
+    openGraph: {
+      title: "Eye Emergencies and Injuries Toronto | Walk-in Eye Clinic",
+      description:
+        "For eye emergencies, seek early medical attention by visiting our optometrist or emergency room. Protect your vision from serious injury.",
+      url: "https://www.360eyecare.ca/eye-emergencies/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/eye-emergencies/",
+    },
+  };
+}
+
 const AdditionalEyeEmergencies = () => {
   return (
     <div className="max-w-6xl mx-auto my-8 sm:my-16 px-4 sm:px-0">

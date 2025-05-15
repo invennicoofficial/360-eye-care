@@ -13,6 +13,25 @@ import {
   LaserVisionServiceImage,
 } from "../../../constants/Images";
 
+export async function generateMetadata() {
+  return {
+    title: "Laser Vision Correction in Toronto for Your Eyes",
+    description:
+      "Transform your vision with advanced Laser Vision Correction in Toronto. Experience freedom from glasses and contacts.",
+    openGraph: {
+      title: "Laser Vision Correction in Toronto for Your Eyes",
+      description:
+        "Transform your vision with advanced Laser Vision Correction in Toronto. Experience freedom from glasses and contacts.",
+      url: "https://www.360eyecare.ca/laser-vision-correction/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/laser-vision-correction/",
+    },
+  };
+}
+
 const page = () => {
   return (
     <main className="pt-[110px] bg-[#F9F9F9]">

@@ -19,6 +19,26 @@ import Symptoms from "../../../components/Symptoms";
 import DryFaqs from "../../../components/DryFaqs";
 import { dryFaqdata } from "constants/Constants";
 
+export async function generateMetadata() {
+  return {
+    title: "Dry Eye Clinic Toronto | Dry Eye Specialist | 360 Eyecare",
+    description:
+      "Do you suffer from Dry Eyes? Get your dry, itchy eyes, irritation & excessive tearing treated at Dry Eye Clinic Toronto. Book an appointment.",
+    openGraph: {
+      title: "Dry Eye Clinic Toronto | Dry Eye Specialist | 360 Eyecare",
+      description:
+        "Do you suffer from Dry Eyes? Get your dry, itchy eyes, irritation & excessive tearing treated at Dry Eye Clinic Toronto. Book an appointment.",
+      url: "https://www.360eyecare.ca/dry-eye-syndrome-keratograph-i-pen/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical:
+        "https://www.360eyecare.ca/dry-eye-syndrome-keratograph-i-pen/",
+    },
+  };
+}
+
 // Section components to improve modularity
 const IntroSection = () => (
   <div className="max-w-6xl mx-auto my-8 md:my-16 px-4 md:px-0 flex flex-col md:flex-row justify-between mb-10">

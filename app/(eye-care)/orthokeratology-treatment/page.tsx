@@ -12,6 +12,25 @@ import Banner2 from "../../../components/Banner2";
 import LocationSelect from "../../../components/LocationSelect";
 import BenefitsOrtho from "../../../components/BenefitsOrtho";
 
+export async function generateMetadata() {
+  return {
+    title: "Ortho-K Lenses Toronto | Orthokeratology Technology Treatment",
+    description:
+      "Orthokeratology is a non-surgical procedure used to improve vision and eliminate the need for glasses. Improve vision with Ortho-K Lenses.",
+    openGraph: {
+      title: "Ortho-K Lenses Toronto | Orthokeratology Technology Treatment",
+      description:
+        "Orthokeratology is a non-surgical procedure used to improve vision and eliminate the need for glasses. Improve vision with Ortho-K Lenses.",
+      url: "https://www.360eyecare.ca/orthokeratology-treatment/",
+      siteName: "360 Eyecare",
+      type: "website",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/orthokeratology-treatment/",
+    },
+  };
+}
+
 const page = () => {
   return (
     <main className="pt-[110px]">
