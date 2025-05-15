@@ -92,7 +92,7 @@ const RequestForm = () => {
       setSubmitStatus({ success: false, message: "" });
 
       try {
-        const response = await fetch("/api/virtual-consult", {
+        const response = await fetch("/api/virtualform", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
