@@ -3,57 +3,58 @@ import OptometristTeam from "../../../components/OptometristTeam";
 import Image from "next/image";
 import { MeetOptometryImage } from "constants/Images";
 import Link from "next/link";
-import Head from "next/head";
+
+export const generateMetadata = () => {
+  return {
+    title:
+      "Dr. Sam Baraam and Associates Optometrists at 360 Eyecare Yorkville & Beaches",
+    description:
+      "Get best eye care for your eyes from 360 Eyecare Optometrists in The Beaches and Yorkville Toronto. Book an appointment Now!",
+    keywords:
+      "optometrists Toronto, eye doctors, eye specialists, 360 Eyecare, Dr. Sam Barram, eye care professionals, contact lens specialists, eye exam Toronto",
+    openGraph: {
+      type: "website",
+      url: "https://www.360eyecare.ca/optometrists/",
+      title:
+        "Dr. Sam Baraam and Associates Optometrists at 360 Eyecare Yorkville & Beaches",
+      description:
+        "Get best eye care for your eyes from 360 Eyecare Optometrists in The Beaches and Yorkville Toronto. Book an appointment Now!",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2022/10/eyecare-optometrist-team.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Optometrist Team",
+        },
+      ],
+      siteName: "360 Eyecare",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title:
+        "Dr. Sam Baraam and Associates Optometrists at 360 Eyecare Yorkville & Beaches",
+      description:
+        "Get best eye care for your eyes from 360 Eyecare Optometrists in The Beaches and Yorkville Toronto. Book an appointment Now!",
+      images: [
+        "https://www.360eyecare.ca/wp-content/uploads/2022/10/eyecare-optometrist-team.jpg",
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/optometrists/",
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    viewport: "width=device-width, initial-scale=1",
+    themeColor: "#4F6A81",
+  };
+};
+
 const SectionDivider = () => (
   <div className="w-24 h-1 bg-combination-100 mb-6"></div>
 );
 const Optometrists = () => {
-  <Head>
-    {/* Primary Meta Tags */}
-    <title>Meet Our Experienced Optometrists | 360 Eyecare Toronto</title>
-    <meta
-      name="description"
-      content="Meet our expert optometrists at 360 Eyecare Toronto. We offer personalized eye care, contact lens fittings, dry eye treatment, and ocular disease management."
-    />
-    <meta
-      name="keywords"
-      content="Toronto optometrists, eye doctors, eye care Toronto, dry eye treatment, contact lens exam, ocular health, 360 Eyecare team"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charSet="UTF-8" />
-
-    {/* Open Graph / Facebook */}
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.360eyecare.ca/optometrists" />
-    <meta
-      property="og:title"
-      content="Meet Our Experienced Optometrists | 360 Eyecare Toronto"
-    />
-    <meta
-      property="og:description"
-      content="Meet the experienced optometrists at 360 Eyecare. Our team offers compassionate care with advanced diagnostics and personalized treatment plans."
-    />
-    <meta
-      property="og:image"
-      content="https://www.360eyecare.ca/wp-content/uploads/2022/10/360eyecare.jpg" // Replace with your own if applicable
-    />
-
-    {/* Twitter */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://www.360eyecare.ca/optometrists" />
-    <meta
-      name="twitter:title"
-      content="Meet Our Experienced Optometrists | 360 Eyecare Toronto"
-    />
-    <meta
-      name="twitter:description"
-      content="Discover how our skilled optometrists at 360 Eyecare provide comprehensive and compassionate eye care tailored to your needs."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.360eyecare.ca/wp-content/uploads/2022/10/360eyecare.jpg" // Replace with your hosted version of MeetOptometryImage
-    />
-  </Head>;
   return (
     <main className="pt-[110px]">
       <SubHeader text="Optometrists" />

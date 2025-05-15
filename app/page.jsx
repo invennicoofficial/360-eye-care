@@ -10,18 +10,60 @@ import HeroSection from "../components/HeroSection";
 import Script from "next/script";
 
 export const metadata = {
-  title: "360 Eye Care - Expert Optometry Services in Toronto",
+  title: "Toronto Optometrists | Eye Doctor | Optometry Clinic - 360 Eyecare",
   description:
-    "Toronto's leading eye care clinic offering comprehensive eye exams, dry eye treatment, myopia control, and advanced diagnostics. Our expert optometrists provide personalized care for your entire family. Schedule your visit today!",
+    "360 Eyecare is full scope, family-friendly optometry clinic with amazing team of qualified Toronto Optometrists. Best eye doctors in Toronto.",
+  keywords: [
+    "Toronto eye care",
+    "optometrist Toronto",
+    "eye exams Toronto",
+    "dry eye treatment",
+    "myopia control",
+    "contact lenses Toronto",
+    "optometry services",
+    "vision care Toronto",
+    "family eye care",
+    "360 Eyecare",
+  ],
+  image: {
+    url: "https://www.360eyecare.ca/360Logo.webp",
+    width: 1200,
+    height: 630,
+    alt: "360 Eye Care Toronto - Eye Exam and Vision Clinic",
+  },
   alternates: {
-    canonical: "https://360eyecare.ca",
+    canonical: "https://www.360eyecare.ca",
   },
   openGraph: {
-    title: "360 Eye Care - Expert Optometry Services in Toronto",
+    type: "website",
+    url: "https://www.360eyecare.ca",
+    title: "Toronto Optometrists | Eye Doctor | Optometry Clinic - 360 Eyecare",
     description:
-      "Toronto's leading eye care clinic offering comprehensive eye exams, dry eye treatment, myopia control, and advanced diagnostics. Our expert optometrists provide personalized care for your entire family. Schedule your visit today!",
+      "360 Eyecare is full scope, family-friendly optometry clinic with amazing team of qualified Toronto Optometrists. Best eye doctors in Toronto.",
+    siteName: "360 Eyecare",
+    images: [
+      {
+        url: "/public/360Logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "360 Eye Care Toronto - Eye Exam and Vision Clinic",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "360 Eye Care - Expert Optometry in Toronto",
+    description:
+      "Book your eye exam with 360 Eyecare, Toronto's trusted optometrists for family vision care, myopia control, and dry eye treatment.",
+    site: "@360eyecare", // Replace with your actual Twitter handle if available
+    images: ["https://www.360eyecare.ca/360Logo.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
+
 const Home = () => {
   return (
     <main className="pt-[80px]">

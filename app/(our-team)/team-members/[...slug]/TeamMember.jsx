@@ -61,7 +61,7 @@ const TeamMember = ({ doctor }) => {
           </div>
 
           <div className="flex flex-col mt-6 md:mt-0 md:w-[70%]">
-            <p className="text-combination-200 text-2xl font-bold mb-4">
+            <p className="text-combination-200 text-2xl font-bold mb-4 ">
               {doctor.name}
             </p>
 

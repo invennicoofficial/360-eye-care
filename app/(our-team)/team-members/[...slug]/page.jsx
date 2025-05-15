@@ -1,4 +1,3 @@
-// Fixed Page.js (Server Component)
 import { optometrists } from "../../../../constants/Constants.js";
 import TeamMember from "./TeamMember";
 

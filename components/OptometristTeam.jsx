@@ -76,7 +76,7 @@ function OptometristCard({ name, image, description, slug, onReadMore }) {
       </div>
       <Link
         href={`/team-members/${slug}`}
-        className="font-semibold text-lg text-[#2D3B55] text-center bg-[#FAFAFA] py-3 mb-2 cursor-pointer"
+        className="font-semibold text-lg text-[#2D3B55] hover:text-combination-100 text-center bg-[#FAFAFA] py-3 mb-2 cursor-pointer"
       >
         {name}
       </Link>

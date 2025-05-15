@@ -47,13 +47,13 @@ const VirtualForm = () => {
       });
 
       if (!response.ok) {
-        console.error("Failed to submit form");
+        // console.error("Failed to submit form");
         return;
       }
 
-      console.log("Form submitted successfully");
+      // console.log("Form submitted successfully");
     } catch (error) {
-      console.error("Submission error:", error);
+      // console.error("Submission error:", error);
     } finally {
       setIsLoading(false);
     }

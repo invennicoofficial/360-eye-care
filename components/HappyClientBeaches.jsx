@@ -125,7 +125,7 @@ export default function ReviewCarousel() {
         // Show reviews starting from index 0
         updateVisibleReviews(widgetData, 0);
       } catch (error) {
-        console.error("Error fetching reviews from widget:", error);
+        // console.error("Error fetching reviews from widget:", error);
         setReviews([]);
       } finally {
         setLoading(false);
