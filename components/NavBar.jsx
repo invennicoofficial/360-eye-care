@@ -277,7 +277,7 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden flex items-center justify-between h-16 z-50 overflow-scroll">
+        <div className="md:hidden flex items-center justify-between h-16 z-50 overflow-y-scroll">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <div className="w-24">
@@ -291,7 +291,6 @@ const NavBar = () => {
               </div>
             </Link>
           </div>
-
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <button
@@ -303,20 +302,20 @@ const NavBar = () => {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[375px] h-screen min-h-screen border-t-4 border-combination-100 overflow-y-scroll p-6"
+              className="w-full max-w-[350px] sm:max-w-[375px] h-full border-l border-t-4 border-t-combination-100 flex flex-col p-0"
             >
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex justify-between items-center p-4 border-b">
                 <Link
                   href="/"
                   onClick={closeSheet}
                   className="flex items-center"
                 >
-                  <div className="w-24">
+                  <div className="w-20">
                     <Image
                       src={EyeCareLogo}
                       alt="360 EyeCare Logo"
-                      width={141.89}
-                      height={70}
+                      width={120}
+                      height={60}
                       priority
                     />
                   </div>
@@ -326,131 +325,135 @@ const NavBar = () => {
                     className="p-2 rounded-md text-neutral-700 hover:text-brand-blue hover:bg-neutral-100"
                     aria-label="Close mobile menu"
                   >
-                    <X className="h-6 w-6" aria-hidden="true" />
+                    <X className="h-5 w-5" aria-hidden="true" />
                   </button>
                 </SheetClose>
               </div>
-              <nav className="flex flex-col space-y-2">
-                {navItems.map((item, index) => {
-                  const isActive =
-                    (item.link && pathname === item.link) ||
-                    isActiveParent(item);
 
-                  return (
-                    <div key={index}>
-                      {item.dropdown ? (
-                        <Collapsible
-                          open={openCollapsible === index}
-                          onOpenChange={() => toggleCollapsible(index)}
-                        >
-                          <CollapsibleTrigger asChild>
-                            <button
-                              className={cn(
-                                "flex w-full items-center justify-between px-4 py-3 text-base font-medium text-left",
-                                isActive
-                                  ? "text-brand-blue"
-                                  : "text-neutral-700"
-                              )}
-                              aria-expanded={openCollapsible === index}
-                            >
-                              <span
+              <div className="flex-1 overflow-y-auto py-2">
+                <nav className="flex flex-col">
+                  {navItems.map((item, index) => {
+                    const isActive =
+                      (item.link && pathname === item.link) ||
+                      isActiveParent(item);
+
+                    return (
+                      <div key={index} className="mb-1">
+                        {item.dropdown ? (
+                          <Collapsible
+                            open={openCollapsible === index}
+                            onOpenChange={() => toggleCollapsible(index)}
+                          >
+                            <CollapsibleTrigger asChild>
+                              <button
                                 className={cn(
-                                  "",
-                                  isActive && "text-combination-200"
+                                  "flex w-full items-center justify-between px-6 py-3 text-base font-medium text-left",
+                                  isActive
+                                    ? "text-brand-blue bg-neutral-50"
+                                    : "text-neutral-700"
                                 )}
+                                aria-expanded={openCollapsible === index}
                               >
-                                {item.name}
-                              </span>
-                              <ChevronDown
-                                size={20}
-                                className={cn(
-                                  "transform transition-transform duration-200",
-                                  openCollapsible === index
-                                    ? "rotate-180 text-brand-blue"
-                                    : "text-neutral-500"
-                                )}
-                                aria-hidden="true"
-                              />
-                            </button>
-                          </CollapsibleTrigger>
-                          <CollapsibleContent className="bg-neutral-50 px-4 py-2">
-                            {item.dropdown.map((subItem, subIndex) => {
-                              const isSubItemActive = pathname === subItem.link;
-
-                              return subItem.external ? (
-                                <a
-                                  key={subIndex}
-                                  href={subItem.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  onClick={closeSheet}
+                                <span
                                   className={cn(
-                                    "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
-                                    isSubItemActive
-                                      ? "text-brand-blue font-medium bg-gray-100"
-                                      : "text-neutral-700"
+                                    "",
+                                    isActive && "text-combination-200"
                                   )}
                                 >
-                                  {subItem.name}
+                                  {item.name}
+                                </span>
+                                <ChevronDown
+                                  size={18}
+                                  className={cn(
+                                    "transform transition-transform duration-200",
+                                    openCollapsible === index
+                                      ? "rotate-180 text-brand-blue"
+                                      : "text-neutral-500"
+                                  )}
+                                  aria-hidden="true"
+                                />
+                              </button>
+                            </CollapsibleTrigger>
+                            <CollapsibleContent className="bg-neutral-50">
+                              {item.dropdown.map((subItem, subIndex) => {
+                                const isSubItemActive =
+                                  pathname === subItem.link;
 
-                                  <span
-                                    className={cn(
-                                      "absolute left-4 bottom-2 h-[2px]",
-                                      isSubItemActive
-                                        ? "w-[calc(100%-2rem)] bg-combination-100"
-                                        : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
-                                    )}
-                                  ></span>
-                                </a>
-                              ) : (
-                                <SheetClose asChild>
-                                  <Link
+                                return subItem.external ? (
+                                  <a
                                     key={subIndex}
                                     href={subItem.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={closeSheet}
                                     className={cn(
-                                      "relative block px-4 py-3 text-sm transition-colors duration-150 hover:text-combination-100 group",
+                                      "relative block px-8 py-2 text-sm transition-colors duration-150 hover:text-combination-100 group",
                                       isSubItemActive
-                                        ? "text-brand-blue font-medium font-poppins bg-gray-100"
+                                        ? "text-brand-blue font-medium bg-neutral-100"
                                         : "text-neutral-700"
                                     )}
-                                    aria-current={
-                                      isSubItemActive ? "page" : undefined
-                                    }
                                   >
                                     {subItem.name}
-
                                     <span
                                       className={cn(
-                                        "absolute left-4 bottom-2 h-[2px]",
+                                        "absolute left-6 bottom-1 h-[2px]",
                                         isSubItemActive
-                                          ? "w-[calc(100%-2rem)] bg-combination-100"
-                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-2rem)]"
+                                          ? "w-[calc(100%-3rem)] bg-combination-100"
+                                          : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-3rem)]"
                                       )}
                                     ></span>
-                                  </Link>
-                                </SheetClose>
-                              );
-                            })}
-                          </CollapsibleContent>
-                        </Collapsible>
-                      ) : (
-                        <SheetClose asChild>
-                          <Link
-                            href={item.link}
-                            className={cn(
-                              "px-4 py-3 text-base font-poppins font-medium block ",
-                              isActive ? "text-brand-blue" : "text-neutral-700"
-                            )}
-                            aria-current={isActive ? "page" : undefined}
-                          >
-                            {item.name}
-                          </Link>
-                        </SheetClose>
-                      )}
-                    </div>
-                  );
-                })}
-              </nav>
+                                  </a>
+                                ) : (
+                                  <SheetClose asChild>
+                                    <Link
+                                      key={subIndex}
+                                      href={subItem.link}
+                                      className={cn(
+                                        "relative block px-8 py-2 text-sm transition-colors duration-150 hover:text-combination-100 group",
+                                        isSubItemActive
+                                          ? "text-brand-blue font-medium bg-neutral-100"
+                                          : "text-neutral-700"
+                                      )}
+                                      aria-current={
+                                        isSubItemActive ? "page" : undefined
+                                      }
+                                    >
+                                      {subItem.name}
+                                      <span
+                                        className={cn(
+                                          "absolute left-6 bottom-1 h-[2px]",
+                                          isSubItemActive
+                                            ? "w-[calc(100%-3rem)] bg-combination-100"
+                                            : "w-0 bg-combination-100 transition-all duration-300 group-hover:w-[calc(100%-3rem)]"
+                                        )}
+                                      ></span>
+                                    </Link>
+                                  </SheetClose>
+                                );
+                              })}
+                            </CollapsibleContent>
+                          </Collapsible>
+                        ) : (
+                          <SheetClose asChild>
+                            <Link
+                              href={item.link}
+                              className={cn(
+                                "px-6 py-3 text-base font-medium block",
+                                isActive
+                                  ? "text-brand-blue bg-neutral-50"
+                                  : "text-neutral-700 hover:bg-neutral-50"
+                              )}
+                              aria-current={isActive ? "page" : undefined}
+                            >
+                              {item.name}
+                            </Link>
+                          </SheetClose>
+                        )}
+                      </div>
+                    );
+                  })}
+                </nav>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
