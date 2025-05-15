@@ -8,8 +8,42 @@ import Image from "next/image";
 import Link from "next/link";
 import { MeetOptometryImage } from "../../../constants/Images";
 import { ImageSlider } from "components/common/ImageSlider";
-import Head from "next/head";
 
+export const generateMetadata = () => {
+  return {
+    title: "Optometric and Optical Centre Toronto | About Us | 360 Eyecare",
+    description:
+      "360 Eyecare is optometric and optical centre in Toronto for full eyecare services. Clinics in Rosedale and Beaches locations.",
+    keywords:
+      "eye care Toronto, optometrist Toronto, comprehensive eye exams, prescription eyewear, contact lenses, vision care, dry eye treatment, myopia control, 360 Eyecare",
+    viewport: "width=device-width, initial-scale=1",
+    charSet: "UTF-8",
+    openGraph: {
+      type: "website",
+      url: "https://www.360eyecare.ca/about-us",
+      title: "Optometric and Optical Centre Toronto | About Us | 360 Eyecare",
+      description:
+        "360 Eyecare is optometric and optical centre in Toronto for full eyecare services. Clinics in Rosedale and Beaches locations.",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2022/10/360eyecare.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare team",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Optometric and Optical Centre Toronto | About Us | 360 Eyecare",
+      description:
+        "360 Eyecare is optometric and optical centre in Toronto for full eyecare services. Clinics in Rosedale and Beaches locations.",
+      images: [
+        "https://www.360eyecare.ca/wp-content/uploads/2022/10/360eyecare.jpg",
+      ],
+    },
+  };
+};
 // Card data organized in one place for better maintenance
 const cardData = [
   {
@@ -52,54 +86,6 @@ const FeatureItem = ({ title, description }) => (
 );
 
 const AboutUs = () => {
-  <Head>
-    {/* Primary Meta Tags */}
-    <title>
-      About Us | Comprehensive Eye Care Services in Toronto | 360 Eyecare
-    </title>
-    <meta
-      name="description"
-      content="Learn about 360 Eyecare – dedicated to providing Toronto with exceptional optometric services, advanced diagnostics, and quality eyewear. Experience full-scope, patient-focused vision care."
-    />
-    <meta
-      name="keywords"
-      content="eye care Toronto, optometrist Toronto, comprehensive eye exams, prescription eyewear, contact lenses, vision care, dry eye treatment, myopia control, 360 Eyecare"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charSet="UTF-8" />
-
-    {/* Open Graph / Facebook */}
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.360eyecare.ca/about-us" />
-    <meta
-      property="og:title"
-      content="About Us | Comprehensive Eye Care Services in Toronto | 360 Eyecare"
-    />
-    <meta
-      property="og:description"
-      content="360 Eyecare is committed to delivering the full circle of eye care in Toronto, including exams, diagnostics, and eyewear."
-    />
-    <meta
-      property="og:image"
-      content="https://www.360eyecare.ca/wp-content/uploads/2022/10/360eyecare.jpg"
-    />
-
-    {/* Twitter */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://www.360eyecare.ca/about-us" />
-    <meta
-      name="twitter:title"
-      content="About Us | Comprehensive Eye Care Services in Toronto | 360 Eyecare"
-    />
-    <meta
-      name="twitter:description"
-      content="360 Eyecare is committed to delivering the full circle of eye care in Toronto, including exams, diagnostics, and eyewear."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.360eyecare.ca/wp-content/uploads/2022/10/360eyecare.jpg"
-    />
-  </Head>;
   return (
     <main className="pt-[110px]">
       <SubHeader text="About Us" />

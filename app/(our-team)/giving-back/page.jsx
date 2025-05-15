@@ -3,6 +3,23 @@ import Link from "next/link";
 import SubHeader from "../../../components/SubHeader";
 import { GivingBackImage } from "../../../constants/Images";
 
+export const generateMetadata = () => {
+  return {
+    title: "360 Eyecare: Supporting Optometry Giving Sight",
+    description:
+      "See how 360 Eyecare is giving back by teaming up with Optometry Giving Sight to tackle global vision issues and support eye care projects.",
+    openGraph: {
+      title: "360 Eyecare: Supporting Optometry Giving Sight",
+      description:
+        "See how 360 Eyecare is giving back by teaming up with Optometry Giving Sight to tackle global vision issues and support eye care projects.",
+      url: "https://www.360eyecare.ca/giving-back/",
+      siteName: "360 Eyecare",
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/giving-back/",
+    },
+  };
+};
 const GivingBack = () => {
   return (
     <main className="pt-[110px]">

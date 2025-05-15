@@ -1,6 +1,44 @@
 import SubHeader from "../../../components/SubHeader";
 import Image from "next/image";
 import { MedicalTeamImage } from "../../../constants/Images";
+export const generateMetadata = () => {
+  return {
+    title: "Career Opportunities | 360 Eyecare",
+    description:
+      "Join our team at 360 Eyecare. We're looking for passionate individuals to help provide exceptional eye care to our patients in Toronto.",
+    keywords:
+      "eye clinic jobs, optometrist careers, optician positions, 360 eyecare careers, toronto eye care jobs",
+    openGraph: {
+      title: "Career Opportunities | 360 Eyecare",
+      description:
+        "Join our team at 360 Eyecare. We're looking for passionate individuals to help provide exceptional eye care to our patients in Toronto.",
+      url: "https://www.360eyecare.ca/career-opportunities/",
+      siteName: "360 Eyecare",
+      images: [
+        {
+          url: "https://www.360eyecare.ca/wp-content/uploads/2023/03/360-eyecare-team.jpg",
+          width: 1200,
+          height: 630,
+          alt: "360 Eyecare Team",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Career Opportunities | 360 Eyecare",
+      description:
+        "Join our team at 360 Eyecare. We're looking for passionate individuals to help provide exceptional eye care to our patients in Toronto.",
+      images: [
+        "https://www.360eyecare.ca/wp-content/uploads/2023/03/360-eyecare-team.jpg",
+      ],
+    },
+    alternates: {
+      canonical: "https://www.360eyecare.ca/career-opportunities/",
+    },
+  };
+};
 
 const CareerOpportunities = () => {
   return (
