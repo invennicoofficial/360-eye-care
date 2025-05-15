@@ -43,7 +43,7 @@ const LaserVisionSlider = () => {
         <h3 className="text-3xl md:text-4xl font-bold text-brand-blue mb-2 text-center">
           Types of Laser Vision Correction Procedures
         </h3>
-        <hr className="w-12 h-[3px] bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base font-normal text-center">
           Explore our advanced laser vision correction treatments for clear,
           improved vision.

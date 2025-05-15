@@ -9,7 +9,7 @@ const Associate = ({ rows }) => {
           <h2 className="text-4xl font-bold text-brand-blue  mb-4 text-center font-poppins">
             We are proudly associated with
           </h2>
-          <div className="h-1 w-32 bg-combination-100 mb-12"></div>
+          <div className="h-[2px] w-[65px] bg-combination-100 mb-12"></div>
 
           {/* First Row - Professional Associations */}
           <div className="flex flex-wrap justify-center gap-8 mb-16">

@@ -9,10 +9,10 @@ const NearYou = () => {
     <div className="bg-white w-full py-8 md:py-16">
       {/* Title */}
       <div className="flex flex-col items-center justify-center mb-6 md:mb-10">
-        <p className="text-brand-blue text-2xl md:text-4xl font-bold text-center mb-2 px-4 font-poppins">
+        <p className="text-brand-blue text-2xl md:text-4xl font-bold text-center mb-3 px-4 font-poppins">
           Find a 360 Eyecare Optometrist Near You
         </p>
-        <div className="w-12 h-[3px] bg-combination-100" />
+        <div className="w-[65px] h-[2px] bg-combination-100" />
       </div>
 
       {/* Location Cards */}

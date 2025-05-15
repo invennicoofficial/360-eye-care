@@ -44,7 +44,7 @@ const PediatricSlider = () => {
         <h3 className="text-3xl md:text-4xl font-bold text-brand-blue mb-2 text-center">
           Our Pediatric Optometric Services
         </h3>
-        <hr className="w-12 h-[3px] bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base font-normal text-center">
           We offer specialized pediatric optometric services in Toronto to
           ensure your child’s vision health

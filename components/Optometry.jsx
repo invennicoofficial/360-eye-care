@@ -62,10 +62,10 @@ const Optometry = () => {
   return (
     <div className="w-full py-8 md:py-16 bg-white">
       <div className="flex flex-col justify-center items-center px-4">
-        <h3 className="text-3xl md:text-4xl font-bold text-brand-blue mb-2 text-center font-poppins ">
+        <h3 className="text-3xl md:text-4xl font-bold text-brand-blue mb-3 text-center font-poppins ">
           Optometry Services
         </h3>
-        <hr className="w-12 h-[3px] bg-combination-100 mb-4" />
+        <hr className="w-[65px] h-[2px] bg-combination-100 mb-4" />
         <p className="text-neutral-500 text-base font-normal text-center">
           Comprehensive services for all your vision and eye health needs.
         </p>

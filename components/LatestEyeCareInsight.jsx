@@ -18,7 +18,7 @@ const LatestEyeCareInsight = () => {
               <h2 className="text-4xl font-bold text-brand-blue mb-2 font-poppins">
                 Latest Eye Care Insights
               </h2>
-              <div className="h-1 w-32 bg-combination-100 mb-4"></div>
+              <div className="h-[2px] w-[65px] bg-combination-100 mb-4"></div>
               <p className="text-neutral-500 font-normal text-base">
                 Stay informed with our blog posts covering various eye care
                 topics.
