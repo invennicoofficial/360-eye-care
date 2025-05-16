@@ -34,7 +34,7 @@ export const metadata = {
     siteName: "360 Eyecare",
     images: [
       {
-        url: "/360Logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "360 Eye Care Toronto - Eye Exam and Vision Clinic",
