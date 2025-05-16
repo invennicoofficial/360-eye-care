@@ -44,7 +44,7 @@ const LatestEyeCareInsight = () => {
                   <div className="flex items-center gap-2">
                     <MdOutlineDateRange className="text-combination-100" />
                     <Link
-                      href="https://www.360eyecare.ca/affordable-laser-eye-surgery-toronto-options/"
+                      href="https://www.360eyecare.ca/emergency-eye-care-toronto-guide/"
                       className=" hover:text-combination-100"
                     >
                       April 21, 2025
