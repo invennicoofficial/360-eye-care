@@ -31,10 +31,10 @@ const BookEyeExam = () => {
         <div className="flex lg:flex-row  flex-col ">
           {[
             {
-              title: "Book at Beaches",
+              title: "Book at The Beaches",
               description:
                 "Struggling with blurry vision or eye strain? Let’s get to the root of it together. Your clearer sight is just a click away.",
-              ctaText: "Book at Beaches",
+              ctaText: "Book at The Beaches",
               ctaLink: "#book-appointment",
               ctabgColor: "bg-[#28305F]",
               bgColor: "bg-combination-100",
@@ -55,14 +55,14 @@ const BookEyeExam = () => {
                 className={`md:w-[50%] md:h-[593px] w-full h-[296px]   flex gap-5 justify-center items-center ${item.bgColor}`}
               >
                 <div className="w-[415px] h-[236px] flex flex-col gap-5 text-center md:text-left">
-                  <h2 className="font-[700] md:text-[40px] text-[28px] text-white font-poppins">
+                  <h2 className="font-[700] md:text-[40px] text-[28px] text-white font-poppins md:text-nowrap">
                     {item.title}
                   </h2>
                   <p className="text-white font-poppins font-medium md:text-base text-[14px] text-center md:text-left">
                     {item.description}
                   </p>
 
-                  <div className="flex justify-center items-center md:items-center md:justify-start">
+                  <div className="flex justify-center items-center md:items-center md:justify-start md:text-nowrap">
                     <Link
                       href={item.ctaLink}
                       className={`${item.ctabgColor} text-center   text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md md:text-left w-[218px] h-[56px] flex justify-center items-center text-base `}

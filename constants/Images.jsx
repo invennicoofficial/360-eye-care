@@ -115,13 +115,18 @@ import locationHeroBeaches from "../public/location/HeroBeaches.png";
 import locationHeroYorkVille from "../public/location/HeroYorkville.png";
 import FounderImage from "../public/location/founder.png";
 import eyeCareServicesImage from "../public/location/eyeServiceImage.png";
+
+import kewbeachlbcImage from "../public/kewbeachlbc.jpg";
+import kid2kidimage from "../public/kid2kid.avif";
 export {
   EyeCareLogo,
   virtualshoppingfagimg,
   FounderImage,
+  kewbeachlbcImage,
   locationHeroBeaches,
   eyeglassescommitted,
   eyeCareServicesImage,
+  kid2kidimage,
   locationHeroYorkVille,
   glassesImage,
   VirtualConsultImage,
