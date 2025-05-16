@@ -45,7 +45,7 @@ const page = () => {
             conditions early. Schedule your advanced eye exam today.
           </p>
 
-          <Link href="/book-eye-exam" className="w-[220px]">
+          <Link href="/book-eye-exam" className="w-[280px]">
             <div className="w-full sm:w-auto bg-combination-100 hover:bg-combination-200 hover:text-combination-100 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200 shadow-md mt-4 sm:mt-0 text-center">
               Book Your Eye Exam
             </div>

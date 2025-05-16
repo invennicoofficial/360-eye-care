@@ -63,7 +63,7 @@ const PediatricSlider = () => {
                   className={`w-full p-4 rounded-lg text-center cursor-pointer transition-all duration-200 flex items-center justify-center mb-1 ${
                     isActive
                       ? "bg-combination-100 text-white shadow-md"
-                      : "bg-gray-50 text-slate-800 hover:bg-gray-100"
+                      : "bg-gray-50 text-combination-200 hover:bg-gray-100"
                   }`}
                 >
                   <Image
@@ -122,7 +122,7 @@ const PediatricSlider = () => {
                   className={`relative flex flex-col items-center justify-center w-auto p-4 rounded-t-lg text-center cursor-pointer transition-all duration-200 ${
                     isActive
                       ? "bg-combination-100 text-white shadow-md"
-                      : "bg-gray-50 text-slate-800 hover:bg-gray-100"
+                      : "bg-gray-50 text-combination-200 hover:bg-gray-100 hover:text-combination-100"
                   }`}
                 >
                   {isActive && (

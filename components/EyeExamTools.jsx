@@ -31,15 +31,15 @@ const EyeExamTools = () => {
               <div key={tool.label} className="mb-2 sm:mb-3">
                 <button
                   onClick={() => setSelected(isActive ? -1 : index)}
-                  className={`w-full p-3 sm:p-4 rounded-lg text-left cursor-pointer transition-all duration-200 flex items-center justify-start mb-1 ${
+                  className={`w-full p-3 sm:p-4 rounded-lg text-left cursor-pointer transition-all duration-200 flex items-center justify-center mb-1 ${
                     isActive
                       ? "bg-combination-100 text-white shadow-md"
-                      : "bg-gray-50 text-slate-800 hover:bg-gray-100"
+                      : "bg-gray-50 text-combination-200 hover:bg-gray-100 hover:text-combination-100"
                   }`}
                 >
                   <div
                     className={`mr-2 sm:mr-3 ${
-                      isActive ? "text-white" : "text-combination-200"
+                      isActive ? "text-white" : "text-combination-100"
                     }`}
                   >
                     {tool.icon}
@@ -49,7 +49,7 @@ const EyeExamTools = () => {
                       {tool.label}
                     </div>
                   </div>
-                  <svg
+                  {/* <svg
                     className={`ml-auto w-4 sm:w-5 h-4 sm:h-5 transition-transform ${
                       isActive ? "transform rotate-180" : ""
                     }`}
@@ -63,7 +63,7 @@ const EyeExamTools = () => {
                       strokeWidth="2"
                       d="M19 9l-7 7-7-7"
                     />
-                  </svg>
+                  </svg> */}
                 </button>
                 <AnimatePresence>
                   {isActive && (
@@ -144,7 +144,7 @@ const EyeExamTools = () => {
                   className={`relative flex flex-col items-center justify-center w-auto p-4 rounded-t-lg text-center cursor-pointer transition-all duration-200 ${
                     isActive
                       ? "bg-combination-100 text-white shadow-md"
-                      : "bg-gray-50 text-slate-800 hover:bg-gray-100"
+                      : "bg-gray-50 text-combination-200 hover:bg-gray-100 hover:text-combination-100"
                   }`}
                 >
                   {isActive && (
@@ -157,7 +157,7 @@ const EyeExamTools = () => {
                   >
                     {tool.icon}
                   </div>
-                  <div className="font-semibold text-xs lg:text-base text-combination-200">
+                  <div className="font-semibold text-xs lg:text-base ">
                     {tool.label}
                   </div>
                 </button>
