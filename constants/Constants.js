@@ -692,7 +692,7 @@ export const commonEyeServices = [
   },
   {
     label: "Dry Eye",
-    icon: "/commoneye/dryeye.png",
+    icon: "/commoneye/dryEye.png",
     image: DryEyeSyndromeImage,
     title: "Relief from Dry Eye: Causes and Treatments",
     description:
