@@ -68,6 +68,8 @@ const LaserVisionSlider = () => {
                   <Image
                     src={service.icon}
                     alt={service.label}
+                    width={36}
+                    height={36}
                     className={`h-8 w-auto mr-3 ${
                       isActive ? "filter brightness-0 invert" : ""
                     }`}
@@ -128,6 +130,8 @@ const LaserVisionSlider = () => {
                   <Image
                     src={service.icon}
                     alt={service.label}
+                    width={36}
+                    height={36}
                     className={`mx-auto mb-2 h-8 w-auto ${
                       isActive ? "filter brightness-0 invert" : ""
                     }`}

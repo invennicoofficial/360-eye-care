@@ -68,6 +68,8 @@ const CommonEyeSlider = () => {
                   <Image
                     src={service.icon}
                     alt={service.label}
+                    width={36}
+                    height={36}
                     className={`h-8 w-auto mr-3 ${
                       isActive ? "filter brightness-0 invert" : ""
                     }`}
@@ -128,6 +130,8 @@ const CommonEyeSlider = () => {
                     <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-combination-100" />
                   )}
                   <Image
+                    width={36}
+                    height={36}
                     src={service.icon}
                     alt={service.label}
                     className={`mx-auto mb-2 h-8 w-auto ${

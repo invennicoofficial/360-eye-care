@@ -28,6 +28,8 @@ import {
   TearOsmolarityImage,
   VisionThreapImage,
 } from "./Images";
+import { Eye, CheckSquare, Clock, Shield, Heart, User } from "lucide-react";
+
 import {
   ContactLensIcon,
   ContactLensImage,
@@ -43,16 +45,34 @@ import {
 
 import {
   FaEye,
-  FaMicroscope,
   FaLightbulb,
   FaRobot,
   FaCamera,
   FaMedkit,
   FaSearchLocation,
 } from "react-icons/fa";
+import { GrVolumeControl } from "react-icons/gr";
 import { FaUserDoctor } from "react-icons/fa6";
 import { LuScanEye } from "react-icons/lu";
 import { TbBrandVisualStudio } from "react-icons/tb";
+import { FaLowVision } from "react-icons/fa";
+import Image from "next/image";
+import { BiSolidReport } from "react-icons/bi";
+import { FaGlasses } from "react-icons/fa6";
+import { GiSpectacleLenses } from "react-icons/gi";
+import { IoIosContacts } from "react-icons/io";
+import {
+  HiOutlineEye,
+  HiOutlineViewGridAdd,
+  HiOutlineChartPie,
+} from "react-icons/hi";
+import { FaDiagnoses, FaMicroscope } from "react-icons/fa";
+import {
+  MdOutlineRemoveRedEye,
+  MdVisibility,
+  MdCameraAlt,
+} from "react-icons/md";
+
 export const OptometryServices = [
   {
     imageLink: "/homeIcons/Comprehensive Eye Exams.png",
@@ -656,7 +676,7 @@ export const eyeExamTools = [
 export const commonEyeServices = [
   {
     label: "Cataracts",
-    icon: EyeExamIcon,
+    icon: "/commoneye/cataracts.png",
     image: CataractImage,
     title: "Understanding Cataracts and Treatment Options",
     description:
@@ -664,7 +684,7 @@ export const commonEyeServices = [
   },
   {
     label: "Glaucoma",
-    icon: ContactLensIcon,
+    icon: "/commoneye/glaucoma.png",
     image: GlaucomaImage,
     title: "Managing Glaucoma: Diagnosis to Treatment",
     description:
@@ -672,7 +692,7 @@ export const commonEyeServices = [
   },
   {
     label: "Dry Eye",
-    icon: MyopiaIcon,
+    icon: "/commoneye/dryeye.png",
     image: DryEyeSyndromeImage,
     title: "Relief from Dry Eye: Causes and Treatments",
     description:
@@ -680,7 +700,7 @@ export const commonEyeServices = [
   },
   {
     label: "Diabetic Retinopathy",
-    icon: DryEyeIcon,
+    icon: "/commoneye/diabetic.png",
     image: DiabeticImage,
     title: "Diabetic Retinopathy: Prevention and Treatment",
     description:
@@ -688,7 +708,7 @@ export const commonEyeServices = [
   },
   {
     label: "Macular Degeneration",
-    icon: PediatricIcon,
+    icon: "/commoneye/mascular.png",
     image: MacularImage,
     title: "Macular Degeneration: Symptoms and Treatments",
     description:
@@ -699,27 +719,27 @@ export const commonEyeServices = [
 export const eyeemergencyData = [
   {
     id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/eyeemergencies/corneal.png",
     title: "Corneal Abrasions",
     description:
       "If you think you have a foreign object in your eye or a corneal abrasion, get medical help immediately.",
   },
   {
     id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/eyeemergencies/chemical.png",
     title: "Chemical Burns",
     description:
       "In case of a chemical burn, wash your eyes with clear water and seek immediate medical attention.",
   },
   {
     id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/eyeemergencies/penetrating.png",
     title: "Penetrating Foreign Objects",
     description: "If something gets in your eye, call us immediately.",
   },
   {
     id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/eyeemergencies/sudden.png",
     title: "Sudden Inflammation and Eye Bleeding",
     description:
       "Signs of serious underlying issues requiring urgent attention..",
@@ -759,28 +779,28 @@ export const selectionGuideData = [
 export const laservisiondata = [
   {
     id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/laser/lasik.png",
     title: "LASIK Eye Surgery",
     description:
       "Refractive surgery to correct vision problems like nearsightedness and astigmatism.",
   },
   {
     id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/laser/prk.png",
     title: "PRK Vision Correction",
     description:
       "Similar to LASIK but does not involve creating a corneal flap.",
   },
   {
     id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/laser/bladeless.png",
     title: "Bladeless Laser Surgery",
     description:
       "Advanced technology for precise and blade-free laser vision correction.",
   },
   {
     id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/laser/wavefront.png",
     title: "Custom Wavefront LASIK",
     description:
       "Personalized treatment that maps the unique characteristics of your eyes.",
@@ -789,27 +809,27 @@ export const laservisiondata = [
 export const pediatricEyeData = [
   {
     id: "01",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/pediatric/vision.png",
     title: "Vision Care",
     description: "Comprehensive eye care services for children of all ages.",
   },
   {
     id: "02",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/pediatric/myopio.png",
     title: "Myopia Control",
     description:
       "Specialized treatments to slow down the progression of nearsightedness.",
   },
   {
     id: "03",
-    icon: "/Icons/Optometry-Icon1.webp",
+    icon: "/pediatric/eyeExam.png",
     title: "Eye Exams",
     description:
       "Regular eye exams to monitor and maintain your child’s vision health.",
   },
   {
     id: "04",
-    icon: "/Icons/Optometry-Icon2.webp",
+    icon: "/pediatric/eyeglasses.png",
     title: "Eyeglasses & Contacts",
     description: "Stylish eyeglasses and comfy contact lenses for kids.",
   },
@@ -818,7 +838,7 @@ export const pediatricEyeData = [
 export const laservisionService = [
   {
     label: "PRK",
-    icon: EyeExamIcon,
+    icon: "/laser/prk.png",
     image: prkImage,
     title: "PRK Laser Vision Correction Treatment",
     description:
@@ -826,7 +846,7 @@ export const laservisionService = [
   },
   {
     label: "LASIK",
-    icon: ContactLensIcon,
+    icon: "/laser/lasik.png",
     image: lasikImage,
     title: "LASIK Laser Vision Correction Treatment",
     description:
@@ -834,7 +854,7 @@ export const laservisionService = [
   },
   {
     label: "SMILE",
-    icon: MyopiaIcon,
+    icon: "/laser/bladeless.png",
     image: smileImage,
     title: "SMILE Laser Vision Correction Treatment",
     description:
@@ -845,7 +865,7 @@ export const laservisionService = [
 export const advanceddiagnosticsService = [
   {
     label: "OCT Scans",
-    icon: EyeExamIcon,
+    icon: "/advanceddiagnosis/oct.png",
     image: octImage,
     title: "OCT Scans for Detailed Eye Analysis",
     description:
@@ -854,7 +874,7 @@ export const advanceddiagnosticsService = [
 
   {
     label: "Corneal Topography",
-    icon: MyopiaIcon,
+    icon: "/advanceddiagnosis/corneal.png",
     image: cornealImage,
     title: "Corneal Topography for Corneal Health Assessment",
     description:
@@ -862,7 +882,7 @@ export const advanceddiagnosticsService = [
   },
   {
     label: "Meibography",
-    icon: MyopiaIcon,
+    icon: "/advanceddiagnosis/meibography.png",
     image: MeibographyImage,
     title: "Meibography for Meibomian Gland Assessment",
     description:
@@ -870,7 +890,7 @@ export const advanceddiagnosticsService = [
   },
   {
     label: "Tear Osmolarity Testing",
-    icon: MyopiaIcon,
+    icon: "/advanceddiagnosis/tear.png",
     image: TearOsmolarityImage,
     title: "Tear Osmolarity Testing for Dry Eye Diagnosis",
     description:
@@ -878,7 +898,7 @@ export const advanceddiagnosticsService = [
   },
   {
     label: "Perimetry & the Zeiss Humphrey",
-    icon: MyopiaIcon,
+    icon: "/advanceddiagnosis/perimetry.png",
     image: PerimetryImage,
     title: "Perimetry for Visual Field Assessment",
     description:
@@ -886,7 +906,7 @@ export const advanceddiagnosticsService = [
   },
   {
     label: "Retinal Imaging",
-    icon: MyopiaIcon,
+    icon: "/advanceddiagnosis/retinal.png",
     image: RetinalImage,
     title: "Retinal Imaging for Comprehensive Retina Evaluation",
     description:
@@ -894,7 +914,7 @@ export const advanceddiagnosticsService = [
   },
   {
     label: "IPL Therapy",
-    icon: MyopiaIcon,
+    icon: "/advanceddiagnosis/ipl.png",
     image: IPLTherapyImage,
     title: "Advanced IPL Therapy for Dry Eye",
     description:
@@ -902,7 +922,7 @@ export const advanceddiagnosticsService = [
   },
   {
     label: "RF Therapy",
-    icon: MyopiaIcon,
+    icon: "/advanceddiagnosis/rf.png",
     image: RFTherapyImage,
     title: "Innovative RF Therapy for Dry Eye",
     description:
@@ -913,7 +933,7 @@ export const advanceddiagnosticsService = [
 export const pediatricEyeService = [
   {
     label: "Vision Therapy",
-    icon: EyeExamIcon,
+    icon: "/homeIcons/EFP.png",
     image: VisionThreapImage,
     title: "OCT Scans for Detailed Eye Analysis",
     description:
@@ -922,7 +942,7 @@ export const pediatricEyeService = [
 
   {
     label: "Myopia Control",
-    icon: MyopiaIcon,
+    icon: "/homeIcons/MYO.png",
     image: MyopiaPediaImage,
     title: "Effective Myopia Control Treatments for Kids",
     description:
@@ -930,7 +950,7 @@ export const pediatricEyeService = [
   },
   {
     label: "Pediatric Eye Exams",
-    icon: "/homeIcons/pedi.png",
+    icon: "/homeIcons/PED.png",
     image: PediatricEyeImage,
     title: "Comprehensive Pediatric Eye Exams in Toronto",
     description:
@@ -1104,239 +1124,34 @@ export const benefitsData = [
   {
     title: "Clear Vision",
     description: "Achieve sharp, clear vision without the need for glasses.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
+    icon: <Eye className="w-9 h-9 text-combination-100" size={36} />,
   },
   {
     title: "Quick Recovery",
     description:
       "Experience fast recovery and return to your daily activities.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="2"
-          y="2"
-          width="20"
-          height="20"
-          rx="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M7 13l3 3 7-7"
-        />
-      </svg>
-    ),
+    icon: <CheckSquare className=" text-combination-100" size={36} />,
   },
   {
     title: "Long-Term Results",
     description:
       "Enjoy lasting vision improvement with laser vision correction.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
+    icon: <Clock className=" text-combination-100" size={36} />,
   },
   {
     title: "Proven Safety",
     description: "Laser vision correction is a safe and established procedure.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="3"
-          y="3"
-          width="16"
-          height="20"
-          rx="1"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <line
-          x1="7"
-          y1="9"
-          x2="15"
-          y2="9"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="13"
-          x2="15"
-          y2="13"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="17"
-          x2="11"
-          y2="17"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
-      </svg>
-    ),
+    icon: <Shield className=" text-combination-100" size={36} />,
   },
   {
     title: "Enhanced Quality of Life",
     description: "Improved vision can lead to a better quality of life.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="6"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C16 8 16 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C8 8 8 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="9"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-        <circle
-          cx="12"
-          cy="15"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-      </svg>
-    ),
+    icon: <Heart className=" text-combination-100" size={36} />,
   },
   {
     title: "Personalized Treatment",
     description: "Each procedure is tailored to meet your vision needs.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="8"
-          r="4"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
+    icon: <User className=" text-combination-100" size={36} />,
   },
 ];
 export const pediatricEyeBenefitsData = [
@@ -1345,242 +1160,309 @@ export const pediatricEyeBenefitsData = [
     description:
       "Effective treatments to slow down myopia progression in children.",
     icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        width="36"
-        height="36"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
+      // <svg
+      //   className="w-9 h-9 text-combination-100"
+      //   fill="none"
+      //   stroke="currentColor"
+      //   viewBox="0 0 24 24"
+      //   xmlns="http://www.w3.org/2000/svg"
+      // >
+      //   {/* Glasses with special lenses for myopia control */}
+      //   <path
+      //     d="M5 9L9 9C11 9 11 13 9 13L5 13C3 13 3 9 5 9Z"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <path
+      //     d="M15 9L19 9C21 9 21 13 19 13L15 13C13 13 13 9 15 9Z"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <path d="M9 11H15" strokeWidth="1.5" stroke="currentColor" />
+      //   {/* Myopia control indicator */}
+      //   <path
+      //     d="M7 7L7 15"
+      //     strokeWidth="1"
+      //     strokeDasharray="1,1"
+      //     stroke="currentColor"
+      //   />
+      //   <path
+      //     d="M17 7L17 15"
+      //     strokeWidth="1"
+      //     strokeDasharray="1,1"
+      //     stroke="currentColor"
+      //   />
+      // </svg>
+      <GrVolumeControl size={36} className="text-combination-100" />
     ),
   },
   {
     title: "Vision Therapy",
     description:
-      "Customized programs to enhance children’s visual skills and abilities.",
+      "Customized programs to enhance children's visual skills and abilities.",
     icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="2"
-          y="2"
-          width="20"
-          height="20"
-          rx="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M7 13l3 3 7-7"
-        />
-      </svg>
+      // <svg
+      //   className="w-9 h-9 text-combination-100"
+      //   fill="none"
+      //   stroke="currentColor"
+      //   viewBox="0 0 24 24"
+      //   xmlns="http://www.w3.org/2000/svg"
+      // >
+      //   {/* Eye with therapy exercises */}
+      //   <path
+      //     d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <circle
+      //     cx="12"
+      //     cy="12"
+      //     r="3"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   {/* Exercise arrows for vision therapy */}
+      //   <path
+      //     d="M16 8L18 6"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      //   <path
+      //     d="M8 8L6 6"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      //   <path
+      //     d="M16 16L18 18"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      //   <path
+      //     d="M8 16L6 18"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      // </svg>
+      <FaLowVision size={36} className="text-combination-100" />
     ),
   },
   {
     title: "Pediatric Eye Exams",
     description:
-      "Comprehensive exams to monitor and maintain your child’s vision health.",
+      "Comprehensive exams to monitor and maintain your child's vision health.",
     icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
+      // <svg
+      //   className="w-9 h-9 text-combination-100"
+      //   fill="none"
+      //   stroke="currentColor"
+      //   viewBox="0 0 24 24"
+      //   xmlns="http://www.w3.org/2000/svg"
+      // >
+      //   {/* Eye chart for pediatric exams */}
+      //   <rect
+      //     x="4"
+      //     y="4"
+      //     width="16"
+      //     height="16"
+      //     rx="1"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <text
+      //     x="7"
+      //     y="9"
+      //     fontSize="4"
+      //     fontWeight="bold"
+      //     stroke="none"
+      //     fill="currentColor"
+      //   >
+      //     E
+      //   </text>
+      //   <text x="12" y="9" fontSize="3" stroke="none" fill="currentColor">
+      //     F P
+      //   </text>
+      //   <text x="7" y="14" fontSize="2.5" stroke="none" fill="currentColor">
+      //     T O Z
+      //   </text>
+      //   <text x="7" y="18" fontSize="2" stroke="none" fill="currentColor">
+      //     L P E D
+      //   </text>
+      // </svg>
+      <BiSolidReport size={36} className="text-combination-100" />
     ),
   },
   {
     title: "Eyeglasses for Kids",
     description:
-      "Stylish and durable eyeglasses designed for children’s active lifestyles.",
+      "Stylish and durable eyeglasses designed for children's active lifestyles.",
     icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="3"
-          y="3"
-          width="16"
-          height="20"
-          rx="1"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <line
-          x1="7"
-          y1="9"
-          x2="15"
-          y2="9"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="13"
-          x2="15"
-          y2="13"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="17"
-          x2="11"
-          y2="17"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
-      </svg>
+      // <svg
+      //   className="w-9 h-9 text-combination-100"
+      //   fill="none"
+      //   stroke="currentColor"
+      //   viewBox="0 0 24 24"
+      //   xmlns="http://www.w3.org/2000/svg"
+      // >
+      //   {/* Kid-friendly eyeglasses */}
+      //   <path
+      //     d="M5 10L9 10C11 10 11 14 9 14L5 14C3 14 3 10 5 10Z"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <path
+      //     d="M15 10L19 10C21 10 21 14 19 14L15 14C13 14 13 10 15 10Z"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <path d="M9 12H15" strokeWidth="1.5" stroke="currentColor" />
+      //   {/* Colorful temple design for kids */}
+      //   <path
+      //     d="M3 10C3 10 2 7 4 7"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      //   <path
+      //     d="M21 10C21 10 22 7 20 7"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      // </svg>
+      <FaGlasses size={36} className="text-combination-100" />
     ),
   },
   {
     title: "Contact Lenses for Children",
     description:
-      "Safe and comfortable contact lens options for kids’ vision correction.",
+      "Safe and comfortable contact lens options for kids' vision correction.",
     icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="6"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C16 8 16 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C8 8 8 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="9"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-        <circle
-          cx="12"
-          cy="15"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-      </svg>
+      // <svg
+      //   className="w-9 h-9 text-combination-100"
+      //   fill="none"
+      //   stroke="currentColor"
+      //   viewBox="0 0 24 24"
+      //   xmlns="http://www.w3.org/2000/svg"
+      // >
+      //   {/* Contact lens */}
+      //   <ellipse
+      //     cx="12"
+      //     cy="12"
+      //     rx="8"
+      //     ry="4"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <ellipse
+      //     cx="12"
+      //     cy="12"
+      //     rx="4"
+      //     ry="2"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   {/* Case for contacts */}
+      //   <path
+      //     d="M4 18H8"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      //   <path
+      //     d="M16 18H20"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      //   <circle
+      //     cx="6"
+      //     cy="20"
+      //     r="1"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <circle
+      //     cx="18"
+      //     cy="20"
+      //     r="1"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      // </svg>
+      <GiSpectacleLenses size={36} className="text-combination-100" />
     ),
   },
   {
     title: "Eye Care Tips for Parents",
     description:
-      "Valuable advice on how to protect and maintain your child’s vision.",
+      "Valuable advice on how to protect and maintain your child's vision.",
     icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="8"
-          r="4"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
+      // <svg
+      //   className="w-9 h-9 text-combination-100"
+      //   fill="none"
+      //   stroke="currentColor"
+      //   viewBox="0 0 24 24"
+      //   xmlns="http://www.w3.org/2000/svg"
+      // >
+      //   {/* Parent and child icons with eye care element */}
+      //   <circle
+      //     cx="8"
+      //     cy="9"
+      //     r="2.5"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <path
+      //     d="M3 17C3 14 5.5 13 8 13C10.5 13 13 14 13 17"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <circle
+      //     cx="16"
+      //     cy="11"
+      //     r="1.8"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   <path
+      //     d="M13 17C13 15 14.5 14 16 14C17.5 14 19 15 19 17"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     fill="none"
+      //   />
+      //   {/* Protection shield for eye care */}
+      //   <path
+      //     d="M12 5C12 5 14 7 16 7"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      //   <path
+      //     d="M7 6.5L8.5 8"
+      //     strokeWidth="1.5"
+      //     stroke="currentColor"
+      //     strokeLinecap="round"
+      //   />
+      // </svg>
+      <IoIosContacts size={36} className="text-combination-100" />
     ),
   },
 ];
@@ -1590,242 +1472,37 @@ export const advanceddiagnosticsbenefitsData = [
     title: "Digital Retinal Imaging",
     description:
       "High-resolution images of the retina for early disease detection.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
+    icon: <MdCameraAlt className=" text-combination-100" size={36} />,
   },
   {
     title: "Optical Coherence Tomography (OCT)",
     description:
       "Detailed cross-sectional images of the eye for precise diagnosis.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="2"
-          y="2"
-          width="20"
-          height="20"
-          rx="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M7 13l3 3 7-7"
-        />
-      </svg>
-    ),
+    icon: <FaMicroscope className=" text-combination-100" size={36} />,
   },
   {
     title: "Visual Field Testing",
     description:
       "Assessment of your peripheral vision for early detection of diseases.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <ellipse
-          cx="12"
-          cy="12"
-          rx="6"
-          ry="4"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="2"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
+    icon: <MdOutlineRemoveRedEye className=" text-combination-100" size={36} />,
   },
   {
     title: "Corneal Topography",
     description:
       "Mapping the cornea’s surface to detect irregularities and conditions.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="3"
-          y="3"
-          width="16"
-          height="20"
-          rx="1"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-        />
-        <line
-          x1="7"
-          y1="9"
-          x2="15"
-          y2="9"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="13"
-          x2="15"
-          y2="13"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <line
-          x1="7"
-          y1="17"
-          x2="11"
-          y2="17"
-          strokeWidth="2"
-          stroke="currentColor"
-        />
-        <path d="M16 3v3h3" strokeWidth="2" stroke="currentColor" fill="none" />
-      </svg>
-    ),
+    icon: <HiOutlineChartPie className=" text-combination-100" size={36} />,
   },
   {
     title: "Pachymetry",
     description:
       "Measurement of corneal thickness is important for glaucoma detection.",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="6"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C16 8 16 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M12 6C8 8 8 16 12 18"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <circle
-          cx="12"
-          cy="9"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-        <circle
-          cx="12"
-          cy="15"
-          r="1"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="currentColor"
-        />
-      </svg>
-    ),
+    icon: <FaDiagnoses className=" text-combination-100" size={36} />,
   },
   {
     title: "Auto Refraction",
     description:
-      "Automated measurement of refractive errors for accurate prescriptions..",
-    icon: (
-      <svg
-        className="w-9 h-9 text-combination-100"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="12"
-          cy="8"
-          r="4"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-        <path
-          d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          fill="none"
-        />
-      </svg>
-    ),
+      "Automated measurement of refractive errors for accurate prescriptions.",
+    icon: <MdVisibility className=" text-combination-100" size={36} />,
   },
 ];
 
