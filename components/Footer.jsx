@@ -72,7 +72,7 @@ const Footer = () => {
           {/* Beaches Location */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">
-              Beaches, Toronto
+              The Beaches, Toronto
             </h3>
             <div className="h-1 w-16 bg-teal-400 mb-4"></div>
 
