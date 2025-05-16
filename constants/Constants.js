@@ -482,7 +482,7 @@ export const cardData = [
 export const services = [
   {
     label: "Eye Exams",
-    icon: EyeExamIcon,
+    icon: "/homeIcons/eyeExam.png",
     image: EyeExamImage,
     title: "Comprehensive Eye Exams by Top Toronto Optometrists",
     description:
@@ -497,7 +497,7 @@ export const services = [
   },
   {
     label: "Contact Lens Fitting",
-    icon: ContactLensIcon,
+    icon: "/homeIcons/contact.png",
     image: ContactLensImage,
     title: "Professional Contact Lens Fittings for You",
     description:
@@ -512,7 +512,7 @@ export const services = [
   },
   {
     label: "Myopia Control",
-    icon: MyopiaIcon,
+    icon: "/homeIcons/myopia.png",
     image: MyopiaImage,
     title: "Effective Myopia Control Solutions for Children",
     description:
@@ -528,7 +528,7 @@ export const services = [
   },
   {
     label: "Dry Eye Treatment",
-    icon: "/homeIcons/drytest.png",
+    icon: "/homeIcons/dryeye.png",
     image: DryEyeImage,
     title: "Effective Dry Eye Treatment Solutions",
     description:
@@ -543,7 +543,7 @@ export const services = [
   },
   {
     label: "Pediatric Eye Care",
-    icon: "/homeIcons/pedi.png",
+    icon: "/homeIcons/pediatric1.png",
     image: PediatricEyeCareImage,
     title: "Comprehensive Pediatric Optometric Services in Toronto",
     description:
