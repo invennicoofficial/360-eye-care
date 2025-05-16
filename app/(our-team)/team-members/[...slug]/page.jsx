@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
     ? doctor.longDescription.split(".")[0] + "."
     : "";
 
-  const description = doctor.shortDescription || firstSentence;
+  const description = doctor.description || firstSentence;
 
   return {
     title: `${doctor.name} | Optometrist at Your Clinic`,
