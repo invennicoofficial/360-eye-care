@@ -32,11 +32,11 @@ const GivingBack = () => {
       <div className="bg-neutral-400 pt-8 md:pt-12 pb-8 md:pb-15 px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl mx-auto gap-6 md:gap-8">
           <div className="w-full ">
-            <div className="text-brand-subheader text-3xl md:text-4xl font-bold mb-2 text-left md:text-left">
+            <div className="text-brand-subheader text-3xl md:text-4xl font-bold mb-2 text-left ">
               360 Eyecare's Partnership with Optometry Giving Sight to Bring
               Clear Vision to the World
             </div>
-            <hr className="w-20 h-1 bg-combination-100 mb-4 md:mx-auto mx-0" />
+            <hr className="w-20 h-1 bg-combination-100 mb-4 md:flex " />
 
             <p className="text-base text-neutral-500 mb-5  leading-7 md:leading-8 font-normal">
               360 Eyecare is proud to announce our continued sponsorship of
@@ -154,7 +154,7 @@ const GivingBack = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-col p-6 md:px-16 md:pt-12 gap-4">
+      <div className="max-w-8xl mx-auto flex flex-col md:flex-col p-6 md:px-16 md:pt-12 gap-4">
         <div className="text-brand-subheader text-2xl md:text-4xl font-bold mb-2">
           360 Eyecare Supports Lawn Bowling Club
         </div>
@@ -188,7 +188,7 @@ const GivingBack = () => {
           className="w-full h-auto"
         />
       </div>
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-col p-6 md:px-16 md:pt-12 gap-4">
+      <div className="max-w-8xl mx-auto flex flex-col md:flex-col p-6 md:px-16 md:pt-12 gap-4">
         <div className="text-brand-subheader text-2xl md:text-4xl font-bold mb-2">
           360 Eyecare Partners with Kid2Kid
         </div>
@@ -234,7 +234,7 @@ const GivingBack = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-col p-6 md:px-16 md:pt-12 gap-3">
+      <div className="max-w-8xl mx-auto flex flex-col p-6 md:px-16 md:pt-12 gap-3">
         <div className="text-brand-subheader text-2xl md:text-4xl font-bold mb-2">
           360 Eyecare Proudly Sponsors Neil McNeil Catholic High School's AAA
           Sr. Boys Volleyball Team
