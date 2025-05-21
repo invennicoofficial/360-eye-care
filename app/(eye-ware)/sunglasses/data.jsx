@@ -24,6 +24,7 @@ import {
   Brand23,
   Brand24,
   Vercase,
+  Brandmykita,
   Prada,
   RudyProject,
 } from "../../../constants/brand";

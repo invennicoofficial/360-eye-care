@@ -70,10 +70,10 @@ const BeforeYourAppoinment = () => {
             <div className="grid grid-cols-2 gap-x-2 gap-y-3">
               {[
                 { head: "Mon : ", para: " 9:00am – 7:00pm" },
-                { head: "Tue : ", para: " 9:00am – 9:00pm" },
+                { head: "Tue : ", para: " 9:00am – 8:00pm" },
                 { head: "Wed : ", para: " 9:00am – 6:00pm" },
                 { head: "Thur : ", para: " 9:00am – 7:00pm" },
-                { head: "Fri : ", para: " 9:00am – 8:00pm" },
+                { head: "Fri : ", para: " 9:00am – 6:00pm" },
                 { head: "Sat : ", para: "10:00am – 5:00pm" },
               ].map((item) => (
                 <div

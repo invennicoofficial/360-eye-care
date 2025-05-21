@@ -96,7 +96,7 @@ const MyopiaControl = () => {
               <div className="md:w-3/5 order-2 md:order-1">
                 <section className="text-base text-neutral-700">
                   <h3 className="text-3xl font-bold mb-6 text-combination-200">
-                    MiyoSmart Lenses by Hoya
+                    MyoCare Lenses by Zeiss
                   </h3>
                   <ul className="space-y-6 list-disc list-inside">
                     <li>

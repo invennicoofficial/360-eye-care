@@ -25,6 +25,7 @@ import Brand24 from "../public/Brand/brand24.webp";
 import Vercase from "../public/Brand/Versace.webp";
 import Prada from "../public/Brand/Prada.webp";
 import RudyProject from "../public/Brand/Rudy.webp";
+import Brandmykita from "../public/mykita.png";
 
 export {
   Vercase,
@@ -35,6 +36,7 @@ export {
   Brand3,
   Brand4,
   Brand5,
+  Brandmykita,
   Brand6,
   Brand7,
   Brand8,

@@ -89,7 +89,7 @@ const TorontoBeachesOptometrist = () => {
             Dr. Baraam is certified to treat and manage ocular disease and is
             thoroughly trained in cataract management and laser vision
             correction procedures. He is also further trained in binocular
-            vision and visual-perceptual therapy.{" "}
+            vision, orthokeratology lenses and dry eye disease management.{" "}
             <Link className="underline" href="/team-members/dr-sam-baraam">
               Dr. Sam Baraam
             </Link>{" "}

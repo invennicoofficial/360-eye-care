@@ -161,7 +161,7 @@ During his training, Dr. Baraam gained extensive experience in ocular disease at
 
 Passionate about supporting patients with ocular surface disease, dry eye management, and specialty contact lenses, Dr. Baraam offers advanced in-office treatments, including Intense Pulsed Light (IPL therapy) and Radiofrequency (RF), to ensure the highest level of care. He also specializes in myopia management and provides orthokeratology lens fitting (OrthoK), helping to slow myopia progression in children and young adults.
 
-Beyond his clinical practice, Dr. Baraam participated in the SOSH mission team, where he provided essential eye care to thousands of patients in underserved villages in Belize. He is certified by the Canadian National Boards (CSAO) and has successfully completed all three parts of the U.S. National Board Examinations (NBEO). As an active member of both the Ontario Association of Optometrists and the Canadian Association of Optometrists, he remains at the forefront of his field.
+Beyond his clinical practice, Dr. Baraam participated in the SOSH mission team, where he provided essential eye care to thousands of patients in underserved villages in Belize. He is certified by the Canadian National Boards (CSAO) and has successfully completed all three parts of the US National Board Examinations (NBEO) As an active member of both the Ontario Association of Optometrists and the Canadian Association of Optometrists, he remains at the forefront of his field.
 
 Dr. Baraam is the founder and president of 360 Eyecare, practicing at the Beaches and Yorkville locations. Outside of work, he enjoys running, cycling, and spending quality time with his family and friends`,
   },
@@ -234,7 +234,7 @@ Dr. Shahid is passionate about providing thorough eye care and building trusting
 
 She gained a plethora of practical experience during her rotations at the Detroit Veteran’s Hospital, the Kresge Eye Institute and the Illinois Eye Institute. She has been NBEO certified to treat and manage ocular disease in the US since 2005 and Canada since 2006. After working briefly in the US, she moved back to Ontario in 2006 and has been practicing in a private practice setting ever since. She takes pride in providing very thorough and complete eye care to her patients.
 
-Dr. Swatch enjoys learning and staying abreast of the latest developments in eye care in order to best serve her patients’ needs. In her spare time, she loves to bake and is an avid fashion and interior design lover.
+Dr Swatch enjoys learning and staying abreast of the latest developments in eye care in order to best serve her patients’ needs. In her spare time, she loves to bake and is an avid fashion and interior design lover.
 
 She currently works at the Yorkville Rosedale location and looks forward to serving the community`,
   },

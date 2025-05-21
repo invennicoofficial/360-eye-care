@@ -28,6 +28,7 @@ import {
   Brand22,
   Brand23,
   Brand24,
+  Brandmykita,
 } from "../../../constants/brand";
 import Card from "../../../components/Card";
 import BookExamCommon from "../../../components/common/BookExampCommon";
@@ -96,6 +97,15 @@ const pages = () => {
         "Tom Ford eyeglasses embody luxury and sophistication. With sleek designs and high-quality materials, Tom Ford frames symbolize refined taste. Whether you're looking for classic styles or contemporary trends, Tom Ford Integrum has a frame to suit your style.",
       catalogLink: "https://tomford.com/",
       logoImg: Brand4,
+    },
+    {
+      id: "mykita",
+      name: "MYKITA",
+      tagline: "Designer eyewear and frames - handmade in Berlin",
+      description:
+        "Prescription glasses frames for men and women by MYKITA®. Handmade in the modern manufactory in Berlin. Various styles, designs, and colours available.",
+      catalogLink: "https://mykita.com/en/prescription-glasses",
+      logoImg: Brandmykita,
     },
     {
       id: "integrum",

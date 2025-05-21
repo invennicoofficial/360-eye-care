@@ -112,9 +112,6 @@ const Page = () => {
               <p className="text-neutral-500">
                 <span className="font-bold">Saturday: </span>10:00am – 5:00pm
               </p>
-              <p className="text-neutral-500 font-bold mt-1">
-                By appointment only
-              </p>
             </div>
           </div>
 
