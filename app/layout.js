@@ -1,8 +1,7 @@
 import { Poppins, Roboto, Lora } from "next/font/google";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import "./globals.css";
 import { Lora } from "next/font/google";
+import RootLayout2 from "./RootLayout2";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -132,9 +131,7 @@ export default function RootLayout({ children }) {
       <body
         className={`font-sans antialiased ${poppins.className} ${roboto.className} ${lora.className} overflow-x-hidden`}
       >
-        <NavBar />
-        {children}
-        <Footer />
+        <RootLayout2>{children}</RootLayout2>
       </body>
     </html>
   );
